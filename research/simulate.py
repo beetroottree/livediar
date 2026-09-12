@@ -80,7 +80,10 @@ def simulate(pool, out: Path, n_spk: int, dur_s: float, sched: Schedule, rng: ra
         a = read(u["path"]) * gains[cur]
         want = np.exp(rng.uniform(np.log(sched.turn_s[0]), np.log(sched.turn_s[1])))
         a = a[: int(want * SR)]
-        s0 = int(t * SR); mix[s0:s0 + a.size] += a
+        s0 = int(t * SR); a = a[: max(0, mix.size - s0)]          # clip at the buffer edge
+        if a.size == 0:
+            break
+        mix[s0:s0 + a.size] += a
         f0, f1 = int(t / FRAME_S), int((t + a.size / SR) / FRAME_S) + 1
         activity[f0:f1, cur] = True
         segs.append({"t0": round(t, 2), "t1": round(t + a.size / SR, 2), "slot": cur, "spk": spks[cur],
@@ -91,7 +94,8 @@ def simulate(pool, out: Path, n_spk: int, dur_s: float, sched: Schedule, rng: ra
             b = read(rng.choice(by_spk[spks[o]])["path"]) * gains[o]
             b = b[: int(rng.uniform(*sched.backchannel_s) * SR)]
             bt = t + rng.uniform(0.5, a.size / SR - 0.5)
-            b0 = int(bt * SR); mix[b0:b0 + b.size] += b
+            b0 = int(bt * SR); b = b[: max(0, mix.size - b0)]
+            mix[b0:b0 + b.size] += b
             activity[int(bt / FRAME_S):int((bt + b.size / SR) / FRAME_S) + 1, o] = True
             segs.append({"t0": round(bt, 2), "t1": round(bt + b.size / SR, 2), "slot": o, "spk": spks[o],
                          "text": "[backchannel]"})
