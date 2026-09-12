@@ -13,11 +13,66 @@ from pathlib import Path
 
 import modal
 
-import sys
-for _p in ("/repo/research", str(Path(__file__).resolve().parent)):   # container mount / local checkout
-    if _p not in sys.path:
-        sys.path.insert(0, _p)
-from modal_app import DATA, GPU_USD_H, HF_SECRET, REPO, VOL, _guard, _link_data, _record_spend  # noqa: E402,F401
+REPO = Path(__file__).resolve().parent.parent
+VOL = modal.Volume.from_name("livediar-data", create_if_missing=True)
+DATA = "/data"
+GPU_USD_H = {"H100": 3.95, "H200": 4.54, "B200": 6.25, "A100": 2.50, "A100-80GB": 2.50, "L40S": 1.95, "L4": 0.80, "T4": 0.59}
+HF_SECRET = [modal.Secret.from_name("huggingface")] if os.environ.get("USE_HF_SECRET") else []
+BUDGET_USD = float(os.environ.get("LIVEDIAR_BUDGET_USD", "450"))
+
+# --- helpers copied from modal_app.py (the container cannot import that module at load time) ---
+def _spend_rows():
+    """One JSON file per call under results/spend/ — concurrent appends to a single file lost
+    entries (14 containers wrote spend.jsonl at once and 2 survived). Legacy spend.jsonl is still read."""
+    import json
+    VOL.reload()
+    rows = []
+    d = Path(f"{DATA}/results/spend")
+    if d.exists():
+        rows += [json.loads(f.read_text()) for f in d.glob("*.json")]
+    p = Path(f"{DATA}/results/spend.jsonl")
+    if p.exists():
+        rows += [json.loads(l) for l in p.read_text().splitlines() if l.strip()]
+    return rows
+
+
+def _spent() -> float:
+    return sum(r["est_usd"] for r in _spend_rows())
+
+
+def _guard(job: str, gpu: str, est_hours: float):
+    """Refuse to start a job whose estimated cost would push total spend past BUDGET_USD."""
+    n = int(gpu.split(":")[1]) if ":" in gpu else 1
+    est = GPU_USD_H.get(gpu.split(":")[0], 4.0) * n * est_hours
+    spent = _spent()
+    if spent + est > BUDGET_USD:
+        raise RuntimeError(f"budget guard: {job} would cost ~${est:.2f}, spent ${spent:.2f}, ceiling ${BUDGET_USD:.0f}")
+    print(f"[budget] {job}: est ${est:.2f}, spent so far ${spent:.2f}, ceiling ${BUDGET_USD:.0f}", flush=True)
+
+
+def _record_spend(job: str, gpu: str, seconds: float, note: str = ""):
+    """Append one line to spend.jsonl on the volume; `modal run ...::spend` sums it."""
+    import json, time
+    n = int(gpu.split(":")[1]) if ":" in gpu else 1
+    kind = gpu.split(":")[0]
+    usd = GPU_USD_H.get(kind, 4.0) * n * seconds / 3600
+    import uuid
+    d = Path(f"{DATA}/results/spend"); d.mkdir(parents=True, exist_ok=True)
+    (d / f"{int(time.time())}-{job}-{uuid.uuid4().hex[:6]}.json").write_text(json.dumps(
+        {"t": time.strftime("%Y-%m-%d %H:%M:%S"), "job": job, "gpu": gpu,
+         "seconds": round(seconds), "est_usd": round(usd, 3), "note": note}))
+    VOL.commit()
+    return usd
+
+
+def _link_data():
+    """Make /repo/bench/ami/{wav,cache,manual,setup} point at the volume."""
+    for d in ("wav", "cache", "manual", "setup"):
+        dst = Path(f"/repo/bench/ami/{d}")
+        if not dst.exists():
+            dst.symlink_to(f"{DATA}/ami/{d}")
+    Path("/repo/bench/ami/results").mkdir(exist_ok=True)
+
 
 app = modal.App("livediar-pilot")
 
