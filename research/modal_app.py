@@ -52,6 +52,27 @@ MEETINGS = ["EN2002a", "EN2002b", "EN2002c", "EN2002d", "ES2004a", "ES2004b", "E
 GPU_USD_H = {"H100": 3.95, "H200": 4.54, "B200": 6.25, "A100": 2.50, "A100-80GB": 2.50, "L40S": 1.95, "L4": 0.80, "T4": 0.59}
 
 
+BUDGET_USD = float(os.environ.get("LIVEDIAR_BUDGET_USD", "450"))   # hard ceiling on estimated spend
+
+
+def _spent() -> float:
+    import json
+    p = Path(f"{DATA}/results/spend.jsonl")
+    if not p.exists():
+        return 0.0
+    return sum(json.loads(l)["est_usd"] for l in p.read_text().splitlines() if l.strip())
+
+
+def _guard(job: str, gpu: str, est_hours: float):
+    """Refuse to start a job whose estimated cost would push total spend past BUDGET_USD."""
+    n = int(gpu.split(":")[1]) if ":" in gpu else 1
+    est = GPU_USD_H.get(gpu.split(":")[0], 4.0) * n * est_hours
+    spent = _spent()
+    if spent + est > BUDGET_USD:
+        raise RuntimeError(f"budget guard: {job} would cost ~${est:.2f}, spent ${spent:.2f}, ceiling ${BUDGET_USD:.0f}")
+    print(f"[budget] {job}: est ${est:.2f}, spent so far ${spent:.2f}, ceiling ${BUDGET_USD:.0f}", flush=True)
+
+
 def _record_spend(job: str, gpu: str, seconds: float, note: str = ""):
     """Append one line to spend.jsonl on the volume; `modal run ...::spend` sums it."""
     import json, time
@@ -110,6 +131,7 @@ def dixtral_one(meeting: str, win: int = 120) -> str:
     if done.exists():
         return done.read_text()
     t0 = time.time()
+    _guard("dixtral_ami", "H100", 0.5)
     _link_data()
     Path(f"{DATA}/hf").mkdir(parents=True, exist_ok=True)
     env = dict(os.environ, WANDB_MODE="disabled", HF_HOME=f"{DATA}/hf",
@@ -135,32 +157,42 @@ def dixtral_ami(meetings: str = "all", win: int = 120):
 
 @app.function(gpu="A100", timeout=4 * 3600, volumes={DATA: VOL}, secrets=HF_SECRET,
               retries=modal.Retries(max_retries=2, initial_delay=10.0))
-def toy_ablation_job(steps: int = 20000, rooms: int = 2000):
-    """Conditioning proof with more rooms and steps than the laptop run."""
-    import time
+def toy_ablation_job(steps: int = 3000, rooms: int = 2000, bs: int = 8) -> dict:
+    """Conditioning ablation v3 (frozen wav2vec2 listener) at scale: simulate `rooms` rooms from the
+    uploaded LibriSpeech pool in-container (CPU), then train arms cond 0/1/2 on the A100."""
+    import json, time
     t0 = time.time()
+    _guard("toy_ablation", "A100", 3.0)
     Path(f"{DATA}/hf").mkdir(parents=True, exist_ok=True)
     env = dict(os.environ, PYTHONPATH="/repo:/repo/research", HF_HOME=f"{DATA}/hf")
     root = Path("/repo/research/data"); root.mkdir(exist_ok=True)
-    if not (root / "rooms").exists():
-        (root / "rooms").symlink_to(f"{DATA}/rooms")
-    if not (root / "pool.jsonl").exists():
-        (root / "pool.jsonl").symlink_to(f"{DATA}/pool.jsonl")
-    subprocess.run(["python", "/repo/research/toy_ablation.py", "features"], check=True, cwd="/repo", env=env)
-    for cond in (1, 0):
-        subprocess.run(["python", "/repo/research/toy_ablation.py", "train", "--cond", str(cond),
-                        "--steps", str(steps), "--bs", "16"], check=True, cwd="/repo", env=env)
-    res = {c: (root / f"toy_result_cond{c}.json").read_text() for c in (1, 0)}
-    Path(f"{DATA}/results").mkdir(exist_ok=True)
-    for c, t in res.items():
-        Path(f"{DATA}/results/toy_cond{c}.json").write_text(t)
-    _record_spend("toy_ablation", "A100", time.time() - t0)
+    rooms_dir = Path(f"{DATA}/rooms_modal")
+    if not (rooms_dir / f"room{rooms - 1:05d}" / "audio.wav").exists():
+        subprocess.run(["python", "/repo/research/simulate.py", f"{DATA}/pool_modal.jsonl", str(rooms_dir),
+                        "--n", str(rooms), "--dur", "90", "--spk", "2,4", "--seed", "1"], check=True, cwd="/repo", env=env,
+                       stdout=subprocess.DEVNULL)
+        VOL.commit()
+    if not (root / "rooms_modal").exists():
+        (root / "rooms_modal").symlink_to(rooms_dir)
+    res = {}
+    for cond in (0, 1, 2):
+        out = root / f"toy_result_w2v_rooms_modal_cond{cond}_s{steps}.json"
+        if not out.exists():
+            subprocess.run(["python", "/repo/research/toy_ablation_w2v.py", "--cond", str(cond), "--steps", str(steps),
+                            "--bs", str(bs), "--rooms", "rooms_modal", "--max-rooms", str(rooms)],
+                           check=True, cwd="/repo", env=env)
+        res[cond] = json.loads(out.read_text())
+        Path(f"{DATA}/results").mkdir(exist_ok=True)
+        Path(f"{DATA}/results/toy_w2v_cond{cond}.json").write_text(json.dumps(res[cond], indent=1))
+        VOL.commit()
+    _record_spend("toy_ablation", "A100", time.time() - t0, f"rooms={rooms} steps={steps}")
     return res
 
 
 @app.local_entrypoint()
-def toy_ablation(steps: int = 20000):
-    print(toy_ablation_job.remote(steps=steps))
+def toy_ablation(steps: int = 3000, rooms: int = 2000):
+    for c, r in toy_ablation_job.remote(steps=steps, rooms=rooms).items():
+        print(c, r)
 
 
 # ---------------------------------------------------------------- job 6: Moshi-LoRA stage-1 pilot
@@ -188,6 +220,7 @@ def pilot_segment(steps: int = 1000, run: str = "pilot1") -> str:
     """One training segment. Reads /data/pilot/<run>/latest.json for where to start."""
     import json, time
     t0 = time.time()
+    _guard("pilot_stage1", "H100", 3.0)
     base = Path(f"{DATA}/pilot/{run}"); base.mkdir(parents=True, exist_ok=True)
     state_p = base / "latest.json"
     state = json.loads(state_p.read_text()) if state_p.exists() else {"segment": 0, "step": 0, "init_moshi": None, "init_cond": None}
