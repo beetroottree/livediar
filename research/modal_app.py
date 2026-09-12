@@ -128,6 +128,7 @@ HF_SECRET = [modal.Secret.from_name("huggingface")] if os.environ.get("USE_HF_SE
               retries=modal.Retries(max_retries=3, initial_delay=10.0))
 def dixtral_one(meeting: str, win: int = 120) -> str:
     import time
+    VOL.reload()                       # see files uploaded after this container started
     done = Path(f"{DATA}/results/{meeting}.dixtral.json")
     if done.exists():
         return done.read_text()
