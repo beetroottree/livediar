@@ -14,6 +14,19 @@ browser mic ──PCM16 @16 kHz──▶ WebSocket ──▶ Sortformer streamin
 UI  ◀── frames / turns / captions / stats ◀───┘
 ```
 
+## Project map
+
+| where | what |
+|---|---|
+| `livediar/`, `static/` | the live app: Sortformer diarization, Whisper captions, voice profiles, replay (this README) |
+| `bench/` | AMI test-set benchmark with ground truth (DER, cpWER, idWER); results in `bench/ami/results/` |
+| `PLAN.md` | the programme for a room-aware full-duplex spoken model, and the $500 execution plan (§8) |
+| `research/` | the code behind the plan: conditioning module, simulator, ablations, Dixtral gate, Moshi-LoRA pilot, Modal jobs |
+| `docs/RUNS.md` | run log: every job, its cost, its metric, what it changed |
+| `docs/DECISIONS.md` | every non-obvious decision with the evidence behind it |
+| `docs/research/` | deep-research reports: full-duplex models, diarization conditioning, data & licences, infrastructure & Modal |
+| `samples/` | test clips' transcripts and RTTMs (audio fetched per `samples/README.md`) |
+
 ## Quickstart (UI demo, no model, ~30 s)
 
 ```bash

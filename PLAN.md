@@ -83,7 +83,11 @@ Per frame *t* the model consumes:
   corrupted during training (§4.4) so the model is robust to diarizer errors,
   and *identity is bound outside the mask*: a slot swap inside a DiCoW-style
   mask is unrecoverable, so names attach to the identity embedding, never to
-  the slot index.
+  the slot index. The conditioning output is **zero-gated at
+  initialisation** (a learnable scalar starting at 0): injected at unit scale
+  into a pretrained wav2vec2 it silenced the model outright (all-blank
+  output, own run 2026-09-12), and the same would happen to Moshi. DiCoW's
+  suppressive prior is therefore learned, not imposed.
 - **Its own previous audio tokens** `m_{t-1}` and **inner-monologue text**
   `w_t`, exactly as in Moshi, with the acoustic delay so text leads audio.
 
@@ -350,6 +354,14 @@ anything with a ≥3B model over hours of audio, and anything that trains a
 | 6 | **Moshi-LoRA stage-1 pilot**: moshi-finetune (LoRA, one H100) with the conditioning module added and the text stream re-targeted to the speaker-attributed room transcript, on 300 h simulated rooms + the 700 h labelled meetings; checkpoints every 500 steps | Modal, 1 × H100, ~30 h | ~$120 | whether a full-duplex-shaped model learns to *listen to a room* under conditioning — the plan's central bet, scored by job 1's harness |
 | 7 | pilot re-run / second arm (FDDT variant or Dixtral encoder path) | Modal, 1 × H100 | ~$120 | reserve |
 | 8 | assistant-in-the-room scripts (1 000) rendered with CosyVoice 3 / Dia2, 100 h | local | $0 | the §4.3 behaviour spec |
+
+Job 2 went through two invalid versions before a valid one (`docs/RUNS.md`):
+a CTC recognizer trained from scratch on 7 h of simulated rooms never learns
+the acoustics, so it cannot measure conditioning. The valid ablation freezes
+a pretrained listener (wav2vec2-base-960h) and trains only the speaker-tag
+outputs and the conditioning — the experiment then measures exactly the two
+things conditioning is for, *who* and *where turns start*, and its lesson
+(zero-gate the conditioning) is already in §2.
 
 Job 6 replaces §5's 7B stage 1 as the thing this budget proves. It is
 deliberately a LoRA on the public Moshi weights rather than full training:

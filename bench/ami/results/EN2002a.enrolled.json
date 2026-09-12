@@ -1,0 +1,45 @@
+{
+ "meeting": "EN2002a",
+ "condition": "enrolled",
+ "audio_min": 35.7,
+ "der": {
+  "der": 0.26477215869345627,
+  "miss": 0.18936052386134863,
+  "fa": 0.05217937538861518,
+  "conf": 0.023232259443492432,
+  "total": 2058.5599999999977
+ },
+ "cpwer": 0.4291,
+ "ref_words": 7851,
+ "hyp_words": 7846,
+ "captions": 760,
+ "overlap_s": 136.2,
+ "diar_rtf": 1.209,
+ "asr_rtf": 0.216,
+ "eval_wall_s": 1074.0,
+ "talk_s": [
+  455.4,
+  389.5,
+  766.1,
+  446.4
+ ],
+ "turns": [
+  345,
+  220,
+  401,
+  330
+ ],
+ "idwer": 0.4683,
+ "identified": {
+  "0": "MEE073",
+  "1": "MEE071",
+  "2": "FEO072",
+  "3": "FEO070"
+ },
+ "verified_captions": 442,
+ "idwer_policy": {
+  "caption": 0.4683,
+  "slot": 0.4291,
+  "strong": 0.4554
+ }
+}

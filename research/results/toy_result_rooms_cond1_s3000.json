@@ -1,0 +1,11 @@
+{
+ "cond": 1,
+ "steps": 3000,
+ "rooms": "rooms",
+ "dev_cpwer": 1.5768,
+ "dev_wer_speaker_agnostic": 1.0544,
+ "n_dev": 40,
+ "params": 4366369,
+ "train_rooms": 280,
+ "wall_s": 1841
+}

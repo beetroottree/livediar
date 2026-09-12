@@ -1,0 +1,9 @@
+{
+ "cond": true,
+ "steps": 2500,
+ "dev_cpwer": 0.9762,
+ "n_dev": 40,
+ "params": 6461947,
+ "train_rooms": 280,
+ "wall_s": 1098
+}
