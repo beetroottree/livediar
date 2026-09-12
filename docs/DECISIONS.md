@@ -64,12 +64,22 @@ query-key biasing hallucinates at init and hurts timestamps (tcpWER 55.8 vs
 47.8 on AMI); its per-layer diagonal affine with suppressive init is what
 works (`docs/research/conditioning.md`).
 
-**Conditioning is zero-gated at init.** Discovered the hard way in the
+**Conditioning is zero-gated and bounded.** Discovered the hard way in the
 ablation: a unit-scale conditioning vector added to a pretrained wav2vec2's
-encoder input silenced it (all-blank output) *(own run, 2026-09-12)*. A
-learnable scalar gate initialised at zero leaves any pretrained host untouched
-at step 0; DiCoW's suppressive prior is learned, not imposed. Applies to the
-Moshi pilot too.
+encoder input silenced it (all-blank output), and even a *trained* gate
+drifted to −0.20 (conditioning RMS 0.25) and collapsed the frozen encoder,
+while RMS 0.06 left it intact *(own runs, 2026-09-12)*. The gate is therefore
+zero-initialised and bounded (`max_gate` × tanh, default 0.1). Input-level
+additive injection into a *frozen* pretrained encoder is brittle; the pilot's
+host is not frozen (LoRA adapts around the conditioning), and DiCoW's
+per-layer FDDT — the variant that halved cpWER in job 3 — is the fallback
+injection if the pilot's additive path underperforms.
+
+**The conditioning question is answered by job 3, not the toy.** Dixtral with
+our Sortformer masks: cpWER 20.3 % over 14 AMI meetings vs 41.5 % for the
+unconditioned Whisper pipeline on the same masks *(own run, 2026-09-12)*.
+The toy ablation's remaining value is engineering (gate bounds, injection
+point), not evidence; its Modal copy was cancelled.
 
 **Explicit floor-control channel over implicit silence modelling.** Every
 2026 system that measures it wins this way (DuplexSLA, SALMONN-omni,

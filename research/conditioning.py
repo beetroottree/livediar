@@ -88,16 +88,19 @@ class DiarizationConditioning(nn.Module):
     no meaning, which is what we want from Sortformer's anonymous slots.
     """
 
-    def __init__(self, d_model: int, n_slots: int = 4, d_id: int = 192):
+    def __init__(self, d_model: int, n_slots: int = 4, d_id: int = 192, max_gate: float = 0.1):
         super().__init__()
         self.n_slots = n_slots
+        self.max_gate = max_gate
         self.state_emb = nn.Embedding(N_STATES, d_model)
         self.slot_pos = nn.Parameter(torch.zeros(n_slots, d_model))     # weak slot prior
         self.id_proj = nn.Linear(d_id, d_model, bias=False)
         self.unknown_id = nn.Parameter(torch.randn(d_model) * 0.02)
         self.norm = nn.LayerNorm(d_model)
-        # zero-initialised output gate: a pretrained host model is untouched at step 0 and
-        # the conditioning grows only as the loss asks for it (adapter / ControlNet practice)
+        # zero-initialised, BOUNDED output gate: a pretrained host is untouched at step 0 and the
+        # conditioning can never exceed max_gate x unit RMS. Measured 2026-09-12 on a frozen
+        # wav2vec2-base: an unbounded gate drifted to -0.20 (conditioning RMS 0.25 at the encoder
+        # input) and the encoder collapsed to all-blank output; at RMS 0.06 it was unaffected.
         self.gate = nn.Parameter(torch.zeros(1))
         nn.init.normal_(self.state_emb.weight, std=0.02)
         nn.init.normal_(self.slot_pos, std=0.02)
@@ -113,7 +116,7 @@ class DiarizationConditioning(nn.Module):
             known = identity.norm(dim=-1, keepdim=True) > 0
             ident = torch.where(known, self.id_proj(identity), self.unknown_id.expand(B, K, -1))
         e = e + ident[:, None] * active[..., None].to(e.dtype)                # identity only when talking
-        return self.gate * self.norm(e.sum(2))                                # (B,T,d)
+        return self.max_gate * torch.tanh(self.gate) * self.norm(e.sum(2))    # (B,T,d), |scale| < max_gate
 
 
 class PerLayerStateConditioning(nn.Module):
