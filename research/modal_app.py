@@ -40,7 +40,7 @@ image = (
     .add_local_dir(str(REPO / "livediar"), "/repo/livediar")
     .add_local_dir(str(REPO / "bench"), "/repo/bench", ignore=["ami/wav", "ami/cache", "ami/logs", "ami/manual"])
     .add_local_dir(str(REPO / "research"), "/repo/research",
-                   ignore=["data", "pilot_data", "results", ".venv-dixtral", "dixtral_repo", "moshi_finetune_repo", "moshi_repo", "__pycache__"])
+                   ignore=["data", "pilot_data", "results", ".venv-dixtral", "dixtral_repo/.git", "moshi_finetune_repo", "moshi_repo", "__pycache__"])
 )
 
 app = modal.App("livediar-research", image=image)
@@ -207,6 +207,27 @@ def debug_sim(n: int = 3) -> str:
                         "--n", str(n), "--dur", "30", "--spk", "2,3", "--seed", "1"], cwd="/repo",
                        capture_output=True, text=True, env=dict(os.environ, PYTHONPATH="/repo:/repo/research"))
     return f"exit {r.returncode}\nSTDOUT:\n{r.stdout[-1500:]}\nSTDERR:\n{r.stderr[-3000:]}"
+
+
+@app.function(volumes={DATA: VOL}, timeout=3 * 3600, memory=8192, cpu=4.0)
+def simulate_rooms_job(rooms: int = 2000, dur: int = 90) -> str:
+    """Simulate the pilot/ablation rooms on a CPU container (no GPU cost). Writes /data/rooms_modal."""
+    import time
+    t0 = time.time()
+    out = Path(f"{DATA}/rooms_modal")
+    if (out / f"room{rooms - 1:05d}" / "audio.wav").exists():
+        return "already simulated"
+    r = subprocess.run(["python", "/repo/research/simulate.py", f"{DATA}/pool_modal.jsonl", str(out),
+                        "--n", str(rooms), "--dur", str(dur), "--spk", "2,4", "--seed", "1"], cwd="/repo",
+                       capture_output=True, text=True, env=dict(os.environ, PYTHONPATH="/repo:/repo/research"))
+    VOL.commit()
+    n = len(list(out.glob("room*/audio.wav")))
+    return f"exit {r.returncode}, rooms on volume {n}, {time.time() - t0:.0f}s\nSTDERR tail:\n{r.stderr[-1500:]}"
+
+
+@app.local_entrypoint()
+def simulate_rooms(rooms: int = 2000):
+    print(simulate_rooms_job.remote(rooms=rooms))
 
 
 @app.local_entrypoint()
