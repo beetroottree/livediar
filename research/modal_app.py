@@ -206,7 +206,9 @@ pilot_image = (
     .apt_install("git", "ffmpeg")
     .pip_install("torch==2.6.0", "torchaudio==2.6.0", "triton>=3.2", "fire", "simple-parsing", "pyyaml",
                  "safetensors", "tensorboard", "tqdm", "sphn", "sentencepiece", "numpy", "scipy",
-                 "huggingface_hub", "wandb")
+                 "huggingface_hub", "wandb", "pyannote.core", "pyannote.metrics", "jiwer", "whisper-normalizer")
+    .add_local_dir(str(REPO / "livediar"), "/repo/livediar")
+    .add_local_dir(str(REPO / "bench"), "/repo/bench", ignore=["ami/wav", "ami/cache", "ami/logs", "ami/manual", "ami/setup"])
     .run_commands(
         "git clone --depth 1 https://github.com/kyutai-labs/moshi.git /opt/moshi && pip install /opt/moshi/moshi",
         "git clone https://github.com/kyutai-labs/moshi-finetune.git /opt/moshi-finetune && cd /opt/moshi-finetune && git checkout 2acc879",
@@ -241,6 +243,13 @@ def pilot_segment(steps: int = 1000, run: str = "pilot1") -> str:
         subprocess.run(["python", "/repo/research/pilot_data.py", "rooms", f"{DATA}/rooms_modal", f"{DATA}/pilot/rooms"],
                        check=True, cwd="/repo", env=env)
         VOL.commit()
+    # AMI pilot data (train subset + dev) is built in-container from the 16 kHz wavs + references on the volume
+    _link_data()
+    for split, sub in (("train", "ami"), ("dev", "ami_dev")):
+        if not Path(f"{DATA}/pilot/{sub}/data.jsonl").exists():
+            subprocess.run(["python", "/repo/research/pilot_data.py", "ami", f"{DATA}/pilot/{sub}", split],
+                           check=True, cwd="/repo", env=dict(env, PYTHONPATH="/repo:/repo/bench:/repo/research"))
+            VOL.commit()
     subprocess.run(["python", "/repo/research/pilot/build_trainer.py", "/opt/moshi-finetune"], check=True)
     cfg = Path("/opt/moshi-finetune/pilot_seg.yaml")
     y = (Path("/repo/research/pilot/pilot.yaml").read_text()
