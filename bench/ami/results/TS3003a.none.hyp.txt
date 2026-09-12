@@ -1,0 +1,264 @@
+[   13.68] slot0: Good morning.
+[   15.44] slot1: Good morning.
+[   15.60] slot2: Good morning. Good morning. Good morning.
+[   16.80] slot0: I see you all find your places. Everybody's sitting on the right place.
+[   23.60] slot0: I guess so.
+[   26.40] slot0: so
+[   32.80] slot0: Let's see.
+[   36.08] slot0: First I'll introduce myself. I don't know if everybody knows me. So, I'm Bart. Hello. Hello. I'm Bert. Bart. Hello. Joost. Bart. Welcome.
+[   40.96] slot3: Happy birthday.
+[   45.52] slot2: Just.
+[   50.32] slot0: Let's see.
+[   54.24] slot0: Let's start off with a little presentation.
+[   62.40] slot0: uh
+[   65.76] slot0: First I'll tell you a little bit about the setting. You can see a few cameras here. They'll record our actions. And you'll have wires and microphones. They will record your voice. There are also some microphones there.
+[   80.16] slot0: but you don't have to pay a lot of attention on those because it will disappear when you don't intend to do it. This is our project documents folder.
+[   94.56] slot0: There are some notes in it already, I see. Some documents.
+[   99.36] slot0: I'll start with the presentation kickoff.
+[  106.96] slot0: It's being modified by the administrator.
+[  110.64] slot0: Okay, let's do it read only.
+[  116.80] slot0: Well, I don't know if you've noticed, but we're working for Real Reaction. It's a company in electronics. We put fashion in electronics. We make it work. We put a lot of effort.
+[  131.52] slot0: effort in design and in the product itself. I'm Bart Boet, I'm the project manager so I'll direct you through the project.
+[  140.72] slot0: This is our agenda.
+[  143.52] slot0: We have our opening acquaintance tool training project plan discussion closing.
+[  149.84] slot0: Maybe I can sit down and I can take some notes or...
+[  157.68] slot0: Let's see.
+[  161.44] slot0: Maybe you can take the minutes once in a while.
+[  163.84] slot1: Sure.
+[  164.56] slot0: I don't know, it's not a lot of work, but just if you hear something, you can write it down. As you can see, it's the opening. Acquaintance tool trading. Acquaintance is a point we've done a bit.
+[  179.52] slot0: Have you all seen the corporate website already? Yep.
+[  182.56] slot2: Yep.
+[  183.28] slot0: yeah have you seen any flaws in it I think I found one
+[  183.36] slot3: Yeah.
+[  191.04] slot3: so I paid much attention to it.
+[  196.16] slot0: see if it works this way
+[  198.24] slot1: It doesn't work here.
+[  198.40] slot0: Does it work here? Okay. No problem. But on the corporate information side, there was real remote instead of real reaction.
+[  212.32] slot3: Oh, yeah. Real remote.
+[  212.88] slot0: Real Remote is not really the company we are.
+[  216.24] slot1: Just a little.
+[  216.32] slot0: just a little uh... okay what are we going to do uh... project aim is as you can see a new remote control it has to be original trendy and user friendly
+[  230.40] slot0: so these are the points why we also hired you we've got the marketing experts for the trendy and user-friendly
+[  244.80] slot0: look and industrial designer that's also user-friendly and a bit original and we've got our user interface designer
+[  260.56] slot0: that's about the new remote control project method the is the three faces we're going through first is functional design individual work meetings
+[  274.56] slot0: After the functional design, then the conceptual design and the detailed design, I had some role indications here.
+[  288.32] slot0: but I think you know it already by yourself. The industrial designer is going to work on the working design, components design, and a bit of the look and feel design. The user
+[  302.40] slot0: The user interface designer is going to do the technical function design, user interface concept and user interface design. And the marketing expert is doing a little bit of user requirements specification.
+[  316.80] slot0: trend watching and project a product evaluation so that's a bit what you're going to do but that will be all worked out in other meetings
+[  332.32] slot0: Then we've got our first tool training. We're going to work with a lot of high-tech tools here. So it's handy if we have a little bit of training first. As you can see, we've got the smart boards here and here, and the white board.
+[  347.04] slot0: board.
+[  348.88] slot0: In the whiteboard here is a little toolbar on this side. Here are some functions we can save. These functions we don't have anything to do with. Only undo, you can undo a little.
+[  362.88] slot0: a piece of drawing, a blank new document for each person, select a pen, razor, capture we don't have to do anything with. Then we've got our pen.
+[  377.28] slot0: This pen is really funny because you can draw with it on this page. In the format you can also select the current color and the line.
+[  391.68] slot0: align with
+[  392.72] slot1: With that.
+[  393.20] slot0: But then first you have to select the pen function. We're going to work with it in a minute.
+[  402.80] slot0: It's very simple and it's easy to draw your findings and drawings on there. Then a short thing about documents. We've got our shared folder.
+[  417.60] slot0: project document I think but all you all found that already because there are a lot of documents in it already so it will be okay and these are available on the smart boards as well
+[  432.00] slot0: as well. So if you have a document you want to show.
+[  435.36] slot1: Just open it from the folder.
+[  435.52] slot0: Just open it from the folder.
+[  439.52] slot0: Here is the simple toolbar. That's what I just said. It's save, print, move back or forward one page. You can switch between the different drawings.
+[  452.80] slot0: and then we're going to try out the whiteboard.
+[  456.88] slot0: So as you can see, we're going to draw an animal just to get a bit familiar with it.
+[  468.00] slot0: mouse was running away everybody is anybody playing with the most we're going to uh... draw an able and uh... just some of the few of its favorite characteristics
+[  469.36] slot3: Interesting.
+[  482.40] slot0: characteristics. The only thing we have to look after is that we use different colors and different lines with this. I can start from now.
+[  496.80] slot0: You can use this pen by holding it like a little child, because if you hold it like this, the sensors will get blocked.
+[  506.32] slot1: Cut away.
+[  506.88] slot0: Drawing won't get good. Another thing is you have to be a bit slow, because if you're going to draw really fast, then the pen won't hold up. So we choose Format, Current Color.
+[  521.76] slot0: color I think gray is appropriate
+[  529.12] slot0: then the line width. I think 7 will be nice.
+[  535.20] slot0: Now you'll see my drawing capabilities. These are not very much.
+[  543.76] slot0: Here you have to do it real slow.
+[  554.48] slot0: Oh, listen.
+[  569.92] slot1: Shark.
+[  571.28] slot0: I was trying to draw a dolphin.
+[  574.64] slot3: I think his nose is too bad.
+[  574.96] slot0: I think his nose has to be a little bit... but it's close.
+[  577.76] slot3: I'm thinking about a swordfish.
+[  579.76] slot0: Yeah, it's a bit of a swordfish.
+[  580.56] slot1: Let's see. Because it's better.
+[  584.16] slot1: All right.
+[  585.04] slot0: Whoa. Now we've got another function, we've got the eraser.
+[  590.72] slot0: And I can undo
+[  593.68] slot0: this easily. It's okay. And I've got to write down a few of his characteristics.
+[  595.84] slot3: Meet.
+[  612.56] slot0: He's got no text tool.
+[  617.68] slot0: All right.
+[  629.68] slot0: Okay, this is typically a do action, I think.
+[  634.00] slot3: Yeah.
+[  636.88] slot0: Ben.
+[  640.00] slot0: Maybe I have to hold it a bit.
+[  643.12] slot0: upside down I think that's it because if you want to do it like this then it will be a stripe I don't know just trying
+[  658.56] slot0: This is not my word? Okay.
+[  661.36] slot3: Hmm.
+[  661.92] slot0: Maybe you have to...
+[  684.72] slot0: I think it wants to draw another animal. I don't know.
+[  691.92] slot0: lives for the fun
+[  695.12] slot0: So.
+[  700.32] slot0: That's my characteristic about the dolphin. It lives for the fun.
+[  704.72] slot3: So now I'm going to...
+[  704.96] slot0: So now I'm gonna hand over the pen on a new blank sheet to you. Go ahead. Thank you.
+[  714.56] slot3: Okay.
+[  721.44] slot3: use a different line width.
+[  724.80] slot3: and i'm gonna draw in black
+[  729.76] slot3: there
+[  732.40] slot3: Okay, I'm not much of an artist, but here we go.
+[  743.68] slot0: Maybe it's easier to draw with a smaller line with, I think.
+[  748.32] slot1: because this is
+[  748.56] slot0: because this is going a lot better than I did.
+[  767.20] slot1: sheet
+[  783.20] slot3: Mm-hmm.
+[  805.52] slot0: This is my, um...
+[  806.88] slot1: Hmm.
+[  812.32] slot3: Sheep.
+[  818.40] slot0: Nice.
+[  820.64] slot3: Of course.
+[  830.08] slot3: Blue dot they always get sprayed on their butts.
+[  830.16] slot0: Blue.
+[  835.12] slot0: It's a real dead sheet. Yeah.
+[  836.56] slot3: Yeah.
+[  837.12] slot0: Recognition, I see.
+[  843.12] slot0: Maybe you can also write your name somewhere.
+[  846.64] slot3: They are.
+[  846.80] slot0: are.
+[  858.96] slot3: You have to go really slow when you're riding.
+[  861.76] slot0: Yeah.
+[  879.60] slot3: they're brilliant meeting
+[  888.64] slot3: I guess I'll pass the pen to our user interface.
+[  889.84] slot1: Okay, it's user interface design. I'm just gonna draw it head.
+[  915.28] slot1: uh
+[  926.00] slot1: Yeah.
+[  966.16] slot1: Okay?
+[  970.00] slot0: Sweet.
+[  971.60] slot3: Yeah.
+[  972.56] slot1: You know what it is?
+[  975.20] slot2: Garfield. Garfield. Yeah.
+[  975.36] slot3: Garfield. Garfield, yeah.
+[  977.36] slot1: Yeah. Just that.
+[  984.08] slot1: good
+[  986.96] slot1: uh
+[  990.32] slot1: Yeah.
+[  993.20] slot1: Use a blank? Yeah, use a blank.
+[  995.04] slot0: Yeah, just a blank machine.
+[ 1009.44] slot2: Well I was gonna draw a cat too so...
+[ 1014.56] slot2: I'll just try something else.
+[ 1018.24] slot2: Something different than Garfield.
+[ 1040.00] slot2: Mine is a bit more skinny.
+[ 1041.60] slot3: Yeah.
+[ 1044.56] slot2: but uh
+[ 1045.84] slot3: The most interesting tool.
+[ 1048.64] slot0: Is it your kid or did you find him on the street?
+[ 1057.04] slot2: Well, it's supposed to be a cat. I like cats because...
+[ 1064.24] slot2: They are right.
+[ 1067.68] slot2: independent.
+[ 1071.60] slot1: Hmm.
+[ 1080.88] slot2: so
+[ 1081.76] slot0: Okay.
+[ 1083.84] slot0: That's pretty clear. So everybody knows how to work with the whiteboard now. So if you have any ideas or if you want to draw anything on the whiteboard just ask and go ahead. It's pretty easy.
+[ 1088.48] slot1: So if you have any...
+[ 1101.12] slot0: Okay.
+[ 1102.24] slot3: We're being home.
+[ 1104.00] slot0: And I'll hold the whiteboard.
+[ 1106.88] slot0: So we've got the tool introduction. We move along to the project finance. As you can see, for a remote control,
+[ 1121.28] slot0: and selling price is 25 euros our selling price our profit aim is 50 million euros that's the least we have to get from our remote controls so we have to work together to reach
+[ 1135.68] slot0: reach our aims we can do it international so we have to focus on different kind of users different kind of cultures and different kind of trends as well but that's all
+[ 1150.08] slot0: all in the later stadium. Our production cost can be maximal 12 and a half euros. So that's also a point we have to keep in mind that we won't make...
+[ 1164.48] slot0: remote controls with small televisions inside and stuff like that it won't work so just try to remember these points selling price 25 profit aims 50 million but more important
+[ 1178.88] slot0: important is the international markets we're trying to focus on and production cost maximum 12 and a half euros
+[ 1189.60] slot0: So that leads us to our little discussion. We've got about five or ten minutes left for discussion. So I'm going to sit down, I think. It's easier.
+[ 1202.08] slot3: We already got a message.
+[ 1204.56] slot0: I've got a message. Five minutes, okay. That's good timing.
+[ 1207.28] slot1: Okay, that's it.
+[ 1210.16] slot3: So just on a side note, why is it my laptop is only giving me a black screen?
+[ 1210.96] slot0: Why is it?
+[ 1214.64] slot1: Hmm?
+[ 1215.36] slot0: Maybe you have to say the magic word.
+[ 1218.72] slot1: Yeah.
+[ 1219.68] slot3: right
+[ 1221.20] slot0: Does it do anything?
+[ 1222.88] slot2: No.
+[ 1223.52] slot0: Maybe you have to just clap it down.
+[ 1228.00] slot0: Back up again.
+[ 1234.08] slot0: the sledge
+[ 1236.24] slot3: It's off now.
+[ 1240.64] slot3: Well, it was on.
+[ 1243.84] slot0: Yeah, it's those laptops.
+[ 1247.20] slot1: There we are.
+[ 1248.48] slot0: nice okay but some does everybody has experiences with remote controls and i mean not the ordinary remote controls but also a little bit different ones
+[ 1251.76] slot2: everybody else
+[ 1262.08] slot1: I like it.
+[ 1262.56] slot0: like you can use for other
+[ 1264.40] slot1: Not really.
+[ 1265.68] slot0: No.
+[ 1266.16] slot1: Mm-hmm.
+[ 1267.28] slot0: Well, no.
+[ 1267.60] slot3: Well, we kind of brought TV at home and the DVD player. So we got like a lot of remote controls, one for the TV, one for the video recorder, one for the DVD player. Yeah. And I think it would be best to just...
+[ 1267.84] slot2: No, me neither.
+[ 1276.80] slot1: Recorder
+[ 1279.36] slot0: Yeah.
+[ 1282.08] slot3: to just make one remote control that can operate them all? Yeah.
+[ 1284.80] slot0: Yeah.
+[ 1285.20] slot3: True.
+[ 1285.76] slot0: Yeah, I've got one at home. You can program, I think, eight different devices in it. And you can use it for your television, anything else. And it also operates on infrared.
+[ 1286.32] slot1: I've got one.
+[ 1293.52] slot3: use it for your television.
+[ 1294.88] slot1: anything else.
+[ 1299.84] slot0: got a little device inside your room and then you can operate it from the third or second floor.
+[ 1306.48] slot1: Second floor.
+[ 1308.24] slot3: Oh, really?
+[ 1308.80] slot0: So that's pretty handy when you have a video recorder or DVD player downstairs and you've got a link to your TV on the second floor.
+[ 1313.92] slot1: You've got to leave.
+[ 1316.88] slot3: So it is.
+[ 1317.20] slot1: So that's a pretty...
+[ 1317.36] slot0: So that's a pretty handy thing. But only the, I think if you can put different kind of devices in one remote control, that makes it a lot easier.
+[ 1332.48] slot0: lot easier as well.
+[ 1334.32] slot3: Yeah.
+[ 1335.20] slot1: Mm-hmm.
+[ 1336.64] slot0: It's good to remember.
+[ 1337.84] slot3: So I think you can take minutes again. Yeah.
+[ 1340.00] slot0: Yeah, it's nice. So we want different functions.
+[ 1341.84] slot3: so
+[ 1346.16] slot3: Yeah.
+[ 1346.88] slot0: uh and we can maybe see if we can do something with infrared but i don't know if that will exceed the production costs so that there's something we have to find out i think yeah
+[ 1360.64] slot3: Yeah, but that would be really good if we could do that.
+[ 1366.08] slot0: and other functions for remote control maybe we can make it
+[ 1371.20] slot1: make it
+[ 1374.40] slot3: I think it has to be shock-proof.
+[ 1376.64] slot1: Because...
+[ 1376.64] slot3: Because...
+[ 1377.36] slot0: shockproof
+[ 1378.56] slot3: My remote control tends to fall a lot.
+[ 1380.72] slot1: Sorry.
+[ 1382.48] slot0: Sure. Never not.
+[ 1386.96] slot0: What I prove.
+[ 1390.00] slot0: Okay, so these are a few things we can think of. I will put the minutes from this meeting in our project folder.
+[ 1401.44] slot1: Yeah.
+[ 1401.60] slot3: Yeah, one other little thing. I thought it might be handy to put a battery status display on it.
+[ 1408.88] slot3: so you can see. That's a better.
+[ 1408.88] slot0: so you can see battery status.
+[ 1410.48] slot1: Okay. How much is left?
+[ 1410.96] slot3: How much is left in the battery?
+[ 1414.40] slot3: but they'll also really drag up the production costs.
+[ 1418.80] slot0: We'll have to see about that.
+[ 1418.88] slot3: We'll have to see about that too.
+[ 1420.40] slot1: Mm-hmm.
+[ 1421.68] slot0: Yeah.
+[ 1422.32] slot3: But maybe just a little lead. I don't know.
+[ 1425.76] slot0: That's an ID as well. Other ID's? Quick ID's.
+[ 1430.56] slot2: Nope. They were all mentioned.
+[ 1432.64] slot1: Okay.
+[ 1432.88] slot0: Any questions about this kickoff presentation?
+[ 1440.96] slot3: Nope, I don't think so.
+[ 1442.56] slot0: That one.
+[ 1442.96] slot1: Hmm.
+[ 1443.92] slot0: Okay, then I'll put the minutes from this meeting in the project folder. And then we can all work finish meeting now.
+[ 1453.92] slot3: Okay. Okay. We can all work.
+[ 1454.24] slot0: Okay, we can all work on our own projects.
+[ 1468.32] slot0: Okay, then I'll meet you in about there.
+[ 1472.16] slot3: Half an hour, I think.
+[ 1472.40] slot0: half an hour I think
+[ 1474.24] slot2: Okay.
+[ 1474.40] slot3: So good luck.
+[ 1474.72] slot0: So good luck.

@@ -1,0 +1,258 @@
+[   13.68] MTD009PM: Good morning.
+[   15.44] slot1: Good morning.
+[   15.60] MTD009PM: Good morning. Good morning. Good morning.
+[   16.80] MTD009PM: I see you all find your places. Everybody's sitting on the right place.
+[   23.60] MTD009PM: I guess so.
+[   26.40] MTD009PM: so
+[   32.80] MTD009PM: Let's see.
+[   36.08] MTD009PM: First I'll introduce myself. I don't know if everybody knows me. So, I'm Bart. Hello. Hello. I'm Bert. Bart. Hello. Joost. Bart. Welcome.
+[   40.96] MTD009PM: Happy birthday.
+[   45.52] MTD009PM: Just.
+[   50.32] MTD009PM: Let's see.
+[   54.24] MTD009PM: Let's start off with a little presentation.
+[   62.40] MTD009PM: uh
+[   65.76] MTD009PM: First I'll tell you a little bit about the setting. You can see a few cameras here. They'll record our actions. And you'll have wires and microphones. They will record your voice. There are also some microphones there.
+[   80.16] MTD009PM: but you don't have to pay a lot of attention on those because it will disappear when you don't intend to do it. This is our project documents folder.
+[   94.56] MTD009PM: There are some notes in it already, I see. Some documents.
+[   99.36] MTD009PM: I'll start with the presentation kickoff.
+[  106.96] MTD009PM: It's being modified by the administrator.
+[  110.64] MTD009PM: Okay, let's do it read only.
+[  116.80] MTD009PM: Well, I don't know if you've noticed, but we're working for Real Reaction. It's a company in electronics. We put fashion in electronics. We make it work. We put a lot of effort.
+[  131.52] MTD009PM: effort in design and in the product itself. I'm Bart Boet, I'm the project manager so I'll direct you through the project.
+[  140.72] MTD009PM: This is our agenda.
+[  143.52] MTD009PM: We have our opening acquaintance tool training project plan discussion closing.
+[  149.84] MTD009PM: Maybe I can sit down and I can take some notes or...
+[  157.68] MTD009PM: Let's see.
+[  161.44] MTD009PM: Maybe you can take the minutes once in a while.
+[  163.84] slot1: Sure.
+[  164.56] MTD009PM: I don't know, it's not a lot of work, but just if you hear something, you can write it down. As you can see, it's the opening. Acquaintance tool trading. Acquaintance is a point we've done a bit.
+[  179.52] MTD009PM: Have you all seen the corporate website already? Yep.
+[  182.56] MTD009PM: Yep.
+[  183.28] MTD009PM: yeah have you seen any flaws in it I think I found one
+[  183.36] MTD009PM: Yeah.
+[  191.04] MTD012ME: so I paid much attention to it.
+[  196.16] MTD009PM: see if it works this way
+[  198.24] slot1: It doesn't work here.
+[  198.40] MTD009PM: Does it work here? Okay. No problem. But on the corporate information side, there was real remote instead of real reaction.
+[  212.32] MTD012ME: Oh, yeah. Real remote.
+[  212.88] MTD009PM: Real Remote is not really the company we are.
+[  216.24] slot1: Just a little.
+[  216.32] MTD009PM: just a little uh... okay what are we going to do uh... project aim is as you can see a new remote control it has to be original trendy and user friendly
+[  230.40] MTD009PM: so these are the points why we also hired you we've got the marketing experts for the trendy and user-friendly
+[  244.80] MTD009PM: look and industrial designer that's also user-friendly and a bit original and we've got our user interface designer
+[  260.56] MTD009PM: that's about the new remote control project method the is the three faces we're going through first is functional design individual work meetings
+[  274.56] MTD009PM: After the functional design, then the conceptual design and the detailed design, I had some role indications here.
+[  288.32] MTD009PM: but I think you know it already by yourself. The industrial designer is going to work on the working design, components design, and a bit of the look and feel design. The user
+[  302.40] MTD009PM: The user interface designer is going to do the technical function design, user interface concept and user interface design. And the marketing expert is doing a little bit of user requirements specification.
+[  316.80] MTD009PM: trend watching and project a product evaluation so that's a bit what you're going to do but that will be all worked out in other meetings
+[  332.32] MTD009PM: Then we've got our first tool training. We're going to work with a lot of high-tech tools here. So it's handy if we have a little bit of training first. As you can see, we've got the smart boards here and here, and the white board.
+[  347.04] MTD009PM: board.
+[  348.88] MTD009PM: In the whiteboard here is a little toolbar on this side. Here are some functions we can save. These functions we don't have anything to do with. Only undo, you can undo a little.
+[  362.88] MTD009PM: a piece of drawing, a blank new document for each person, select a pen, razor, capture we don't have to do anything with. Then we've got our pen.
+[  377.28] MTD009PM: This pen is really funny because you can draw with it on this page. In the format you can also select the current color and the line.
+[  391.68] MTD009PM: align with
+[  392.72] slot1: With that.
+[  393.20] MTD009PM: But then first you have to select the pen function. We're going to work with it in a minute.
+[  402.80] MTD009PM: It's very simple and it's easy to draw your findings and drawings on there. Then a short thing about documents. We've got our shared folder.
+[  417.60] MTD009PM: project document I think but all you all found that already because there are a lot of documents in it already so it will be okay and these are available on the smart boards as well
+[  432.00] MTD009PM: as well. So if you have a document you want to show.
+[  435.36] MTD009PM: Just open it from the folder.
+[  435.52] MTD009PM: Just open it from the folder.
+[  439.52] MTD009PM: Here is the simple toolbar. That's what I just said. It's save, print, move back or forward one page. You can switch between the different drawings.
+[  452.80] MTD009PM: and then we're going to try out the whiteboard.
+[  456.88] MTD009PM: So as you can see, we're going to draw an animal just to get a bit familiar with it.
+[  468.00] MTD009PM: mouse was running away everybody is anybody playing with the most we're going to uh... draw an able and uh... just some of the few of its favorite characteristics
+[  469.36] MTD012ME: Interesting.
+[  482.40] MTD009PM: characteristics. The only thing we have to look after is that we use different colors and different lines with this. I can start from now.
+[  496.80] MTD009PM: You can use this pen by holding it like a little child, because if you hold it like this, the sensors will get blocked.
+[  506.32] MTD009PM: Cut away.
+[  506.88] MTD009PM: Drawing won't get good. Another thing is you have to be a bit slow, because if you're going to draw really fast, then the pen won't hold up. So we choose Format, Current Color.
+[  521.76] MTD009PM: color I think gray is appropriate
+[  529.12] MTD009PM: then the line width. I think 7 will be nice.
+[  535.20] MTD009PM: Now you'll see my drawing capabilities. These are not very much.
+[  543.76] MTD009PM: Here you have to do it real slow.
+[  554.48] MTD009PM: Oh, listen.
+[  569.92] MTD009PM: Shark.
+[  571.28] MTD009PM: I was trying to draw a dolphin.
+[  574.64] MTD009PM: I think his nose is too bad.
+[  574.96] MTD009PM: I think his nose has to be a little bit... but it's close.
+[  577.76] MTD012ME: I'm thinking about a swordfish.
+[  579.76] MTD009PM: Yeah, it's a bit of a swordfish.
+[  580.56] MTD009PM: Let's see. Because it's better.
+[  584.16] MTD009PM: All right.
+[  585.04] MTD009PM: Whoa. Now we've got another function, we've got the eraser.
+[  590.72] MTD009PM: And I can undo
+[  593.68] MTD009PM: this easily. It's okay. And I've got to write down a few of his characteristics.
+[  595.84] MTD012ME: Meet.
+[  612.56] MTD009PM: He's got no text tool.
+[  617.68] MTD009PM: All right.
+[  629.68] MTD009PM: Okay, this is typically a do action, I think.
+[  634.00] MTD012ME: Yeah.
+[  636.88] MTD009PM: Ben.
+[  640.00] MTD009PM: Maybe I have to hold it a bit.
+[  643.12] MTD009PM: upside down I think that's it because if you want to do it like this then it will be a stripe I don't know just trying
+[  658.56] MTD009PM: This is not my word? Okay.
+[  661.36] MTD012ME: Hmm.
+[  661.92] MTD009PM: Maybe you have to...
+[  684.72] MTD009PM: I think it wants to draw another animal. I don't know.
+[  691.92] MTD009PM: lives for the fun
+[  695.12] MTD009PM: So.
+[  700.32] MTD009PM: That's my characteristic about the dolphin. It lives for the fun.
+[  704.72] MTD009PM: So now I'm going to...
+[  704.96] MTD009PM: So now I'm gonna hand over the pen on a new blank sheet to you. Go ahead. Thank you.
+[  714.56] MTD012ME: Okay.
+[  721.44] MTD012ME: use a different line width.
+[  724.80] MTD012ME: and i'm gonna draw in black
+[  729.76] MTD012ME: there
+[  732.40] MTD012ME: Okay, I'm not much of an artist, but here we go.
+[  743.68] MTD009PM: Maybe it's easier to draw with a smaller line with, I think.
+[  748.32] MTD009PM: because this is
+[  748.56] MTD009PM: because this is going a lot better than I did.
+[  767.20] MTD009PM: sheet
+[  783.20] MTD012ME: Mm-hmm.
+[  805.52] MTD012ME: This is my, um...
+[  806.88] MTD009PM: Hmm.
+[  812.32] MTD012ME: Sheep.
+[  818.40] MTD009PM: Nice.
+[  820.64] MTD012ME: Of course.
+[  830.08] MTD012ME: Blue dot they always get sprayed on their butts.
+[  830.16] MTD009PM: Blue.
+[  835.12] MTD009PM: It's a real dead sheet. Yeah.
+[  836.56] MTD012ME: Yeah.
+[  837.12] MTD009PM: Recognition, I see.
+[  843.12] MTD009PM: Maybe you can also write your name somewhere.
+[  846.64] MTD012ME: They are.
+[  846.80] MTD009PM: are.
+[  858.96] MTD012ME: You have to go really slow when you're riding.
+[  861.76] MTD009PM: Yeah.
+[  879.60] MTD012ME: they're brilliant meeting
+[  888.64] MTD012ME: I guess I'll pass the pen to our user interface.
+[  889.84] MTD011UID: Okay, it's user interface design. I'm just gonna draw it head.
+[  898.16] MTD011UID: Let's see.
+[  915.28] MTD011UID: uh
+[  926.00] MTD011UID: Yeah.
+[  966.16] MTD011UID: Okay?
+[  970.00] MTD009PM: Sweet.
+[  971.60] MTD012ME: Yeah.
+[  972.56] MTD011UID: You know what it is?
+[  975.20] MTD0010ID: Garfield. Garfield. Yeah.
+[  975.36] MTD0010ID: Garfield. Garfield, yeah.
+[  977.36] MTD011UID: Yeah. Just that.
+[  984.08] MTD011UID: good
+[  986.96] MTD011UID: uh
+[  990.32] MTD011UID: Yeah.
+[  993.20] MTD011UID: Use a blank? Yeah, use a blank.
+[  995.04] MTD009PM: Yeah, just a blank machine.
+[ 1009.44] MTD0010ID: Well I was gonna draw a cat too so...
+[ 1014.56] MTD0010ID: I'll just try something else.
+[ 1018.24] MTD0010ID: Something different than Garfield.
+[ 1040.00] MTD0010ID: Mine is a bit more skinny.
+[ 1041.60] MTD012ME: Yeah.
+[ 1044.56] MTD0010ID: but uh
+[ 1045.84] MTD012ME: The most interesting tool.
+[ 1048.64] MTD009PM: Is it your kid or did you find him on the street?
+[ 1057.04] MTD0010ID: Well, it's supposed to be a cat. I like cats because...
+[ 1064.24] MTD0010ID: They are right.
+[ 1067.68] MTD0010ID: independent.
+[ 1071.60] MTD011UID: Hmm.
+[ 1080.88] MTD0010ID: so
+[ 1081.76] MTD009PM: Okay.
+[ 1083.84] MTD009PM: That's pretty clear. So everybody knows how to work with the whiteboard now. So if you have any ideas or if you want to draw anything on the whiteboard just ask and go ahead. It's pretty easy.
+[ 1088.48] MTD009PM: So if you have any...
+[ 1101.12] MTD009PM: Okay.
+[ 1102.24] MTD012ME: We're being home.
+[ 1104.00] MTD009PM: And I'll hold the whiteboard.
+[ 1106.88] MTD009PM: So we've got the tool introduction. We move along to the project finance. As you can see, for a remote control,
+[ 1121.28] MTD009PM: and selling price is 25 euros our selling price our profit aim is 50 million euros that's the least we have to get from our remote controls so we have to work together to reach
+[ 1135.68] MTD009PM: reach our aims we can do it international so we have to focus on different kind of users different kind of cultures and different kind of trends as well but that's all
+[ 1150.08] MTD009PM: all in the later stadium. Our production cost can be maximal 12 and a half euros. So that's also a point we have to keep in mind that we won't make...
+[ 1164.48] MTD009PM: remote controls with small televisions inside and stuff like that it won't work so just try to remember these points selling price 25 profit aims 50 million but more important
+[ 1178.88] MTD009PM: important is the international markets we're trying to focus on and production cost maximum 12 and a half euros
+[ 1189.60] MTD009PM: So that leads us to our little discussion. We've got about five or ten minutes left for discussion. So I'm going to sit down, I think. It's easier.
+[ 1202.08] MTD012ME: We already got a message.
+[ 1204.56] MTD009PM: I've got a message. Five minutes, okay. That's good timing.
+[ 1207.28] MTD009PM: Okay, that's it.
+[ 1210.16] MTD012ME: So just on a side note, why is it my laptop is only giving me a black screen?
+[ 1210.96] MTD009PM: Why is it?
+[ 1214.64] MTD011UID: Hmm?
+[ 1215.36] MTD009PM: Maybe you have to say the magic word.
+[ 1218.72] MTD011UID: Yeah.
+[ 1219.68] MTD012ME: right
+[ 1221.20] MTD009PM: Does it do anything?
+[ 1222.88] MTD0010ID: No.
+[ 1223.52] MTD009PM: Maybe you have to just clap it down.
+[ 1228.00] MTD009PM: Back up again.
+[ 1234.08] MTD009PM: the sledge
+[ 1236.24] MTD012ME: It's off now.
+[ 1240.64] MTD012ME: Well, it was on.
+[ 1243.84] MTD009PM: Yeah, it's those laptops.
+[ 1247.20] MTD011UID: There we are.
+[ 1248.48] MTD009PM: nice okay but some does everybody has experiences with remote controls and i mean not the ordinary remote controls but also a little bit different ones
+[ 1251.76] MTD0010ID: everybody else
+[ 1262.08] MTD011UID: I like it.
+[ 1262.56] MTD009PM: like you can use for other
+[ 1264.40] MTD011UID: Not really.
+[ 1265.68] MTD009PM: No.
+[ 1266.16] MTD011UID: Mm -hmm.
+[ 1267.28] MTD009PM: Well,
+[ 1267.60] MTD012ME: Well, we kind of brought TV at home and the DVD player. So we got like a lot of remote controls, one for the TV, one for the video recorder, one for the DVD player. Yeah. And I think it would be best to just...
+[ 1267.84] MTD0010ID: No, me neither.
+[ 1279.36] MTD009PM: Yeah.
+[ 1282.08] MTD012ME: to just make one remote control that can operate them all? Yeah.
+[ 1284.80] MTD009PM: Yeah.
+[ 1285.20] MTD012ME: True.
+[ 1285.76] MTD009PM: Yeah, I've got one at home. You can program, I think, eight different devices in it. And you can use it for your television, anything else. And it also operates on infrared.
+[ 1286.32] MTD011UID: I've
+[ 1294.88] MTD011UID: anything
+[ 1299.84] MTD009PM: got a little device inside your room and then you can operate it from the third or second floor.
+[ 1308.24] MTD012ME: Oh, really?
+[ 1308.80] MTD009PM: So that's pretty handy when you have a video recorder or DVD player downstairs and you've got a link to your TV on the second floor.
+[ 1313.92] MTD011UID: leave.
+[ 1316.88] MTD012ME: So is.
+[ 1317.20] MTD011UID: So that's
+[ 1317.36] MTD009PM: So that's a pretty handy thing. But only the, I think if you can put different kind of devices in one remote control, that makes it a lot easier.
+[ 1332.48] MTD009PM: lot easier as well.
+[ 1335.20] MTD011UID: Mm-hmm.
+[ 1336.64] MTD009PM: It's good to remember.
+[ 1337.84] MTD012ME: So I think you can take minutes again. Yeah.
+[ 1340.00] MTD009PM: Yeah, it's nice. So we want different functions.
+[ 1341.84] MTD012ME: so
+[ 1346.16] MTD012ME: Yeah.
+[ 1346.88] MTD009PM: uh and we can maybe see if we can do something with infrared but i don't know if that will exceed the production costs so that there's something we have to find out i think yeah
+[ 1360.64] MTD012ME: Yeah, but that would be really good if we could do that.
+[ 1366.08] MTD009PM: and other functions for remote control maybe we can make it
+[ 1374.40] MTD012ME: I think it has to be shock-proof.
+[ 1376.64] MTD012ME: Because...
+[ 1377.36] MTD009PM: shockproof
+[ 1378.56] MTD012ME: My remote control tends to fall a lot.
+[ 1380.72] MTD011UID: Sorry.
+[ 1382.64] MTD011UID: I mean...
+[ 1386.96] MTD009PM: What I prove.
+[ 1390.00] MTD009PM: Okay, so these are a few things we can think of. I will put the minutes from this meeting in our project folder.
+[ 1401.44] MTD011UID: Yeah.
+[ 1401.60] MTD012ME: Yeah, one other little thing. I thought it might be handy to put a battery status display on it.
+[ 1408.88] MTD012ME: So you can see. Bedrains.
+[ 1408.88] MTD009PM: so you can see battery status.
+[ 1410.48] MTD011UID: Okay. How much
+[ 1410.96] MTD012ME: How much is left in the battery?
+[ 1414.40] MTD012ME: but they'll also really drag up the production costs.
+[ 1418.80] MTD009PM: We'll have that.
+[ 1418.88] MTD012ME: have to see about that too.
+[ 1420.40] MTD011UID: Mm-hmm.
+[ 1421.68] MTD009PM: Yeah.
+[ 1422.32] MTD012ME: But maybe just a little lead. I don't know.
+[ 1425.76] MTD009PM: That's an ID as well. Other ID's? Quick ID's.
+[ 1430.56] MTD0010ID: Nope. They were all mentioned.
+[ 1432.64] MTD011UID: Okay.
+[ 1432.88] MTD009PM: Any questions about this kickoff presentation?
+[ 1440.96] MTD012ME: Nope, I don't think so.
+[ 1442.56] MTD009PM: That one.
+[ 1442.96] MTD011UID: Hmm.
+[ 1443.92] MTD009PM: Okay, then I'll put the minutes from this meeting in the project folder. And then we can all work finish meeting now.
+[ 1453.92] MTD009PM: Okay. Okay. We
+[ 1454.24] MTD009PM: Okay, we can all work on our own projects.
+[ 1468.32] MTD009PM: Okay, then I'll meet you in about there.
+[ 1472.16] MTD012ME: Half think.
+[ 1472.40] MTD009PM: half an hour I think
+[ 1474.24] MTD0010ID: Okay.
+[ 1474.72] MTD009PM: So good luck.

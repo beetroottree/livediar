@@ -1,0 +1,45 @@
+{
+ "meeting": "TS3003a",
+ "condition": "enrolled",
+ "audio_min": 25.1,
+ "der": {
+  "der": 0.2725984279166815,
+  "miss": 0.22490376872543746,
+  "fa": 0.037321327182011504,
+  "conf": 0.010373332009232522,
+  "total": 926.4140000000006
+ },
+ "cpwer": 0.2225,
+ "ref_words": 2521,
+ "hyp_words": 2389,
+ "captions": 258,
+ "overlap_s": 27.7,
+ "diar_rtf": 1.996,
+ "asr_rtf": 0.096,
+ "eval_wall_s": 229.5,
+ "talk_s": [
+  641.9,
+  34.4,
+  19.4,
+  88.6
+ ],
+ "turns": [
+  383,
+  58,
+  24,
+  86
+ ],
+ "idwer": 0.2328,
+ "identified": {
+  "0": "MTD009PM",
+  "2": "MTD0010ID",
+  "3": "MTD012ME",
+  "1": "MTD011UID"
+ },
+ "verified_captions": 166,
+ "idwer_policy": {
+  "caption": 0.2328,
+  "slot": 0.2225,
+  "strong": 0.2241
+ }
+}

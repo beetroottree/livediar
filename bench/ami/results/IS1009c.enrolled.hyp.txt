@@ -1,0 +1,300 @@
+[   32.72] FIE088: I don't know if that's any good here.
+[   40.56] slot1: Okay.
+[   42.32] FIE088: Hello everyone. How are we doing? We are good. First we are going over the minutes of the last meeting more or less.
+[   43.44] slot1: Hi. Hi. Hi.
+[   56.64] FIE088: In the last meeting, the marketing manager had presented her method of working, meaning gathering suggestions from everyone.
+[   71.04] FIE088: to see how she best could market this product within the budget that was given.
+[   81.52] FIE088: In general, the idea is that it should be something that is not difficult to use.
+[   89.84] FIE088: It's also an item that people lose a lot, so we should address that. And of course it should be something...
+[  102.72] FIE088: that is very simple to use. In addition to that, to make it sell, of course, the marketing manager wishes that it be very attractive, or like she says, put some sizzle into it in one way or another.
+[  117.12] FIE088: so that the people are buying it now because in particularly smaller items that's a very important fact because if they say well I go home and think about it that won't work
+[  131.52] FIE088: One also mentioned was it should have a very short learning curve and maybe it could be sold by using a slogan.
+[  145.52] FIE088: Our technical manager has then said that he feels it should have a chip that has infrared bits and it has an interface that controls.
+[  159.84] FIE088: the chip. Therefore messages will be controlled in the same manner. There should be extra features like lit buttons, maybe a beep if too many buttons are pressed.
+[  174.24] FIE088: child lock and maybe a display clock so that people could you could see the time you know what show they want to watch.
+[  188.64] FIE088: mentioned was maybe different shapes.
+[  193.52] FIE088: The components of the thing should be button, bulbs, infrared bulbs, battery, chips, wires and maybe some kind of a holder for the...
+[  207.84] FIE088: item.
+[  210.40] FIE088: Francina, who is our...
+[  213.84] FIO087: Interface Designer. Interface Designer.
+[  214.48] FIE088: Interface designer has mentioned that there, of course, should have an on-off button. And also has mentioned an interesting feature that it should have maybe a channel lock.
+[  228.48] FIE088: particularly with maybe small children that they couldn't watch a channel that is undesirable. It should be compact. Her personal favorite was it should be T-shaped and maybe have an alarm clock.
+[  242.88] FIE088: and the material should possibly be of non-allergic nature.
+[  250.32] FIE088: The different systems that exist are infrared or radio waves. Maybe it should have electricity saving feature.
+[  264.96] FIE088: and even possibly a timer so that people can program their favorite program right from the remote.
+[  277.36] FIO087: Peace.
+[  279.20] FIE088: uh are we all in agreement that that's about what we discussed last time you
+[  284.24] FIO087: Yes. OK. We've got pretty much
+[  284.64] FIO089: Okay. Pretty much.
+[  284.80] FIO089: Okay, that pretty much is it.
+[  287.12] FIE088: Okay, then I'm looking for three presentations. And I don't know whether the order matters much. I don't think so. So whoever wants to... I can start first. Yeah, okay. Okay.
+[  298.00] FIE088: I can stop first. Yeah, okay. Okay.
+[  305.52] FIO087: My slide, please.
+[  306.16] FIO089: Okay, your side.
+[  306.80] FIE088: Okay
+[  314.48] FIE088: Come on, close already.
+[  321.60] FIE088: And that's number two, right? Three.
+[  323.92] FIO087: Three.
+[  324.72] FIE088: three.
+[  325.92] FIO087: But it's been three. Yes.
+[  335.92] FIO087: Okay. Now as an interface designer, I would give more emphasis on the interface, how the remote looks like, so that it is sellable, it is attractive to customers.
+[  349.12] FIO087: Next please. Okay, now the function of a remote is to send messages to the television. These messages could be a switch on off message or switch to next channel message or switch
+[  363.36] FIO087: or swapping the channels or switching on to a particular channel like you can have the numbers 1,2,3,4 upto 9.
+[  373.52] FIE088: 9 channel switches
+[  377.44] FIO087: Pardon me? Night.
+[  378.08] FIO087: Nine channel switches. Yes. Nine numbers. Mm-hmm.
+[  379.28] FIO087: Yes, nine numbers.
+[  383.04] FIO087: And then you have swapping button.
+[  386.32] FIO087: By which you sing which you sing.
+[  386.40] FIO087: By which using which you can swap the channels. If you don't want to see the third channel, you can swap it to the fourth channel or vice versa.
+[  395.92] FIO087: then it should have a next button channel by which you can keep on scrolling the channels one by one. Next slide, please.
+[  403.04] FIE088: Mm-hmm. Mm-hmm. Mm-hmm. Mm-hmm. Mm-hmm.
+[  405.36] FIO087: one by one.
+[  408.32] FIE088: Mm-hmm.
+[  410.48] FIO087: then you should have a button which can be used for increasing or decreasing the volume.
+[  416.24] FIE088: Mm-hmm.
+[  418.24] FIO087: then there should be a button which can give subtitles for a particular program which is going on at television. For example, if you are watching a French program and you would like to have subtitles in English, then you can click on the button.
+[  430.88] FIO087: then there should be a chance.
+[  430.88] FIO087: then there should be a channel which can trigger this mechanism in the television so that the user can see the subtitles on the screen.
+[  442.08] FIO087: then there should be some buttons which can control features like the color of the picture, the contrast, sharpness, brightness of the picture.
+[  456.88] FIO087: Now there should be a memory switch.
+[  462.80] FIO087: There should be a mute button suddenly if a viewer he gets a telephone call and if he wants he doesn't want to switch off the TV but he can reduce the sound. He can bring the volume.
+[  477.12] FIO087: volume down and while talking he can watch the TV. Now the most important feature I would like to have in my remote would be the speech recognition feature.
+[  490.56] FIO087: It's an integrated programmable sample sensor speaker unit.
+[  498.64] FIO087: So remote can be designed which can have the voice recognizers. You can record your own voice.
+[  509.60] FIE088: Mm-hmm.
+[  510.48] FIO087: which can be recognized by a voice recognizer in the television. For example, if you want to see the 9th channel, if you just say 9th channel, the remote will also be recorded.
+[  524.64] FIO087: So it will automatically switch to the 9th channel.
+[  527.76] FIO087: So the TV
+[  528.24] FIO087: So the TV will have some recognizer which will recognize the user's voice and accordingly it will change its functionalities. So this is one of the very important features a remote control can have.
+[  535.12] FIO087: So this is one of the things that we have done.
+[  541.28] FIO087: So this is one of the interface which can be created.
+[  546.96] FIO087: It's very simple.
+[  547.28] FIO087: A very simple interface which has all the important features. Then please next side. Then these are some of the remotes which are different in shape and color but they have many buttons.
+[  553.92] FIO087: Please next slide.
+[  561.60] FIO087: So, sometimes the user finds it very difficult to recognize which button is for what function and all that. So, you can design an interface which is very simple and which is user friendly. Even a kid can use that.
+[  562.24] FIO087: So sometimes...
+[  575.92] FIE088: So can you go?
+[  576.08] FIO087: So can you go on to the next slide? Yeah. So this is one of the interface or one of the remote which has this voice recognizer.
+[  585.04] FIO087: and this has mulch.
+[  585.20] FIO087: And this has multipurpose use. It can be used for TV. It can be used for cable satellites. It can be used for VCR, DVDs, and audio.
+[  595.28] FIO087: And this has inbuilt voice recognizer.
+[  599.04] FIE088: Mm-hmm.
+[  601.76] FIO087: Can I go on to the next slide? Yeah. Now, this is an interface for a remote which a child can use. This is user-friendly. It's very attractive. And children can use it as well as they can play with it.
+[  610.00] FIO087: This is used.
+[  615.84] FIO087: with it and this comes with different colors different shapes
+[  626.80] FIE088: And this, this.
+[  627.04] FIO087: And this child interface has minimum buttons, and all the important buttons are there in this small, compact, attractive child interface.
+[  646.64] FIO087: Next slide please. Now this is a big oversized remote which cannot be misplaced or it's impossible to be misplaced. I just have to remember. You don't know.
+[  650.00] slot3: Oversized room.
+[  656.48] FIO089: You don't know me.
+[  656.48] FIO089: You don't know me.
+[  661.12] FIO089: I could lose that in a minute.
+[  661.36] FIO087: You can't lose that in a minute. No, this is a very big. You cannot misplace it anywhere. So this is a Jumbo Universal Remote Control. It's impossible to misplace or lose.
+[  672.88] FIE088: Mm-hmm.
+[  674.00] FIO087: this is one such interface which can be created
+[  678.48] FIO087: And the personal preference would be to incorporate speech recognizers which will respond to users' voice for a particular function.
+[  688.56] FIE088: particular
+[  690.64] FIE088: Right.
+[  692.08] FIO087: Thank you. That's it.
+[  693.68] FIE088: Mm-hmm.
+[  711.60] FIE088: Okay, thank you very much. Any comments on her presentation?
+[  720.48] FIO089: Well, looks like we still have quite a choice of things out there. No suggestion is bad, but we're going to have to narrow it down a little more. I don't think that we can get the T-shaped.
+[  728.88] FIO087: Yes. But we were good.
+[  731.36] FIE088: little more I don't think
+[  735.36] FIO089: The T-shape is good, the child one is good. It's a too big to misplace, I think it's just funny.
+[  743.28] FIO089: I don't think that's...
+[  743.36] FIO089: I don't think that's going to be our impulse purchase at the checkout counter. It's going to be a little bit too unwieldy. No, I think these are her presentations.
+[  748.40] FIO089: It's going to be a little bit.
+[  748.88] FIE088: be a little bit too unwieldy. No, I think these are her presentations, but as far as the decision-making, we're getting to that after. We have to come back to that later. We can after. Okay. But I just wanted to know whether anybody had anything to add to her presentation. No, I think her presentation
+[  749.76] FIE088: I think these are her presentations.
+[  754.80] FIE088: I'll have to come back to that later. But if...
+[  755.60] FIO087: Okay.
+[  762.64] FIO089: No, I think her presentation was good and she really explored all the options.
+[  763.20] FIO089: Her presentation was good and she really...
+[  766.56] FIE088: who wants to go next
+[  770.24] FIE088: Okay and you...
+[  770.72] FIE088: Okay, and you...
+[  777.20] FIE088: Okay.
+[  778.40] FIO084: The next one. Oops. It was the old one.
+[  779.68] FIE088: Oops.
+[  787.68] FIE088: the components design.
+[  787.68] FIE088: The components design. Mm-hmm. Okay.
+[  788.80] FIO089: Mm-hmm.
+[  795.60] FIO084: Yeah. This time I'm going to concentrate more on the components and the technical side of the remote controller design. Can you go on to the next slide, please?
+[  803.44] FIO089: and the technical
+[  809.76] FIO084: I have just briefed down a few components which we require for the remote control construction. The first one is case to keep all the components like integrated circuit, battery, etc. like
+[  824.16] FIO084: like it can be a plastic one, hard plastic, so that it can be strong even if you just, you know, if it falls down then it doesn't break. So it should be strong.
+[  838.56] FIO084: there are no harmful materials used in that and it should be recyclable
+[  844.88] FIO084: Mm-hmm.
+[  845.28] FIO084: and a good point yeah and also using of coloring component compounds like if we want to have different colors blue red green so we have to use some coloring component component compounds and the second
+[  845.84] FIO084: Good point. Yeah.
+[  859.68] FIO084: second important thing is integrated circuit. We can use a highly sophisticated one because it's like the it's like the heart of the remote controller. If it is not efficient then everything is going to be
+[  874.08] FIO084: like the left is less efficient so it you should we should have a highly sophisticated one and it should be resistant to high as well as low temperatures suppose if it is 38 degrees outside 40 degrees outside it should it should be able
+[  888.48] FIO084: be able to resist the temperature, high temperature and low temperatures. And it should be equipped with timer and alarm facility. And the other...
+[  902.88] FIO084: Another component we have in the remote controller is a resistor, which is very much important for the electricity flow through the remote controller and also a capacitor.
+[  917.28] FIO084: which is a which is a I think it's it's like a battery capacitor can you go to the next slide please
+[  922.24] FIO089: and you go on to the next.
+[  923.76] FIE088: Mm-hmm.
+[  926.16] FIO084: a diode, a transistor, a resonator. These are all the technical electronic components which we have to use in a remote controller. A battery, I would like to suggest one thing.
+[  940.32] FIO084: If we will be able to make a rechargeable battery, then we need not go for a high performance battery.
+[  950.16] FIO089: even if it is a low
+[  950.32] FIO084: Even if it is a low performance battery, it can't charge much. It's not a high voltage battery. Then also we can, if it is a rechargeable one, then people can use it for a long time. So in that way, we can cut the cost.
+[  964.32] FIO084: that we have to make the battery as rechargeable one and we we have a circuit board in a remote controller can you go to the next slide please and how it works how the remote controller works when you press a button
+[  984.56] FIE088: Go away.
+[  986.48] FIO084: When you press a button, when you do that, you complete a specific connection. That means when you press a button, there will be a small circuit underneath the button and it will send some signals through the wires.
+[ 1000.80] FIO084: then the chip will sense that connection and knows that which button is pressed suppose you have pressed channel one button number one you have pressed then the chip will know that the number one button was pressed it produces a more
+[ 1015.20] FIO084: Morse code line signal specific to that button. Every button, every individual button has its own Morse code. Suppose the user has pressed button 1, then the circuit will generate a specific Morse code.
+[ 1029.60] FIO084: that button and the transistor will amplify the signal and send them to the LED which translates the signal into infrared light like you have got a signal by pressing a button that Morse code
+[ 1044.00] FIO084: has been generated by the integrated circuit. Now that signal that MOS could has to be amplified by the transistor that is the use of transistor which we use in the remote controller it will amplify the signal and it will send it to the LED and
+[ 1058.40] FIO084: and which translates the signal into infrared bits. The sensor in the TV can see the infrared light, and seeing the signal, it reacts appropriately. That when it sees the amplified Morse code signal, then it
+[ 1072.80] FIO084: then it will know what action it has to do. Then it will do the appropriate action. So this is how the remote controller works.
+[ 1086.16] FIO084: Can you go to the next slide, please? Yeah, I have few pictures. When you look at the remote controller, this is a normal remote controller. And to the next slide, please. And we had .
+[ 1095.68] FIO089: Mm-hmm.
+[ 1100.16] FIO084: a few buttons and all and if you open the remote controller you have this circuit circuit board and
+[ 1106.24] FIO089: and few electrons.
+[ 1106.40] FIO084: few electronic components like you can see a chip there which is having 18 pins and also a capacitor three resistors and also resonator yeah and I under that
+[ 1110.32] FIE088: which is having...
+[ 1121.28] FIO084: and the diode transistor.
+[ 1123.76] FIE088: Mm-hmm.
+[ 1124.24] FIO084: the electronic components, all of the electronic components have all those things like chip and diode, transistors.
+[ 1134.24] FIO084: Yeah, you can see the TA11835 labeled chip.
+[ 1139.04] FIO084: labeled
+[ 1140.32] FIE088: Deep.
+[ 1140.96] FIO089: Yes.
+[ 1141.20] FIO084: you can also see the green, two green things are, they are resistors and just beside that you can see a transistor and a cylinder shape, that one is.
+[ 1149.36] FIE088: and just be
+[ 1155.36] FIO084: is a capacitor and also there are resistors, sorry, there is a diode. Can you go on to the next slide? So, this is the circuit board, the green one is a circuit board. Actually, building a circuit board is a circuit board.
+[ 1163.12] FIE088: I'm going to the next layer.
+[ 1169.76] FIO084: circuit board is pretty pretty easy and also it's it's inexpensive it's it costs less than what you print on a paper because when you when you are building some circuits some circuits and also
+[ 1184.16] FIO084: also wires it's it's better to go for printing because you can build these kind of circuit boards on a bulk and it's just printing nothing like you know you don't need to use wires and all it's not exactly wires we are using it's just print
+[ 1193.52] FIE088: like you know
+[ 1199.04] FIO084: printing something on a board that those prints will act act as wires and circuits so that green thing is a circuit board and also you can see there are like
+[ 1213.44] FIO084: access for buttons like when you press a button the circuit under the button will be activated it will it will get some signals from it and it will it will change send the signal signals to
+[ 1227.84] FIO084: integrated circuit. Can you go to the next slide please? So this is, these are the circuits underneath the buttons. Can you see the black round marks? They are the circuits. Next please. And
+[ 1237.68] FIO084: They are the second.
+[ 1242.24] FIO084: like we have designed before we have seen some few things like instead of buttons we had some scrolls but a push button requires a simple chip underneath it but whereas a scroll wheel requires
+[ 1256.64] FIO084: normally a regular chip which is a higher price range. Like for scrolls we have to go for a sophisticated and full complete chip. And as energy source we offer a basic battery, more engine
+[ 1260.16] FIO089: Like for school.
+[ 1263.68] FIE088: Okay. Uh-oh.
+[ 1271.04] FIO084: engine is a hard dynamo, a kinetic provision of energy, modern watches that you shake casually to provide energy so that also we can have in a battery or we can use solar cells.
+[ 1285.92] FIO089: That's interesting. Yeah.
+[ 1286.00] FIO089: That's interesting.
+[ 1290.08] FIO084: The product can be delivered into different cases. Usually the case is uncarved flat that we see usually a normal remote controller.
+[ 1303.12] FIE088: Okay.
+[ 1303.68] FIO084: Yeah.
+[ 1304.16] FIE088: You have more pictures? We have five minutes to the end of the meeting.
+[ 1306.00] FIO084: five minutes to the end of the meeting. I have just one more slide, I think. Like we can have materials such as plastic, rubber, wood, titanium, but titanium we can't use. And also for electronics.
+[ 1320.00] FIO084: we can use a simple and regular or an advanced chip on the print. Also, it includes infrared sandal. For the movie, just to develop a sample sensor speed.
+[ 1334.40] FIO084: speak sample speaker yeah that's it okay well thank you
+[ 1340.48] FIE088: Okay, well thank you. Any particular comments by anybody?
+[ 1346.64] FIO089: on the scroll and the push button.
+[ 1349.28] FIE088: Can you?
+[ 1349.36] FIO089: You can...
+[ 1349.84] FIO089: You can achieve scrolling by repeatedly pushing a button.
+[ 1353.68] FIO084: No, the scrolling was different. Like you can go for switches like buttons or scrolls, which we used to do before, 10 years before I think. Now nobody uses it because you need a sophisticated chip and all.
+[ 1368.00] FIO084: So I think it's better we go for ordinary buttons. We'll just go for push buttons for interest of cost. Yeah. OK.
+[ 1368.40] FIO089: I think it's better we go.
+[ 1370.24] FIO084: ordinary buttons. But...
+[ 1371.20] FIO089: We'll just go for push buttons in interest of cost. Yeah. Okay.
+[ 1375.04] FIE088: We don't have a lot of time left and we will still have to make a decision and the marketing expert has to present her.
+[ 1381.28] FIO089: Okay, you're right to my next slide.
+[ 1381.76] FIE088: You're right on my next slide. Okay.
+[ 1381.76] FIO089: You're right on my next slide.
+[ 1386.48] FIO089: Um, alright.
+[ 1387.68] FIO089: All right, my method is I'm interested in what the competition is doing and want to see how we can make ourselves different from the competition. So I've really been looking at the press and the ads that are out there for other remote controllers.
+[ 1389.68] FIO089: I'm interested
+[ 1402.08] FIO089: I spend a lot of time on the internet surfing around doing the same thing and then when I'm out
+[ 1409.36] FIO089: in people's houses or at meetings or anything like that. I try to notice what kind of remote controls people have. And if it's convenient in the conversation, I ask about it. And I would encourage you all to do the same. And my findings from there...
+[ 1423.68] FIO089: from this is that you know small is beautiful people like something that really fits in their hand
+[ 1429.92] FIO084: Simple.
+[ 1430.24] FIO089: Simple is beautiful. They don't want to have to squint at small print They want buttons whose functions are obvious and they want as few buttons as possible And they don't care for the mode thing they want each button
+[ 1444.32] FIO089: button to do something and eye-catching is important it's got to look cute it's got to look appealing go ahead I'm trying to finish fast for you and our preferences as far as I'm concerned or we've got to get to the market before the competition ours has to be
+[ 1458.72] FIO089: look really great and it has to come out before the others so that we have a leg up on time to sell it and push it before other people get out their Christmas item and we should develop one or two features we can really dwell on in our ad campaign
+[ 1473.12] FIO089: If we try to tell people it has too many great features, the consumer just gets confused and we don't get anywhere. So we've got to narrow our selection down to two things, I think, that we're going to say are really great about our new product.
+[ 1487.52] FIO089: product and I've been looking around at what designs every year different things are popular and in my research this year I found out that fruit and vegetable shapes are really popular and people are tired of hard plastic and
+[ 1501.92] FIO089: in hard metal. They're more back into soft feel, spongy feeling things, things with maybe a little cloth on them. So those are things maybe we want to look at as far as saleability of the item.
+[ 1517.28] FIE088: Okay. That...
+[ 1522.16] FIE088: concludes the presentation of everyone. And what we really have to decide in this meeting is the concept of the remote.
+[ 1532.56] FIO089: Mm-hmm.
+[ 1533.76] FIE088: And so what do we think on the concept of the remote?
+[ 1545.28] FIO087: you want to try to come back to yours and yeah yes I would like to include this feature which is called as voice recognizer
+[ 1547.52] FIO087: Yes, I would like to...
+[ 1547.60] FIO087: Yes, I would like to include this video.
+[ 1552.48] FIO089: Okay.
+[ 1552.56] FIE088: Okay. Mm-hmm.
+[ 1554.56] FIO084: Mm-hmm.
+[ 1556.32] FIO089: So speech recognition is most important as far as you're concerned?
+[ 1560.08] FIO087: this could be a
+[ 1560.56] FIO087: one feature which could be sellable yeah like
+[ 1562.88] FIO089: Yeah, that could be our star feature. That might be really good. Yeah, I agree.
+[ 1563.68] FIO084: That could be a good idea.
+[ 1563.76] FIO089: That could be our star feature.
+[ 1566.80] FIO089: Yeah, I agree with that.
+[ 1567.12] FIO089: I agree with that.
+[ 1567.52] FIO084: agree with that. But I'm very much doubtful how far it will work because speech recognizer like it has its own... Distance problem? Yeah, it's not distance problem, it's recognizing a person's what...
+[ 1577.20] FIO089: distance problem.
+[ 1580.24] FIE088: it's
+[ 1581.60] FIO084: voice like maybe different people will be having different voices well it's it's yeah it's like you're
+[ 1586.64] FIE088: Well, you teach, you have to teach.
+[ 1591.28] FIO087: are recording all time.
+[ 1595.12] FIO087: all a question already and then you're expecting an answer from for example you have a tv system i'm the user
+[ 1603.52] FIO084: And family.
+[ 1603.92] FIO087: And my family members are the
+[ 1605.20] FIO087: user I will already record good morning like around 8 o 'clock I want to see the news in the television so I'll say just good morning and the TV will switch on it will recognize
+[ 1607.36] FIO084: question like
+[ 1613.20] FIO084: in the television.
+[ 1617.36] FIO084: It will
+[ 1618.16] FIO087: I recognized my voice. Yeah.
+[ 1619.52] FIO084: and to switch up.
+[ 1620.08] FIO089: go...
+[ 1620.08] FIE088: Okay, before we get too far off here, the components of the concept is the energy. What kind of energy do we foresee?
+[ 1630.72] FIO089: I think battery. I think we all agreed on that.
+[ 1631.92] FIO089: I think we all agreed on that. That's going to be most cost effective and the best.
+[ 1632.32] FIO084: best.
+[ 1635.92] FIO089: find the best thing
+[ 1637.12] FIE088: Okay then chip on print. Yeah.
+[ 1639.52] FIO084: Yeah, it
+[ 1639.92] FIO089: Okay.
+[ 1640.88] FIE088: Okay. And the case. And I think we all agree on the case. We want to have something maybe bright, colorful. Yeah.
+[ 1647.76] FIO089: Bright, colourful,
+[ 1648.88] FIO089: colorful, trendy, trendy design, and strong.
+[ 1649.84] FIO089: Trendy, trendy design and strong. Compact.
+[ 1653.12] FIE088: Mm -hmm. Drain the design, compact and strong. Mm -hmm. Yes.
+[ 1657.44] FIO089: Yes.
+[ 1657.52] FIO089: Yes.
+[ 1660.40] FIE088: User interface concept, interface type supplements.
+[ 1669.76] FIE088: That would be your area, I think.
+[ 1674.40] FIO084: like the switches like we use buttons for user interface push buttons I
+[ 1678.96] FIE088: Push buttons? Push buttons. I guess for, yeah.
+[ 1685.28] FIE088: and i'm not sure what they mean by supplements
+[ 1688.00] FIO087: I think different types of features buttons yeah
+[ 1690.00] FIO089: supplements, like different types.
+[ 1690.08] FIO089: Well, I think... There's like different types of...
+[ 1690.16] FIE088: of...
+[ 1692.80] FIO089: Yeah, or like her speech recognition would also be a supplement. Her recognition feature would be a supplement. Yes. Okay, so why don't we
+[ 1692.96] FIO084: Or like
+[ 1692.96] FIO089: or like her speech recognition would also be.
+[ 1698.48] FIO084: Right, right. Yes. Okay.
+[ 1700.72] FIO089: Why don't we put down speech recognition, if possible, pending...
+[ 1703.28] FIO084: pending
+[ 1703.36] FIO089: pending some more restrictions.
+[ 1703.76] FIO089: some more research from our industrial engineer on how expensive that is. Right.
+[ 1706.48] FIO089: expensive that is. Right.
+[ 1707.52] FIE088: Right.
+[ 1711.84] FIE088: Okay, our next meeting will be in 30 minutes. And the ID is to, this is the individual actions to be taken until then. To have to look and feel.
+[ 1726.08] FIE088: field design and the UID is supposed to come up with the user interface design.
+[ 1737.92] FIO084: Mm-hmm.
+[ 1738.56] FIE088: and the marketing expert with the product evaluation.
+[ 1742.48] FIO089: Okay.
+[ 1742.72] FIO089: Okay.
+[ 1743.12] FIE088: In this phase, the two of you, Jana and Francine, have to work together on a prototype using modeling clay. It says here. You will receive specific instructions. It will be sent to you by...
+[ 1757.28] FIE088: by your coaches.
+[ 1758.64] FIO084: Okay.
+[ 1759.76] FIE088: If you have any questions, you know, you can always contact me or your coach, I suppose.
+[ 1771.52] FIO089: wherever they're hiding.
+[ 1773.36] FIE088: So I think we conclude the meeting here and we come back in 30 minutes, according to our timetable here.
+[ 1778.00] FIO084: And
+[ 1787.60] FIE088: Thank you very much. Thank
+[ 1794.88] FIE088: Okay. That's enough.
+[ 1800.56] FIE088: There you go.

@@ -1,0 +1,45 @@
+{
+ "meeting": "IS1009c",
+ "condition": "enrolled",
+ "audio_min": 30.3,
+ "der": {
+  "der": 0.3510655895894762,
+  "miss": 0.06087852554382623,
+  "fa": 0.059110584213275065,
+  "conf": 0.23107647983237495,
+  "total": 1450.8399999999972
+ },
+ "cpwer": 0.6134,
+ "ref_words": 4242,
+ "hyp_words": 4270,
+ "captions": 300,
+ "overlap_s": 99.8,
+ "diar_rtf": 1.953,
+ "asr_rtf": 0.075,
+ "eval_wall_s": 352.5,
+ "talk_s": [
+  442.1,
+  845.0,
+  193.6,
+  59.7
+ ],
+ "turns": [
+  211,
+  271,
+  81,
+  33
+ ],
+ "idwer": 0.2548,
+ "identified": {
+  "0": "FIE088",
+  "1": "FIO084",
+  "2": "FIO089",
+  "3": "FIO089"
+ },
+ "verified_captions": 210,
+ "idwer_policy": {
+  "caption": 0.2548,
+  "slot": 0.6256,
+  "strong": 0.2671
+ }
+}

@@ -1,0 +1,248 @@
+[   11.04] slot0: Are we not allowed to do the lights so people can see that a bit better?
+[   18.00] slot0: Yeah. Okay.
+[   22.48] slot0: Am I supposed to be standing up there?
+[   23.12] slot1: standing up there. So we've got both of these clipped on.
+[   29.20] slot2: Is she going to answer me? Yeah, good. Right, both of them. Okay.
+[   29.92] slot1: Yeah. Good.
+[   34.40] slot1: yes
+[   50.48] slot2: This is gonna fall off, it doesn't let you put it on.
+[   63.52] slot0: Yep, yep, yep.
+[   80.64] slot1: Okay, hello everybody. I'm Sarah, the project manager, and this is our first meeting, surprisingly enough. Okay, this is our agenda.
+[   83.36] slot0: Hi.
+[   96.00] slot1: We will do some stuff, get to know each other a bit better, feel more comfortable with each other. Then we'll go do tool training, talk about the project plan, discuss our own ideas and everything.
+[  110.88] slot1: and we've got 25 minutes to do that as far as I can understand.
+[  117.76] slot1: Now we're developing a remote control, which you probably already know. We want it to be original, something that people haven't thought of, that's not out in the shops, trendy, appealing to a wide market.
+[  132.00] slot1: but not a hunk of metal. And user-friendly, grannies to kids, maybe even poochies, should be able to use it.
+[  143.12] slot1: Okay, first is the functional design. This is where we all go off and do our individual work. What needs need to be fulfilled by the product? What effect the product has to have? And how it's...
+[  157.44] slot1: how it's actually going to do that. Conceptual design, what we're thinking, how it's going to go. And then the detailed design, how we're actually going to put it into practice and make it work.
+[  170.56] slot1: Okay, right. We're going to practice with the pens and draw our favorite animal on the whiteboard. I'll go first. And sum up the characteristics of that animal. So...
+[  189.04] slot1: Okay, I'll leave space for everyone else.
+[  243.36] slot1: We're running out of blue.
+[  247.20] slot1: Okay, I'm not going to ask you to guess, I'm going to tell you that's supposed to be a tiger.
+[  254.64] slot1: and I see them as majestic.
+[  260.00] slot1: and independent.
+[  266.32] slot1: and
+[  268.80] slot1: proud
+[  272.40] slot1: Now, who would like to go next?
+[  275.28] slot0: Okay.
+[  275.68] slot1: Okay.
+[  279.28] slot0: got
+[  285.28] slot0: Where does this come from?
+[  287.76] slot1: Put your lapel on.
+[  290.00] slot1: Yep.
+[  293.44] slot0: Maybe you can guess what I'm trying to make.
+[  306.48] slot2: a kind of dog.
+[  309.36] slot0: Yep.
+[  313.60] slot0: It's actually sitting. So.
+[  316.08] slot2: Sorry.
+[  316.80] slot3: It's sitting down. It's not sitting.
+[  317.12] slot0: It's sitting, it's not standing. Okay, I see it as one thing. It's very supportive.
+[  318.00] slot2: Outstanding.
+[  324.24] slot0: It's your best friend in your... You can talk to a dog, it can be your best friend, it doesn't discriminate between you based on what you are. Second, it's...
+[  333.52] slot0: loyal
+[  335.68] slot0: and third thing it's got intuition
+[  340.80] slot0: Means dogs can sometimes make out between a thief and a...
+[  345.28] slot0: So basically these are the three unique features I think belong to a dog.
+[  350.24] slot1: Okay, thank you.
+[  353.84] slot3: Yeah, I hope we go.
+[  356.32] slot0: Please please leave
+[  356.64] slot2: Please leave me a space at the bottom, I'm little. I can get to the top. I'll be standing on a chair.
+[  359.20] slot0: Get to the top.
+[  359.44] slot1: get to the top.
+[  361.84] slot3: Well, since you guys have chosen the ones I wanted to do, I have to go for something a bit random.
+[  364.72] slot1: Okay.
+[  366.08] slot0: It's a bit random.
+[  371.60] slot3: And also my drawing skill isn't that great. Well, as you can see, the quality of the work.
+[  374.00] slot1: Well, as you can see, the quality of the work today is... I think it's outstandingly good.
+[  376.96] slot2: I think it's outstandingly good.
+[  379.76] slot3: Okay, now I'm going to have to change what it was originally going to be because that looks like a beak now.
+[  382.64] slot1: because that looks like a...
+[  391.28] slot2: Crocodile?
+[  394.08] slot1: Yeah.
+[  394.48] slot3: Yeah, it can be a crocodile. It can be a crocodile. Well, firstly, it was an attempt at a T-Rex, and then it sort of changed into a pelican, but it can be a crocodile.
+[  396.56] slot1: The crocodile. Well, it was... It's going to be a bird. Firstly...
+[  403.28] slot2: sort of changed into a...
+[  420.24] slot1: That's lovely. Yeah.
+[  421.28] slot3: Yeah, and I'll have to think on the spot of things that it is.
+[  421.52] slot2: Peace out.
+[  428.24] slot3: uh scary
+[  432.64] slot3: uh strong
+[  438.88] slot3: Yeah, that's about it, I think.
+[  441.76] slot2: Okay. I'm very impressed with your artistic skills. Mine's a dreadful. Oops, this is now coming apart. Let me just put the top in.
+[  454.08] slot2: I hope that clicks in. I'll hold it on. Oh dear. What happened there?
+[  461.20] slot1: technical help
+[  465.52] slot2: Hopefully that will stay on, two-handed version.
+[  468.32] slot3: Okay.
+[  468.72] slot2: Okay.
+[  474.56] slot2: Again, this is off the top of my head. I was going to do a big cat too.
+[  476.96] slot3: too.
+[  481.36] slot2: It doesn't look like what I want it to be.
+[  487.20] slot2: It's not a vampire bat, honestly.
+[  487.52] slot3: It's not a vampire bat, honestly.
+[  493.04] slot2: and somewhere there's a body behind.
+[  497.60] slot3: That's my dreadful, that's the worst, yeah, that's meant to be.
+[  497.92] slot2: That's my dreadful, that's the worst. Yeah, it's meant to be an eagle. Right. You can tell it's a flying animal. Could have been a seagull. I never thought of a seagull. An eagle. Again, I'm thinking on my feet. Goodness. I suppose they're also in...
+[  501.60] slot1: You can tell it's a flying animal.
+[  501.84] slot3: Right. You can tell it.
+[  501.92] slot0: Right.
+[  512.16] slot2: so independent. I'll put that one down again.
+[  516.24] slot2: I didn't.
+[  520.00] slot3: Look at it go.
+[  520.32] slot2: They're good at golf. Independent, right. Did you say they're good at golf? Yeah. Are they? Eagle. Oh, right. I'm not good at golf. I'll say they're quite free-spirited, flying around everywhere.
+[  524.48] slot3: Yeah. Are they? Eagle. Oh, right.
+[  525.60] slot1: Eagle.
+[  535.68] slot2: doing their own thing.
+[  541.60] slot2: and birds of prey aren't they oh dear intrepid intrepid
+[  553.76] slot2: There we go. I hope that pen is going to be okay.
+[  554.56] slot1: I hope that pen's good.
+[  561.28] slot1: Okay. That was fine. Right. Finance-wise, we've got a selling price at 25 euros, which I don't actually know what that is in pounds at all. Any ideas?
+[  576.64] slot2: 17?
+[  576.80] slot3: 17?
+[  576.96] slot0: 1.4 euro would make a pound or something. Yeah, yes.
+[  580.96] slot3: Yeah, yeah, something like that. Yeah, about 17 pounds.
+[  582.72] slot0: That's right.
+[  584.56] slot1: 17 pounds.
+[  584.96] slot2: 17 pounds
+[  588.48] slot2: Should we be making notes of this? We can just refer to this later, Colin. I think so. I think so. I'll be able to pull it up or put it in the shared...
+[  591.12] slot1: I think so. I think I'll be able to pull it up or put it in the shared folder. Having said that, though...
+[  594.40] slot3: Having said that though, if you want to get one of those, the ones on the market at the moment, they're about £20 anyway. Right. Yeah, we have to buy one.
+[  603.60] slot2: Right.
+[  606.00] slot2: Buy one.
+[  606.80] slot1: Mm-hmm.
+[  608.16] slot2: So I suppose later it depends if we want to undercut the price or is it going to make our product look a cheapy, cheapy option? Yeah.
+[  613.68] slot1: Yeah, production costs at $12.50. So half of the selling price is taken up by building it.
+[  614.24] slot3: Um,
+[  617.84] slot0: Okay, pretty huge margin. Half.
+[  621.60] slot3: taken out
+[  622.16] slot2: not by
+[  624.00] slot2: Mm-hmm.
+[  624.40] slot1: and profit aim is 50 million euros which is a
+[  630.48] slot2: In her first year. Yep.
+[  631.36] slot1: Yes. Yeah, I presume so.
+[  635.68] slot0: So then...
+[  638.24] slot2: You've got market range international and you did say earlier it's got to be accessible and usable by all age groups. We're not focusing on business market, any particular thing, it's user friendly to everyone.
+[  645.28] slot1: just
+[  649.28] slot1: everyone, user friendly to everyone.
+[  653.52] slot2: big target group
+[  654.56] slot1: Yes, yes. I don't think it's a case of worrying about different languages and things like that.
+[  662.00] slot2: No.
+[  662.40] slot1: making that key point, just that it's going to be in the international market like Australia, America, things like that. Okay.
+[  666.80] slot0: Australian.
+[  675.28] slot1: What are your experiences with remote controls? I mean, I've got, we got, we had three videos, a TV and sort of amp thing all set up.
+[  687.52] slot0: set up.
+[  688.24] slot3: So we got one of them.
+[  688.48] slot1: So we got one of the universal remote controls.
+[  691.20] slot2: Yeah.
+[  691.36] slot3: Yeah.
+[  691.36] slot0: Yeah.
+[  691.76] slot1: that you program each of your things into, but that kept losing the signals, so we'd have to reprogram it every now and again. I think it was quite a GP as well.
+[  701.28] slot0: so that might
+[  701.28] slot3: so that might have had
+[  701.44] slot1: so that might have had something to do with it. But that was quite good, the fact that you could...
+[  705.28] slot3: Used all the ones in the same time. Didn't have six.
+[  706.16] slot1: didn't have six remote controls.
+[  708.16] slot2: Right.
+[  708.88] slot0: You want to integrate everything into one like yeah
+[  711.36] slot3: Yeah.
+[  712.00] slot2: My experience has only been being given the remote control with the object I buy, not doing any tampering with it and programming, using it to program TV or videos and things, but basically on, off, volume, up and down, channel one, two, that...
+[  713.04] slot3: My experience is...
+[  726.24] slot2: that basic function I don't think I could go any further with it than that so it's got to be something usable by someone like me as well
+[  735.12] slot1: Yeah, that's the main stuff anyway. I mean, and you don't want to. I hate looking at a control and seeing a million tiny little buttons with tiny little words saying what they all do and just sitting there searching.
+[  737.44] slot2: I mean...
+[  746.48] slot2: seeing what they all do.
+[  747.84] slot3: Yes.
+[  749.28] slot1: searching for the teletext button or something like that. And symbols that you don't necessarily understand.
+[  749.92] slot2: the teletext button or something like that. And symbols that you don't necessarily understand. Symbols you're meant to understand that you don't.
+[  755.60] slot1: Simplification.
+[  755.60] slot0: Simplification of symbols you put together. When they're...
+[  757.52] slot1: when you've got the main things on the front of it and a section opens up or something to the other functions when you can do sound or options kind of recording things like that inside
+[  768.56] slot2: Oh yeah.
+[  771.84] slot1: it because it doesn't make when you pick it up it doesn't make it really complicated to look at it's obvious what you're doing um actually that just
+[  772.40] slot2: because it doesn't...
+[  775.68] slot2: to look at it's obvious what you're doing
+[  778.00] slot3: what you're doing.
+[  779.92] slot2: Actually, that just raises a point. I wonder what our design people think. But you know on a mobile phone,
+[  785.12] slot3: you can press...
+[  785.28] slot2: you can press a key and it gives you a menu, it's got a menu display. I wonder if incorporating that into the design of a remote control might be useful. So you've got a little LCD display.
+[  787.20] slot0: It's got a menu display.
+[  792.32] slot3: useful so you've got a little
+[  794.64] slot0: I was thinking on the same lines you instead of having too many buttons and make it complicated for the user May maybe have an LCD display or something like that like a mobile
+[  803.92] slot2: With menus. With menus. Yeah.
+[  804.48] slot0: and with menus. And if it's somewhat similar to what you have on mobile phone, people might find it easier to browse and navigate also.
+[  811.28] slot2: Yeah.
+[  811.92] slot0: Maybe.
+[  812.48] slot1: What about the older generation? What about granny and granddads? My granddad can answer his mobile phone, but he couldn't even dream of texting or something like that.
+[  816.40] slot0: My grader can answer.
+[  820.08] slot3: He couldn't...
+[  821.44] slot2: dream of texting or something like that. Can he program his remote control or is he basic with that too?
+[  826.16] slot1: basic with that too.
+[  828.24] slot1: I don't think they tape things.
+[  829.52] slot3: Yeah.
+[  830.16] slot2: My granddad.
+[  830.48] slot3: My grandad's actually better than me at using Teletext. Right.
+[  830.64] slot1: My granddad's actually better than me.
+[  833.36] slot2: Right. So that's a problem regardless of any design modifications you come up with. Yeah. That's going to be a problem anyway with the older generation perhaps. And that's another issue how we tackle that. Why?
+[  838.80] slot3: Yeah.
+[  841.28] slot1: perhaps. And that's another...
+[  843.84] slot3: you know we tackle that. Well it just needs to be, as long as it's sort of self-intuitive and you can work out why everything's doing. Because I mean menus on sort of phones now, they're sort of goldy.
+[  858.24] slot3: all these pictures and stuff which makes it fairly obvious what you're trying to do.
+[  862.48] slot1: Hmm.
+[  863.36] slot3: Mm-hmm.
+[  864.40] slot1: I don't know how. I don't like the new phones that have kind of got a Windows-based running system.
+[  864.80] slot3: I don't know how.
+[  870.32] slot3: Oh yeah. Running.
+[  873.04] slot1: I find it really confusing. I kept getting lost in the phone. I have not got a new one, but my friend got a new one. I was trying to do things with it. And I just kept getting lost, but that's just me.
+[  878.48] slot2: my friend
+[  885.28] slot3: I don't know how for €12.50 how much of an excellent screen you could get. You'd have to keep it down to a black and white LCD. Is it possible that...
+[  893.76] slot1: you'd have to
+[  895.60] slot2: it down to a...
+[  898.80] slot2: Is it possible that for the older generation you could have an extra button that you press for large print, like you do in large print books?
+[  899.52] slot3: the
+[  905.60] slot0: Obviously it just...
+[  905.76] slot2: Obviously it displays less on the screen, but as long as they can read it, that's the main thing.
+[  905.92] slot1: Obviously it displays less on the screen.
+[  912.00] slot1: yeah
+[  913.84] slot1: Or what about kind of a dual function in that you've got the basic buttons just for your play volume program things and also and then a menu to go into with obvious.
+[  923.84] slot2: and
+[  928.80] slot1: obvious pictures, obvious symbols, and that's where you control recording and things like that.
+[  930.96] slot2: Yes.
+[  933.20] slot2: recording
+[  933.20] slot0: recording and things like that.
+[  935.28] slot2: The other thing is, just tacking into mobile phone design features again, you could have a flip-top remote control so that when you flip over the top, you can have a bigger screen.
+[  946.40] slot0: The flip over.
+[  946.48] slot2: Flip over.
+[  948.56] slot1: I think that's a cost thing. I don't know how much we're going to know about it.
+[  950.08] slot0: I don't...
+[  951.20] slot2: Yeah.
+[  952.96] slot0: might save a bit of space instead of looking bulky it might look small yeah
+[  955.04] slot2: instead of looking bulkier.
+[  956.88] slot2: Yeah.
+[  957.36] slot3: but it might have...
+[  957.36] slot0: but it might have its cost implications.
+[  958.24] slot2: with cost implications.
+[  959.60] slot1: And there's no reason...
+[  959.76] slot2: And there's no reason we need to make it look as fashionable and stylish as a mobile phone. It can still be lightweight plastic, you know?
+[  965.20] slot1: you know
+[  966.32] slot0: Something that's easily...
+[  966.48] slot2: Something that's easily moulded and produced. Sorry, I'm treading on your territory, guys.
+[  968.96] slot1: Sorry, I'm trying to...
+[  971.12] slot1: right okay we've got half an hour before the next meeting so we're all going to go off and do our individual things I think that's probably about it and then we'll come back and liaise again
+[  985.44] slot1: And I get to do another fantastic PowerPoint presentation.
+[  985.52] slot3: Yeah. And I get...
+[  988.96] slot3: Just a quick thing about what you were saying about the, it doesn't need to be fashionable. So I had a quick look at the company website, and it's like the, we put the...
+[  991.20] slot1: about the...
+[ 1003.20] slot3: the fashion into electronics. I think the whole design thing might be quite... I mean you don't... you can still have plastic and it look quite good.
+[ 1005.20] slot2: So I think the whole design thing might be quite... Sure. I mean, you don't... Yeah. You can still have...
+[ 1013.84] slot2: quite good. Yeah. I mean, it doesn't have to be that, you know, but that was my main point. We do have to use metal. I don't know if using plastic does make it cheaper. I presume it would. Yeah. It would. Yeah. Probably. Yeah.
+[ 1018.72] slot3: We don't have to use metal.
+[ 1022.16] slot3: Yeah. I would. Yeah.
+[ 1022.40] slot1: I would, yeah. Probably. Yeah. I mean, the Sky remote controls and everything, they're kind of molded and look a bit different, and the Telewest remote controls are silver plastic, which looks a bit smarter. So, yeah, I guess that's stuff.
+[ 1033.04] slot2: Right.
+[ 1036.80] slot1: Okay, so let's break up there.
+[ 1037.52] slot2: Okay.
+[ 1042.32] slot2: Okay.
+[ 1042.72] slot3: Okay.
+[ 1043.28] slot1: So see you in half an hour.
+[ 1046.56] slot2: Do we go back to our room? I think so. Yeah.
+[ 1048.00] slot1: I think so. Yeah.
+[ 1048.16] slot0: Yeah.

@@ -1,0 +1,199 @@
+[   23.04] slot0: The microphone is between your right.
+[   27.36] slot0: And then where's the other one? Oh, here.
+[   55.28] slot1: Okay.
+[   55.84] slot0: Everybody ready? I think so.
+[   56.08] slot1: Everybody ready? I think so. I think the first thing we do is introduce ourselves.
+[   61.68] slot0: Yeah, that's a good plan.
+[   62.08] slot1: and his name and what your function is. So maybe we start with you.
+[   66.80] slot2: My name is Franz Anna and I'm a user interface. My role...
+[   71.60] slot3: My role is the main responsibility is user interface.
+[   76.48] slot0: And my...
+[   76.72] slot3: And my role is to design a television remote control.
+[   81.28] slot2: Mm-hmm. Yeah.
+[   82.00] slot1: Okay.
+[   83.52] slot0: And I'm a marketing person. I want to figure out how to sell them.
+[   87.68] slot2: And your name is...
+[   88.08] slot1: And your name is? My name is.
+[   88.96] slot0: My name is Aileen.
+[   90.48] slot1: Okay?
+[   91.44] slot3: I'm Janavi. My role is industrial designer and my responsibilities are deal with the technical functional designs and specifications of user interface.
+[  105.60] slot3: and dealing with user interface design
+[  108.00] slot1: Very good. And as you already know, I'm Betsy. I'm the project manager for today. So why don't we look at the presentation to see what we really are supposed to do.
+[  118.96] slot0: Okay.
+[  119.36] slot1: um
+[  122.56] slot1: Yes, opening, acquaintance, tool training. Well, the tools, I think we already, I guess the tool is really the computer, as far as I can see. Each of us will get instructions and we'll take it.
+[  131.28] slot0: As far as I can.
+[  136.80] slot1: from their project plan that falls under the same heading pretty much I don't think we have any great discussion at this point
+[  145.68] slot0: No.
+[  146.32] slot1: um
+[  149.60] slot1: here is what this thing should be this thing we are gonna design is a new remote control should be original
+[  159.60] slot0: trendy
+[  159.76] slot1: trendy and of course user-friendly.
+[  165.28] slot1: So maybe you want to make some notes of that.
+[  188.32] slot0: Okay.
+[  195.20] slot1: Okay? Mm-hmm.
+[  195.68] slot0: Mm-hmm.
+[  196.48] slot1: All right, here is what the functional design is supposed to achieve. That is, it's going to be individual work and then at the meeting we'll discuss what we have come up with.
+[  210.72] slot1: with the same goes for the conceptual design there will be individual work with and then discussion afterwards detailed design okay same thing basically
+[  220.56] slot0: Okay, same thing basically. Three different types of design that we're going to be concerned with.
+[  226.08] slot2: Mm-hmm.
+[  227.04] slot1: Mm-hmm.
+[  236.24] slot0: Functional, conceptual.
+[  244.00] slot1: I can't write this thing.
+[  248.48] slot0: Maybe we should redesign it.
+[  249.68] slot1: I am.
+[  251.92] slot1: Yes.
+[  252.88] slot0: After we finish the remote control, we'll get to that.
+[  257.44] slot1: All right.
+[  260.16] slot1: Then tool training, try out the whiteboard, participant control their favorite animal. Does anybody want to go and see how the whiteboard works? So that in case we have to, in the next meeting, present something on the whiteboard.
+[  274.80] slot1: You want to go, Eileen? Okay.
+[  276.32] slot0: Okay, I'll see what I can do.
+[  277.68] slot1: whether you...
+[  278.64] slot0: Without hanging yourself. See if I remember how to draw a kitty cat or a rabbit or something.
+[  278.80] slot1: Without hanging yourself. CF.
+[  287.60] slot2: and
+[  288.24] slot1: And remember, you have to press so it works. So that it will record. Okay.
+[  290.16] slot0: So that it will record, okay. Traditional kitty cat.
+[  307.68] slot1: Oh, that's okay.
+[  311.36] slot0: I'm a very fat cat.
+[  315.84] slot0: and it likes to sit like that.
+[  317.76] slot1: Okay. Okay.
+[  318.40] slot0: it.
+[  320.64] slot1: and you're Francine, right? Would you like just to see how it feels so that you have a little idea?
+[  322.24] slot0: Would you like to...
+[  322.56] slot3: Would you like just to see how it feels?
+[  328.88] slot0: Am I supposed to wipe off that? No, no. No, that's okay.
+[  330.32] slot1: No, no, no, that's okay. No, okay.
+[  332.24] slot3: Okay. Okay.
+[  332.40] slot0: Yeah.
+[  333.76] slot1: I don't know. Get to that later.
+[  336.32] slot0: Okay.
+[  337.60] slot3: which it is
+[  338.00] slot1: I just...
+[  347.84] slot3: I'm going to dress.
+[  348.08] slot1: I'm going to draw a snake.
+[  355.92] slot3: Okay. Okay.
+[  356.40] slot1: Okay. Okay.
+[  357.36] slot0: Oh, okay. I hope the kitty cat is hungry because I don't like snakes.
+[  367.36] slot1: Here's a project finance, which of course we all have to think about when we design this thing. Selling price is supposed to be 25 euro. Profit aim for the company is 50 million euro.
+[  377.52] slot0: profit and
+[  381.60] slot1: The market range unlimited, meaning international.
+[  386.72] slot0: Okay.
+[  387.52] slot1: and the production cost should not exceed, hopefully should be less than €1250.
+[  395.68] slot0: Okay, that should keep everybody on their toes and challenged.
+[  398.88] slot1: Mm-hmm.
+[  400.32] slot0: Off it.
+[  402.96] slot0: So these are all things, of course,
+[  403.92] slot1: So these are all things, of course, to remember with the budget and when you design to materials, cost, etc.
+[  419.28] slot0: Now, uh...
+[  419.92] slot1: The discussion I guess is, does any one of you have experience with remote control?
+[  428.80] slot3: Yeah, of course. Because we use them, right?
+[  428.96] slot1: Yeah, of course. We use them, right, every day. And, um...
+[  430.64] slot0: We use them.
+[  436.72] slot1: Now, having used the remote control for years, does anybody already have like an idea, like things you didn't like with it, things you would like to change, things you would like to improve with this thing? Any first ideas? Would you like to...
+[  450.72] slot1: Like to be smaller, bigger, have more buttons on it, or maybe clearly better marked buttons, you know, things like that.
+[  451.12] slot3: smaller
+[  454.08] slot3: Have more...
+[  460.00] slot3: things like that.
+[  461.60] slot3: Yes, I think.
+[  461.60] slot2: Yes, I feel that all the remote should be very compact. Small.
+[  465.44] slot0: all right those which we get
+[  465.76] slot1: those which we get
+[  466.64] slot2: which we get here nowadays, it's very long.
+[  476.24] slot3: It should be used for some other purpose also, like controlling the temperature inside the house, or for air conditioners, or for heating system. So it should be a multifunctional gadget that would...
+[  481.84] slot2: temperature inside the house
+[  486.88] slot1: So it should be a multifunctional gadget that would control all your household machines, basically. Exactly.
+[  490.56] slot3: And...
+[  492.72] slot3: machines basically. Exactly.
+[  497.20] slot0: at, um, €12.50 per...
+[  502.88] slot1: Well? Well.
+[  503.92] slot0: Well, who knows if we get a really good designer, maybe we can do that. We certainly can try to. I agree with her that to market something successfully, it should do some more things. It should be something new.
+[  506.24] slot3: We can do that.
+[  513.28] slot1: It should be something new. It should do something different than just what we have. Now, of course, the other thing to think there is maybe the design. Yeah.
+[  517.44] slot0: we have now
+[  517.84] slot3: Now, of course, the other thing...
+[  521.20] slot3: Yeah, design should be different. Almost all the remotes. Like trend, you know, like earlier we saw.
+[  524.32] slot1: Like trendy, you know, like earlier we saw maybe it should be something trendy, you know, maybe different colors or materials also or, you know. So, yeah, shapes, right? You know, like kidney shape feels better in your hand or something, you know.
+[  527.92] slot3: Maybe different colors or materials.
+[  532.56] slot2: you know
+[  532.88] slot3: You know.
+[  537.12] slot3: better in your hand or something. Okay.
+[  538.48] slot0: Okay, friendly shape. Yeah. That would help. I think another thing that would help is if it beeps when you clap. Because I think one of the big things that happens is people lose them. They can't find it.
+[  538.56] slot1: Yeah, okay. Friendly shape. Yeah.
+[  544.24] slot1: Yes. If.
+[  552.64] slot1: That is true. They put the newspaper or they put it behind a plant or, you know, whatever. And suddenly the phone rings and they want to turn the TV off. And they say, where the hell?
+[  558.32] slot0: And they were...
+[  562.40] slot3: Where the hell is my...
+[  564.32] slot1: My remote control, yeah.
+[  566.24] slot0: Well, or, yeah, or if it...
+[  566.24] slot1: Or if it's really in a dark spot that it gives out a sound or a signal. So it should either beep or a light should blink. If lost, throw a signal.
+[  572.24] slot3: or a signal or something like that.
+[  572.40] slot0: or a signal or something like that so it should either beep or a light should blink if floss
+[  576.96] slot3: lost signal with me throw a signal you know yeah maybe it should have a light so that we can we can just recognize where it is exactly I mean just that's why I say I'm
+[  580.48] slot0: Throw signal. Yeah.
+[  580.80] slot1: you know yeah maybe it should have a light so that we can
+[  585.84] slot1: Exactly. I mean, just that's why I'm saying I'm just saying throw signal meaning just whether it's a beep or a light. And you think a good...
+[  585.92] slot2: Exactly. I mean, just that's why I say I'm just saying.
+[  591.04] slot3: people whether a light or do you think
+[  592.32] slot0: Do you think a good clue for that is that it would respond to a clap or respond to your voice or it would respond? What should you have to do to make it beep or blink?
+[  605.84] slot1: Okay, my idea is maybe that the minute it's really hidden, in other words, if it's like in a dark spot, meaning, you know, like a newspaper is on top, a sweater is on top, or it's behind a plant.
+[  613.36] slot0: Mm-hmm.
+[  618.00] slot0: or it's a bit...
+[  620.16] slot1: At that moment, it's like, what do you call it? The light sensors, you know. Okay.
+[  625.68] slot0: In that moment, it has.
+[  625.84] slot1: In that moment, it has a sensor.
+[  627.84] slot3: it gets
+[  628.08] slot1: It gets a certain darkness, it has a sensor, and it gives out a signal. Whether that be a light signal or a beep, I mean, we can discuss that later, you know.
+[  628.40] slot0: It gets a certain dart.
+[  634.32] slot3: or a beep, I mean, that we can discuss that later, you know. Yeah. So the light sounds...
+[  634.96] slot0: I mean, that week.
+[  639.12] slot0: So the light sensor would activate the signal. That's right.
+[  641.44] slot1: That's right. You know, that would be right. You have to have some kind of sensor. And I think voice or clapping, that's not specific enough. I know there are the lamps and stuff, you know, you can clap on and off. But I think they only work.
+[  641.84] slot3: you know, they would
+[  652.96] slot0: you can clap on and
+[  653.76] slot3: and off.
+[  655.68] slot1: work to a certain degree.
+[  658.24] slot1: But it could be something.
+[  658.24] slot0: But it could be someplace really obvious and you still wouldn't be able to find it.
+[  664.08] slot3: Well, because you're silly, because people are...
+[  665.36] slot0: Well, because you're silly, because people are silly. Oh, yeah, well, but then those people, we can't help everybody. Well, if we're, like, on top of your bookcase, and you usually kept it on the coffee table, you know, we have to move along.
+[  667.84] slot1: Oh, yeah, well, but then those people, we can't help everybody. Well, we're like on top of...
+[  678.24] slot1: Okay, we have to move along. Yeah, we have to move along, but I think we have some good points to start with here.
+[  679.68] slot0: Yeah, we have to move along.
+[  682.16] slot3: Good points to start with.
+[  685.92] slot1: okay the next meeting will be in 30 minutes i think you all did you get notices on your computer for this okay so you'll get the notice um uh the working design i guess that's the function idea
+[  691.76] slot3: Me, yes. Okay, so you'll get the notice.
+[  700.32] slot1: ID, who is this industrial designer.
+[  703.12] slot3: Yeah.
+[  703.68] slot1: That's you!
+[  704.72] slot3: Yeah, it's functioning. Yeah, exactly. Okay.
+[  707.20] slot1: Okay, so we're looking for a working design when we come back.
+[  710.24] slot3: when we come back? Working design, yeah. It's maybe technical functional design. And then the technical function, you're the technical function, so you're the working.
+[  714.32] slot1: Maybe technical functional design. And then the technical function. You're the technical function. So you're the working design. So you have a working design and then a functional design. And the marketing manager is coming up with some user requirements.
+[  720.48] slot3: You have a working design.
+[  728.64] slot1: requirement specification like friendliness and what we just discussed in general that would be your idea and of course price that it that it that the price is a good price i mean the price is given but
+[  741.44] slot0: I mean the price
+[  743.04] slot1: that was
+[  745.36] slot0: We have to justify that price by having sufficient features to make it sell at that price. That's right.
+[  746.48] slot1: That's right.
+[  749.52] slot1: That's right.
+[  750.48] slot3: and
+[  751.52] slot1: And you know, you will get specific instructions for that. I think that's the end of the show. Yeah.
+[  764.80] slot1: So we have, well, we have two, three minutes. Any questions at this point or suggestions?
+[  777.44] slot0: I think basically...
+[  777.92] slot1: I think basically you will get instructions to work with. And if you have any questions, I guess you can...
+[  782.96] slot3: And if you have any questions.
+[  787.76] slot0: I think I have enough to think about to our next meeting.
+[  791.12] slot2: Mm-hmm. Yeah, even. Thank you.
+[  791.28] slot3: How about you people? Yes. Thank you.
+[  791.76] slot0: How about you people? Yes. Okay. Thank you. Okay.
+[  793.28] slot2: I think, yeah.
+[  795.84] slot1: Okay.
+[  796.64] slot0: Alright, well, um... Let's see.
+[  797.36] slot1: Then we see you in about 30 minutes and see what we can come up with.
+[  803.52] slot3: Okay.
+[  803.92] slot0: Okay, very good.
+[  804.24] slot1: Very, very good. Okay. Yes.
+[  805.36] slot3: Yes.
+[  814.64] slot3: So now we have to work.
+[  820.80] slot3: I think we have to keep it here.
