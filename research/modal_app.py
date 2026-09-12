@@ -152,8 +152,8 @@ def dixtral_one(meeting: str, win: int = 120) -> str:
 @app.local_entrypoint()
 def dixtral_ami(meetings: str = "all", win: int = 120):
     ms = MEETINGS if meetings == "all" else meetings.split(",")
-    for r in dixtral_one.map(ms, kwargs={"win": win}):
-        print(r)
+    for m, r in zip(ms, dixtral_one.map(ms, kwargs={"win": win}, return_exceptions=True)):
+        print(m, "FAILED:" if isinstance(r, Exception) else "", str(r)[:200])   # one failure must not stop the app
 
 
 @app.function(gpu="A100", timeout=4 * 3600, volumes={DATA: VOL}, secrets=HF_SECRET,
