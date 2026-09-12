@@ -55,13 +55,23 @@ GPU_USD_H = {"H100": 3.95, "H200": 4.54, "B200": 6.25, "A100": 2.50, "A100-80GB"
 BUDGET_USD = float(os.environ.get("LIVEDIAR_BUDGET_USD", "450"))   # hard ceiling on estimated spend
 
 
-def _spent() -> float:
+def _spend_rows():
+    """One JSON file per call under results/spend/ — concurrent appends to a single file lost
+    entries (14 containers wrote spend.jsonl at once and 2 survived). Legacy spend.jsonl is still read."""
     import json
-    VOL.reload()                       # other containers append to spend.jsonl; see the latest commit
+    VOL.reload()
+    rows = []
+    d = Path(f"{DATA}/results/spend")
+    if d.exists():
+        rows += [json.loads(f.read_text()) for f in d.glob("*.json")]
     p = Path(f"{DATA}/results/spend.jsonl")
-    if not p.exists():
-        return 0.0
-    return sum(json.loads(l)["est_usd"] for l in p.read_text().splitlines() if l.strip())
+    if p.exists():
+        rows += [json.loads(l) for l in p.read_text().splitlines() if l.strip()]
+    return rows
+
+
+def _spent() -> float:
+    return sum(r["est_usd"] for r in _spend_rows())
 
 
 def _guard(job: str, gpu: str, est_hours: float):
@@ -80,21 +90,20 @@ def _record_spend(job: str, gpu: str, seconds: float, note: str = ""):
     n = int(gpu.split(":")[1]) if ":" in gpu else 1
     kind = gpu.split(":")[0]
     usd = GPU_USD_H.get(kind, 4.0) * n * seconds / 3600
-    Path(f"{DATA}/results").mkdir(parents=True, exist_ok=True)
-    with open(f"{DATA}/results/spend.jsonl", "a") as f:
-        f.write(json.dumps({"t": time.strftime("%Y-%m-%d %H:%M:%S"), "job": job, "gpu": gpu,
-                            "seconds": round(seconds), "est_usd": round(usd, 3), "note": note}) + "\n")
+    import uuid
+    d = Path(f"{DATA}/results/spend"); d.mkdir(parents=True, exist_ok=True)
+    (d / f"{int(time.time())}-{job}-{uuid.uuid4().hex[:6]}.json").write_text(json.dumps(
+        {"t": time.strftime("%Y-%m-%d %H:%M:%S"), "job": job, "gpu": gpu,
+         "seconds": round(seconds), "est_usd": round(usd, 3), "note": note}))
     VOL.commit()
     return usd
 
 
 @app.function(volumes={DATA: VOL})
 def spend_total() -> str:
-    import json
-    p = Path(f"{DATA}/results/spend.jsonl")
-    if not p.exists():
+    rows = _spend_rows()
+    if not rows:
         return "no spend recorded"
-    rows = [json.loads(l) for l in p.read_text().splitlines() if l.strip()]
     tot = sum(r["est_usd"] for r in rows)
     by = {}
     for r in rows:
@@ -189,6 +198,20 @@ def toy_ablation_job(steps: int = 3000, rooms: int = 2000, bs: int = 8) -> dict:
         VOL.commit()
     _record_spend("toy_ablation", "A100", time.time() - t0, f"rooms={rooms} steps={steps}")
     return res
+
+
+@app.function(volumes={DATA: VOL}, timeout=1800)
+def debug_sim(n: int = 3) -> str:
+    """Run the simulator for a few rooms in-container and return its stderr (CPU only, cents)."""
+    r = subprocess.run(["python", "/repo/research/simulate.py", f"{DATA}/pool_modal.jsonl", f"{DATA}/rooms_debug",
+                        "--n", str(n), "--dur", "30", "--spk", "2,3", "--seed", "1"], cwd="/repo",
+                       capture_output=True, text=True, env=dict(os.environ, PYTHONPATH="/repo:/repo/research"))
+    return f"exit {r.returncode}\nSTDOUT:\n{r.stdout[-1500:]}\nSTDERR:\n{r.stderr[-3000:]}"
+
+
+@app.local_entrypoint()
+def debug_simulate(n: int = 3):
+    print(debug_sim.remote(n=n))
 
 
 @app.local_entrypoint()
