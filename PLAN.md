@@ -308,31 +308,61 @@ graph-captured; `moshi_mlx` already runs the 7B at int4/int8 on an M3
 laptop, so the 1–2B student on Apple silicon is a matter of distillation,
 not feasibility.
 
-## 8. Execution order
+## 8. The $500 programme (execution order, revised 2026-09-12)
 
-Everything below job 3 needs Modal (`research/modal_app.py`; attach with
-`modal setup`, create the `huggingface` secret, set a spend limit). Local
-runs on the M5 Pro established the pipelines but not the numbers: Dixtral
-runs at 9× realtime on its GPU, so the 16-meeting gate is a 1–2 H100-hour
-job there and an 80-hour one here.
+Constraints as set: US$500 of Modal credit, unlimited CPU time, a 48 GB
+M5 Pro whose memory is the local ceiling and which must not be crashed, and
+Modal reserved for GPU work that genuinely saves time. That rules out §7's
+64-GPU stage 1 for now; it does *not* rule out answering the plan's
+decisive questions, because each of them is a small job. The credit buys
+~125 H100-hours; the programme below spends about $200 of it and keeps
+$300 in reserve for the one job that will need re-running.
 
-1. **Dixtral on Sortformer masks, 16 AMI meetings** — `dixtral_ami`,
-   16× H100 in parallel, ~$10, 15 min. The stage-1 target and the first
-   test of the plan's central assumption. Done locally on IS1009a only.
-2. **Toy conditioning ablation at scale** — `toy_ablation`, A100, ~$6:
-   2 000 simulated rooms, 20 k steps, conditioned vs. not, cpWER on
-   held-out rooms. The laptop version (320 rooms, 2.5 k steps) is running
-   now and is the smoke test.
-3. **Per-scenario turn statistics** from AMI and ICSI dialogue acts (both
-   carry backchannel labels) to fit `research/simulate.py`; regenerate the
-   rooms; start the DuplexChat podcast pipeline on a first 1 000 h.
-4. **1B ablations** on H100:8 (~$420): additive input conditioning vs.
-   per-layer FDDT with suppressive init; identity as embedding vs. text;
-   corruption strength; with and without the Dixtral encoder path.
-5. **Assistant-in-the-room scripts**: first 1 000, listen to 20, rewrite
-   §4.3; render 100 h with CosyVoice 3 / Dia2 and measure whether the
-   stage-3 model can tell "addressed to me" from "talking to others".
-6. **7B stage-1 pilot**: Moshi init, 2 epochs over 4.1, one 24-hour
-   H100:8 job (~$360). Its measured frames/s replaces the estimate in §7.
-7. **Stage 1 at 64 H100s** once Modal approves clustering: $11 k–$89 k,
-   2–15 days.
+**Rules that apply to every Modal job** (`research/modal_app.py`):
+every function appends `{job, gpu, seconds, est_usd}` to `spend.jsonl` on
+the volume and `modal run research/modal_app.py::spend` prints the running
+total, so credit use is visible without the dashboard; every job is
+idempotent (skips work whose result already exists on the volume) and
+retried, because GPU functions are preemptible; every training job
+checkpoints to the volume at a fixed cadence and resumes from the latest
+checkpoint on restart, and is launched with `modal run --detach` so a
+laptop sleep cannot kill it; and a workspace spend limit of $450 is set in
+the Modal dashboard before the first job — the one thing only the account
+owner can do.
+
+**Local vs. Modal split.** Local (M5 Pro): everything that is CPU-bound or
+fits comfortably in MPS memory — the AMI benchmark (Sortformer on CPU,
+Whisper on the GPU), room simulation, the toy and the scaled conditioning
+ablations (33 M parameters, 3 h at 20 k steps), data preparation, the
+DuplexChat podcast pipeline, and all scoring. Rule of thumb from the crash
+log: keep at most three CPU workers and one MPS job at a time, under
+`caffeinate`. Modal: only what the Mac cannot do in reasonable time —
+anything with a ≥3B model over hours of audio, and anything that trains a
+7B model.
+
+| # | job | where | cost | what it decides |
+|---|---|---|---|---|
+| 1 | AMI benchmark, all 48 scores + report | local | $0 | the Whisper-pipeline baseline (cpWER, idWER) |
+| 2 | toy conditioning ablation, 320 rooms / 2.5 k steps | local | $0 | does additive conditioning work at all |
+| 3 | Dixtral on Sortformer masks, 16 meetings | Modal, 16 × H100, ~15 min | ~$12 | the stage-1 target number; is our diarizer good enough to condition on |
+| 4 | scaled ablation, 2 000 rooms / 20 k steps, additive vs. FDDT-style | local, MPS, ~6 h | $0 | which injection to use |
+| 5 | per-scenario turn statistics from AMI/ICSI; regenerate rooms | local | $0 | simulator fidelity |
+| 6 | **Moshi-LoRA stage-1 pilot**: moshi-finetune (LoRA, one H100) with the conditioning module added and the text stream re-targeted to the speaker-attributed room transcript, on 300 h simulated rooms + the 700 h labelled meetings; checkpoints every 500 steps | Modal, 1 × H100, ~30 h | ~$120 | whether a full-duplex-shaped model learns to *listen to a room* under conditioning — the plan's central bet, scored by job 1's harness |
+| 7 | pilot re-run / second arm (FDDT variant or Dixtral encoder path) | Modal, 1 × H100 | ~$120 | reserve |
+| 8 | assistant-in-the-room scripts (1 000) rendered with CosyVoice 3 / Dia2, 100 h | local | $0 | the §4.3 behaviour spec |
+
+Job 6 replaces §5's 7B stage 1 as the thing this budget proves. It is
+deliberately a LoRA on the public Moshi weights rather than full training:
+moshi-finetune runs LoRA on one H100 (39.6 GB), the conditioning module is
+~5 M parameters, and 30 H100-hours at 440 audio-hours per H100-hour is
+~13 k audio-hours of exposure — 13 epochs over the 1 000 h pilot corpus,
+enough to see the cpWER curve bend or not. If it bends, §7's stage 1 is
+the same recipe with the LoRA removed and the corpus scaled, and the
+budget case for it is made with a measured curve rather than an estimate.
+If it does not, the Dixtral encoder path (job 7) is the fallback and the
+plan changes before real money is spent.
+
+What gets documented, per job, in `docs/RUNS.md`: the exact command, the
+Modal app id, GPU-seconds and dollars from `spend.jsonl`, the checkpoint
+path, the metric before/after, and one paragraph on what changed in the
+plan because of it. Nothing is reported as done without the metric.

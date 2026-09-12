@@ -27,3 +27,4 @@ bench/ami/logs/
 research/data/
 research/dixtral_repo/
 research/.venv-dixtral/
+research/moshi_finetune_repo/
