@@ -40,7 +40,7 @@ image = (
     .add_local_dir(str(REPO / "livediar"), "/repo/livediar")
     .add_local_dir(str(REPO / "bench"), "/repo/bench", ignore=["ami/wav", "ami/cache", "ami/logs", "ami/manual"])
     .add_local_dir(str(REPO / "research"), "/repo/research",
-                   ignore=["data", ".venv-dixtral", "dixtral_repo/.git"])
+                   ignore=["data", "pilot_data", "results", ".venv-dixtral", "dixtral_repo", "moshi_finetune_repo", "moshi_repo", "__pycache__"])
 )
 
 app = modal.App("livediar-research", image=image)

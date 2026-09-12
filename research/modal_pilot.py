@@ -34,7 +34,7 @@ pilot_image = (
     .add_local_dir(str(REPO / "livediar"), "/repo/livediar")
     .add_local_dir(str(REPO / "bench"), "/repo/bench", ignore=["ami/wav", "ami/cache", "ami/logs", "ami/manual", "ami/setup"])
     .add_local_dir(str(REPO / "research"), "/repo/research",
-                   ignore=["data", ".venv-dixtral", "dixtral_repo", "moshi_finetune_repo", "moshi_repo"])
+                   ignore=["data", "pilot_data", "results", ".venv-dixtral", "dixtral_repo", "moshi_finetune_repo", "moshi_repo", "__pycache__"])
 )
 
 
