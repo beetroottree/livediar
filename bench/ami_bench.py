@@ -97,6 +97,12 @@ def uem(m):
 
 # ---------------------------------------------------------------- diarization
 def diarize(m):
+    import os
+    import torch
+    # Several workers run at once; torch's default thread pool (= all cores) per
+    # process oversubscribes the machine. Measured: 5 workers x default threads
+    # gave 1.88x realtime per worker vs 0.64x for a lone process.
+    torch.set_num_threads(int(os.environ.get("LIVEDIAR_THREADS", "4")))
     from livediar.engine_sortformer import SortformerEngine
     from livediar.presets import PRESETS
     pcm = read_wav(m)
@@ -203,9 +209,10 @@ def der(m, hyp_segments):
     for s0, s1, spk in hyp_segments:
         hyp[Segment(s0, s1)] = f"spk{spk}"
     metric = DiarizationErrorRate(collar=0.25)
-    d = metric(ref_rttm(m), hyp, uem=uem(m), detailed=True)
-    return {"der": float(d["diarization error rate"]), "miss": float(d["missed detection"]),
-            "fa": float(d["false alarm"]), "conf": float(d["confusion"]), "total": float(d["total"])}
+    d = metric(ref_rttm(m), hyp, uem=uem(m), detailed=True)   # components are seconds
+    tot = float(d["total"]) or 1e-9
+    return {"der": float(d["diarization error rate"]), "miss": float(d["missed detection"]) / tot,
+            "fa": float(d["false alarm"]) / tot, "conf": float(d["confusion"]) / tot, "total": tot}
 
 
 # ------------------------------------------------------------------- evaluate
@@ -312,11 +319,34 @@ def evaluate(m, cond):
         res["idwer"] = round(id_wer(ref_by_spk, hyp_by_name), 4)
         res["identified"] = {str(i["spk"]): i["name"] for i in idents}
         res["verified_captions"] = sum(1 for c in finals if c.get("verified"))
+        # Identity policies scored offline from the same captions:
+        #   caption  = per-caption verification overrides the slot mapping (live default)
+        #   slot     = final slot->person mapping only
+        #   strong   = override only with >= 2.5 s clean audio and margin >= 0.15
+        final_map = {str(i["spk"]): i["name"] for i in idents}
+        def hyp_for(policy):
+            h = {}
+            for c in finals:
+                slot_name = final_map.get(str(c["spk"]))
+                if policy == "slot":
+                    nm = slot_name
+                elif policy == "strong":
+                    nm = c.get("name") if (c.get("verified") and c.get("clean_s", 0) >= 2.5
+                                          and c.get("margin", 0) >= 0.15) else slot_name
+                else:
+                    nm = c.get("name")
+                h.setdefault(nm or f"slot{c['spk']}", []).extend(norm(c["text"]))
+            return h
+        res["idwer_policy"] = {p: round(id_wer(ref_by_spk, hyp_for(p)), 4) for p in ("caption", "slot", "strong")}
+        (RES / f"{m}.{cond}.caps.json").write_text(json.dumps(
+            [{k: c.get(k) for k in ("spk", "t0", "t1", "text", "name", "verified", "sim", "margin", "clean_s", "slot_person")}
+             for c in finals]))
     (RES / f"{m}.{cond}.json").write_text(json.dumps(res, indent=1))
     (RES / f"{m}.{cond}.hyp.txt").write_text("\n".join(
         f"[{c['t0']:8.2f}] {c.get('name') or 'slot' + str(c['spk'])}: {c['text']}" for c in finals))
     print(f"[{m}/{cond}] DER {d['der'] * 100:.1f}%  cpWER {cpw * 100:.1f}%"
-          + (f"  idWER {res['idwer'] * 100:.1f}%" if cond == "enrolled" else "")
+          + (f"  idWER {res['idwer'] * 100:.1f}% (slot {res['idwer_policy']['slot'] * 100:.1f}%, "
+             f"strong {res['idwer_policy']['strong'] * 100:.1f}%)" if cond == "enrolled" else "")
           + f"  ({res['eval_wall_s']}s)")
     return res
 

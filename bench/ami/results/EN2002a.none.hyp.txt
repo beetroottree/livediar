@@ -1,0 +1,774 @@
+[    0.64] slot0: I wonder how much of the meeting...
+[    1.36] slot1: How much of the meetings is talking about the stuff at the meetings. Yeah, exactly. Yeah, yeah, yeah. Look at all these.
+[    3.76] slot2: Yeah, exactly. Look at all this stuff, man.
+[    3.84] slot3: Yeah, exactly.
+[    4.00] slot0: Yeah, yeah, yeah.
+[   13.28] slot2: What do we need to talk about?
+[   13.36] slot3: Which do we need to?
+[   15.28] slot1: Shall we just go round and everyone say...
+[   15.36] slot3: Shall we just go round?
+[   15.44] slot0: Shall we just go around?
+[   16.96] slot2: Everyone says what they've been doing.
+[   19.28] slot1: It's going to be done anything.
+[   21.60] slot0: Not a lot.
+[   24.32] slot2: Well, I'm sorry.
+[   25.92] slot3: Yeah.
+[   26.64] slot0: Okay, sounds like you've done something.
+[   30.32] slot2: Well I've got a browser now which...
+[   32.64] slot3: Which, whoops.
+[   35.60] slot3: Good to start.
+[   36.40] slot2: Mm-hmm.
+[   38.16] slot3: Oh, I dropped mine as well.
+[   43.84] slot3: This wasn't a good story.
+[   48.56] slot3: Okay, sorry. Yeah.
+[   50.48] slot2: So, yeah, we've got a browser which comes up automatically with the transcription box and the topics. And then when you go on the menu, you can select the summarization box, which pops up.
+[   64.80] slot2: and an audio player.
+[   68.88] slot2: And I think the search works as well, so you can pop up a search. And it loads up just the background window, so empty. So when you start, you have to either open a particular observation or do it.
+[   83.04] slot2: or do a search and open it through that.
+[   86.56] slot2: That makes sense?
+[   88.72] slot2: The transcription box has got a summarise button which doesn't do anything yet. Now, I wonder how we want to do, you know, we want to pop up window with the speaker.
+[  102.72] slot2: the speaker characterization.
+[  106.32] slot0: Either we can...
+[  106.32] slot2: either we could do that you know when does the pop-up come either we can when you click on the the ID any sort of ID in the transcription box or we can put an extra button extra few buttons next to the summarize button
+[  106.56] slot1: I
+[  120.48] slot2: so that you actually in the transcription box but so you click on a button and then it opens whatever that speaker characterization is the problem is the left click is already used because it highlights that um
+[  136.72] slot2: that part of speech or whatever that what he's been saying the left click or the right click the left click highlights it right okay so that you can i don't know what happens when you double click actually but that'd be a bit annoying if you have left click for one thing and double click
+[  138.88] slot1: The left click or the right click? The left.
+[  141.04] slot3: double click, highlights it. Right. Can you just double click?
+[  150.72] slot2: click for something else. I think so yeah when you left click it you can for example set the marker there so that the audio goes from there I think.
+[  162.80] slot2: So we can't put it on left click, we could put it on right click. We could for example have a little menu that pops up.
+[  169.60] slot1: Yeah, that might be quite good, I suppose. So, right-click on...
+[  170.80] slot2: So right click on it, menu, you know, and you can click on speaker characterization. It pops the window.
+[  177.04] slot1: What else could we have in the menu?
+[  180.48] slot2: That's a good point. I don't know.
+[  183.12] slot2: Otherwise we just have a...
+[  183.12] slot1: Otherwise we just have a right click or do. Yeah, yeah.
+[  185.28] slot2: Yeah, yeah, but I don't know about you, but usually in Windows, right-click doesn't do anything. It opens a menu. A menu, yeah. Yeah, that's what anybody does. Yeah.
+[  186.16] slot3: Yeah. Great.
+[  186.88] slot1: I don't know.
+[  190.24] slot1: It doesn't do anything, does it?
+[  192.40] slot1: a menu yeah that's what anybody does yeah it would be a bit weird for it to just start bringing up stuff
+[  193.12] slot3: Yeah, that's what anybody does. It might be a bit weird for it to just start bringing up stuff.
+[  196.24] slot2: to just start bringing up stuff.
+[  198.16] slot0: Yeah, to just have sort of the same sort of idiom throughout. Yeah.
+[  202.24] slot2: Yeah.
+[  203.36] slot1: yeah
+[  204.08] slot0: Mm-hmm.
+[  204.80] slot2: Or just the button.
+[  207.76] slot0: I guess.
+[  207.92] slot3: I guess a button makes a bit more sense, because otherwise you don't really know that, oh, what if I right-click now? What happens then? Well, no, no. It's visual. Yeah.
+[  218.48] slot0: Well no, no, if you still have the menu.
+[  218.56] slot2: Well, no, no, if you still have the menu, the menu pop up.
+[  219.04] slot1: If you still have the menu, the menu pop up.
+[  223.20] slot2: Well, oh, yeah. It's more obvious, isn't it? It's more idiot-proof, isn't it? It's got a button. Yeah, that's true. That's true, yeah. It's more intuitive. Well, then it's not as a...
+[  225.12] slot3: That's more of what you can do.
+[  225.44] slot1: I'm already at proof, isn't it? It's got a button. Yeah.
+[  228.24] slot3: Yeah.
+[  230.64] slot0: So then it's not as expensive. But, well, we can have both. Like if we want to add more things in the future, then we have, well, new buttons. Add more buttons. Maybe. Maybe. More flexible that way.
+[  231.28] slot3: But, well, we can have both, but...
+[  232.96] slot1: in the future than we are.
+[  234.72] slot1: at Wilbur's. Maybe.
+[  235.68] slot2: Maybe. I think it's more.
+[  239.04] slot1: Yeah, well, I guess in Meeting Browser 1.1, you can have a menu instead of a button. Right. This one.
+[  239.12] slot0: Yeah, well, I guess in...
+[  243.28] slot0: You can have a menu instead of a bun.
+[  248.88] slot3: the beat of it
+[  249.36] slot2: But actually what we could do is in that menu as well, we could have an option that pops up a window with all the meetings that that user has been in.
+[  249.84] slot1: but actually
+[  261.28] slot0: Like a...
+[  261.44] slot2: like a search for that user yeah is that gonna be useful or too much
+[  263.52] slot1: Yeah.
+[  267.76] slot1: I guess so. So part of the menu that comes down is says, give me all your meetings or something. Yeah.
+[  272.80] slot2: Yeah, so when you right click on it, one option will be give me all your meetings, characterize the speaker.
+[  280.24] slot1: Yeah.
+[  284.24] slot2: Or was that too much?
+[  285.12] slot3: I mean, I guess I mean, it's more like part of the.
+[  286.16] slot1: I guess so. I mean, it's more like...
+[  291.84] slot3: browsing sort of thing more than the speaker characterisation as steve mentioned yeah i don't really know how to involve the speaker characters yeah that's true
+[  296.96] slot2: Steve mentioned, I don't really know how to involve the speaker characters. Yeah, that's true. It would be nice to have it interconnected.
+[  298.80] slot0: how to evolve the
+[  302.24] slot0: How does it have it interconnected? Yeah, maybe tie that in with dialogue acts or something as well. I mean, speaker characterization tied into, I don't know, just some way to sort of leverage that information. Like we have it, we're doing it, but how does it help the browsing or what can it give us?
+[  316.32] slot0: What do you mean the speaker characterization? Oh well, yeah.
+[  316.72] slot2: What do you mean the speaker characterization? Oh, well, yeah.
+[  321.52] slot2: I don't know about that. I mean, the speaker characterisation is a bit like you said. I mean, it's like a nice thing. We're not actually sure what the user wants with it, but it's interesting, so why not give it to him?
+[  326.08] slot0: a nice thing
+[  332.88] slot1: Yeah, yeah.
+[  333.44] slot0: Right.
+[  334.00] slot3: I think we should do it. Yeah. I mean, I guess maybe we could have that as another thing of, like, well, if you get to speak a characterization that someone talks a lot in a certain topic, and then...
+[  334.16] slot2: I think we should do it. Yeah.
+[  348.00] slot3: if you, I don't know, click on that topic you get everything that's in that topic or whatever
+[  354.88] slot2: Yeah, I mean, that's still another level further. I mean, we're not even there yet. No, no, no.
+[  355.12] slot3: I mean, that's still another level.
+[  358.96] slot3: no no no pop up the speaker
+[  359.60] slot1: pop up the speaker
+[  359.68] slot0: Yeah, pop up the speaker.
+[  359.68] slot2: The pop-up of the speaker characterisation, you have to first define what happens when you click on a user.
+[  364.56] slot1: We have to have a speaker characterisation for this before we cross any other.
+[  367.12] slot3: Yeah.
+[  368.08] slot2: So should we try to do a right click menu then?
+[  374.88] slot1: Yeah. All right. Why not? Is that just from the mean? Even if only one thing comes up. Is that from any particular one?
+[  376.40] slot2: Is that just from the meme? Even if anyone...
+[  376.48] slot0: Is that just from the main? Even if any one thing comes up. Is that from any particular window? Like if we want to sort of get, like if we're on the users versus like a topic or something, have a right click for these various things? Yes. Wait. Yeah. There's a...
+[  385.84] slot2: yeah from from various yes way yeah there's a second thing about the topics the topic window you wanna somehow click be able to click on the topic any pops up with all the meetings contain that right
+[  387.20] slot3: Wait.
+[  397.76] slot0: Right. Yeah.
+[  398.24] slot3: Yeah.
+[  398.72] slot2: yeah so we could do that in a similar way to it right click as well okay and so this does for consistent throne yeah
+[  399.12] slot0: So we could do that in a similar way, do it right click as well.
+[  403.12] slot1: So this slot is for...
+[  407.04] slot1: on the speaker
+[  409.76] slot2: So we have basically two options of browsing the meetings, by either searching and opening individual observations, and then we have the interlinking by right-click.
+[  410.56] slot1: Yeah. So we have basically...
+[  423.84] slot2: basically.
+[  424.72] slot0: Right. Actually, yeah, like another common thing, like if we have it so set up that if you double click and it goes to a default thing on the menu, I mean, that's kind of a typical kind of action. Double click. If you double click on a particular topic or something, then it goes to sort of.
+[  435.52] slot2: Double flick.
+[  438.72] slot0: to sort of like a default view. So it'll be like all the cases of that topic, either whatever we decide the default to be, whether it's in all meetings or just in one meeting, and just show up in particular instances of that topic in the meeting.
+[  440.88] slot2: So it will be like.
+[  452.72] slot3: Like, and just think...
+[  453.12] slot0: Like, and just think to have the default there, so if somebody knows exactly what they want to do, and we know that that's the most common thing that's going to happen, so the double click won't do that and just save them the trouble of right-clicking and choosing the item on the menu.
+[  453.92] slot2: the default there so if somebody knows
+[  459.20] slot3: Yeah.
+[  462.88] slot2: I don't see there's anything obvious that would be able... Well, it might come...
+[  463.04] slot3: I didn't see there was anything.
+[  466.24] slot3: That would be...
+[  466.64] slot0: It might come to us. Start playing with it.
+[  469.52] slot3: What was that?
+[  469.68] slot1: What was that? I didn't quite understand. Do you mean... Like we have...
+[  471.52] slot0: Like we have the right click menu, right click, but instead of like have a default double click. So there will be a choice for me. It figures out what's the most common use to double click.
+[  471.92] slot3: Like we have the right click.
+[  473.84] slot1: Yeah.
+[  478.32] slot1: So there'll be a choice for me. It figures out what's the most common. Yeah, exactly.
+[  478.72] slot3: And it'll be a twist.
+[  481.76] slot3: Yeah. Use the double.
+[  481.92] slot1: Used to double click.
+[  483.84] slot3: Like, I don't know, show the speaker characterization.
+[  486.16] slot0: Yeah, but then...
+[  486.48] slot2: Yeah, but then there's a problem with a lot of windows popping up again. And they pop up without you even being quite sure what it is, you know what I mean?
+[  486.48] slot3: for instance or then there's a problem with
+[  494.88] slot0: Yeah.
+[  496.40] slot3: But if you do double click on something, don't you expect something to happen?
+[  496.96] slot0: Double click.
+[  501.84] slot0: Mm-hmm.
+[  502.88] slot2: Yeah, maybe. Sort of.
+[  503.44] slot3: Sort of. Sort of. Sort of.
+[  504.64] slot1: Sometimes you do it by accident. I'll go away. Stop coming up. I don't think close it.
+[  507.28] slot3: Stop coming up.
+[  507.44] slot0: Stop coming up. I'll let them close it. Yeah.
+[  509.68] slot3: Yeah. It's not.
+[  509.84] slot0: It's not the end of the world.
+[  512.00] slot2: Especially if you have a touchpad.
+[  514.00] slot1: Yeah, yeah. Oh, yeah. Oh, yeah. Oh, yeah.
+[  514.32] slot2: Oh, yes. Oh.
+[  515.68] slot0: I'll check what it does
+[  517.76] slot2: I'll check what it does on DoubleClick at the moment. Yeah.
+[  521.76] slot3: Yeah. Because I think it might do something. It's a good start.
+[  521.92] slot0: because I think it might
+[  522.16] slot2: because I think it might do something. It's a good start. But I don't, I don't, I really don't see anything obvious.
+[  526.96] slot1: I don't...
+[  532.48] slot2: I mean, if you can think of something, but...
+[  534.96] slot0: Mm-hmm.
+[  542.48] slot3: I guess it depends on the...
+[  546.40] slot2: Yeah.
+[  546.80] slot3: what you're clicking on.
+[  548.64] slot2: Yeah, another thing...
+[  549.92] slot0: Yeah.
+[  553.84] slot2: Single audio files, do we want to use them or not?
+[  558.72] slot1: We don't know yet, do we? Do you mean single channel? Yeah.
+[  561.92] slot2: Yeah, single channel files. Do we want them? I mean...
+[  562.08] slot3: Yeah, single channel.
+[  562.72] slot0: that single channel
+[  565.92] slot1: Probably not, but we might need them for this fluency. If we try to do it in audio. We might use them in the world to work with them, but do we want to integrate them?
+[  567.12] slot3: them for this.
+[  569.36] slot0: if we try to do it in order.
+[  569.44] slot2: We tried to do it in audio. Yeah, yeah, yeah. I mean, we might use them in the world to work with them, but do we want to integrate them so that when you browse, you can...
+[  578.08] slot1: You might want to be able to say, oh, just give me what that person's saying.
+[  581.52] slot2: do you though? no it's not going to make much sense if you listen to it on its own do you? unless I'm you can't
+[  582.08] slot3: No. It's not going to make much sense.
+[  585.20] slot1: Unless you can't hear it properly or something. Somebody's talking over somebody else or something.
+[  591.44] slot1: We'll just say no for now and put it in later.
+[  596.96] slot1: Yeah, because otherwise it will increase the amount of data we need by a lot, won't it? Yeah.
+[  601.68] slot2: Yeah.
+[  602.32] slot1: The footprint will be bigger.
+[  604.48] slot0: Mm-hmm.
+[  606.96] slot2: Um.
+[  610.16] slot2: Yeah, what do people think in general about the windows cluttering that you mentioned? Do you think... I think we probably need that though.
+[  615.76] slot0: think we probably need that though to have the full flexibility we need to have that's what i feel i mean i'm i'm very
+[  619.20] slot2: That's what I feel as well. I mean, I'm very much... I want to have everything customisable.
+[  625.20] slot0: The thing is typically though is someone going to have five windows open at the same time, probably not. Probably not, no. Two or three of whatever they're looking at, like dialogue acts, whatever. But yeah, it depends.
+[  631.12] slot2: Probably not, no. Two or three of whatever. Two or three, maybe. Whatever they're looking at, like DialogX, whatever. But yeah, it depends. I mean, I really want to put the summary in somewhere, you know. And the summary, for example, is typical. You open the window. You read through it. You might click on, you know, close it again.
+[  640.00] slot0: summary for example
+[  645.12] slot2: it again straight away yeah
+[  646.32] slot0: Yeah. But it'd be good to know.
+[  646.64] slot2: but it'd be good to have it there. I think it's fine.
+[  647.20] slot1: I think it's fine. But, well, couldn't we? I mean...
+[  648.48] slot3: But, well, couldn't we? I mean, you probably, I don't know if you want to have, like, the full transcription and the summary at the same time. So maybe you can just, like, choose the same window for transcription.
+[  662.16] slot0: transcription and summary. Like have a tab there? Yeah.
+[  662.88] slot3: summary
+[  665.04] slot2: Yeah. Yeah.
+[  665.28] slot3: I was just going to need a tab. Yeah. Tabs are nice.
+[  669.28] slot1: Yeah, Tapsic. Mozilla style. Yeah.
+[  669.60] slot3: I like Taps. Mzillis style. Yeah, yeah, yeah.
+[  670.64] slot2: Yeah, yeah, yeah. That's right, I'm not sure. Does anybody know how to do that? Can you do that job? I don't think Java knows how to do that. Maybe, you probably can. I'm sure.
+[  675.04] slot3: Does anybody know how to do that? Can you do that job? I don't know. I don't know. I don't know. I don't know. I don't know.
+[  675.28] slot1: Does anybody know how to do that? Can you do that job? I don't know. I don't know. I don't know. Maybe. You probably can. I'm sure.
+[  680.88] slot3: Yeah. Perfect.
+[  681.36] slot1: I'm sure you can do anything. If you really knew what you were doing. But I don't know. It's a bit of a cripple, Java's windowing toolkit. The A sometimes.
+[  681.44] slot0: So you could do anything.
+[  681.60] slot2: I'm sure you can do anything.
+[  683.12] slot3: If he really knew what he would.
+[  689.84] slot2: It's a bit of a cripple.
+[  690.00] slot1: Bit of a cripple.
+[  691.12] slot3: No.
+[  692.08] slot2: I can have a look.
+[  694.24] slot1: Yeah.
+[  694.96] slot3: Yeah, or just, I don't know.
+[  697.04] slot2: But yeah, that might be an idea. Change to...
+[  697.36] slot3: Yeah, that might be an idea. Yeah, changed the contents of the same window. Yeah, yeah. From transcription to summary.
+[  701.92] slot1: Yeah, yeah. From the transcription.
+[  704.48] slot1: Yeah.
+[  704.64] slot3: Oh, yeah.
+[  706.48] slot2: Mm-hmm.
+[  707.92] slot0: Yeah, or even just have buttons on it, toggle buttons or something on the toolbar for that window.
+[  713.28] slot2: Hmm.
+[  714.56] slot0: something
+[  716.08] slot3: Yeah.
+[  716.16] slot0: It doesn't have to be a tab or whatever. No, no, it could be like...
+[  719.12] slot3: No, no, it could be like transcription summary, like two letters and you just... Yeah.
+[  722.00] slot0: like two butters
+[  724.08] slot1: Yeah.
+[  724.48] slot3: Or check marks even have.
+[  725.20] slot0: Or check marks even have two of them. Yeah, that would reduce that.
+[  726.24] slot1: yeah that will reduce the number of windows which is quite good otherwise photoshop has a lot of windows if you ever use photoshop it's got loads and you're always good forever going they'll get out of the way there's always stuff in the way
+[  727.36] slot3: number of
+[  729.36] slot0: We need to do it.
+[  736.88] slot0: There's always stuff in the way.
+[  739.20] slot3: I don't like it. I don't mean people get used.
+[  740.56] slot2: I don't know how many people get used to it. I mean, when you use Windows, or Linux for that matter, you have a lot of windows open.
+[  741.44] slot1: I mean...
+[  747.92] slot1: You do, yeah. You manage them. Yeah.
+[  748.00] slot0: manage them yeah
+[  748.08] slot2: I did. I didn't manage them.
+[  751.92] slot0: Yeah.
+[  752.16] slot1: Yeah. Unless, can you, I don't suppose you can minimise them and stuff like that. Yeah, you can minimise them. Can you do that? Yeah, yeah. Okay.
+[  754.64] slot2: but you can minimize.
+[  756.48] slot2: Yeah, you can minimise them. Can you do that? Yeah, yeah. Okay.
+[  758.56] slot0: Okay.
+[  759.04] slot1: Okay, well that's alright. Of course you can actually. Like a lot of these can.
+[  762.32] slot0: A lot of these can be, like once we get the disfluencies out, then we can have transcript without the disfluency, transcript with the disfluency. Yeah, that's true. Have all these sort of using the same window. Yeah, they're definitely going to be in the same window. And probably mutually.
+[  769.84] slot2: Yeah, that's true. They're definitely...
+[  773.20] slot2: Yeah, they're definitely going to be in the same window. And probably mutually.
+[  776.64] slot0: and
+[  778.24] slot0: Yeah.
+[  778.24] slot2: Yeah, that was the plan for the Disfluencies anyway. So, yeah, do you want to do that with summaries then? Put the summaries in the same window? Mutually exclusively? Yeah, well...
+[  782.00] slot0: so
+[  790.88] slot3: Yeah, well, I don't know. With transcripts, it sounds reasonable to have transcripts, maybe three alternatives then, like full meeting, meeting without influences, and summarize. Yeah.
+[  795.84] slot0: Sounds reasonable.
+[  800.48] slot0: Full meeting.
+[  803.44] slot2: Summarize. Yeah. Do you want to do that? That kind of makes sense.
+[  804.56] slot0: Do you want to do that? That kind of makes sense. Yeah.
+[  806.00] slot3: Yeah. Yeah.
+[  806.48] slot2: Yeah. Yeah.
+[  806.96] slot1: Yes, sounds good.
+[  810.48] slot3: Yeah.
+[  816.64] slot2: And finally the prototype he spoke about. What kind of prototype could we produce?
+[  823.20] slot0: By the end of February.
+[  824.40] slot2: Because I'm just, you know, I go into the lab and I say, what am I going to change today, you know? And it kind of just develops. I'm not aiming for anything. Do we want to aim for something?
+[  830.56] slot1: It just developed.
+[  837.92] slot1: um
+[  841.60] slot2: I'm pretty much getting there anyway, to be honest. It's not going to be a lot more work. I guess it is.
+[  846.80] slot3: I guess it is. I mean, just to try and, I mean, for us to be able to do something that we can include with your thing. Yeah, that's what we need. Yeah.
+[  854.72] slot0: Yeah, that's what we need.
+[  854.80] slot1: Yeah, that's what we need. Yeah. Yeah.
+[  856.56] slot2: Something just slightly more than just that on its own. Yeah.
+[  856.72] slot1: Something just slightly more than just that on its own. Yeah. You can plug it in. Yeah. Yeah.
+[  858.80] slot0: Yeah. You can plug it in. Yeah. Yeah.
+[  858.80] slot3: Yeah, just so see the integration works
+[  865.20] slot2: Yeah, definitely.
+[  865.44] slot1: Yeah, definitely.
+[  866.96] slot3: Um...
+[  868.72] slot0: So I guess that...
+[  869.04] slot3: So I guess that's what we need to aim for.
+[  871.12] slot1: I think that's kind of what he meant as well, isn't it? Yeah. Seeing it sort of start to do stuff rather than just be...
+[  872.88] slot3: Sing it
+[  876.48] slot2: Oh, I see.
+[  878.16] slot1: and prototype of the GUI. Yeah.
+[  879.44] slot3: Yeah, well, I guess, I mean, that was probably our intention, but we might not have written it down. Yeah.
+[  886.56] slot1: Yeah, yeah.
+[  890.96] slot3: Yeah.
+[  892.08] slot0: Actually, is the code accessible, like the GUI stuff that you've done? Can we just copy the latest stuff out of your directory? Like if we're going to just try and take a look or something. I don't know.
+[  900.56] slot3: Like if we're going to just try and take a look or something.
+[  903.44] slot2: I don't know. Can you access other people's? You can make it.
+[  903.92] slot0: Can you access other people's?
+[  905.20] slot1: If you make it world-readable, then anybody can. Or if you just tell us.
+[  905.52] slot0: If you make it world readable, then anybody can. If you just tell us the directory and just make the file readable, then we know the directory to get in. Yeah, sure. I don't know if it's readable.
+[  910.64] slot1: when you know the director.
+[  912.56] slot2: Yeah, sure. I don't know if it's readable at the moment, but you can sure have it. I think by default they are.
+[  916.96] slot0: I think by default they are.
+[  917.04] slot1: I think by default they are. No, they're not world-readable. They're not downloadable. They're only default. Then only you can read them. You can see them, but you can't read them.
+[  918.48] slot3: No, they're not World Read.
+[  919.68] slot0: Not down at this hole.
+[  920.24] slot2: So
+[  922.64] slot0: you can read them.
+[  923.76] slot2: You can see them but you can't read them. Right, well I'll make that readable then.
+[  923.84] slot0: You can see them.
+[  925.84] slot0: Okay. Right, well I'll make that.
+[  928.16] slot1: Yeah.
+[  928.96] slot2: and say that directory is my number
+[  932.72] slot0: Or you could just email. OK, yeah. Well, this is not difficult. Right.
+[  934.80] slot2: Well, this is not difficult.
+[  936.56] slot1: What's your number?
+[  937.60] slot0: Okay.
+[  937.92] slot2: In all the emails. Yeah.
+[  939.28] slot0: Yeah.
+[  940.16] slot2: You're number
+[  940.16] slot1: You're number
+[  942.16] slot2: Not 04.
+[  944.16] slot1: Okay. 04.
+[  944.48] slot2: A4 555
+[  948.64] slot2: 6-0.
+[  949.92] slot3: Say that again. Oh, four. Oh, four, five.
+[  950.80] slot2: 0455560.
+[  953.12] slot1: and then it's
+[  955.04] slot2: And then there's a folder, NLSSD.
+[  958.72] slot1: And it's cool.
+[  959.68] slot2: and it's called the mbrowser
+[  962.56] slot1: The M Brother.
+[  963.76] slot2: Yes, I am for meetings.
+[  964.16] slot1: M for me.
+[  966.32] slot1: I hope you never have to look in my directory, it's just pure chaos.
+[  970.16] slot2: No, I'm extremely organized. I've got folders, everything. I love folders.
+[  975.76] slot3: It might be.
+[  976.24] slot1: The mind is serious chaos. Files everywhere.
+[  986.48] slot3: Yep, so that's...
+[  986.64] slot2: So that's me then. Someone else want to talk about their stuff?
+[  992.08] slot1: Donald Jumbo Lenz.
+[  994.80] slot3: I can tell you what I've done in SBT.
+[  997.68] slot0: All right.
+[ 1000.08] slot3: I don't know. I started browsing a bit, trying to see if there's anything out there to use.
+[ 1010.00] slot2: sort of, what were you doing again?
+[ 1013.28] slot3: Yeah.
+[ 1013.92] slot0: Yeah. Yeah. Yeah. Yeah. Yeah. Yeah.
+[ 1014.56] slot1: Yeah. Oh, yeah.
+[ 1015.28] slot2: We appreciate it.
+[ 1015.92] slot1: Yeah, it was a trial stuff.
+[ 1019.12] slot2: Okay.
+[ 1019.52] slot0: Founded the tour.
+[ 1019.60] slot3: Found a tutorial that inverted search indexing but I haven't read it yet.
+[ 1022.64] slot0: indexing but I haven't read it yet. So you could probably just use that code. Like that was behind the question she asked him earlier. Yeah. Oh, yeah. We're using code and stuff and just like, okay. Oh, right.
+[ 1024.32] slot2: use that code
+[ 1027.28] slot3: Yeah.
+[ 1028.32] slot2: We're using code and stuff. Oh, right. That's pretty much there, isn't it?
+[ 1028.80] slot3: We're using code.
+[ 1030.56] slot3: All right.
+[ 1031.04] slot1: We've found some code for it. Yeah, well, I don't know if...
+[ 1031.12] slot3: We found some code.
+[ 1032.96] slot3: Yeah, well, I don't know if it's usable. I haven't looked at it, but I found some code from a tutorial about indexing. Oh, cool.
+[ 1035.68] slot0: looked at it but I found some code for like
+[ 1035.92] slot1: But I found...
+[ 1038.08] slot2: from a tutorial
+[ 1039.92] slot1: indexing.
+[ 1040.96] slot0: So
+[ 1040.96] slot1: So even if it doesn't work you can jiggery poke it around and make it work.
+[ 1044.40] slot0: Yeah, yeah. We'll probably self-dead some other file management, file, I don't know, creation. Yeah, yeah. Messing around stuff. A little sort of nonsense, but yeah.
+[ 1044.64] slot3: Yeah. We'll probably self-
+[ 1048.48] slot1: Yeah, yeah, yeah. The basics is there.
+[ 1050.72] slot3: Both basics is there. Okay, that's a good one.
+[ 1053.28] slot2: Yeah, that's handy.
+[ 1054.24] slot0: Yeah.
+[ 1054.80] slot3: Yeah. So you think you shouldn't be...
+[ 1055.20] slot0: Yeah.
+[ 1056.64] slot2: So you think it shouldn't be too difficult?
+[ 1060.32] slot3: I don't know, I was a bit worried about when he talked about this with the file, messing on with files, I mean, how much do we actually need to do, like extracting things from the XML file?
+[ 1075.20] slot3: files and stuff to be able to do the indexing.
+[ 1076.16] slot0: to be able to do
+[ 1078.08] slot2: Oh, I see. Yeah. I have to convert it to some sort of format, I suppose. Yeah.
+[ 1079.76] slot1: I have to convert.
+[ 1082.72] slot0: Yeah.
+[ 1083.52] slot1: I've been trying to write something to read the XML and get rid of it. And I can get rid of it, but I'm having trouble putting it anywhere else. So it'll come up on the screen. But at the moment I haven't managed to put it in.
+[ 1092.56] slot2: that'll come up on the screen.
+[ 1094.16] slot3: Okay.
+[ 1097.76] slot1: put it into a vector or whatever in Java to play with it but are you running in Java? yeah in Java okay
+[ 1099.76] slot3: I like to play with it. But it's not more difficult. Are you running in Java? Yeah, in Java. OK.
+[ 1104.00] slot0: Mm-hmm.
+[ 1104.88] slot1: Mm-hmm.
+[ 1106.32] slot3: I mean, you should have a look at the...
+[ 1106.80] slot2: I mean, you should have a look at the browser code then, because, you know, they already extract, for example, transcripts. Yeah, yeah, I'm sure they do. At least. Yeah.
+[ 1114.48] slot1: Yeah, yeah, I'm sure they do. At least. Yeah.
+[ 1118.56] slot0: That's a good idea.
+[ 1119.52] slot1: Yeah.
+[ 1121.92] slot1: Oh yeah, I will. I'm sure it's not very difficult. I'm sure I'm making a main of it at the moment, actually.
+[ 1134.08] slot3: Yeah, I guess, I mean, it was a good point you had, that collaborating with...
+[ 1142.40] slot0: I mean, if you already...
+[ 1142.56] slot3: I mean, if you already started on doing this stuff, I guess we can...
+[ 1145.84] slot1: Yeah, yeah. I guess we can... We should share as much as possible. Yeah.
+[ 1150.40] slot3: Yeah.
+[ 1150.88] slot0: Mm-hmm, libraries.
+[ 1152.88] slot1: Yeah.
+[ 1153.52] slot3: Yeah.
+[ 1155.36] slot3: Should we, I don't know.
+[ 1158.40] slot3: meet up and see what we can do i mean i don't know see what you've done and see what we need
+[ 1164.80] slot1: When we know more...
+[ 1164.96] slot3: when we know more of what we need maybe.
+[ 1167.44] slot1: next week sometime yeah exactly so you're still actually haven't done anything this week because this week's been manic yes exactly
+[ 1167.52] slot3: next week sometime yeah exactly
+[ 1168.16] slot0: done I actually haven't done any
+[ 1173.68] slot0: Yes, exactly. I mean, this week is only two days old.
+[ 1174.08] slot3: exactly
+[ 1175.60] slot2: What do you mean? This week's only two days old.
+[ 1177.68] slot1: Well, whatever it was last week. The week as is rather than the proper week. Do you know what I mean? It's been all a bit manic. Well, you're an SPNLP and SP2, right? That's right. And then we had to do an IRP.
+[ 1178.80] slot3: last week.
+[ 1178.96] slot2: I was awesome.
+[ 1185.60] slot2: I was, I was, I was.
+[ 1185.92] slot0: Well, you're an SPNLP and SP2, right? That's right.
+[ 1188.72] slot3: Yeah.
+[ 1189.12] slot0: And then we had to...
+[ 1191.84] slot1: whatever it was last week as well, which is only a page long, but it's quite difficult to write a page.
+[ 1194.08] slot0: I just want you to play a song.
+[ 1196.64] slot0: Yeah. Yeah.
+[ 1197.04] slot3: Yeah.
+[ 1197.20] slot2: That was complete rubbish. It was.
+[ 1197.28] slot0: Yeah, oh yeah.
+[ 1198.08] slot1: So that was completely rubbish. It was, it wasn't fun, but it was. I had to sit there and think about it for a bit, which was a bit irritating. Yeah, but SPNLP, ugh.
+[ 1200.96] slot2: I have to sit there and think about it.
+[ 1206.00] slot0: Yeah, that was fun.
+[ 1211.12] slot0: Okay.
+[ 1212.00] slot3: so
+[ 1212.40] slot0: So yeah, I was thinking the weekend probably. Yeah, we're going to meet up. I started attacking this seriously. I'm just, you know, hopefully I have something by next week that we can sort of try integrating into the GUI.
+[ 1214.24] slot3: Yeah, we're going to beat up.
+[ 1216.16] slot1: Seriously.
+[ 1223.20] slot2: Mm-hmm. Thank you.
+[ 1223.76] slot0: Yeah. Well, it's not.
+[ 1224.00] slot3: Yeah.
+[ 1225.28] slot2: Well, the browser as I use it now, or as it was there when I took it, uses the NXT search to get the data out of the files.
+[ 1225.76] slot3: possible
+[ 1237.04] slot0: get the data out.
+[ 1239.36] slot2: which I think is odd but I'm not quite sure how it works I don't quite understand it
+[ 1244.88] slot1: So when it... When it...
+[ 1247.52] slot2: To get the data, for example, to get the summarization data, you have to search for, I think, the IDs or something. Yeah.
+[ 1256.56] slot1: That's pretty bizarre isn't it? Yeah. I guess it's like, where's...
+[ 1257.68] slot2: I guess that's how it works.
+[ 1261.76] slot1: That is pretty bizarre.
+[ 1263.84] slot2: So they don't say, look in that and that folder, but they say, search everything.
+[ 1267.28] slot1: Yeah, yeah, yeah. So, it's like, search,
+[ 1270.64] slot1: That is pretty bizarre eh?
+[ 1274.00] slot0: Well, they did say it wasn't the most efficient.
+[ 1277.68] slot2: it does load up quite quickly. Okay, but what is it like a window?
+[ 1277.84] slot0: It does load up quite quickly.
+[ 1280.56] slot3: Okay, but is it like a window where you have to write a search query, or is it just what's behind it? No.
+[ 1289.36] slot2: No, this is not the actual search. This is just when you open, you know, to load the transcript, for example, to find the transcript for a certain meeting, it does an NXT search for the string, I don't know, transcript.
+[ 1289.44] slot3: No, this is not the actual search. This is just when you...
+[ 1295.28] slot3: Yeah.
+[ 1297.12] slot3: meeting
+[ 1303.68] slot2: transcript
+[ 1305.76] slot1: text okay whatever for and it what like it just has an open variable transcript yes whatever find everything that's got that and then like so
+[ 1306.08] slot3: so whatever
+[ 1306.08] slot2: so whatever
+[ 1310.80] slot2: whatever
+[ 1313.36] slot2: I don't know if you've looked at the search query language, but it's like a dollar a text.
+[ 1319.60] slot1: Yeah, because that's the guy who declares a variable doesn't he? Yeah, and then yeah, because...
+[ 1319.92] slot0: text
+[ 1324.00] slot2: Yeah, and then yeah, because every year all of these files have got an ID and all the transcript files have got the string, I don't know what it is, words or...
+[ 1325.60] slot0: Yeah.
+[ 1338.24] slot2: or text or something in it so just searches for those files
+[ 1342.64] slot3: Okay.
+[ 1343.04] slot1: Right. Vagely.
+[ 1343.36] slot2: Vaguely.
+[ 1345.76] slot3: When you, like, is there an open thingy or what did you do to, like, how did you figure out that it uses NXD search? Like, um, is it?
+[ 1359.44] slot2: Well, it's in the code. Just that you define a search object and then you search that string. I had to figure out how to do the same thing for the summary. That's how I had to understand how to do it.
+[ 1361.36] slot3: Just that it...
+[ 1365.04] slot3: Okay.
+[ 1372.24] slot1: I had to understand.
+[ 1373.76] slot2: how to do the transcript, how they did the transcript to do the summary myself.
+[ 1376.72] slot1: So did you have to write it in the way that they wrote it? Is that what you did? Yeah.
+[ 1379.44] slot2: Yeah, just search for specific string.
+[ 1383.52] slot0: all right
+[ 1385.68] slot2: So you could just, you know, you could use that if you want to take the data out. Fix the data out, I was just thinking that.
+[ 1391.44] slot1: I was just thinking that, yeah.
+[ 1393.20] slot3: Yeah.
+[ 1396.80] slot2: If you have a question about what the code means or where to find the code that you want to, you know, whatever you want to do, then just send me an email. I can explain it.
+[ 1405.84] slot1: Mm-hmm.
+[ 1408.40] slot3: Yeah.
+[ 1408.96] slot1: Have you annotated your code?
+[ 1410.88] slot2: Oh yeah. Actually in the moment it's got a load of rubbish because the browser that I used that they gave us had a lot of extra stuff in and I haven't dared to throw out all the functions I have.
+[ 1411.28] slot1: Yeah.
+[ 1424.96] slot1: Just in case. Mission critical. Yes.
+[ 1425.12] slot2: Just in case. Yeah, just in case. Mission critical. Yes. So they're all in there yet. Still. A lot of rubbish, but we'll be chucked down right at the end, I think.
+[ 1429.44] slot0: they're all in there.
+[ 1437.04] slot1: Commenting it out one bit at a time and running it. Yes. Does it work? Yeah. Okay, go to that next. Yeah.
+[ 1439.44] slot3: Yes. Yeah. Okay, go to that next.
+[ 1439.60] slot2: Yeah. Okay, go to that next. Yeah, precisely.
+[ 1448.80] slot3: Mm-hmm.
+[ 1452.16] slot3: So basically we got...
+[ 1452.24] slot1: So basically we got to go and do some work. Yeah. The answer to that is a bit long and a short bit. Weekend.
+[ 1454.32] slot0: Yeah. Take care.
+[ 1458.16] slot2: The weekend is still four days off.
+[ 1460.24] slot0: Yeah
+[ 1461.36] slot1: Yeah, I'm still at the bottom of the mountain.
+[ 1464.88] slot0: How many hours is this? I don't know. How many hours?
+[ 1467.68] slot2: I don't actually have that much to do with them.
+[ 1470.08] slot1: Well, should you find me want to explore any other...
+[ 1470.96] slot3: need what to explain.
+[ 1472.08] slot2: other
+[ 1473.84] slot0: Yeah.
+[ 1474.40] slot2: How
+[ 1475.60] slot1: How's your quantifier raising?
+[ 1480.24] slot0: Yeah.
+[ 1483.28] slot2: I can't remember what I'm supposed to do, by the way. Am I supposed to do the summarisation thing you bought?
+[ 1488.88] slot0: Hmm.
+[ 1493.52] slot3: Mm-hmm.
+[ 1494.16] slot2: No.
+[ 1495.68] slot0: who was doing that.
+[ 1498.96] slot0: You do.
+[ 1499.44] slot3: You do. Oh, really?
+[ 1499.84] slot0: Oh, really?
+[ 1501.04] slot1: Well, I'll do that.
+[ 1502.16] slot2: Well, I'll do that then. This can be changed.
+[ 1502.96] slot0: This can be changed.
+[ 1503.92] slot3: Shall I do that?
+[ 1504.48] slot2: Should I do that then? I don't know. It doesn't matter. Well, you know. If you want to.
+[ 1505.52] slot0: I don't know. It doesn't matter. If you want to. Just play around with some extra stuff. If you have some time, why not?
+[ 1512.48] slot2: It should be too different.
+[ 1516.24] slot3: Yeah.
+[ 1517.04] slot1: So what courses should I have picked? Are we not doing any work? Yeah.
+[ 1519.20] slot3: Yeah.
+[ 1521.28] slot2: I'm doing communications, which we had one exercise and I've done that like two weeks ago.
+[ 1527.84] slot0: That's it.
+[ 1528.16] slot2: That's in two weeks.
+[ 1530.40] slot0: Is that an informatics course? Yeah.
+[ 1533.20] slot2: Yeah, it's nine courses or ten or something. And then I'm doing parallel programming languages and systems.
+[ 1533.28] slot0: Yeah, it's nine courses or ten or something.
+[ 1537.92] slot1: And then the...
+[ 1544.32] slot0: Mm-hmm.
+[ 1545.04] slot2: Which we had one exercise as well and that's in like Friday.
+[ 1551.68] slot2: Well, I'm not doing any background readings.
+[ 1557.20] slot3: Sorry.
+[ 1557.36] slot2: Sorry.
+[ 1558.40] slot0: Yeah.
+[ 1562.56] slot0: I'll be happy when this week is over.
+[ 1564.88] slot3: I'd be happy to win this course.
+[ 1567.20] slot0: Yeah. Yeah.
+[ 1570.64] slot0: Is that about it then? No. Anything else we need to discuss? I don't know.
+[ 1574.48] slot3: I don't know.
+[ 1576.64] slot0: Did we want to meet before we talk to Steve next week?
+[ 1583.12] slot0: Well, I don't know. We'll probably get some work done over the weekend. So I don't know if after DNLG or something, maybe just have a little quick little update and just...
+[ 1592.48] slot2: Yeah, if you like.
+[ 1593.60] slot3: We can always decide then. Yeah, exactly.
+[ 1594.00] slot0: We can always decide then. Yeah, exactly. Yeah.
+[ 1594.16] slot2: We can always decide then. Yeah, exactly. Yeah. So what are you planning to do over the weekend then?
+[ 1600.48] slot0: search
+[ 1601.60] slot2: You're going to do the search. You're going to implement the search. Sure one. Yeah.
+[ 1601.92] slot0: You're going to do this.
+[ 1604.56] slot0: couldn't be that hard
+[ 1605.12] slot3: Yeah.
+[ 1607.76] slot3: Yeah. Wow.
+[ 1607.92] slot0: Well, it'll be still a limited version of the next query. Won't be the whole thing.
+[ 1616.56] slot3: Yeah.
+[ 1616.88] slot0: Like we can just decide sort of the things that we do want to do. Actually, most of them just dialogue acts.
+[ 1620.80] slot2: Well, actually, it wasn't.
+[ 1631.12] slot0: Summary topics.
+[ 1638.40] slot0: Yeah.
+[ 1639.04] slot2: It's just that I think we need to set ourselves some milestones.
+[ 1642.08] slot0: because otherwise...
+[ 1642.08] slot2: Because otherwise...
+[ 1644.96] slot2: you know
+[ 1647.44] slot0: Yeah, it'll get behind schedule pretty quick, like you were saying. Well, actually, do we want to set a date for interim prototype? Specifically, a date?
+[ 1647.92] slot2: weeks will go by
+[ 1661.60] slot2: Well you decide I'm not doing much for that prejudice.
+[ 1667.92] slot3: The progress report is June 23rd of February.
+[ 1673.12] slot2: of
+[ 1675.52] slot1: So what's that, two weeks? Um...
+[ 1677.44] slot3: Um, yeah, well...
+[ 1679.04] slot2: Well, how about we get it done by then?
+[ 1682.88] slot1: Yes, yeah.
+[ 1684.56] slot2: then we can write about it in the interim report.
+[ 1687.92] slot3: Yeah.
+[ 1688.00] slot1: Yeah, we've got something to show.
+[ 1688.40] slot2: you know, now we've got something to show.
+[ 1697.12] slot3: Yeah.
+[ 1699.36] slot3: Just looking at my own dead lights.
+[ 1702.80] slot3: Yeah.
+[ 1705.52] slot2: Oh, and the search interface.
+[ 1705.60] slot3: Oh, and the...
+[ 1710.96] slot2: Maybe you should decide pretty early what kind of things you want to be able to search for.
+[ 1717.28] slot0: Yeah.
+[ 1718.24] slot2: And then if you want, you can give that to me and I'll build you a nice, you know, a few tick boxes and drop down menus.
+[ 1725.04] slot3: Wasn't that what you had now pretty much what we agreed on? Or was it just like that one? That doesn't exist.
+[ 1728.64] slot2: we agreed on or was it just like that one? That doesn't exist. That was completely cut and pasted. Okay. That does not exist. Nicely done though isn't it?
+[ 1736.72] slot3: Okay.
+[ 1741.12] slot3: It's quite impressive.
+[ 1742.96] slot0: It's actually all these
+[ 1743.36] slot2: It's actually all these things are nicked from, you know, all these drop-down menus and tick boxes are nicked from Google online.
+[ 1744.64] slot3: All these things are nixed from...
+[ 1753.92] slot2: A screenshot of Google.
+[ 1755.20] slot3: Hmm.
+[ 1757.84] slot3: I'm impressed.
+[ 1759.92] slot0: Maybe you should make it exist.
+[ 1759.92] slot3: Maybe you should make it exist then.
+[ 1763.76] slot2: It's going to be a little difficult. Yeah, I mean, I was going to, but, you know, the whole drop-down menus and stuff, what we want to search for is not quite agreed on. We never agreed on what we want to be able to search for. No, it's not easy. Yeah. So...
+[ 1776.72] slot1: No, it's not.
+[ 1778.32] slot0: over the weekend yeah
+[ 1778.40] slot2: Yes, I ran around.
+[ 1779.92] slot2: Yeah, do you want to just get together and think about the different types of search we could possibly do?
+[ 1781.20] slot0: just get together
+[ 1785.20] slot3: then we could do
+[ 1785.60] slot2: Then we could discuss at next meeting which options we really want to include.
+[ 1791.28] slot0: That would probably...
+[ 1791.52] slot2: That would probably involve researching the query language a bit as well to see what that can do.
+[ 1795.04] slot0: to see what that can do.
+[ 1796.56] slot3: Yeah.
+[ 1798.88] slot3: It would be nice to meet up and you can sort of show us a bit what you know already so we don't sort of have to do all the work again of just like figuring out stuff.
+[ 1810.40] slot0: No, just like the basics. No already? What? Just like...
+[ 1810.72] slot2: Just like the basics. No, no already, what?
+[ 1814.00] slot3: Just like accessing the corpus and stuff. Oh.
+[ 1816.40] slot2: Oh.
+[ 1817.60] slot0: Just like all that, and seeing the code, and just sort of how, just see the basics of what you've done. Like just get a quick look over and just. Can.
+[ 1823.20] slot1: You can take it for a tutorial. Yeah.
+[ 1823.60] slot2: for a tutorial.
+[ 1824.64] slot0: Yeah. Or the class paths, all that sort of thing. Just say, okay, well, here's, you know, everything's basic. Yeah, you can do that. And then just, you know, just jump right in. Show you what bits the code.
+[ 1824.80] slot3: Yeah.
+[ 1829.84] slot2: everything's basic yeah you can do that and then just yeah just show you what fits the code
+[ 1830.80] slot3: Yeah, you can do that. And then just, yeah.
+[ 1836.08] slot1: next week sometime
+[ 1836.16] slot2: next week sometime that's cool
+[ 1836.56] slot0: Sounds cool.
+[ 1839.84] slot0: In the morning.
+[ 1841.84] slot3: Yeah. Well, this time...
+[ 1844.00] slot2: Well, this time I'm dictating the time. But I'm not there, you can't do anything.
+[ 1845.20] slot3: Bye. Bye. Bye. Bye. Bye. Bye.
+[ 1848.64] slot0: The thing is, you know, something like that could happen anytime because, you know, like my schedule is like a class, break, class, break, class. Yeah. I thought it was going to take an hour to spend it. Yeah, yeah, yeah. That's what I'm thinking. So something like that. And then if I have a class, I can run off. Yeah. Pick it.
+[ 1856.48] slot2: Yeah, it's not going to take an hour to spend it. Yeah, yeah, yeah. That's what I'm thinking. So something like that. And then if I...
+[ 1858.64] slot3: yeah yeah that's what I'm thinking
+[ 1862.72] slot3: Pick your time.
+[ 1862.80] slot2: Pick your time.
+[ 1862.88] slot0: Pick your time. Yeah.
+[ 1865.28] slot3: Let me know.
+[ 1866.32] slot2: Monday might be good.
+[ 1866.32] slot0: Monday might be good.
+[ 1868.24] slot3: Yeah.
+[ 1868.80] slot2: Monday.
+[ 1870.40] slot0: What do you think? Yeah, this money. Just... Anytime. Monday afternoon. Not at noon or two or four. No, in between those, you know, like one or three.
+[ 1870.48] slot3: Yeah, this money.
+[ 1870.64] slot2: Thanks.
+[ 1873.20] slot1: Monday afternoon.
+[ 1881.04] slot2: three o'clock actually yeah
+[ 1884.40] slot0: Possibly.
+[ 1885.52] slot1: Three's all right. It's one time to do the NLG four, isn't it? It's four.
+[ 1887.04] slot3: It's the NLG4, isn't it? It's for you. Unless you want to do it.
+[ 1889.04] slot2: Unless you want to do it after.
+[ 1889.20] slot0: you want to do after this
+[ 1891.68] slot0: Yeah, that's an option too. Yeah. Sure.
+[ 1892.00] slot3: that's an option to.
+[ 1893.44] slot2: Afternoon.
+[ 1896.00] slot1: Three is good though, but we have whatever. What was your fare?
+[ 1896.24] slot3: He's good, though.
+[ 1900.24] slot0: Or 3.30. I'm just, yeah.
+[ 1903.52] slot3: Well, it doesn't matter for me. I mean, 3.30 in the computer room in here.
+[ 1903.60] slot0: Well, it doesn't matter for me. I mean, treat the...
+[ 1904.00] slot2: Necessarily.
+[ 1905.20] slot1: 3.30 in the computer room in here and then we can just go. We can't get in there though. Can you get in the front door? Oh, we haven't got a key, do you? Can none of you get in there? Yeah.
+[ 1907.44] slot0: We can't get in there though.
+[ 1910.64] slot3: the front door.
+[ 1912.72] slot0: Can none of you get in there? We can get in through them.
+[ 1914.08] slot2: We can get in through that.
+[ 1916.00] slot1: The computer room is in here. The MSC computer. I've not found that yet. It's in here. Well, if you find me, I'll show you where. I'll let us all in there. We can look. We can look.
+[ 1916.48] slot0: This computer rooms in here.
+[ 1916.48] slot3: There's computer rooms in here.
+[ 1918.72] slot2: I've not found that yet. It's in here. How about we take that?
+[ 1920.40] slot0: Well, if you find me...
+[ 1922.96] slot3: I'll let us all in there. We can look now afterwards. You do need to.
+[ 1926.96] slot1: you do need to have a key for it it's got a locked door yeah somebody I was asking Steve
+[ 1927.12] slot0: Yeah, yeah. You did eat.
+[ 1929.92] slot0: I was asking Steve about that, whether we can get in there, whether he's going to get us access into that.
+[ 1938.16] slot3: Into what? The computer room. Okay.
+[ 1938.80] slot0: The computer one. Okay.
+[ 1940.48] slot1: It's only got this crap, it's only got about four or five computers in it. It would do quite good for our job because it can all sit around, it's not very often, not many people in it.
+[ 1945.28] slot0: you can all see around
+[ 1947.60] slot0: Is there a printer in there too? Yes.
+[ 1947.84] slot3: Mm-hmm.
+[ 1949.92] slot1: Yes, and there's a photocopier with the code on it.
+[ 1950.32] slot0: and it's
+[ 1952.96] slot0: on it
+[ 1955.76] slot0: coming home.
+[ 1956.72] slot2: Hmm.
+[ 1957.92] slot2: Well, I'm just going to come in.
+[ 1957.92] slot0: We should put a copy of your assignment if we want to.
+[ 1958.00] slot3: I heard of it.
+[ 1962.80] slot2: I can go to my computer.
+[ 1963.12] slot3: my computer
+[ 1964.16] slot0: Yeah, the comments I'm thinking.
+[ 1964.40] slot2: What are the comments I'm thinking?
+[ 1964.40] slot3: What are the comments I'm thinking? So what time do we say?
+[ 1968.24] slot0: I just think it's better.
+[ 1968.24] slot2: I just think it's better to do it afterwards than we have all the time we need. Yeah, that's true. Other than have half an hour and then we'll actually run out. Yeah.
+[ 1970.72] slot0: we need. Yeah, that's true. Yeah, for now and then we'll.
+[ 1971.12] slot1: All right. Yeah.
+[ 1971.52] slot3: Yeah, then have half an hour and then...
+[ 1973.28] slot1: Yeah. Definitely run out.
+[ 1973.44] slot3: And it's really run out. Yeah. Yeah.
+[ 1977.52] slot3: Okay.
+[ 1978.88] slot0: as long as D&LG doesn't go late.
+[ 1981.92] slot1: Hopefully it's not that man's, it won't matter.
+[ 1986.40] slot2: Actually it's not even confirmed yet.
+[ 1988.72] slot3: What?
+[ 1989.12] slot0: Oh.
+[ 1989.68] slot2: She doesn't even know what she's talking about.
+[ 1992.96] slot2: Maybe it doesn't happen at all.
+[ 1993.04] slot0: Maybe it doesn't happen.
+[ 1994.88] slot3: It's reading week next week. It should be. Well, it's supposed to be. Next week. It's week six next week.
+[ 1995.28] slot0: It's reading week next week. It should be.
+[ 1997.76] slot2: Is it me? Me?
+[ 1998.48] slot0: Well, it's supposed to be.
+[ 2002.48] slot2: next week
+[ 2004.00] slot0: I don't think we have.
+[ 2004.24] slot2: I don't think we have a reading window. I don't know. We have...
+[ 2005.60] slot3: I don't know. We have one class at least. Speech perception, we don't have any lectures. But I think we have all of the classes. I don't think there was an official.
+[ 2007.04] slot0: at least when we like speech perception we don't have any lectures but I think
+[ 2013.12] slot2: I don't think there was an official one last semester. I think it was just a bank holiday, wasn't it?
+[ 2019.12] slot0: Something like that. I think some classes did and some classes didn't. Yeah. We should have been. Bizarre.
+[ 2020.96] slot1: Some classes didn't, some classes didn't. Yeah.
+[ 2023.60] slot3: yeah we should have been already they didn't really know what was i think the undergraduates had were
+[ 2024.24] slot1: We did a big crap. Bizarre, really. They didn't really know what was going to happen. I think the undergraduate.
+[ 2026.48] slot0: I think the undergraduates had... I think it was up to the professor whether they did it or not. Well, I don't feel like...
+[ 2026.72] slot2: undergraduates had.
+[ 2034.48] slot1: No, make them work.
+[ 2034.72] slot3: Make them work.
+[ 2034.88] slot0: I think DIL will probably have one to make up for missing classes.
+[ 2040.72] slot3: What? DIL. We'll probably. Yeah, we will probably have you. Yeah. It's been last week.
+[ 2041.04] slot0: DIL will probably have classes. Yeah, we will probably have, yeah.
+[ 2047.36] slot2: Okay.
+[ 2048.64] slot3: Miss me, Monday.
+[ 2048.64] slot2: Miss me, Monday.
+[ 2050.48] slot0: Yeah.
+[ 2050.64] slot3: Yeah. I guess that's it. Was there anything else? Do anyone know you want to take care of this or should I take care of it?
+[ 2053.84] slot2: Mm-hmm.
+[ 2060.96] slot0: We trust you.
+[ 2061.12] slot1: We trust you.
+[ 2062.40] slot3: I don't know if there was something I think he basically said.
+[ 2069.76] slot2: Um.
+[ 2070.72] slot3: the same things as in the comments. If I could read it.
+[ 2078.32] slot3: Can you read that?
+[ 2079.52] slot0: on the top one.
+[ 2084.40] slot0: Do you really want multiple windows from a single app?
+[ 2086.64] slot3: a single laugh.
+[ 2088.96] slot3: But most will probably...
+[ 2089.68] slot0: but most will probably want to go with the faults.
+[ 2094.48] slot3: Yeah, that was what he said. Yeah, I think it comes.
+[ 2094.80] slot0: That was what he said.
+[ 2096.56] slot1: Yeah, I think your comments are basically the same as what you said. Yeah, exactly.
+[ 2096.72] slot0: Yeah, I think your comments are basically the same as what you said. Yeah, exactly. And just the other comment about whether you want to do both speaker characterization and topic segmentation.
+[ 2099.04] slot3: Yeah, exactly.
+[ 2105.68] slot3: Yeah.
+[ 2106.32] slot0: So, yeah, that's brilliant.
+[ 2107.92] slot3: And now we have 7% of the course already.
+[ 2108.00] slot0: And now we have...
+[ 2112.24] slot0: Of course, honey.
+[ 2115.12] slot2: It's pretty good. I think we need to tick the OK box, right?
+[ 2117.28] slot3: so you can if you're not okay with a having a thing in a good
+[ 2122.40] slot0: I was just...
+[ 2126.16] slot1: signing off yeah
+[ 2126.32] slot3: Signing off, isn't it? Yeah.
+[ 2129.76] slot2: Okay.
+[ 2131.60] slot2: Should we turn these off then or what?
+[ 2134.00] slot3: We're done now.
+[ 2136.80] slot3: Yeah.
+[ 2139.44] slot3: Is she still here? Yes, you are. Yeah.

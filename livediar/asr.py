@@ -305,25 +305,26 @@ class Captioner:
     def _learn(self, spk, pieces):
         """Online slot profile + identification against enrolled people.
 
-        Returns (person id or None, sim). Identification uses only clean
-        audio >= 1 s, so an overlapped stretch can never re-label a slot.
+        Returns (person id or None, sim, margin, clean_s). Identification uses
+        only clean audio >= 1 s, so an overlapped stretch can never re-label a slot.
         """
+        clean_s = pieces.size / SR
         if self.bank is None or pieces.size < 1.0 * SR:
-            return None, 0.0
+            return None, 0.0, 0.0, clean_s
         try:
             if pieces.size >= ENROLL_S * SR:
                 self.bank.enroll(spk, pieces)
-            pid, sim, _ = self.bank.identify(pieces)
+            pid, sim, margin = self.bank.identify(pieces)
             if pid is not None:
-                changed = self.bank.vote(spk, pid, pieces.size / SR)
+                changed = self.bank.vote(spk, pid, clean_s)
                 if changed is not None:
                     self.pending.append({"type": "identify", "spk": spk, "person": changed,
                                          "name": self.bank.people[changed]["name"],
                                          "sim": round(sim, 3)})
-            return pid, sim
+            return pid, sim, margin, clean_s
         except Exception as e:  # noqa: BLE001
             print(f"[livediar] profile update failed: {e}")
-            return None, 0.0
+            return None, 0.0, 0.0, clean_s
 
     def _run_dominant(self, spk, other, s, e, prob_dom):
         """Is `spk` the louder voice in the overlapped stretch [s, e)?
@@ -358,13 +359,14 @@ class Captioner:
         if dom is None or not dom[1].any():           # clean slice: plain transcription
             r = self.asr.transcribe(audio)
             r["overlap"] = 0.0; r["recovered"] = False
-            r["person"], r["sim"] = (self._learn(spk, audio) if (final and r["text"]) else (None, 0.0))
+            r["person"], r["sim"], r["margin"], r["clean_s"] = (
+                self._learn(spk, audio) if (final and r["text"]) else (None, 0.0, 0.0, 0.0))
             return r
         times, others_active, prob_dominant = dom
         overlap_s = float(others_active.sum()) * FRAME_S
-        person, sim = None, 0.0
+        person, sim, margin, clean_s = None, 0.0, 0.0, 0.0
         if final:
-            person, sim = self._learn(spk, self._clean_audio(audio, base, others_active, times))
+            person, sim, margin, clean_s = self._learn(spk, self._clean_audio(audio, base, others_active, times))
 
         # overlapped stretches, each judged once for dominance
         P, A, _ = self.activity.window(t0, t1)
@@ -425,7 +427,7 @@ class Captioner:
         if final:
             self.overlap_s += overlap_s
         return {"text": text, "language": lang, "overlap": round(overlap_s, 2), "recovered": recovered,
-                "person": person, "sim": sim}
+                "person": person, "sim": sim, "margin": margin, "clean_s": clean_s}
 
     async def _run(self):
         while True:
@@ -457,7 +459,11 @@ class Captioner:
                              "t0": round(t0, 2), "t1": round(t1, 2),
                              "text": r["text"], "final": final, "lang": r.get("language"),
                              "overlap": r.get("overlap", 0.0), "recovered": r.get("recovered", False),
-                             "person": pid, "name": name, "verified": r.get("person") is not None})
+                             "person": pid, "name": name, "verified": r.get("person") is not None,
+                             "sim": round(float(r.get("sim") or 0), 3),
+                             "margin": round(float(r.get("margin") or 0), 3),
+                             "clean_s": round(float(r.get("clean_s") or 0), 2),
+                             "slot_person": self.bank.slot_person.get(spk) if self.bank else None})
 
     def _schedule(self, o: _Open, t1: float, final: bool):
         self.queue.put_nowait((o.cap_id, o.spk, o.t0, t1, final))

@@ -1,0 +1,539 @@
+[    4.96] slot1: No.
+[    9.92] slot0: Yeah.
+[   16.80] slot0: Okay.
+[   26.32] FEO070: Who wants to take notes today?
+[   37.20] MEE073: Okay. Okay. I'd like to take notes this time, I guess.
+[   42.08] FEO070: What? I'll take it.
+[   42.56] MEE073: I'll take notes. OK.
+[   43.04] FEO070: Okay.
+[   45.04] FEO070: I'll make fun.
+[   45.92] FEO070: I'll make funny drawings.
+[   48.40] MEE073: Actually, I guess first thing, I just sort of did a really sort of brief, you know, version of what we have to do.
+[   58.88] FEO070: Yep.
+[   59.68] MEE073: Actually, just...
+[   82.56] FEO070: Very interesting start of the meeting.
+[   86.80] FEO070: I'm looking down.
+[   93.44] slot3: Yeah.
+[  123.36] slot3: I like the timeline.
+[  124.88] MEE073: Actually for that I was just copying the one straight out of the other document so it's all whatever, inaccurate.
+[  137.60] MEE071: Okay, yeah. That's fine.
+[  137.84] MEE071: Yeah, that's fine.
+[  140.32] FEO072: Is it?
+[  141.28] FEO070: Oh, shit.
+[  141.52] FEO072: Cheers. Cheers. Yeah.
+[  144.32] FEO072: um i'm not sure if we need the outline of the prototype i mean what we're going to put into that
+[  144.56] MEE073: I'm not sure.
+[  149.20] MEE073: What are we going to put into that? Well, just sort of. Well, the thing is, yeah, we're going to be touching on all that during the other part for the progress. Yeah, because that's basically what we're doing here, isn't it? The whole. Yeah. Well, it was just something that he had mentioned in the previous, like just to sort of.
+[  154.56] FEO072: Yeah, because that's basically what we're doing here, isn't it? The whole...
+[  163.20] MEE073: have a prototype together and sort of just saying that we could potentially do that. Yeah, we keep on something we have to...
+[  167.60] MEE071: Yeah, we keep on something after. This could be just some... Just describe some screenshots or something.
+[  174.80] MEE073: Yeah, sure. Like the thing is, I was thinking even in the stuff that I was doing, I mean, just throw the screenshots in there when you talk about what you're doing. Yeah.
+[  183.76] MEE071: Yeah, you can either have some. We can just ignore that. Oh, yes.
+[  184.16] MEE073: We can just ignore that. Oh, yes. Actually, I have that at the very end screenshots, but that didn't show up on this page. So it's not even relevant.
+[  191.68] MEE071: Yeah, it says screenshot there and stuff. You can have screenshots by the thing, each one, or have just a bunch of them in one section.
+[  194.48] MEE073: We need a screenshot.
+[  200.24] MEE073: Yeah, anyways, so yeah, this is just very general structure. I guess from this we can just pop in our little blurbs and...
+[  209.04] MEE071: Yeah, I've written the topic segmentation one. All right, cool.
+[  209.12] MEE073: Yeah.
+[  211.44] MEE073: Cool.
+[  212.48] FEO072: It does.
+[  214.72] MEE073: So I don't know if there's other stuff that you think should be done to this, I could do that before I mail it to you guys. Otherwise, no.
+[  222.88] MEE073: Does anyone else want to?
+[  223.12] MEE073: Did someone else want to throw it together? Actually, I can probably still throw it together if you want. Put your parts into this one.
+[  230.00] MEE071: I think Penny Lish should do it.
+[  231.68] MEE073: Perfectionist. Yes.
+[  232.64] FEO072: Yes.
+[  232.88] FEO070: Yes.
+[  233.92] MEE071: Yeah.
+[  236.64] MEE073: That's a good idea. Let's just cut out the middle man. She never said that. She's not even going to tell us. You're going to go.
+[  236.72] MEE073: Good idea. Let's just cut out.
+[  238.64] FEO070: Yeah, exactly. You're not even going to tell us you're going.
+[  238.72] MEE071: Yeah, exactly. You're not even going to tell us we've got it wrong anyway.
+[  239.04] FEO072: Exactly. You're not even going to tell us you've got it wrong anyway.
+[  244.48] FEO070: and i'm being like native speak of english
+[  245.76] MEE071: I don't know.
+[  251.84] FEO072: Yeah.
+[  252.16] MEE073: Yeah.
+[  253.92] FEO072: Yeah, well, I mean, it's all to you if you want to keep going with that. I'm happy to do some as well. I have lots of time tonight.
+[  255.20] FEO070: I'll see you if you want to.
+[  259.52] MEE073: Mm-hmm.
+[  260.56] FEO072: and then we'll send it to you you can do the final I'll look at it
+[  266.16] MEE071: Yeah, I'll look at it.
+[  266.24] FEO070: Yeah, I'll look at it like when my usual working hours are like from 12 o'clock to 3 o'clock or something. So if you can work on it then.
+[  275.60] FEO072: so if you can work on that you're always online
+[  276.24] MEE071: Good work on the inside.
+[  278.32] FEO072: It always makes me feel...
+[  278.48] FEO072: It always makes me feel bad because when I go to bed at like 1, you're still online. You never go to bed.
+[  286.40] MEE073: Just leave your computer on, maybe.
+[  287.36] MEE073: Put your computer on, maybe.
+[  288.96] FEO070: He pretends always busy. So maybe.
+[  289.04] MEE071: He pretends.
+[  289.52] MEE073: He pretend, always busy.
+[  291.44] FEO070: No, actually not. But I'm never online in the morning, so...
+[  297.04] MEE071: Yeah.
+[  297.12] MEE073: I noticed that. No one is.
+[  298.00] MEE073: I noticed that. No one is.
+[  302.16] MEE073: Yeah.
+[  302.40] FEO070: Yeah.
+[  302.88] FEO072: So...
+[  304.48] MEE073: Okay, so I'll send it off to you.
+[  305.60] FEO070: talk to you.
+[  307.76] FEO070: Yeah, do what you want to do with it first and then I'll...
+[  311.60] FEO070: I'll just sabotage you. Yeah. And I'll send it out.
+[  312.48] FEO070: And I'll send it out to you again. Was there anything else we wanted to add to the timeline?
+[  316.96] MEE073: Was there anything else we wanted to add to the timeline? I mean, essentially, was what, like... Yeah.
+[  320.80] MEE073: Yeah.
+[  321.28] MEE073: You can't see either right there. Here's the old one. Oh, there's more. Oh, I see. This is the original one. Oh, this is...
+[  324.00] MEE073: Oh, there's more. Oh, I see. Well, that's the original one. Oh, this is the one that, okay. Yeah, yeah.
+[  327.84] MEE073: Yeah, it was just copied straight out.
+[  331.20] FEO070: Probably want to think about if we want to change our goals and stuff.
+[  335.76] MEE073: I think it's...
+[  336.08] FEO070: I think one thing that we could probably skip totally is removing things from the audio files. That's what I thought.
+[  345.60] FEO072: That's what I thought as well. I mean, are we actually going to attempt that? No.
+[  347.04] MEE073: Yeah.
+[  347.60] FEO072: are we actually
+[  348.32] FEO072: No, I don't think so either.
+[  349.84] FEO070: I don't know. That's...
+[  350.72] FEO072: I don't think so either. That's too big. Yeah. I think that's going to be, we don't even know how to approach that. No.
+[  352.08] MEE073: Yeah.
+[  355.68] FEO070: Yeah.
+[  356.24] MEE073: Yeah.
+[  357.52] MEE071: It's a good thing to have to say what we could have done if we had more time. Good future work thing, isn't it? It's digging the conclusion. Yeah. It's a fun report. Should have we had more time. Yeah.
+[  363.44] FEO070: Yeah.
+[  366.08] MEE073: Yeah.
+[  366.40] MEE073: Yeah, yeah, that's right. Unless we discover some sort of time.
+[  368.08] MEE073: Unless we discover some sort of time warp thing.
+[  368.56] MEE071: Yeah.
+[  371.12] MEE071: Yeah.
+[  371.52] FEO072: I don't know.
+[  372.96] FEO072: Yeah, but that's definitely one thing. So maybe, I mean, we should...
+[  373.04] FEO072: Yeah, but that's definitely one thing. So maybe, I mean, we should definitely, well, we could probably not put it under this heading, but put it under changes since the initial specification. Yeah.
+[  380.24] FEO072: changes since the initial specification
+[  382.48] FEO070: and say
+[  382.80] FEO072: and say, you know, we didn't...
+[  385.20] FEO072: We decided that it...
+[  385.52] FEO072: We decided the time is too short. We felt there were...
+[  388.64] MEE071: or we felt there were more important things.
+[  389.84] MEE071: important things to do with our time. Yeah, so much.
+[  391.44] FEO072: Yes, I'm not lying.
+[  392.08] MEE073: Yeah.
+[  392.16] MEE071: didn't worry about
+[  394.00] FEO072: We prefer to concentrate on the main.
+[  401.28] FEO070: Yeah.
+[  405.04] FEO072: And I think we should probably comment explicitly on the milestones here as well. And say we managed to do...
+[  409.28] MEE073: say we
+[  411.28] MEE073: Yeah, this, this and that.
+[  412.64] MEE073: Or some of them were a bit later. Yeah.
+[  413.04] MEE073: Or some of them were a bit later. Yeah.
+[  415.44] MEE071: Yeah, we could even. We should have a section. Mike, we haven't really.
+[  415.76] MEE071: I could even.
+[  417.68] FEO072: Like we haven't really...
+[  418.16] FEO072: We haven't really... We've got a prototype GUI, which is, you know. Yeah. Exactly. Nicely.
+[  419.84] MEE073: Yeah. Yeah.
+[  423.60] MEE071: Best for on target
+[  425.76] MEE073: Yeah.
+[  426.24] FEO072: Yeah, yeah. More or less. Yeah. Yeah. Pretty good.
+[  426.40] FEO070: More or less.
+[  426.56] MEE073: More or less. Yeah.
+[  427.92] MEE071: That's pretty good.
+[  429.04] MEE073: or plus or minus three days. He doesn't have to know exactly. Yeah. That's true.
+[  429.36] MEE071: Well...
+[  431.04] FEO070: He doesn't have to know exactly what I've done. I mean, yeah, I mean, it's not finished, but...
+[  434.00] MEE071: Me too.
+[  441.28] MEE071: So I've only got six days to do the topic segment. Cheers. That is funny.
+[  441.84] MEE071: Six days to do the topic segment.
+[  445.12] MEE073: You don't have any SPNLP assignments, do you?
+[  452.00] FEO072: And you can say...
+[  452.24] FEO072: And you can say, yeah, we're still aiming for the...
+[  454.48] FEO072: We're still aiming for...
+[  457.60] FEO072: development to be
+[  457.68] FEO072: development to be completely on the march of eights or something. Speaking of character.
+[  460.40] MEE071: Be your character is supposed to be done already. Oh, really? Yeah, two days ago.
+[  460.80] MEE071: Characterization is supposed to be done already. Oh, really? Yeah.
+[  460.96] FEO072: It's supposed to be
+[  463.84] FEO072: days ago.
+[  465.36] MEE073: Are one of those something that you want to change and delete from our list of expectations?
+[  473.12] MEE071: Give me a week and I'll tell you the answer to that.
+[  475.12] FEO072: Yeah.
+[  475.92] MEE073: Like, should we put a hint that something like that might happen into the document? Maybe.
+[  479.12] MEE071: Maybe the speaker characterization may get slimmer.
+[  482.00] FEO072: yeah I really want to do it it's not gonna be difficult if at least have all the information pop up that is already in the metadata file that's gonna be there true so it's definitely gonna be something
+[  482.08] FEO072: yeah I really want to do it
+[  483.36] FEO072: I really want to do it. We won't disappear.
+[  491.36] MEE073: That's going to be new work. Yeah, true.
+[  492.40] MEE071: It worked.
+[  495.52] MEE071: We won't make it disappear, but we might thin it down a bit.
+[  495.60] MEE071: We won't make it disappear, but we might.
+[  496.32] FEO072: here but we
+[  498.16] MEE073: Yeah.
+[  499.28] MEE071: But we might not, you never know, we might have time. Yeah.
+[  501.36] FEO072: Yeah, they might turn out easier than thoughts.
+[  501.92] MEE073: They might.
+[  502.40] MEE071: I turn out...
+[  504.80] MEE071: I'll put that one in there.
+[  506.88] FEO072: Um,
+[  508.72] MEE071: The topic segmentation with Elsie Sagan textiles basically done. It just needs to be done. Tuned? Yeah, tuned. Search through the parameters, but it's man. See what happens.
+[  513.76] MEE073: It just needs to be.
+[  515.68] MEE071: Tuned? Yeah, tuned, yeah.
+[  526.72] FEO072: Yeah, sounds good.
+[  530.40] FEO072: Okay.
+[  536.96] FEO072: Should we change the deadlines?
+[  537.84] FEO072: We should probably do another responsibility of packages as well. That's what he hinted that we should also indicate who is responsible for what from now on.
+[  548.40] MEE073: Right.
+[  550.00] MEE073: Well, I could probably just copy that straight out of the other one as well.
+[  552.56] MEE071: Yeah, pretty much. That's essentially it.
+[  553.28] MEE073: That's essentially the same as it was. More detailed, specifically. Well, you could put.
+[  557.76] FEO072: Well, you could put, you know, I don't know.
+[  568.08] FEO072: Yeah.
+[  569.20] FEO070: Should we, I don't know, what do you think, Mike, about our things that we have together? Should we? Let's put those apart. Yeah. I mean, we have now, like, inverted and you have the other, but...
+[  575.28] FEO070: I mean, no. Put those apart? Yeah. I mean, we have, no, like, inverted and you.
+[  579.04] MEE071: Yeah, but...
+[  579.84] FEO070: What about them?
+[  580.00] FEO070: What about them?
+[  582.56] MEE073: removing these fluencies well if we're skipping the audio one
+[  583.68] MEE073: Well, if we're skipping the audio one, then that makes it easier.
+[  587.84] FEO070: Yeah, we just keep it together on the paper there right now and just see what... What?
+[  589.92] MEE073: on the
+[  591.76] MEE073: Have you taken any more of a look at it? No, not the dysplastication. Okay. We could probably...
+[  595.76] FEO070: No, not the dysfluencies.
+[  601.76] MEE073: I don't know if we'll have time to look at that before tomorrow.
+[  604.00] FEO070: Yeah. Yeah. Yeah.
+[  605.20] MEE073: We could just make it up. Yeah.
+[  606.96] MEE073: Like I'll clean one.
+[  607.36] MEE073: Like I'll claim one, you claim the other for the search things, and then we can leave that one as a joint one.
+[  612.32] FEO070: Yeah.
+[  613.04] MEE073: That may be good.
+[  614.80] FEO070: Have you mentioned?
+[  615.12] FEO072: Have you managed any further on the search thing?
+[  617.92] MEE073: I found finally today something that I can build it in. And I should have something for tomorrow. I should at least, very least, have a GUI and wire it. I'll be wiring that in hopefully tomorrow morning. So I want to get...
+[  628.08] MEE073: and I'll be wiring that in.
+[  632.16] MEE073: I want to get something. I want to see this. I want to get it together. I have an image in my mind. I just want to see it on the thing and then get my screenshot.
+[  636.24] FEO072: on the thing
+[  639.52] FEO070: Yeah.
+[  639.76] MEE073: Okay.
+[  642.24] FEO070: Yeah, my intent is to work on these things tomorrow a bit more as well. So I don't know if we send it in in the afternoon. Maybe I can add a few sentences to what I'm done.
+[  647.12] MEE073: I don't know.
+[  649.68] MEE073: Maybe I can add a few.
+[  652.32] MEE073: It doesn't really matter. I mean, you can write the sentences first as well. I mean, with the intention that this is done. That it's done. And it's not him. And also, sometimes it's a bit of a motivating factor, too. I mean, you write down the words and the ideas. Oh, OK, we'll do this. I'll do it. Yeah.
+[  658.24] MEE071: Yeah. This is done.
+[  658.96] MEE073: Sometimes it's a bit of a motivating factor, too, when you write down the words.
+[  666.32] FEO070: Yeah, yeah. All falls together. How about...
+[  666.72] MEE073: Yeah. All falls together.
+[  668.40] MEE071: How about the underlying data for it, for the inverted file? How's that coming along?
+[  672.64] MEE071: for the inverted file. That's not coming along.
+[  675.92] FEO070: Well, I still like struggling with Java stuff. Yeah, but I'll work on it. The thing I was wondering about that is I haven't looked at it so much, but if...
+[  679.52] MEE073: Amen.
+[  679.92] FEO070: but yeah, but I won't work on it.
+[  690.24] FEO070: guys know how we could do the like from the extract words that you did like also in extract timestamps and
+[  700.80] MEE071: Easy, yeah. Yeah, we're just, when he pulls up the segments, part of that, one of the attributes, if you do get attributes, call them ethical, get attributes, it returns a list of attributes. Search through those.
+[  705.60] FEO070: Yeah.
+[  712.08] FEO070: Okay.
+[  715.20] MEE071: those and then because you can that will tell you what attributes is go okay
+[  718.96] FEO070: Okay.
+[  719.44] MEE071: And then you can do it automatically, or you can just hard code and say, look, get me the timestamps. So you just say, get attribute and put, I think the method's called get attribute. Okay.
+[  729.92] FEO070: Okay. And it's called...
+[  730.00] MEE071: It's called start time and end time. Okay.
+[  731.92] FEO070: Okay.
+[  732.40] MEE071: And that will tell you the start times and end times. Okay. I think it returns a double.
+[  734.24] FEO070: I think it returns.
+[  736.56] FEO070: Okay.
+[  741.12] FEO070: So now I can just put it in some...
+[  744.64] MEE071: Yeah, that's on the non-right elements.
+[  745.20] FEO070: or something, yeah.
+[  748.56] FEO070: What on the...
+[  749.20] MEE071: The object is a non-right element.
+[  752.48] FEO070: Okay.
+[  756.48] MEE071: That's it, Tony White. Yeah.
+[  757.92] FEO070: yeah i'll take a look at that
+[  762.56] FEO072: Hmm.
+[  767.92] FEO072: So is there, did you, have you made another M browser? Is there something that I should.
+[  772.16] MEE073: There is, but I haven't made a lot of changes to it, so I might just delete what I've done and copy again from yours, because I'm sure you've probably made some changes already. Not since you looked at it last. Oh, really? Since Friday? No. Okay. But I went tonight. I thought you said...
+[  782.32] MEE073: Not since you looked at it last. Oh, really? Since Friday? No. Okay. But I went tonight. Okay. All right.
+[  786.24] MEE073: Okay, all right, I see. Okay, I thought you said that you had written some things that maybe have caused some bugs and that you were gonna fix those on the weekend or something. No.
+[  795.20] MEE073: No. Okay. After the weekend.
+[  795.52] MEE073: Okay.
+[  797.04] MEE071: again.
+[  799.04] FEO072: Weekend was out. Okay.
+[  799.84] MEE073: Okay, cool. Yes, if you're... Although there's stuff out there that... Actually, I'm gonna try and minimize the amount of changes at Make Damn Browser anyways. Shouldn't, um... Shouldn't be an issue. Actually, just to clarify, last week when we were talking about...
+[  814.08] MEE073: when we were talking about our search results, like if we have topics as well as transcripts as well as what was the other summaries? Do we want separate result panes for each of those? Or do we want them all in one pane with an icon or a different color or something?
+[  828.48] MEE073: something to indicate what type of result they are so that when they click on that it's going to go to the relevant thing. Like just if they check all three say topics, summaries, blah, blah, blah, have three different windows come up? Or three, like some paint?
+[  837.60] FEO070: Summary, blah, blah, blah.
+[  837.76] MEE073: summaries, blah, blah, blah. Yeah, yeah. Have three.
+[  842.24] FEO072: At the moment, is there a window that comes up or is that a second result of pain? Or does the window get larger? I think what we sort of discussed...
+[  842.88] FEO072: Pains, sort of.
+[  847.28] FEO072: Second result pain.
+[  850.40] MEE073: I think what we sort of discussed last week was to have it on the same window. So it'll be on the search window, the bottom half of the search window. I don't know if we still want to keep it that way, but that's what it's going to be working on.
+[  859.92] FEO070: Mm-hmm.
+[  864.48] MEE073: to be working with so so it's just like you click those and it just loads up you know splits that thing into like two or three or whatever it is one two or three depending on which ones you check and then um so if we want to do it that way you know like it probably doesn't matter too much just trying to think if there's gonna
+[  864.72] FEO072: working with.
+[  868.56] MEE073: split stop the thing into two or three or one.
+[  872.24] FEO072: depending on which ones you choose.
+[  879.36] MEE073: if there's going to be any other issues down the road, depending on what happened.
+[  880.24] MEE073: issues down the road.
+[  882.56] MEE071: what have you confused me yet have a three separate windows for the three separate different types of no just just
+[  888.24] MEE073: No, just pains, just result pains. Okay, not three different... No, no, no, no. Okay, no.
+[  890.32] MEE071: Okay, not three different... No, no, no.
+[  892.32] FEO070: No.
+[  894.96] MEE073: So it's just when we click topics and summaries for what we want to search, then there will be two result panes. One for topics, one for... I don't know, really tabs. I quite like the idea of tabbing. But then you can't see all of them at the same time. But you wouldn't want...
+[  895.28] MEE073: So it's just when we click, you know, topic.
+[  897.84] MEE071: for what we want to serve.
+[  901.44] MEE073: Yeah. So one for topics, one for...
+[  904.24] MEE073: Tabs. I quite like the idea of tab. But then you can't see.
+[  907.68] MEE073: of them at the same time. But you wouldn't want...
+[  908.32] FEO072: time it's no but
+[  909.12] MEE073: I didn't want to compete.
+[  913.20] MEE073: Well, it's no, but the thing is if you're looking, if you check them both, you want to see all the results.
+[  916.64] MEE073: You want to see all the results. Yeah.
+[  918.48] FEO072: Yeah, yeah, three planes.
+[  918.56] MEE073: If you get results for the same meeting. Yeah, exactly. So the summary and the topic and the transcript. That's true.
+[  921.92] MEE073: Yeah, exactly. Yeah, so the summary and the topic and the transcript. That's true. Or we could just put them all into one result pane.
+[  925.20] MEE071: That's true.
+[  930.96] FEO072: Yeah. On that same window. I mean, we could order them by meeting, for example. Yeah.
+[  931.36] MEE073: on that same window. I mean, we could order them.
+[  935.04] MEE073: Oh yeah, I guess that was the other thing, whether we want to have this.
+[  938.64] FEO072: Reorder by columns. That's a hassle too. That's a lot of work. The second step, the first question is, do we want to order them? How do we want to order them in the first place? Yeah.
+[  938.80] FEO072: Reorder by columns. That's a hassle too. That's a lot of work. The second step, the first question is, do we want to order them?
+[  946.64] MEE073: Yeah, I think, yeah, probably by meeting makes most sense. I mean, he said.
+[  950.48] MEE073: Essentially they're tempers.
+[  950.56] MEE073: Essentially they're in time order. So that kind of makes more sense.
+[  957.36] FEO072: Yeah, maybe we should do that.
+[  957.76] MEE073: Maybe we should do that. Yeah. Yeah. Should be an easy. No, I don't know. Should be for Lisa, I guess.
+[  982.16] FEO072: Yeah, why don't you just colour code those?
+[  987.60] MEE073: Yeah.
+[  988.08] MEE073: the results to... Sometimes in a case like that, like a...
+[  989.04] MEE073: I'm thinking sometimes in a case like that, like I've run across in other languages, just that it's hard to tell what kind of object it was originally once it's put into like a list box or something. It's hard to tell whether it was a transcript or whatever. And then if we're highlighting something in a transcript...
+[ 1003.20] MEE073: a transcript window it may be difficult to get that information back once it's just in a list box and item in a list box so whereas if it's coming from
+[ 1013.60] FEO072: Where is it coming from? If you do it straight from, you get the result and then there's some if statement straight on the rock bottom level saying if you found a segment, then color it, print it.
+[ 1026.40] FEO072: colorate, print it in red or whatever. Yeah, yeah. As opposed to...
+[ 1027.68] FEO072: I just want to paint it in red or what about it.
+[ 1030.96] FEO072: As opposed to...
+[ 1032.72] MEE073: Yeah, it's just like from past experience, there's goofy little things that happen and it just doesn't let you save certain things. And it's just kind of trying to do a different kind of to go to a different window. So if you want to go to.
+[ 1038.96] FEO072: doesn't let you see.
+[ 1041.52] MEE073: Trying to do a different...
+[ 1046.88] MEE073: the actual highlight the transcript or highlight the topic at that point that's sort of where it starts getting a little bit tricky because you're working with an event handler within the one panel or a list box or whatever it is
+[ 1050.00] MEE073: at that point.
+[ 1053.44] MEE073: or working with an event handler.
+[ 1058.88] FEO072: Oh, I see, yeah.
+[ 1060.32] MEE073: So there are ways around it, but whether I'll be able to figure something out like that until before tomorrow, yeah, I know, or delegates or whatever. Yeah, I mean...
+[ 1063.76] MEE073: able to figure something out like that.
+[ 1064.24] MEE073: something else like that before tomorrow.
+[ 1069.68] FEO072: Yeah, I mean, at the moment it works with highlighting in the transcript window, doesn't it?
+[ 1075.84] MEE071: Right.
+[ 1076.40] MEE073: So.
+[ 1077.28] FEO072: so
+[ 1078.64] MEE073: I think he was saying that as long as we implement that interface, it should work with anything that we do, like highlighting. I think that was, who was saying that? What do you mean it should work with anything? Wasn't Jonathan saying something about that?
+[ 1090.24] FEO072: What do you mean it should work with anything?
+[ 1092.96] MEE073: I think it was just like, as long as we implement one of these interfaces for this particular type of window, we should be able to have that highlighting happen. I don't know.
+[ 1100.32] FEO070: I don't know.
+[ 1103.04] MEE073: In-race.
+[ 1105.12] MEE073: Okay.
+[ 1105.84] FEO072: Yeah, I mean the whole, what fills the transcription box and all of these boxes is a special sort of pane made by night. Okay. I'm not sure what it's called now.
+[ 1114.96] MEE073: Okay.
+[ 1119.36] FEO072: I don't know what it's called. And that comes with a whole load of highlighting extras as well. As I said, if you left-click on something, for example, it highlights automatically. Okay.
+[ 1128.64] FEO072: as well as I said, you know, if you...
+[ 1133.12] MEE073: okay so maybe it comes with something okay maybe I should use that as well
+[ 1133.76] FEO072: So maybe it comes with something clever as well.
+[ 1138.24] FEO072: yeah
+[ 1138.72] MEE071: yeah
+[ 1139.52] MEE071: It's called a night text pane or something, isn't it? No. Is it? No.
+[ 1141.60] FEO072: No, I'm sure there's a lot of pain in it. I don't know. Text area. Yeah, something like that. Nom text area. Mostly things are called nom. Yeah, why? It's nom anyway.
+[ 1147.04] FEO072: Text area. Yeah, something like that. Nom text area. Mostly things are called nom. Yeah.
+[ 1154.16] MEE073: anyway
+[ 1155.52] MEE071: Night object model.
+[ 1155.76] MEE071: Night object model. Okay.
+[ 1157.20] MEE071: Okay, I think that makes sense.
+[ 1157.76] MEE071: I think that makes sense.
+[ 1159.28] FEO070: What?
+[ 1160.00] MEE071: Night object model. That's what I think.
+[ 1165.44] FEO070: Okay.
+[ 1175.12] MEE073: Hmm.
+[ 1178.80] MEE071: With the...
+[ 1181.44] MEE071: the removing the disfluencies. Have you done anything with that yet? Anybody? No.
+[ 1186.32] MEE073: No.
+[ 1186.56] FEO070: No, we haven't.
+[ 1187.76] MEE071: because um i was wondering how we're gonna write it back to html i mean xml if we take if we did the processing writing it back to xml
+[ 1200.64] MEE073: I thought we were just going to have that as words, like not as XML, just sort of as a...
+[ 1205.92] MEE071: There's a blob of text. What was that on? Text file. What transcript?
+[ 1206.08] MEE073: what was that done text file transcript no because then we need all the other data if we want to keep it a transcript
+[ 1214.08] MEE071: It will very much limit what you can do with it if it's 9xml. That's true, yeah. Good point. There is some bizarre method that puts things back into XML. Why do you...
+[ 1214.80] MEE073: limit what you can do with it.
+[ 1216.40] FEO072: Yeah.
+[ 1216.48] FEO070: Yeah.
+[ 1216.96] MEE071: That's true. They rise.
+[ 1221.60] FEO072: why do you why do we want to in xml there i mean i thought we we just selectively selectively write the xml that we've got
+[ 1230.40] MEE073: Cool.
+[ 1231.28] FEO072: So as opposed to... Oh.
+[ 1231.52] FEO072: So as opposed to...
+[ 1233.28] MEE071: select what we want just take bits of the XML take certain things yeah
+[ 1235.92] FEO072: and it takes certain...
+[ 1236.80] MEE073: segments. Yeah.
+[ 1237.28] FEO072: yeah yeah I print out certain certain segments the segments that we want just selectively at the moment it prints out all of them yeah yeah
+[ 1237.52] FEO072: Yeah, only print out.
+[ 1237.92] MEE071: print out
+[ 1243.92] FEO072: print out all of them yeah yeah yeah
+[ 1245.04] FEO070: We'll just put an if loop.
+[ 1248.16] FEO070: Yeah. Yeah.
+[ 1251.36] FEO072: Okay.
+[ 1251.36] MEE071: Okay. With that. All right.
+[ 1252.64] MEE071: Yeah, that's what I think we... Yeah, I know. That's sort of what we were thinking before. Actually, but this makes more sense. But that will mean that you can only do...
+[ 1252.96] FEO070: Yeah, that's why I think we... Yeah, I know. That's sort of what we're...
+[ 1254.64] MEE071: Yeah, I know.
+[ 1257.36] MEE071: Oh, right.
+[ 1257.52] MEE071: right actually but this makes more sense but that will mean that you can only do things on actually know it because you need things on word level so yeah that's fine
+[ 1266.40] MEE073: Yeah, if we're going to do the XML, then fine.
+[ 1268.56] MEE071: Yeah.
+[ 1269.12] MEE073: We were not really well
+[ 1269.12] FEO070: We're not really, well, I mean, we're not going to do much more than just look at the...
+[ 1277.28] FEO070: the text will remove these fluencies. Because we're not gonna search it and we're not gonna listen to it.
+[ 1286.40] MEE073: Since we're not doing that.
+[ 1286.56] FEO070: Since we're not doing the audio thing.
+[ 1289.68] MEE071: Yeah.
+[ 1290.00] FEO072: So I guess just displaying it is right. Yeah, you don't need to do much more with it.
+[ 1290.88] FEO072: I guess just...
+[ 1293.36] FEO072: Right. But yeah, yeah.
+[ 1294.00] FEO072: Yeah, you don't need to do much more with it.
+[ 1294.24] FEO072: Yeah, you don't need to do much more with it. Yeah, that's right.
+[ 1297.12] MEE073: Well, how would we display the, like, if we do take this fluencies out and just, you know, create a text file, take the disfluencies out of the text file? It would just be a blurb, like a summary. It won't look like.
+[ 1303.12] MEE071: It would just be a blurb like a summary. It won't look like, it won't say, Speaker X says this, Speaker Y says that, Speaker Z says this. Unless we extract.
+[ 1308.80] FEO070: because that's...
+[ 1309.76] MEE073: Unless we extract that out of the file when we create the text file. Yeah.
+[ 1312.56] MEE071: Yeah, then it will look ugly probably because it will look just black and white. Unless you want to start climbing. It's probably the best thing to do.
+[ 1315.04] MEE071: unless you want to start
+[ 1316.88] FEO072: It's probably the best thing to do. I don't think it's going to take long to produce anyway. It's just another...
+[ 1319.60] FEO072: I don't think it's going to take long to produce anyway. It's just another...
+[ 1321.68] FEO072: Anyway, it's just another...
+[ 1323.92] MEE073: Yeah.
+[ 1324.40] FEO072: I mean these meetings are not endlessly long, it's just words and to print all of them out selectively.
+[ 1332.48] MEE071: It does own the fly anyway, doesn't it? Yeah.
+[ 1334.16] FEO072: yeah
+[ 1335.20] MEE071: So then it just goes through and says, if this word equals that, don't print.
+[ 1339.44] FEO070: Yeah.
+[ 1339.60] FEO072: Yeah.
+[ 1341.92] MEE071: Just a bunch of histoines.
+[ 1344.32] FEO072: you can nearly do it together with with the transcription with the original transcription have them run parallel so if certain you know if it's a proper word print on both panes and if it's not
+[ 1344.40] MEE073: You could nearly do it.
+[ 1358.40] FEO072: not a proper word than print only on one but I mean that's that's you know fancy but
+[ 1361.92] MEE073: I don't see, but.
+[ 1365.12] MEE071: Yeah, you probably could, actually.
+[ 1365.12] MEE071: Yeah, you're probably good actually. That's probably not that difficult. You just didn't fatten the code out a bit. Yeah.
+[ 1367.44] FEO072: Yeah. What a difficult, you just think.
+[ 1369.68] FEO072: Yeah.
+[ 1370.56] MEE071: But then...
+[ 1370.88] FEO072: But then, you know, the good way of doing it not together is that if someone doesn't want to look at the, you know, the chop file, then you don't ever have to produce it.
+[ 1383.12] FEO072: You don't ever have to produce it.
+[ 1383.36] FEO072: ever have to produce it. Yeah, exactly.
+[ 1385.68] FEO072: But I mean you can write something like, we'll try and do it on the fly and observe if that's going to take too long. Well, think about writing it to a foul.
+[ 1397.76] MEE073: writing it.
+[ 1399.68] FEO072: Wow.
+[ 1400.56] MEE071: It's just that they're just beefs.
+[ 1404.64] MEE073: I was just thinking as well, I mean, we could probably even use like XSLT to kind of just transform it and flip it into a.
+[ 1405.92] MEE073: as well. I mean, we could probably even use that.
+[ 1412.56] MEE071: What was that? Just a...
+[ 1413.04] MEE073: It just transforms like a style sheet, XML style sheet. And then it's kind of like there's usually things built in to, well, it should be built into Java, I mean, to process XML into, like it just creates whatever file it's got.
+[ 1416.96] MEE073: All right.
+[ 1427.04] MEE073: it's gonna be in a couple years since I've looked into anything like this but that might even be an easier way and then that way we could even pre-process that beforehand I don't know well we don't want to have to do that right
+[ 1439.36] MEE071: I wouldn't want to have to put it back into XML with Java. Even trying to read it in XML with Java was complicated enough. I gave up doing that completely. Devolted back to night stuff because it was much, much, much easier.
+[ 1439.76] MEE073: Although I have to put it back into a small range of it.
+[ 1445.44] MEE071: I gave up doing that completely. Oh, really? Devolted back to night stuff because it was much, much, much easier.
+[ 1451.60] FEO072: Yeah.
+[ 1452.24] MEE071: So we can do it with night stuff.
+[ 1452.96] MEE071: So we can do it with night stuff. Java, trying to do it, it was just so complicated. It was ridiculous.
+[ 1459.12] MEE073: It was really good.
+[ 1461.76] MEE073: I can't believe it.
+[ 1461.92] MEE071: I can't believe it. You have to start defining object models like the night thing and the game. Who's serious? All bizarre, weird things. It's mad.
+[ 1465.68] MEE071: thing and getting serious it's insane
+[ 1471.84] MEE073: Actually, I was thinking I might try and talk to, who is it, Jonathan and Jean? Like, just to see what they, what system they use to develop this stuff. Because it would be nice to have all the tools there and just, like, have the object model and just kind of, like, plug and play with everything and just to actually use the system.
+[ 1475.92] FEO072: what they
+[ 1486.08] MEE073: them at a higher level rather than playing around with a little bit of code and modifying their code and doing this and that. It'd be nice to just sort of see what they're doing. So I might try and contact them, see if there's any other.
+[ 1500.48] MEE073: hints they could give us just to get things, I don't know, moving at a higher level I guess. Seems to be more interesting to use it as a real developer would.
+[ 1513.20] MEE073: It just seems like a little tinkering here and there and just adding a couple things.
+[ 1516.56] FEO072: I'm out.
+[ 1517.60] MEE073: So.
+[ 1518.88] FEO072: That's what programming is all about, I'm afraid. No.
+[ 1519.04] MEE073: support program.
+[ 1521.04] MEE073: No, no, it shouldn't be. It should be higher level. It should be conceptual and coming up with the brilliant ideas and then just bringing those to reality.
+[ 1531.68] FEO072: Yeah, maybe. For higher people.
+[ 1533.28] MEE073: That's the high.
+[ 1538.88] FEO070: Well, I mean...
+[ 1539.04] FEO072: Well, I mean, yeah, why don't you put both of those ideas into that paragraph and say you'll have a look at both or something, if you want to do it.
+[ 1547.68] MEE073: If you...
+[ 1549.52] MEE073: I...
+[ 1549.84] FEO072: I personally don't want to mess with writing files or anything at the moment. I want to do it superficially.
+[ 1551.68] MEE073: Yeah.
+[ 1558.80] MEE073: Like the thing that I was thinking there as well is that once it's done for, you know, one meeting, it's done. It's there. It's a file, text file or XML or whatever it is. But, you know, just, I don't know. It doesn't make any difference really either way to me. It's like, if it's fast enough on the fly.
+[ 1572.96] MEE073: fly then sure that's about the only issue I have with on the fly whether it's fast enough
+[ 1578.16] FEO072: Yeah.
+[ 1578.80] MEE071: I expect it will be. Especially.
+[ 1579.68] MEE073: Especially with Java and so if it's loading the file and
+[ 1586.56] FEO072: Well, it has already loaded it anyway.
+[ 1588.16] MEE073: you know
+[ 1589.20] MEE071: Yeah, it's after it's loaded.
+[ 1591.28] MEE073: Mm-hmm.
+[ 1592.48] MEE071: It's just a full loop, really. It's really fine.
+[ 1594.24] FEO072: of
+[ 1595.12] MEE073: Whether it runs out of memory.
+[ 1596.88] MEE071: yeah
+[ 1598.48] MEE073: Mm-hmm.
+[ 1600.32] MEE073: Mm-hmm.
+[ 1604.00] FEO072: So shall we all write a letter or two about future work as well?
+[ 1609.20] MEE073: I'm
+[ 1609.28] MEE071: I included a future work in my own section, but I just said what I've done so far and what I'm going to do. Yeah, that up.
+[ 1611.92] FEO072: All right.
+[ 1615.36] FEO072: Yeah, well maybe
+[ 1617.36] MEE073: Right.
+[ 1618.08] FEO072: Maybe you could split that up.
+[ 1620.64] MEE073: I'll look into each. Yeah,
+[ 1622.88] FEO072: Yeah, like here is what we've done already and then, you know, down
+[ 1625.76] MEE071: You might lose a bit of continuity if you do that. That's what I was thinking. Sometimes it's easier to have the top in its own intersections. You talk about the speaker characters.
+[ 1626.32] FEO070: a
+[ 1632.88] FEO072: think
+[ 1634.00] MEE073: I think that does make sense, but maybe at the end, maybe just a point form of things that we're still working on.
+[ 1639.28] FEO072: Go.
+[ 1640.00] MEE071: Golds or something.
+[ 1641.20] FEO072: bullet points
+[ 1643.68] MEE073: Yeah, you...
+[ 1643.68] MEE071: Because if you have a discursive thing here and then another discursive thing there.
+[ 1643.76] FEO072: Yeah.
+[ 1647.20] MEE073: yeah they're
+[ 1647.60] MEE071: If they're not together, you lose a lot of continuity. Yeah,
+[ 1649.44] FEO072: Yeah, maybe you're right.
+[ 1651.04] MEE073: Yeah.
+[ 1681.20] MEE073: nice
+[ 1683.60] FEO072: Sounds good.
+[ 1685.44] MEE071: Anything else?
+[ 1686.64] FEO072: Anyone want to talk about? We'll all have sleep, won't we?
+[ 1693.76] FEO072: birds out boom
+[ 1698.80] FEO072: Maybe.
+[ 1699.60] FEO072: Maybe Yeah. Maybe asleep.
+[ 1699.76] MEE073: asleep
+[ 1705.20] MEE073: So...
+[ 1705.52] FEO070: So we'll...
+[ 1706.00] FEO072: We're all still writing our summaries, sending them to you. Or it.
+[ 1711.76] MEE073: Or she'll just take it. She can take it from now. It doesn't matter. Or do you want to? Or no? What? Okay, I can. Yeah, sure, if you want to send them to me. that's a good idea. I'll take one quick look over, try and get it as good as I think. That way.
+[ 1715.44] FEO072: What?
+[ 1719.92] FEO070: I don't know. It doesn't matter
+[ 1726.08] MEE073: that we
+[ 1727.04] FEO070: Yeah.
+[ 1727.04] FEO072: Yeah.
+[ 1727.60] MEE071: You stick it together, she'll shine it.
+[ 1727.76] FEO070: it.
+[ 1729.52] MEE073: Yeah.
+[ 1729.60] FEO070: yeah
+[ 1730.80] FEO072: And then send it on to us so that we can nod.
+[ 1734.88] MEE073: Purely of formality. Yeah.
+[ 1735.76] FEO070: and correct back any like things that i thought was wrong in english you
+[ 1741.84] FEO072: It's like, no.
+[ 1743.20] MEE073: We're changing dialogue back.
+[ 1746.16] MEE073: Hello, Gene.
+[ 1749.28] FEO072: Okay.
+[ 1750.00] MEE073: Sounds good.
+[ 1750.80] FEO072: Yeah, I haven't used my pen. Oh.
+[ 1752.40] MEE073: So...
+[ 1752.96] FEO070: Hmm.
+[ 1755.12] MEE073: Okay.
+[ 1755.28] FEO070: I read like four lines or whatever.
+[ 1760.00] FEO070: Yeah, 12 .30 tomorrow with...
+[ 1763.92] MEE073: oh
+[ 1765.52] MEE071: Oh, God.
+[ 1771.28] FEO070: yeah yeah
+[ 1782.88] MEE071: I thought he was alright, yeah. How much of a lie in the UMS?
