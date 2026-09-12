@@ -1,0 +1,45 @@
+{
+ "meeting": "ES2004a",
+ "condition": "enrolled",
+ "audio_min": 17.5,
+ "der": {
+  "der": 0.2147080461992483,
+  "miss": 0.15048274617476062,
+  "fa": 0.045450405403660674,
+  "conf": 0.01877489462082702,
+  "total": 775.7699999999991
+ },
+ "cpwer": 0.2698,
+ "ref_words": 2676,
+ "hyp_words": 2608,
+ "captions": 231,
+ "overlap_s": 83.6,
+ "diar_rtf": 1.951,
+ "asr_rtf": 0.078,
+ "eval_wall_s": 166.1,
+ "talk_s": [
+  87.1,
+  330.0,
+  226.3,
+  133.8
+ ],
+ "turns": [
+  67,
+  200,
+  132,
+  85
+ ],
+ "idwer": 0.3034,
+ "identified": {
+  "0": "MEO015",
+  "2": "FEE016",
+  "1": "FEE013",
+  "3": "MEE014"
+ },
+ "verified_captions": 134,
+ "idwer_policy": {
+  "caption": 0.3034,
+  "slot": 0.2698,
+  "strong": 0.2769
+ }
+}

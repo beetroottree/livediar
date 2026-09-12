@@ -230,7 +230,7 @@ swaps are included because identity must survive them (§2).
 | stage | objective | data | goal metric | compute (H100-h) |
 |---|---|---|---|---|
 | 0 codec + init | reuse Mimi and the public Moshi weights; verify frame alignment | — | — | 0.5 k |
-| 1 room listening | next-token on room audio + speaker-attributed monologue, conditioned | 4.1 + 4.2 | cpWER on AMI/NOTSOFAR ≤ Dixtral-with-Sortformer-masks | 3–23 k |
+| 1 room listening | next-token on room audio + speaker-attributed monologue, conditioned | 4.1 + 4.2 | cpWER on AMI test ≤ 21 % (Dixtral with our Sortformer masks: 20.7 %, own run 2026-09-12) | 3–23 k |
 | 2 identity | identity embeddings + enrollment prompts, names in monologue | 4.2 with names, 4.1 with profiles | idWER − cpWER ≤ 1 point | 1–3 k |
 | 3 duplex behaviour | own-audio stream + action channel, supervised | 4.3 | NOTSOFAR-1 turn-taking F1 ≥ 0.76, MOS ≥ 4.0 | 3–10 k |
 | 4 RL for timing | DuplexPO-style windowed factorised reward on floor decisions | 4.3 human slice | onset MAE, VIR, rater win-rate | 1–3 k |
@@ -252,11 +252,13 @@ so the model learns *not* to answer speech aimed at someone else.
 Stage 1 is the gate. If a diarization-conditioned LM does not match Dixtral
 on cpWER with *our* diarizer's masks, the conditioning is not working and
 nothing downstream matters. It is also the cheapest stage to iterate on
-because the AMI harness scores it directly. No published number exists for
-Dixtral on Sortformer masks, which is why `research/dixtral_ami.py` runs it
-(§8); the streaming floor is NVIDIA's multitalker Parakeet at AMI-SDM cpWER
-37.4 with a 1.12 s latency, the only public streaming system that consumes
-Sortformer activity.
+because the AMI harness scores it directly. No published number existed for
+Dixtral on Sortformer masks, so `research/dixtral_ami.py` measured it (§8
+job 3): **20.7 % word-weighted cpWER over all 16 AMI test meetings**, against
+41.5 % for this repo's unconditioned Whisper pipeline on the identical
+subset — the gate's assumption holds, and the target is 21 %. The streaming
+floor is NVIDIA's multitalker Parakeet at AMI-SDM cpWER 37.4 with a 1.12 s
+latency, the only public streaming system that consumes Sortformer activity.
 
 Ablations that decide architecture, run at 1B scale before stage 1 at 7B:
 additive STNO vs. query-key biasing; identity as embedding vs. as text

@@ -1,0 +1,512 @@
+[    0.08] slot0: I'll wait until you're all hooked up.
+[   18.08] slot0: Good grief.
+[   30.08] slot0: Okay.
+[   47.60] slot0: 3.8 is coming.
+[   52.48] slot0: I'll put it right that way.
+[   78.40] slot0: Okay.
+[   80.24] slot0: Welcome back everybody.
+[   82.72] slot1: Lucky Pat 5.
+[   82.88] slot0: Have you had fun?
+[   85.12] slot1: Right.
+[   85.60] slot0: Right, this is our conceptual design meeting.
+[   91.68] slot0: I think we're slightly ahead of ourselves from the last meeting. Yeah.
+[   96.16] slot2: Yeah, I was getting that impression as well. I think, yeah.
+[   96.96] slot0: Yeah, I was getting the impression as well. I think, yeah.
+[  101.20] slot0: This is where we talk about...
+[  105.76] slot0: properties, materials, user interface, and trend watching.
+[  110.00] slot2: And...
+[  112.00] slot1: Mm-hmm.
+[  112.80] slot0: So I think we've touched on a few things.
+[  116.80] slot0: to that already, but we'll just go over it.
+[  123.12] slot0: The minutes from last time, we had a couple of changes in our plans in that we couldn't use teletext, it wasn't going to be a control for everything.
+[  137.28] slot0: and that we had to incorporate the image of the company into it somehow. We have decided on leaving out the voice recognition. We've decided on...
+[  152.16] slot0: on there being a flip design and a different shape from what's normal. We were thinking a shell, but something along those lines, just a different shape from what's normal.
+[  169.12] slot0: you were going to look into the rechargeable batteries? Yep.
+[  172.48] slot2: Yeah.
+[  173.44] slot0: And we were going to think about the port and an alarm for getting it lost and things like that. And our market was going to be young business kind of range.
+[  177.84] slot2: Yeah. Things like that.
+[  187.68] slot0: Okay, so should we start with the first presentation?
+[  191.44] slot3: Shall I? Yes.
+[  191.92] slot1: Yes.
+[  192.08] slot0: Yes, if you feel.
+[  193.44] slot3: just connect up
+[  218.00] slot3: Okay, so we decided on our market and so this feedback from the marketing department is really about trend watching. The methods we use to decide on...
+[  232.32] slot3: uh
+[  234.72] slot3: current trends and so on, market trends, were that we did our traditional, our usual market research study with our 100 subjects. And the general feedback from them is that the most, I'm sorry, I'm slightly tongue-tied after lunch.
+[  249.12] slot3: lunch, sorry, the project manager. We decided on the most important aspect required in a remote control device and we'll come to that later. So that was one of the first things we did. Also with our company being forerunners in putting fashion into technology.
+[  249.60] slot0: So he's coaching manager.
+[  263.52] slot3: We also looked at a fashion update using our consultants on fashion and design in Paris and Milan. So the general findings from that was in the market trends, the most important aspects for remote controls were people want...
+[  278.88] slot3: want a fancy look and feel rather than the the current functional look and feel of remote controls. They also also want a remote control to be technologically innovative and of course as we predicted that it should be easy to use.
+[  293.28] slot3: to use. Now I should point out that the first of those findings, fancy look and feel, is the most important, it's twice as important as the second, technologically innovative, which is in turn twice as important as being easy to use.
+[  308.16] slot3: possibly that the feature that we put first is actually third it's still important but it's third in order of preference for the subject that we looked at okay now the function update which relates to very personal preferences
+[  316.16] slot0: Yeah.
+[  322.56] slot3: among our subject group. We found from our consultants in Paris and Milan who attended all the design and fashion fairs then that fruit and vegetables are going to be the theme for clothes shoes and furniture so should we be thinking of using something like that
+[  336.96] slot3: that in our remote control design too. There also seems to be a trend towards a spongy feel to materials, again in contrast to last year. So a lot of interesting feedback there both from our market research departments and from
+[  351.36] slot3: and from our people in Paris and Milan. It would be interesting to see what our design people make of that.
+[  357.44] slot0: Okay, thank you very much. Let's start from the inside and work our way out.
+[  363.68] slot2: Yeah, okay.
+[  365.60] slot3: Unless anyone has any questions about that. Not yet.
+[  368.00] slot0: I don't think so.
+[  371.12] slot0: Yes, thank you.
+[  381.12] slot2: Let's screw it in. There we go.
+[  388.64] slot0: I hate those little things. Yeah.
+[  390.08] slot2: Yeah.
+[  391.04] slot0: Especially if you do them on too tight and you can't get the leverage on them to undo them.
+[  403.12] slot2: Okay.
+[  411.04] slot2: OK, this is all about the design of the actual components and the availability of the components we have in stock at the moment.
+[  422.64] slot2: Okay, first into the method. The main idea of the whole thing is just so you just press buttons and it should activate things on the TV. And we discussed last week.
+[  436.80] slot2: meeting it should be easy to find. Also in this study I've looked into the availability of some of the materials because some of the things that we looked at last time unfortunately aren't available.
+[  452.80] slot2: I've got my nice little picture there. This is the chip called the TA11835, which is what's used in pretty much every remote control because it sends out standard signals based on your input.
+[  467.04] slot2: and it's pretty much used for all TV remotes at the moment. And then we're looking into battery options. There's actually no...
+[  481.92] slot2: no rechargeable option available. So I saw the standard AA and AAA which we thought were a bit too bulky at the moment. Dynamo charging, I thought that might be a bit...
+[  496.32] slot2: bit silly to be to be honest people what it's it's basically like wind up radio right so you wind up your remote control before you use it
+[  498.16] slot0: It's basically like wind-up radio. Right. So you wind up your own.
+[  505.04] slot0: How long can you get out of that? I mean, can you pick it up and then wind it for two minutes and then that's it for the night? Yeah.
+[  506.40] slot2: kind of had long
+[  508.88] slot2: Pick it up.
+[  512.24] slot1: Yeah.
+[  512.32] slot2: Yeah, I presume you wouldn't have to wind it for very long, but I don't think it's really necessary when you think of the next two options, like the solar charging.
+[  526.56] slot2: because most people have the light on in the room anyway so they could get when you've got TV.
+[  531.60] slot0: Does light charge as sunlight does? Artificial light? Is it? Oh right.
+[  532.40] slot3: Does light charge as sunlight does? Artificial light?
+[  535.28] slot2: Is that it? Oh, right.
+[  539.28] slot3: It has to be so...
+[  539.76] slot0: any regarding the
+[  540.72] slot1: Regarding the sizes, which one you think will be like because we have to take into consideration size also. So maybe standard AAA might take lesser space and Dynamo might take more space. Yeah, it would.
+[  551.20] slot2: Yeah, it would. The Dynamo would take more space because you'd actually need a physical handle to wind up.
+[  557.12] slot0: I'm pretty sure that solar is from the sun. Yeah.
+[  559.84] slot2: Yeah.
+[  560.48] slot3: I don't think it counts. Artificial light, no.
+[  560.56] slot2: I don't think it's...
+[  560.64] slot0: I don't think it counts. Artificial light, no. But, I mean...
+[  565.36] slot3: That's good too. Not many.
+[  565.52] slot0: That's good too. You don't want to limit your market. I mean, people who live in basement flats, there's not that many people. I know, a different...
+[  571.28] slot3: I know, different parts of the world too if we're marketing internationally yeah, most
+[  571.68] slot2: different parts of the world.
+[  571.76] slot0: parts of the world too
+[  575.28] slot2: Yeah, and most people also watch TV in the night anyway.
+[  575.76] slot1: people
+[  579.68] slot1: the night anyway
+[  580.72] slot0: But then it would be charging through the day. I think the point is it charges through the day and then you've got it charged. But I think the next one's the best anyway.
+[  587.36] slot2: But I think the next one's the best anyway, the kinetic charging, which is like you get it in wristwatches and you don't even notice it. I mean, the amount of probably moving around you'd be...
+[  595.52] slot0: and you
+[  601.44] slot2: be doing all the time would charge it up. I don't think you'd ever need to actually physically start shaking it up to make it work.
+[  608.64] slot1: And are this like, what is the life of the kinetic battery? It runs for a long time?
+[  613.68] slot2: Yeah, it charges into some form of... it's a smaller cell.
+[  620.48] slot1: which you charge.
+[  620.72] slot2: which it charges into and the size of a watch battery because they use them quite frequently in watches and that would last for...
+[  628.00] slot0: and watches.
+[  635.04] slot2: Well, I'm not entirely sure how long it would last, but I've never seen one run out.
+[  640.16] slot0: But then if you think about a watch, it's on your wrist, so it's on your body the whole time. Yeah. So you're walking around, you're doing things. It is moving a lot of the time. Yeah. I mean, you switch the TV on, then you put it on the side, then you pick it up to change it.
+[  640.32] slot2: And then if you think about...
+[  645.28] slot2: Yeah.
+[  650.00] slot2: Yeah. I mean, you.
+[  653.12] slot3: and you pick it up to change.
+[  654.24] slot0: and then you put it on the side.
+[  655.52] slot2: Yeah, but then again, I think it is, because if you think about it, the watch, although it's only a tiny amount, it's...
+[  656.00] slot0: Is it really going to be an R?
+[  666.96] slot2: it's always moving for the whole day and they don't run out overnight when you leave them on the side and for the same the same reason you're only using it for an incredibly short amount of time just to send the signal and then you're finished with
+[  672.56] slot0: Okay.
+[  681.12] slot2: with it no no I don't I don't think the
+[  681.76] slot0: So it's not the draw on it, is it? No, no, I don't.
+[  684.96] slot3: Could I just ask, referring back to solar charging, is that compatible with standard batteries? I mean, could people put standard batteries in, but they could leave it in the sunlight for solar charging, or are the two things not compatible?
+[  688.64] slot2: compatible
+[  695.84] slot1: There are two things in the room.
+[  697.92] slot2: Yeah, you could have a dual power thing, but the thing with the solar cells is you would need to put them on the case. Because if you, like, on a calculator, they're quite...
+[  698.48] slot0: you could
+[  710.72] slot3: they...
+[  712.32] slot2: they're quite big and they all look identical.
+[  714.56] slot3: So that affects the exterior design.
+[  715.44] slot1: the exterior design.
+[  716.56] slot0: They're expensive as well. They're expensive. What kind of price are we looking at for? I presume the normal batteries are the cheapest. Yeah, the normal.
+[  717.28] slot2: They're expensive.
+[  720.72] slot1: I presume that normal batteries...
+[  723.12] slot2: Yeah, the normal batteries would be the cheapest. I presume then it would actually be the solar charging ones. But I think they're not very resistant to dropping.
+[  737.28] slot2: because if you drop stuff yeah if you if you have the size you'd need to charge a remote wouldn't be that big but I mean if remotes always get thrown around and stuff so I think yeah practically
+[  738.80] slot0: stuff yeah if you if you have the size
+[  750.16] slot0: I think, yeah, practically.
+[  751.68] slot2: Exactly.
+[  753.76] slot2: I mean, calculators you don't really throw around a lot, whereas remotes you do.
+[  759.44] slot0: But don't calculators have a battery in there as well.
+[  762.48] slot2: Yeah, they do. They've got dual things, but the batteries are smaller, I think.
+[  765.04] slot0: the battery
+[  767.36] slot1: Another question is like, sorry, which one would last the longest because we don't want customers to be like, you know, charging like a mobile phone every day.
+[  767.44] slot3: I get it.
+[  775.12] slot2: Mm.
+[  776.08] slot1: remote control like so yeah so look at the life also yeah
+[  777.60] slot2: Yeah, so this... Look at the life also. Yeah, if you had something using the standard batteries and the solar charging, I don't think you'd... I think that...
+[  792.00] slot2: the it would well you know how long the standard double A's would last in or just attract from the attract
+[  796.56] slot3: It would just attract from the attractiveness of the whole feature. Yeah, I think it would.
+[  799.52] slot2: Yeah, I think it would.
+[  802.00] slot0: Okay, can we add in an attachment to clothing feature?
+[  807.12] slot1: Okay.
+[  808.08] slot0: Can we think about that? Because if we're doing the kinetic thing...
+[  811.84] slot2: Yeah.
+[  812.16] slot0: Shouldn't we do some market research on that?
+[  812.56] slot3: Shouldn't we do some market research on that first before we add it in? Because I personally... Well, add it in to think about. Right, okay.
+[  816.40] slot0: Add it in to think about. Right, okay.
+[  822.00] slot0: because where am I? If it is the kinetic thing and it is small and it is portable and it is a different shape.
+[  832.72] slot2: and the kinetic
+[  832.80] slot0: And the kinetic is something people don't do. We're doing something original and different. But if you wore it, if it's something you could just clip on your pocket, then you would have that less, you wouldn't lose it.
+[  847.20] slot0: so much but then maybe that's looking at someone who's just sitting on their own rather than the eternal battle for control of the control
+[  847.36] slot2: Yeah. So much.
+[  850.00] slot2: Maybe that's the case.
+[  857.28] slot3: It's not something that's come up in any of our focus groups and market research. It's not a thing that people are looking for.
+[  861.92] slot0: which is not a thing that people are...
+[  864.32] slot0: Okay.
+[  864.96] slot3: when we threw it open to the field, yeah.
+[  865.52] slot1: into the field.
+[  868.16] slot2: But something to put on the...
+[  868.16] slot3: But something to put on the side to think about, maybe.
+[  871.84] slot0: Okay, right. Okay, well, I'll move on. Mm-hmm.
+[  872.32] slot2: Okay, well, I'll move on.
+[  874.96] slot2: My second part of my findings, the most current remotes use this silicon PCB board, which printed circuit board, which basically...
+[  889.44] slot2: basically has these contacts that are really close together and then when you press down on the rubber button, it will connect the circuit and each switch is connected to two different legs on the chip and so it sends a different message.
+[  903.84] slot2: different message and that then gets translated by the chip into a code and then it's fired out of this LED in a sequence of on and off bursts.
+[  918.32] slot0: What kind of things do we have to consider there? What kind of size? Does it come in varying sizes or is it just one size? And we would have to fit the design of...
+[  925.36] slot2: and we would have to fit the design of... Well, the thing about it is they can be as big or as small as you want them to be because you can print a circuit board like that. It's simply space.
+[  939.36] slot2: space like that so you can fit the size of the nine buttons in. If you see how thin the tracks are, you could put them virtually right next to each other and have a much smaller switch on each one if you wanted to.
+[  945.76] slot0: you could...
+[  952.24] slot0: if you if you want
+[  953.76] slot2: but there is an option to do it like that or you could have some sort of array of switches which I'll speak about in the next bit.
+[  966.80] slot0: So that...
+[  967.04] slot2: so that
+[  969.20] slot2: And then to conserve battery life, the remote should be in a standby mode while not being used. Now, what I was thinking about that was because sometimes when you have these things, they've got little lights on behind.
+[  983.52] slot2: behind the buttons so you can see what all the buttons are like on a mobile phone they do it more often than on a
+[  988.16] slot1: more often
+[  990.72] slot2: than on a TV remote. But you could have lights behind the buttons. And after like five or 10 seconds of not being used, I'd have that turned off if we decided to go for buttons that could light up.
+[ 1005.04] slot2: The case material, I've been sent what the factory can actually give us. There's the plastic, which I think we were going to go for anyway.
+[ 1019.04] slot2: as the main case housing.
+[ 1020.96] slot0: the case houses
+[ 1024.72] slot2: the main problems with the... well you could go for wood but I think it would be a bit impractical. Titanium, very expensive, just the process which...
+[ 1038.32] slot0: to me
+[ 1038.72] slot2: to make it is expensive and rubber where you're saying that people like this uh spongy feel this year so perhaps uh some something made of rubber but i was thinking more of the
+[ 1046.80] slot3: yes so
+[ 1053.12] slot2: of the buttons because the buttons which they've said, they've put across, are what is used in some stressful manufacture.
+[ 1066.24] slot3: And it's meant to be...
+[ 1066.48] slot2: and it's meant to be anti-RSI. I'm not sure how that would work, because surely your fingers would still be moving over the short distances, but that's what they said.
+[ 1069.44] slot0: I'm
+[ 1080.48] slot2: problem with the casing is that there's quite a few design restrictions that they've got on the shape of the case.
+[ 1094.88] slot2: titanium they can only do a standard box shape whereas if you come to plastic they can they can be a little more they can they can do sort of curved shapes but whether whether or not because we'd have it in two separate units
+[ 1111.36] slot2: So for the flip phone? Yeah.
+[ 1111.52] slot3: For the flip phone.
+[ 1112.56] slot0: yeah
+[ 1112.88] slot1: Yeah, and second question is like mobile you can change the cover.
+[ 1116.16] slot2: Yeah. Call it a skin over.
+[ 1116.32] slot1: call it a skin or whatever. So in this case if you're looking at like a customer can change the color like from green, parrot green to chili red or something like that. Yeah. So is that feature available in like titanium or it's like only specific to plastic? Yeah.
+[ 1123.36] slot2: Yeah.
+[ 1126.88] slot2: Yeah, in titanium I don't think it would be available at all really. Well, you could make it available in the titanium, it would be so expensive to buy a new case for it.
+[ 1140.96] slot2: it.
+[ 1141.28] slot1: because
+[ 1141.84] slot2: because of the expense of how much titanium is. It's light and strong, but I think it should be left for aircraft design rather than for...
+[ 1152.24] slot3: It does mark quite easily too if you let it fall. I've got a mobile phone myself which is titanium and it does mark very easily if you drop it. I was just wondering if we make the basic mould out of plastic but have like a rubber cover that goes over that would give the spongy feel.
+[ 1152.56] slot2: It's not quite easily too.
+[ 1156.88] slot2: It does mark very easily if you drop it.
+[ 1164.00] slot2: Rubber, yeah.
+[ 1166.40] slot3: that also allows us to have different functions. And you can peel them off, yeah.
+[ 1168.72] slot2: And you can peel them off.
+[ 1170.08] slot0: So instead of the fascia that comes off being plastic, the fascia that comes off would be the rubber. Like a rubber sleeve almost, yeah.
+[ 1174.40] slot3: Like a rubber sleeve almost.
+[ 1176.16] slot2: Yeah.
+[ 1176.32] slot0: It's like those pens that you get with the grip. Yeah.
+[ 1176.48] slot1: like this pen.
+[ 1178.40] slot2: Yeah.
+[ 1178.72] slot1: that you can feel that off.
+[ 1179.20] slot0: That you can feel that off.
+[ 1181.12] slot3: Mm-hmm.
+[ 1181.36] slot2: Mm-hmm.
+[ 1182.16] slot1: It would be comfortable to hold on also. Very cheap way of...
+[ 1182.24] slot0: It would be comfortable.
+[ 1183.84] slot3: Very cheap way of changing the look of it and people can just buy a new one.
+[ 1187.84] slot2: Yeah.
+[ 1188.88] slot0: Well, that's been really popular with mobile phones, so I don't see why not.
+[ 1191.92] slot3: I don't see why not. Yeah.
+[ 1193.84] slot2: Also the...
+[ 1195.20] slot0: Just, just...
+[ 1195.28] slot2: Just going back to the interface designs with the buttons, we were planning to do some sort of touch screen. Now, what I was saying before about instead of having, you could have just a...
+[ 1202.88] slot0: screen
+[ 1209.60] slot2: bare PCB circuit board and I'm sure you could probably get it in different colors and say just by touching it with your finger would make the connection over if you had them close enough that would be one option
+[ 1224.00] slot2: The second option, they offer rubber buttons, but I thought that an LCD type of screen, because one, they're incredibly thin and don't take up much space. Two,
+[ 1238.88] slot2: you can have them in a sort of array and you could arrange the buttons on the screen in a sort of set thing and you could have them like a touch.
+[ 1250.72] slot1: Sorry I didn't get to the last part.
+[ 1251.04] slot2: I'll bring it to the last part.
+[ 1254.40] slot2: uh what what just what do you
+[ 1255.76] slot1: Just what you said, I didn't get the meaning of it completely. Oh, on the LCD screen, you could...
+[ 1259.28] slot2: Oh, on the LCD screen. You could fit it. The problem with it, basically, is that it's flat, and so you can't do lots of curve.
+[ 1268.32] slot1: Okay. Covered.
+[ 1268.48] slot0: curved things
+[ 1268.72] slot2: curved things with it but you wouldn't have with the LCD you'd have the wires coming off you wouldn't have that with the LCD you'd only have that with the printed circuit board with
+[ 1281.52] slot0: circuit board.
+[ 1285.28] slot3: Sorry to interrupt, I don't see why the curved thing is a problem. If we, for example, had a shell...
+[ 1285.36] slot2: Sorry to interrupt.
+[ 1290.96] slot2: Yeah.
+[ 1291.52] slot0: Once we open that. You can have a flat screen inside. Yeah.
+[ 1291.60] slot3: Once we open that. You can have a flat screen inside.
+[ 1292.72] slot2: You can have a flat screen inside. Yeah. But I'm just wondering whether we want an LCD screen inside. It wouldn't be like full colour. It would just be black and white. But there'd be touch buttons. So you wouldn't be pressing down on them.
+[ 1296.08] slot3: But I'm just wondering whether we want...
+[ 1302.32] slot3: Mm-hmm.
+[ 1307.04] slot2: or we could have rubber buttons which are made of this material which is anti-RSI.
+[ 1312.48] slot0: I think it would be good to have a contrast between if the whole thing is going to be this rubber thing, it would be good to open it up and see something quite fancy looking inside. Now, how would you distinguish, if you had it bare, how would you distinguish where you had to press?
+[ 1316.32] slot2: Rubber.
+[ 1321.12] slot3: looking inside.
+[ 1321.52] slot2: inside
+[ 1326.72] slot0: press I mean
+[ 1328.56] slot2: Yeah, I hadn't really thought of that. I just had another idea. I don't know if it helps with...
+[ 1329.92] slot3: I would have said another idea, I don't know if it helps with that, but just to do with the RSI, is it possible, just as an option, when we open it up, people can use their fingers to press the button, or we have inside like a small pointer thing. Yeah, you could have some.
+[ 1341.44] slot2: Yeah, you could have some sort of stylus that you could pull out, but...
+[ 1343.52] slot0: that you could pull out, but...
+[ 1346.32] slot2: I think they could get a bit easily lost.
+[ 1349.68] slot3: Yeah, they're easy to replace as well.
+[ 1350.00] slot1: They're easy to replace as well.
+[ 1350.08] slot2: They're easy to replace.
+[ 1350.56] slot0: They're easy to replace as well.
+[ 1353.28] slot2: Mm-hmm.
+[ 1353.36] slot1: A person who switches channels very often or does use a particular function very often, he'll find it very irritating to use earlier. And he might spoil the touchpad very fast compared to a button like.
+[ 1357.52] slot2: Yeah.
+[ 1360.24] slot2: Yeah.
+[ 1364.64] slot2: Yeah.
+[ 1364.96] slot0: If you keep punching me.
+[ 1364.96] slot1: If you keep punching with a pointer or whatever. Yeah.
+[ 1367.84] slot2: Yeah, okay. Just a thought.
+[ 1368.08] slot3: They wouldn't actually need one and they could use anything they've got, couldn't they? A pencil, a pen, so they wouldn't really need a...
+[ 1374.56] slot0: Okay, we'll talk about that. So if you finish your... Yeah, that's the end of...
+[ 1377.52] slot2: Yeah, that's the end.
+[ 1380.56] slot1: I have one small question before, like, you know, this thing. Regarding the circuit, since we are having a flip-top.
+[ 1385.12] slot2: yeah
+[ 1385.20] slot1: We can customize the two circuits for different type of buttons. Like we are keeping the standard buttons on the top.
+[ 1390.00] slot2: Oh yeah.
+[ 1390.08] slot1: and the more complex modems are in these things so we can divide the circuit like you know.
+[ 1393.76] slot2: Yeah, yeah, that would be fairly simple. I mean, you'd actually have two separate circuit boards, but they'd be joined by wires or some cabling between them.
+[ 1396.08] slot1: you'd actually
+[ 1404.08] slot1: like
+[ 1406.40] slot0: Mm-hmm.
+[ 1407.84] slot2: in the actual flip that you'd have some linking.
+[ 1413.36] slot3: Can I just raise another point? Well, it occurs to me, it kind of applies to both our designers here, because I'm not sure how it would fit in. If we flip open, now you know how you've got some mirrors in nightclubs that are mirrors when you turn to them and you turn away and it gives like an advertising display. Have you seen that?
+[ 1418.00] slot2: fit in.
+[ 1427.52] slot3: Have you seen those? No. And they kind of respond to the turn of your body. Is it possible that when we open our flip top shell, it's a little compact mirror and when you press a button it then goes onto the remote control display thing?
+[ 1428.00] slot0: No.
+[ 1441.68] slot0: We're marketing to guys as much as we are to women.
+[ 1441.84] slot2: We're marketing.
+[ 1445.44] slot3: They don't look at themselves. Just a thought.
+[ 1448.88] slot0: Well, it's a remote control. You were sitting watching TV. Yeah. Are you going to want to sort of open it and say, I know what you mean. It's because I was using the idea to mobile. I'm going to do my hair before I put it.
+[ 1451.20] slot3: are you going to want to
+[ 1453.52] slot3: I know what you mean. So they're using the ideas for mobile phones. I've kind of got sidetracked onto that, I think. Okay. I'm just trying to think of other features we can build in that wouldn't cost too much, but we'll maybe leave that one on the side. Yeah. Okay.
+[ 1455.52] slot1: So they're using the ideas for mobile.
+[ 1455.68] slot2: I hope I'll give you a hand.
+[ 1459.60] slot0: I tracked onto that I think. Okay.
+[ 1464.80] slot0: but when we believe that.
+[ 1466.24] slot2: Yeah.
+[ 1467.76] slot0: Okay.
+[ 1469.52] slot2: I mean, you could do it. You could have a... Because if you just put the full charge through an LCD display, it will completely blank it out. But I don't know if you could get any mirror effect on it. I think I'll forget about the mirror.
+[ 1478.56] slot3: But
+[ 1481.28] slot3: I think I'll forget about the mirror. That was just a very quick passing thought.
+[ 1483.76] slot0: Nothing cool.
+[ 1484.16] slot2: Yeah.
+[ 1486.08] slot1: Okay.
+[ 1490.08] slot1: I would like to share something which I did here. First thing is basically on design, we just took the input from the previous meeting, especially from the marketing and industrial design to check on the customer needs and feasibility. Second is we checked into competitors.
+[ 1504.32] slot1: The picture here shows what are the standard models offered by competitors here. So you generally see there is not much of variety and like marketing team said people need trendy, they are bored of black and white. So you generally see rectangular shape very...
+[ 1510.56] slot0: and like
+[ 1515.84] slot2: So you generally see...
+[ 1519.20] slot1: monotonous kind of designs here
+[ 1523.04] slot1: and second thing is there's too much of confusion here
+[ 1527.36] slot0: No, but
+[ 1527.44] slot1: No particular remote is standard.
+[ 1531.28] slot1: like some some people have
+[ 1534.64] slot1: Here you see this, this is only, I found that only common feature is the channel control and the volume control. Rest other buttons, they are in a very disorganized and they are not consistent with other models and all.
+[ 1548.48] slot0: Okay.
+[ 1549.36] slot1: Okay, and second, as already discussed with William, we are going to have maybe a GUI interface in the middle of the flip top.
+[ 1556.00] slot2: in the middle of
+[ 1557.68] slot3: Sorry, what does that stand for? Graphic use.
+[ 1558.00] slot1: What does that stand for? Graphic user interface. Basically, which is what we do in computer. Have icons or touchpad or whatever. Yeah.
+[ 1558.24] slot0: What does that stand for?
+[ 1560.48] slot3: basically which is what we do.
+[ 1562.40] slot2: I want to touch back.
+[ 1564.32] slot2: Yeah, if you have buttons that appear on the screen and this LCD screen.
+[ 1568.96] slot1: Like you have an, uh, icons or something you have is a good example of GUI graphic user interface. Yes. Okay.
+[ 1574.96] slot2: Yes.
+[ 1575.76] slot0: Okay.
+[ 1576.48] slot1: So basically a person will not point or press any particular device, he just has to click on that particular icon.
+[ 1583.12] slot0: Let us simplify.
+[ 1583.20] slot1: to simplify and on the top repetitive buttons which are like volume or channel changing and all could be on the pointing device that means use of button so he need not use a pointer to keep changing the channel if a person is frequent so
+[ 1597.44] slot1: and so forth.
+[ 1598.24] slot0: So
+[ 1598.88] slot1: So we are having a combination of both. So on the simpler board on the top, we have this rubber buttons to keep frequently changing the channels.
+[ 1609.60] slot0: Can we swap that round so that the ones that we use all the time are on the bottom part?
+[ 1615.52] slot1: Infections.
+[ 1615.76] slot0: If you're thinking about holding it, you would be using your thumbs to press, just like a mobile phone.
+[ 1622.64] slot2: No, you told it you don't.
+[ 1622.64] slot3: You'd flip it open and you'd be...
+[ 1627.12] slot3: wouldn't you? Isn't that the idea? If we just use the shell as an example again, you open that, you've got your LCD display there and you've got the buttons there. That's what I was just saying. But you can't do it with your thumb.
+[ 1630.88] slot0: again you open that
+[ 1635.20] slot2: That's what I was just saying. Yeah, but you can't do it with your thumb.
+[ 1635.52] slot0: That's what I was just saying. Yeah, but you can't do it with your thumb. And then have the LCD at the top and then be able to touch that for the other controls. So have the volume and the program, things like that.
+[ 1640.72] slot3: and then be
+[ 1642.96] slot3: Okay.
+[ 1643.60] slot1: Okay, and you mean to the...
+[ 1649.60] slot1: On the lower side.
+[ 1649.76] slot0: On the lower side.
+[ 1655.68] slot1: So the findings are too many cluttered buttons. Repetition of certain patterns which I already explained. Example the volume and channel control buttons. All are confusing and inconsistent. Okay, we had a latest finding of voice recognition. There was a male which mentioned.
+[ 1670.88] slot1: mentioned that our division has developed a new speech recognition feature. We have to check into the financial feasibility whether we can incorporate this at a low cost. But for like we had
+[ 1685.76] slot1: response from the customers that they would like to have the feature of finding
+[ 1690.24] slot2: Yeah.
+[ 1690.72] slot1: So it could be like where is the remote and the remote answers I am here.
+[ 1694.88] slot2: Yeah.
+[ 1695.36] slot1: some kind of thing or it gives a blip sound or some kind of sound and if this can be incorporated this would be more uh you can say trendy also and technologically innovative also
+[ 1699.52] slot3: Sound? And if
+[ 1708.48] slot2: Yeah.
+[ 1709.12] slot1: So we can check into the financial feasibility of incorporating this.
+[ 1716.32] slot1: My personal preferences would be like, as already highlighted by marketing department, they want something to do with fruit. So I wouldn't say the design should be like a fruit, but yeah, we can take inspiration from fruit colors, like the vibrant colors, a red chili.
+[ 1730.40] slot1: Yeah.
+[ 1730.88] slot2: Yeah.
+[ 1731.52] slot1: uh... tomato red or whatever and second thing is certain standard buttons we should have for example if you see the previous slide uh...
+[ 1743.68] slot2: Well, yeah.
+[ 1746.24] slot1: I think most of the users would now be well acquainted with this certain central pattern.
+[ 1751.28] slot2: Yeah. So if you leave...
+[ 1751.68] slot1: So we will not change that particular pattern because this is the most consistent thing in all remote controls. I can't.
+[ 1757.60] slot0: I can't see that. Is that play and stuff and things? This is the central one. Oh, is that volume and channel? Yeah, volume and channel.
+[ 1760.32] slot1: This is the central one, the one. Oh, it's that volume and channel. Yeah, volume and channel. So keep that standardized because that's the most common feature across all models. If you look at all the models, it's here.
+[ 1773.76] slot1: this
+[ 1777.12] slot1: and
+[ 1780.88] slot1: Voice recognition.
+[ 1783.04] slot0: Okay.
+[ 1787.92] slot0: Right, okay. I'm not sure how long we've got left, but we need to make a decision about...
+[ 1801.20] slot0: of things we've discussed. So we agree on... do we agree on the battery?
+[ 1809.84] slot3: Kinetic.
+[ 1810.32] slot1: kinetic
+[ 1811.60] slot0: Yeah. That means that there's no function for the port, you know, that it sits in, then pressing the button, then having. So we could incorporate voice recognition for finding it. I mean, if... It's like a...
+[ 1811.68] slot2: Yeah.
+[ 1820.00] slot2: button then having
+[ 1823.04] slot2: Yeah, I think, I mean, if...
+[ 1825.92] slot0: It's a gadget. It's a... Yeah.
+[ 1827.20] slot2: Yeah, it is quite a cool feature to have. And also if they've got these parts already in stock.
+[ 1828.24] slot0: It's quite a cool feeling.
+[ 1835.36] slot1: than it was.
+[ 1835.84] slot2: then it won't be cheap to remanufacture them. It will be cheap, sorry, to remanufacture them. So do you reckon that's a good idea, that where's the remote, I'm here thing? I think that would be quite fun. I think that...
+[ 1847.60] slot3: I think
+[ 1848.08] slot0: I think the only pitfall that we would have would be how much it's going to cost. If that means we have to cut down somewhere else. But I think pretty much we've used cheap.
+[ 1855.36] slot2: If that means we have to.
+[ 1863.28] slot2: Yeah.
+[ 1863.60] slot0: relatively cheap and simple things the lcd is not cheap well it
+[ 1864.24] slot3: and simple things.
+[ 1865.12] slot2: The LCD is not cheap. Well, it's not as expensive as it would be if it was full colour, because if you've just got a black and white one, I mean, they use them in calculators.
+[ 1876.56] slot0: So maybe we could...
+[ 1876.64] slot2: Yeah. Okay.
+[ 1877.60] slot1: Maybe we could start with the black and white.
+[ 1880.16] slot2: Yeah.
+[ 1880.88] slot1: That would be good. Yeah. Upgrade later on after.
+[ 1880.96] slot0: That would be good. Yeah.
+[ 1883.84] slot3: We talked about kinetic charging. We seem to have decided on that. Did we decide on AA or AAA batteries?
+[ 1884.24] slot0: Okay.
+[ 1890.40] slot2: What? He went like...
+[ 1891.76] slot0: You want like a backup?
+[ 1894.00] slot3: One of the decisions we had to make was whether we had AA or AAA batteries, because they've still got to be charged this way, haven't they?
+[ 1899.52] slot2: No, the kinetic ones come with a battery that goes in a watch. Right, okay, got you. So it's a lot smaller. Got you on that.
+[ 1900.48] slot3: Oh, I see.
+[ 1905.20] slot3: Right, okay, got you.
+[ 1908.48] slot3: Got you on that, okay. Didn't realize.
+[ 1912.80] slot0: Okay, so we've got the battery. The inside components is pretty standardized across the board, isn't it?
+[ 1921.28] slot2: Yeah.
+[ 1922.00] slot0: So there's not really a decision to be made there.
+[ 1928.16] slot0: the buttons what did you give us as a
+[ 1934.88] slot0: the bareboard LCD. Yeah, I think we.
+[ 1936.48] slot2: Yeah, I think we're going for the LCD on that one, on the buttons. On the top one. On the top one, okay.
+[ 1944.88] slot0: On the top one, okay, you've got the touch. Yeah. Okay. And then...
+[ 1946.80] slot2: Yeah.
+[ 1950.16] slot2: On the bottom we were going to have the rubber ones, the anti-RSI ones.
+[ 1956.80] slot0: Okay. Okay.
+[ 1959.92] slot3: Sorry, could you repeat that last part?
+[ 1961.92] slot2: On the flip screen, the top one is going to be the LCD and the bottom one is going to be the rubberized button.
+[ 1963.76] slot3: The flip screen, the top one.
+[ 1970.00] slot3: Okay.
+[ 1971.52] slot1: and for those
+[ 1973.52] slot0: No, it's fine.
+[ 1977.20] slot1: For the body design I think plastic.
+[ 1980.32] slot2: Plastic? Yeah. Okay.
+[ 1980.96] slot1: yeah okay for the inside and yeah rubber as a padding or for the grips something like to add to the design
+[ 1981.68] slot0: for the inside
+[ 1983.44] slot2: Yeah.
+[ 1987.84] slot0: Mm-hmm.
+[ 1988.32] slot3: So we decided on a rubber casing for the plastic shell, a variety of designs, okay.
+[ 1989.68] slot1: So we decided on a rubber...
+[ 1992.08] slot1: variety of designs.
+[ 1992.32] slot0: variety of designs, okay.
+[ 1996.08] slot3: And it is just, although it's rubberized and spongy, apart from that, we're just going to go for sort of vegetable and fruit colors. We're not going to try and make it actually a vegetable or fruit design or anything else, like a shell that we discussed. No, I think we don't want to...
+[ 2006.16] slot2: like a shell that we discussed.
+[ 2007.12] slot0: No, I think we don't want to be tacky. If we've got a different shape anyway, the material that we would be using would be cheap. So we could make it red, we could make it...
+[ 2010.56] slot3: Okay.
+[ 2021.76] slot0: psychedelic you know we can make it black and white zebra stripes but that's not really what we're focusing on what we're focusing on is the you know the feel yes so we could just pick anything
+[ 2025.36] slot3: it
+[ 2031.92] slot3: The feel. Yeah.
+[ 2037.76] slot3: Is that going to be this image I've got in my head of something kind of shaped like that, maybe about that size, made of plastic, fits into the palm of the hand, rubberized cover that's spongy. Is that really going to fit fancy look and feel?
+[ 2052.00] slot3: which was the major thing that people wanted market research is that different
+[ 2055.60] slot0: It's just different.
+[ 2056.88] slot2: It's just.
+[ 2057.60] slot0: It's just different from everything else. I mean, I'm trying to imagine clean-looking houses, sort of beige and black. Do you either want something that goes with that, which is what's on the...
+[ 2063.68] slot3: houses
+[ 2066.80] slot3: Mm-hmm.
+[ 2071.68] slot0: on the market anyway or you want something that contrasts as
+[ 2072.40] slot3: Anyway, or you.
+[ 2075.52] slot2: You know, like...
+[ 2075.76] slot0: you know like you get clocks now that are more of a talking point than an actual clock yeah because they're so i'm just kind of pushing it
+[ 2078.56] slot3: that are more of a talking...
+[ 2080.96] slot3: Yeah, I'm just kind of pushing it out to see if you came out with anything else. But I mean, I totally agree. We looked at those remotes. I mean, they are kind of anonymous, very similar looking things. This would definitely be different enough. I just wondered if anybody could come up with something even more.
+[ 2090.32] slot0: things.
+[ 2094.40] slot0: And you would just have it across the board. You would have so many different options that you could do. You could have a plain black one. You could have sparkly pink glittery ones. The thing is the rubberized covers are going to be so...
+[ 2105.68] slot3: The thing is the rubberized covers are going to be so relatively cheap to produce that if in a year's time we get feedback from the design fairs that show something else is coming, it's so easy for us to produce that that can be slipped on.
+[ 2116.48] slot0: which is another beauty of it. And ones that have rubbery spikes, you know, you just go so far with it. Like a puffer fish. You could take it wherever. So I think that's quite a flexible...
+[ 2116.64] slot1: which is another beauty.
+[ 2116.72] slot3: which is another beauty of it.
+[ 2123.12] slot1: I'm not going to be too pressure.
+[ 2128.88] slot2: Yeah. It's like.
+[ 2130.96] slot1: And finally the body should be detachable. Maybe you can change the body of the case casing, the case outside. Yes. It should be molded with the design in such a way you can change it every time. Yes.
+[ 2131.52] slot0: the body should be
+[ 2136.80] slot0: Yes.
+[ 2141.44] slot2: Yeah, yeah, with these rubberized, not the actual plastic outside case, just the rubber thing that goes around the outside.
+[ 2145.68] slot0: Yeah, chill.
+[ 2148.32] slot1: Just the rubber.
+[ 2149.60] slot0: Yeah.
+[ 2152.40] slot0: Okay, we've got five minutes. Or that might have been up for a while.
+[ 2156.56] slot3: So can I just recap, Sarah?
+[ 2157.52] slot2: Can I just recap?
+[ 2160.00] slot3: For the decisions that we've made, kinetic charging, the watch type batteries, LCD display on the top side of the flip top, rubberized buttons on the bottom side. We're going to use fruit and vegetable colours for the rubber cover. The case itself is plastic.
+[ 2174.40] slot3: plastic. That's how far we've got. What else do we have to add to our decisions here?
+[ 2180.40] slot1: Fine, we're talking of voice recognition also.
+[ 2183.60] slot3: because
+[ 2183.92] slot0: Because that
+[ 2184.16] slot1: Because we have not addressed the issue of how to locate remote control if it's lost. Yes, it was just a cost issue with that.
+[ 2191.04] slot3: Yes, it was just a cost issue with that, but it's a good idea. We just need to check on the cost.
+[ 2195.92] slot1: Or maybe like, William was suggesting in the last thing, some devices you put on keychains. Oh yeah, yeah, the whistle ones. The whistle. So we can, if financially voice recognition is not feasible, we could go for a whistle.
+[ 2201.68] slot2: Oh yeah, yeah, the whistle ones. The whistle.
+[ 2217.20] slot3: and incorporating the company logo.
+[ 2220.72] slot1: Yep.
+[ 2221.36] slot3: Have you...
+[ 2222.64] slot1: Sorry, I didn't mention that. But we'll be incorporating in the design.
+[ 2225.84] slot3: Because I took it from the feedback you gave in the last meeting from your report, it's not just a case of having a little RR hidden somewhere, they do want it to be obvious that it's our product. Well they do.
+[ 2226.88] slot0: I took it from the feet.
+[ 2235.60] slot0: Well, they do, but I think we can...
+[ 2238.48] slot3: Since it's the only one of its kind on the market, it's obviously going to be ours.
+[ 2238.80] slot0: the only one of its kind on the market. Well, it is. It is. I think you just addressed that with advertising. Yeah.
+[ 2244.40] slot3: Yeah.
+[ 2244.88] slot0: you associate the name with the individual product that it is. And that does the work for you. Obviously you'll have a logo on it, just like everything, but everything else has a logo on it. The point is that it's got to stand out somehow differently.
+[ 2248.00] slot2: that it is
+[ 2248.56] slot3: Okay.
+[ 2257.28] slot3: But I think it does.
+[ 2257.44] slot0: But I think it does without that, so I'm not worried about that. Okay.
+[ 2260.48] slot3: I know at the last meeting we spoke about a beeper, I think you talked about a beeper for a location, have we just rejected that in favour of voice recognition?
+[ 2268.96] slot0: Depending on how... Yeah, depending...
+[ 2270.00] slot2: Yeah, depending on the expense of it.
+[ 2271.76] slot0: I mean, we've got this memo saying that it's something that the company's looking into. And they've got in stock. That seems to make sense. But if it turns out that it's hugely expensive, we'd have to cut down somewhere else. Then it's worth thinking about.
+[ 2276.24] slot2: And they've got in stock.
+[ 2285.76] slot0: about but I think we'll find out more about cost afterwards. Right, I'm going to wrap it up there.
+[ 2288.88] slot2: Yeah.
+[ 2296.40] slot0: I've got an end meeting now message available.
+[ 2299.52] slot2: Did it? Yeah.
+[ 2299.76] slot0: Yeah.
+[ 2301.68] slot1: So again, a question here.
+[ 2305.28] slot0: So I think we've probably got... It says in closing we have 40 minutes. So I think we've probably got about that time before we come back.
+[ 2306.80] slot3: You've got to go through.
+[ 2314.16] slot3: It's either that.
+[ 2314.48] slot0: It's either that or we only had 40 minutes to discuss what we just discussed. Don't know how long that took even.
+[ 2321.76] slot1: I think we're pretty going in a clear direction now.
+[ 2326.00] slot0: Is everyone happy?
+[ 2331.36] slot0: Okay.

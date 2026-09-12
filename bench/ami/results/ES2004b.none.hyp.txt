@@ -1,0 +1,489 @@
+[    0.32] slot0: Help.
+[    2.88] slot0: Maybe.
+[    8.32] slot0: It's up there, but the screen's black.
+[   14.24] slot0: Just do it.
+[   26.48] slot2: I'm not really sure.
+[   37.20] slot0: Oh, right, okay. Okay, that's fine.
+[   66.88] slot0: Right, okay. And I might be a bit all over the place. Right, our agenda for today. Do you want us to give you a second?
+[   80.48] slot3: No, that's okay. Sorry.
+[   81.20] slot0: sorry
+[   86.08] slot0: I'll go over what we decided last meeting.
+[   89.20] slot2: Mm-hmm.
+[   90.64] slot0: um
+[   92.80] slot0: We decided upon a universal control, one handset for all TV video.
+[  100.72] slot0: equipment that it was important that the product was accessible to a wide range of consumers wide age range not limiting anyone we decided it was important to reflect the company's image and
+[  114.72] slot0: our product, we put fashion in electronics, that kind of thing. Our budget would have to affect, try not to reflect our budget that we might...
+[  129.12] slot0: we might.
+[  131.52] slot0: I have a bit of... Oh, oh, you can see it.
+[  136.40] slot0: dissonance between what our budget was and what we wanted to look like. We wanted to look uncluttered, undaunting to the customer. We discussed a flip open design.
+[  150.72] slot0: reducing the size of the control and an electronic panel for further features like programming, things like that.
+[  161.28] slot0: Okay.
+[  163.36] slot0: three presentations I've got written here.
+[  168.80] slot0: Shall we hear from marketing first?
+[  171.12] slot3: Is it okay if I postpone that till later? I just want to get access to a little bit more information. Is that okay?
+[  175.12] slot0: Is that okay? No, that's fine. Okay, yeah.
+[  176.64] slot2: Okay, yeah, I'll go first. Can I grab the...
+[  179.12] slot0: Like me.
+[  182.24] slot2: Thanks.
+[  191.68] slot2: Press Alt F8.
+[  194.16] slot0: FN. Function. Oh, right.
+[  196.96] slot2: All right.
+[  201.12] slot2: Amen.
+[  203.76] slot2: Maybe.
+[  209.44] slot0: Yep.
+[  210.08] slot2: There we go.
+[  212.64] slot2: This is the working design presented by me, the industrial designer extraordinaire. This is where I went a bit mad with PowerPoint.
+[  225.12] slot2: The first question I asked was what are we trying to design? Well, a device which basically just sends the signal to the TV to change its state, whether that be the power or the channel or the volume. Everything is just...
+[  239.52] slot2: some sort of signal to change the state of the TV or other appliance that it's sending the signal to.
+[  249.12] slot2: So I decided I'd have a look at what other people have designed and try and take some inspiration from that.
+[  257.52] slot2: But although we will want to be taking...
+[  261.60] slot2: ideas from other people we want to make sure that our design stands out and i thought that was something that well it wasn't really my area because i'm dealing with the inside really so
+[  276.48] slot2: I ran out of time so I couldn't do this one as fun as the last one. And I found out that most controls use some form of infrared to send signals to the TV, presumably because of the cost issue.
+[  290.88] slot2: of something like the same thing that computers use, wireless, and you don't need to send very much information. Most of them are powered by some form of battery. Now, R1, I'm not sure whether...
+[  305.28] slot2: whether we want to look at the size issue because most of them are powered by AAA batteries, but those can be quite bulky. So I didn't know if you wanted to look at something else so we could shrink down the size.
+[  319.84] slot2: Can I interject?
+[  319.92] slot3: Can I interject to ask a question? Is that appropriate? You're saying the AAA batteries are small or the...
+[  321.68] slot0: Is that appropriate?
+[  321.84] slot2: there is that appropriate
+[  325.76] slot2: I'm not sure if you look at if you look at most remote controls they're quite they're quite chunky and that's because of the size of the batteries they have to be obviously this certain size to fit those batteries. Triple O's are the smallest you can get. Well you can you can get these.
+[  326.00] slot3: No, no, if you look...
+[  330.72] slot3: And that's because of the...
+[  336.08] slot3: those batteries. AAAs are the smallest you can get.
+[  338.40] slot0: Well, you can't...
+[  339.84] slot2: sort of circular round ones but I'm just wondering about power consumption and how much you need to send.
+[  341.68] slot3: Oh, I see.
+[  341.84] slot1: Oh, I see.
+[  345.76] slot3: Okay.
+[  346.48] slot2: the data across, which leads onto the next point about them being small and easy to carry around. Now the ones at the moment are small, but I was just wondering if we could look at something a bit smaller.
+[  360.48] slot2: Now the main components I came up with were obviously the power source for the batteries because otherwise it's not going to work. As I said about which batteries we were going to choose, we can discuss that later.
+[  374.88] slot2: and then you obviously need something to decode the information that you're putting in from the controller and to turn it into an infrared signal.
+[  388.80] slot2: which we're going to use to send the information. Now these have a wireless range of up to about five meters, which is sort of suitable for anyone who's watching their TV unless they're in a cinema, which not most people do.
+[  403.20] slot2: So as we're applying to the most audience, that should be fine. And then I just had a quick look at the external design, but I left that mostly to the interface designer.
+[  417.60] slot2: and so this is what I had as the basic idea of what we want to do it's not a proper circuit I'm not sure if it work or not I'm not even confident that is the real the real way you'd wire
+[  432.00] slot2: wire it up. But anyway, we've just got the power going to the infrared bulb with the chip and the UI interface.
+[  443.44] slot2: which would basically, when you pressed anything, the chip would convert it into some form of IR data which could be decoded by the TV receiver, which obviously means that we're going to have to conform to whatever...
+[  458.40] slot2: whatever form of communication that the TVs are already using, and since that's another reason to use infrared, because that's what all TVs use at the moment.
+[  472.48] slot2: And then finally, we want it to be available to a wide audience at a low cost. So all the components that I've put forward are low in cost. So that should be good.
+[  486.72] slot2: it should be different enough from the alternative products to get a good consumer base, as we were talking about it before. And also just something that I was thinking about, because they're small.
+[  501.12] slot2: they're also easy to lose so if we could look into some way of you know some anti going down the side of the sofa
+[  509.84] slot3: Mm-hmm.
+[  511.04] slot2: thing that you could have. That was just sort of a general point there.
+[  516.08] slot1: Mm-hmm.
+[  517.28] slot3: That's a very important point. It came up in our market research findings too, so I can refer to that whenever you'd like me to present.
+[  517.28] slot2: That's a very important point. It came up in our market research.
+[  521.76] slot2: Whenever you'd like me to present. Yeah, that's what I came up with there.
+[  527.76] slot0: Okay, thank you very much. Would you like to continue on from that?
+[  527.84] slot2: Thank you very much.
+[  531.44] slot2: Yep.
+[  535.84] slot0: Maybe move that over.
+[  538.24] slot2: Okay, that's okay with me.
+[  545.36] slot0: I don't know.
+[  591.92] slot1: I feel right.
+[  594.88] slot0: F.
+[  595.60] slot2: Function effect, yeah.
+[  597.04] slot1: Okay.
+[  602.64] slot1: Is it in the right?
+[  602.72] slot0: Yeah.
+[  604.96] slot3: The plug hasn't come out at the...
+[  606.88] slot3: It's going to go.
+[  606.88] slot1: It's not going to go. No, no, yeah, it's just...
+[  607.52] slot2: No, no, yeah, it's just...
+[  611.92] slot1: It is. It has come. Oh, there you go. Okay. Yeah. Actually, some of my points might overlap with what William just mentioned. But basically, my method was like, whatever brainstorming we did in the last meeting, just took up a...
+[  612.88] slot0: Okay.
+[  618.80] slot2: Yeah.
+[  625.92] slot1: valuable points and started developing on that and there might be some missing loops in this thing which I think will take a feedback from the marketing because I haven't had some marketing data and basic
+[  640.32] slot1: basically every product is market driven. So purpose, as William already said, I would put it to simplify the interaction with TV, to make it as simple as possible. And to summarize, I would say it should be user friendly by being easy to use rather than having a lot of
+[  654.72] slot1: having a lot of complex buttons because you can have an engineering driven maybe having hundred buttons and maybe having a remote control which has the main features like volume control or channel changing the channel or whatever but we are to make it
+[  669.12] slot1: unique so that people want to buy it will punch in these two features together so what the concept is to have a flip top model the main functions such as which are like often used will be on the top and the complex functions which
+[  683.52] slot1: which say you can say like the young generation or trendy generation want to say program their favorite channels or whatever can be put in the middle part of the flip top. So it's like it could be accessed by a wider range of audience.
+[  697.92] slot1: audience and we can punch in new features such as added features such as shockproof body and maybe a design to appeal to a lot of people. Findings most people prefer user friendly rather than complex remote controls.
+[  712.32] slot1: Because there are times like people have used a remote control for say a year or something and they have not used maybe 30 to 40% of the buttons. So it's of no use of punching in those, trying to put in those things on the top of the remote control and try to confuse a user.
+[  726.72] slot1: user as we saw we have to make a profit also so we can maybe go for an economy of a higher production by 50 million we said yeah
+[  736.16] slot2: Yeah. Yeah.
+[  736.64] slot1: Yeah, with that, I think we'll be able to achieve economies of scale also. So we can add in more features and make it less costly.
+[  745.60] slot1: And...
+[  747.76] slot1: that's so this is if you ask me personally I would make a
+[  754.56] slot1: flip top with the trendy design and maybe we should look at also like the buttons whether they are like soft or little hard because there are times the buttons tend to be a bit hard after continuous usage and all that so in overall a simple and
+[  762.40] slot2: There are times where the buttons...
+[  768.96] slot1: No.
+[  770.96] slot1: user friendly design.
+[  772.56] slot3: Yeah.
+[  773.12] slot1: Any comments?
+[  773.36] slot0: Any comments?
+[  775.60] slot0: um i think we'll chat about it at the end okay okay so if anyone wants to write something down
+[  778.48] slot1: Okay.
+[  788.64] slot0: Oh, I think it's strange.
+[  792.72] slot0: Oh, my God.
+[  803.20] slot3: Have I got to keep this here?
+[  805.60] slot1: You can't. I'll have to move it, won't I?
+[  805.84] slot3: God bless you.
+[  808.80] slot3: I'll have to move it, won't I? Whoops.
+[  813.12] slot1: I have to push it a bit more.
+[  816.08] slot3: Can I manage a bit more? Yep. Oh dear.
+[  818.08] slot1: Yep. I do.
+[  826.56] slot2: There we go. I've got a bit more.
+[  827.12] slot1: I've got a bit more.
+[  830.88] slot2: There we go.
+[  831.44] slot3: Is that okay?
+[  834.48] slot1: Yeah, the people who don't know.
+[  836.96] slot3: Thank you. Just pull it closer a little bit.
+[  840.16] slot2: You should be able to make it over. Get it right over. Thank you.
+[  841.44] slot0: Get it right.
+[  841.68] slot3: Get it right over. Thank you.
+[  845.84] slot3: Okay, I'm going to look at the functional requirements from the marketing point of view. And obviously our starting point with marketing is always market research. So that's where we started.
+[  860.16] slot3: We used our usability lab, the company's usability lab. We did our usual selection methods to get a cross section of the general public, male and female, all age groups from 15 upwards. We observed them in the lab, just their general use of the remote control. You can see we had a hundred.
+[  874.56] slot3: had 100 subjects there.
+[  877.44] slot3: Our findings, lots of findings, I've just summarized some of them here. The overall thing, which I've got at the top there in italics, is that users dislike the look and feel of current remote control. So that has obvious design implications there. We found that...
+[  891.84] slot3: 75% of users find most remote controls ugly.
+[  897.12] slot3: 80% would spend more money when a remote control would look fancy. We were quite surprised by that finding, but that's quite a high proportion of our international target group are prepared to spend more money for something that's a bit nicer looking.
+[  911.52] slot3: Current remote controls do not match well with the operating behaviour of the user overall. For example, you can see below there, 75% of users zap a lot. So you've got your person sunk back in the sofa, channel hopping.
+[  926.40] slot3: Again, there's power implications there. 50% of users only use 10% of the buttons. So again, a big design issue there. And possibly we can also cut back on cost if we don't have so many functions actually on the remote control.
+[  940.80] slot3: control.
+[  942.64] slot3: um
+[  947.04] slot3: The biggest frustrations that people found with regard to personal preferences were something that you mentioned earlier. Remote controls are often lost in the room. It's the slipping down the back of the sofa type of thing. 50% were particularly frustrated.
+[  961.44] slot3: by that. 34% of people said they take too much time to learn to use and I think that ties in with the previous finding of people only using 10% of the buttons, they just can't be bothered to learn about the other functions.
+[  976.80] slot3: Slightly more than a quarter of people said it was bad for repetitive strain injury. You know, those small movements of the remote control can lead to kind of shoulder and elbow problems. The vast majority of the 35 and older
+[  991.20] slot3: and underage group would like a liquid crystal display and speech recognition. Again that was to aid I think in when they've lost the actual remote control some kind of speech recognition something we didn't put to them but
+[ 1005.60] slot3: but which I'm thinking of now is even if perhaps the lost control can give off a bleep every now and again until you find it or a flashing light, possibly. That trend reverses in the older age groups. So 35s and unders who would like those two feet...
+[ 1020.00] slot3: two features. That kind of evens out 35 to 45 and in the older age group it kind of reverses they're not so bothered with this.
+[ 1028.48] slot3: I had marvelous tables and things that I could show you, but I think I'll just keep it simple. If there's any more information, I can email you extra details. Is that okay?
+[ 1036.24] slot1: That's fine.
+[ 1038.80] slot0: Right, we have new project requirements.
+[ 1051.20] slot0: We're not going to be using Teletext.
+[ 1054.48] slot1: Okay.
+[ 1054.72] slot0: apparently consumers consider it outdated with the internet now. Our control is only going to be for TV, it's not going to be combined control.
+[ 1068.96] slot0: which limits all of the different things. It limits the cost for us, but it also makes it easier to understand further.
+[ 1076.96] slot3: So can we not program a video with this remote control?
+[ 1080.72] slot0: It says for TV only, so it looks like it's... Just channel hopping. Yeah. I think maybe Sky, things like that, might be incorporated into it, but...
+[ 1084.64] slot3: Just turn the whole thing. Yeah.
+[ 1094.56] slot0: I don't know, what do you think? It just said, for TV only. Would that imply video use? I mean, general TV controls do do video as well.
+[ 1097.84] slot3: Would that imply video use?
+[ 1099.52] slot2: Charles, do you do video?
+[ 1103.76] slot2: Well, I don't know.
+[ 1104.56] slot0: You get combined TV and videos, don't you? Yeah.
+[ 1108.48] slot2: Yeah, and if you've got a Sky box, one of those Sky Plus boxes now, you can record straight off the TV anyway, so onto the TV hard drive or something.
+[ 1108.72] slot3: If you've got
+[ 1118.00] slot0: Anyway, so.
+[ 1122.56] slot0: I think we assume that it's still got play and stop functions and programming.
+[ 1125.92] slot3: Yeah. Okay.
+[ 1127.36] slot2: Anything about that?
+[ 1127.60] slot1: Anything about that on the market research or something like regarding whether people want a combined something like that?
+[ 1134.40] slot3: We didn't really look into that, but remember we found that finding that most people only use about 10% of the buttons. I think that those did tend to be the basic channel hopping things and on and off with the video, fast forwarding, so on.
+[ 1146.32] slot2: and on and off with the video.
+[ 1148.64] slot3: and I think it's general knowledge that people do find programming their videos a nightmare. So I don't know if that's something we need to look at.
+[ 1152.16] slot0: programming their videos and I
+[ 1155.92] slot2: Just as an idea on the speech recognition thing.
+[ 1159.84] slot3: the
+[ 1160.08] slot2: It would probably be quite expensive to incorporate an entire speech recognition thing, and they're not that great. In fact, I just called up that table there. All right.
+[ 1162.56] slot1: too
+[ 1165.92] slot3: In fact, I just called up that table there. We asked those two questions. The table relates to both questions, so we didn't differentiate. Would you prefer an LCD screen? That's a multifunction remote. And would you pay more for speech recognition and remote control? So you can see...
+[ 1176.72] slot2: more for speech recognition.
+[ 1180.32] slot3: how the yes-no sort of varies across the age group. A substantial number of don't-nos in the older age group. I think that's just general fear of new technology.
+[ 1182.88] slot2: across the age
+[ 1188.56] slot0: Yeah.
+[ 1189.44] slot1: But um...
+[ 1189.68] slot2: But on that again, I just thought, because you can get those key chains now and you whistle, and then it'll let off a loud noise to let you know where it is. Right.
+[ 1196.72] slot3: let off
+[ 1199.28] slot3: So I thought that could be cool.
+[ 1199.52] slot2: So I thought that could be cool.
+[ 1200.88] slot0: we do have a budget limitation that we can't control ourselves so i think when we can take a cheaper option which still does the same kind of thing um because it is something i it needs to be
+[ 1210.24] slot3: same
+[ 1216.32] slot0: to be the thing that you use to find it needs to be something that you don't lose. You were saying whistling. Maybe on the TV you could put like a pack on the TV or something so you can't see the remote. You go and press the button on top of the TV.
+[ 1222.16] slot2: You're saying, whistling. Yeah.
+[ 1230.72] slot0: and it beeps. Yeah. Okay, it's over there. It's a super idea. But that sounds a lot cheaper to me. Yeah.
+[ 1232.16] slot3: Yeah, okay. It's a super idea.
+[ 1232.32] slot1: Okay, so thank you.
+[ 1235.04] slot2: That's...
+[ 1236.88] slot2: Yeah.
+[ 1237.60] slot3: Yeah.
+[ 1238.16] slot0: The third thing was that we have to make sure the corporate image is very much incorporated into the handset. So we want logo, we want...
+[ 1255.04] slot0: fashionable trendy i mean what you were talking about with the marketing people paying more for it to look good um we need to focus on that as well further
+[ 1267.52] slot3: Yes, further market research will be needed to kind of focus on what that is. It's going to be different for a 15-year-old than somebody who's 60. And also across the world, we're aiming at the international market. What is attractive to a trendy New Yorker and what is attractive to a retired...
+[ 1274.00] slot0: and also
+[ 1281.60] slot3: a retired South African, I don't know, you get the idea. It's going to vary around the world. At the end of the day, the engineering design is one thing. It's the user interface design that may, and the sort of, you know, fashionable aspects.
+[ 1294.16] slot2: sort of, you know...
+[ 1296.00] slot3: aspect of it we might have to change for different markets around the world.
+[ 1299.84] slot0: So are we talking about this?
+[ 1300.32] slot1: So are we talking of a single model or maybe five, six designs and all that?
+[ 1306.40] slot2: Well, yeah, you could have a number of different designs. I mean, inside, they'd be essentially exactly the same.
+[ 1308.96] slot1: I mean
+[ 1312.00] slot1: Anyway.
+[ 1312.40] slot0: Mm-hmm.
+[ 1313.36] slot2: just
+[ 1313.60] slot1: The features could be same and the body could look slightly different.
+[ 1313.92] slot3: could be same in the...
+[ 1316.00] slot2: Yeah.
+[ 1316.56] slot3: Yeah.
+[ 1316.88] slot2: Yeah.
+[ 1318.16] slot1: So,
+[ 1320.48] slot0: What about, you were talking about the buttons. Yeah. The controls that are coming out now have kind of big rubber buttons, not tiny little ones, big rubber buttons. But what about, I mean, because we've got to make it original.
+[ 1323.20] slot1: Yep.
+[ 1336.32] slot0: What about, you know, with the touchscreen computers? Yeah, yeah. That's what I...
+[ 1340.80] slot2: Yeah, yeah. That's what I was just...
+[ 1343.44] slot0: Yeah. Yeah.
+[ 1344.08] slot2: Yeah.
+[ 1344.48] slot0: So it's like a little panel that you touch rather than a button, which shouldn't wear out as much either. Well, no, because you don't have to press it, you just have to put your thumb onto it.
+[ 1353.04] slot2: Well no, because you don't have to press it, you just have to put your...
+[ 1357.20] slot1: Yeah.
+[ 1357.60] slot2: Yeah.
+[ 1358.88] slot0: I think that might appeal. I'm thinking kind of Japan. I'm thinking young office people, trendy.
+[ 1366.64] slot3: office people.
+[ 1369.84] slot2: Yeah.
+[ 1370.08] slot3: Yes, it will appeal to sections of the market.
+[ 1370.32] slot0: Yes, it will appeal to sections of the market. But quite easily labeled so that anyone can say, oh yeah, that's obvious what that's for and it's not daunting to maybe the older generations.
+[ 1380.40] slot3: for and it's not
+[ 1383.52] slot3: generations
+[ 1384.24] slot2: Mm-hmm.
+[ 1384.32] slot0: Mm-hmm.
+[ 1384.72] slot3: Mm-hmm.
+[ 1385.84] slot2: but also ergonomics, as we're saying with the different designs, ergonomics, there's sort of physically different things, because if you've ever seen the Xbox, they had to make two different sized controllers, because...
+[ 1400.16] slot2: because people in Japan wouldn't buy it because the controller was physically too big. Because just generally Japanese people have smaller hands, so they couldn't get around the controller, which is so...
+[ 1403.12] slot0: was physically too bad.
+[ 1410.88] slot0: so they can...
+[ 1415.04] slot2: So if you, I don't know what, because obviously you could have bigger buttons for some countries or something and smaller ones for others.
+[ 1424.48] slot1: Yeah, maybe to as it was indicated the risk for repeated use the injuries maybe your touchscreen could be a better option for that. Yeah
+[ 1434.08] slot2: Yeah. Yeah.
+[ 1436.88] slot1: So you're dividing designs based on not only segment age groups, you're dividing it according to the countries also, the market. Maybe for US and all, you can have a slightly bigger remote country. Yeah. And maybe in Japan and all you...
+[ 1445.84] slot0: I don't know. Good.
+[ 1449.20] slot2: yeah
+[ 1451.04] slot1: you need to have a small.
+[ 1452.32] slot2: I think...
+[ 1452.64] slot1: I think we have...
+[ 1452.64] slot0: I think we have to design one product. Yeah.
+[ 1456.16] slot2: And then...
+[ 1456.40] slot0: and then the company can take it wherever they want to in the sense that they can make it smaller or they can make it bigger or they can change the features slightly um the internal
+[ 1461.84] slot2: to make it bigger.
+[ 1463.84] slot3: The internal engineering design has got to remain the same.
+[ 1468.08] slot0: It's going to be the same. So we need to focus on just one thing and not get bogged down in lots of different possibilities.
+[ 1471.44] slot2: and not get bogged down.
+[ 1471.44] slot3: and don't get bogged down.
+[ 1475.92] slot3: I am concerned when you raise the RSI issue, repetitive strain injury, I don't think just moving your finger around on a small screen is going to deal with that enough. I think that is still a kind of question mark issue, how we deal with that.
+[ 1491.52] slot2: RSI tends to...
+[ 1491.60] slot3: RSI tends to be caused by repetitive small movements. I really can't get my head around this one. This may have to be postponed to a future meeting, but it's something we should think about.
+[ 1498.40] slot2: You have to be postponed to a future.
+[ 1502.00] slot2: I was just thinking about how you could combat that. Because without doing something where you have to move your arm. I know, and it becomes ridiculous. Or speech recognition. Yeah, speech recognition. Which is extremely expensive.
+[ 1504.72] slot3: because
+[ 1510.64] slot3: I know, and it becomes ridiculous. Or speech recognition. Yeah, speech recognition.
+[ 1513.04] slot0: Or speech recognition. Yeah, speech recognition. Which is extremely expensive. I think that's the only way that you can avoid that kind of issue.
+[ 1517.28] slot2: I think that's it.
+[ 1517.36] slot3: I think that's the only way.
+[ 1519.76] slot3: Mm-hmm.
+[ 1522.24] slot3: Do we have to initially, looking at the findings here, focus on a younger age group initially and then broaden out the market later? Do we really have to go for everyone right away?
+[ 1536.48] slot3: way.
+[ 1537.20] slot2: Um,
+[ 1537.68] slot3: um
+[ 1537.68] slot1: focus on the biggest market
+[ 1539.76] slot3: Yes.
+[ 1540.32] slot2: Yeah. People between each.
+[ 1540.56] slot1: between age 20 to 35.
+[ 1542.72] slot3: And when we've been throwing up our ideas, we're automatically talking about business people, young people, trendy people.
+[ 1547.68] slot0: We are talking about...
+[ 1552.24] slot0: the type of company that we're working for as well, that they want it to be fashionable, they want it to be trendy, and you wouldn't automatically associate that with the older generations.
+[ 1564.64] slot3: No.
+[ 1566.24] slot0: the baby boomers, the older generations are actually larger, they have a greater population than us young people. But I don't think we're focusing on that. I think we are focusing on a sort of mid-range business.
+[ 1572.08] slot2: Yeah.
+[ 1572.88] slot1: young people.
+[ 1573.52] slot3: but
+[ 1578.64] slot3: Mm-hmm.
+[ 1581.60] slot0: kind of class type of people. I'm just thinking of...
+[ 1582.72] slot3: I'm just thinking of budgetary issues too, for when it does get to the broad scale marketing stage, we want to not waste money, not be profligate.
+[ 1592.32] slot0: And, uh...
+[ 1592.72] slot3: and uh
+[ 1595.52] slot3: focus on where the idea will be taken up, it's most likely to be taken up first of all, where the main purchasing power is coming from for a product like this.
+[ 1604.80] slot0: Okay, so the remote control functions, we've got the TV, we've got the video, now there's...
+[ 1617.60] slot0: I can't remember what it's called, the little code at the end of program details. Video Plus. Yes.
+[ 1622.48] slot2: Video Plus. Yeah.
+[ 1625.92] slot0: we could use that as an alternative to programming in times, things like that? Yeah. Is that, I always find that really easy when I discovered it.
+[ 1632.08] slot2: Is that? Yeah. Is that?
+[ 1636.80] slot1: Mm-hmm. Mm-hmm.
+[ 1637.20] slot0: because you've got your general record anyway, so if there's a program on you want to put record on, that's fine. But if you do want to tape something in two days' time and you're not sure if you're going to, you put the number in.
+[ 1647.92] slot2: in two days time and you're not sure if you're going
+[ 1651.20] slot0: And it's just a number. It's not a date, it's not a time, it's not a channel, it's not when it finishes, it's not...
+[ 1656.96] slot2: Anything like that, it's just a number. And you wouldn't need a whole host of extra buttons for that. You'd just need one, because you've already got the numbers there. You've already got the numbers for Tysh.
+[ 1657.04] slot0: Anything like that, it's just a number.
+[ 1662.64] slot0: just need work because you've already got the numbers there anyway.
+[ 1665.76] slot3: I've not come across that function but it sounds wonderful.
+[ 1669.52] slot0: It is after, if you look in the newspaper, TV guide, or any TV guide, there's a five, six-digit number afterwards, and that's the number you put in.
+[ 1672.08] slot2: Paper, TV.
+[ 1676.00] slot2: Six-digit number.
+[ 1679.68] slot3: And it's recorded.
+[ 1679.92] slot0: And it's recorded that it's going to be on on Tuesdays at 10 o'clock on the 17th, things like that. So you don't have to worry about dates and you don't have to worry about times. And it has been around for quite a long time. It's been around.
+[ 1690.08] slot3: Nice.
+[ 1693.60] slot2: It's been around for a long time. It's just it's not very well advertised. No, it's not. I think if awareness...
+[ 1694.40] slot0: around for a long time.
+[ 1697.28] slot0: to the sound. No, it's not. I think if awareness was kind of...
+[ 1697.84] slot3: I think
+[ 1700.88] slot3: Go to the forefront.
+[ 1701.20] slot0: Go to the forefront about that. Yes.
+[ 1702.24] slot1: Yeah.
+[ 1702.64] slot3: Yes.
+[ 1703.44] slot2: So if you've got something like Sky Anyway, you can just press the button on the program once and it will record that program when it's on. And you press it on it twice and it will record the whole series. Excellent. So that, yeah.
+[ 1711.60] slot3: what it's on and you press
+[ 1714.72] slot3: Excellent. So, yeah.
+[ 1717.44] slot2: Yeah, but just to have that function would be really good.
+[ 1720.80] slot3: would be a beauty.
+[ 1722.48] slot0: Okay, so.
+[ 1723.28] slot3: Can I just run this past you while it occurs to me? I don't mean to quickly jump from one subject to another, but just discussing the different age groups and targeting the different age groups. It occurs to me, we already produce our own mobile phones. That's kind of what led us on to comparing TV remote controls.
+[ 1737.60] slot3: with their design features. Chain companies like Carphone Warehouse, you can pop it any time with a phone that you've bought for them if you've got any problems with it and they'll fix it, they'll phone the company, you can use their telephones. Is it worthwhile with our...
+[ 1747.60] slot2: for the company.
+[ 1752.00] slot3: with our retail outlets having a similar kind of service. So that if older users were deterred from buying this, if they know they can just pop into one of our high street outlets, you know, which button is that I press for this? That's a free.
+[ 1766.40] slot3: aspect of our service, would that not make it more attractive to them?
+[ 1769.36] slot2: But the only problem is that with a mobile phone you sign for a contract so the companies who you deal with have actually got an obligation to help you out.
+[ 1782.96] slot3: to help you.
+[ 1783.68] slot2: you out and also I mean it's it's fair enough to have some sort of help service but I I'm not sure how much the cost would be right
+[ 1784.16] slot1: And also...
+[ 1793.92] slot3: Right.
+[ 1794.56] slot0: The functionality of it in the sense that you're sitting there, you're pressing this button and your TV is not doing it.
+[ 1800.80] slot3: All right.
+[ 1801.36] slot0: taking your TV and your phone and saying, look, this is what I'm doing. It's not working. What should I do?
+[ 1806.16] slot3: If it was something as simple as you couldn't change the channel, but I mean, if there were any more, or are we absolutely definite, it's only going to be for TV and video. Yeah, I think so. Okay. Just a thought.
+[ 1813.52] slot2: I think so.
+[ 1813.76] slot0: I think so. Okay. Just a thought.
+[ 1816.48] slot2: I mean instruction books. Instruction manuals. Okay.
+[ 1818.40] slot0: I mean there's customer service. There will be a customer service number thing that you can phone up and speak to. And that way there's no call out charge. There's no extra.
+[ 1819.60] slot3: Okay. But I mean, there...
+[ 1820.08] slot1: I mean, they're...
+[ 1823.28] slot2: There will be a customer.
+[ 1825.68] slot1: Yeah.
+[ 1825.76] slot2: Yeah.
+[ 1825.76] slot3: Yeah.
+[ 1828.64] slot3: Sure.
+[ 1832.64] slot0: The person has to walk to a shop on the high street.
+[ 1833.04] slot3: person has to walk to.
+[ 1834.08] slot1: We shop in the high street.
+[ 1835.04] slot3: Yeah.
+[ 1835.68] slot1: I think it would be too much of an effort for a person to, for a phone maybe he might walk down the street. But for a remote, he will just... Not for such simple functions.
+[ 1835.92] slot0: if you need too much of an effort.
+[ 1839.68] slot2: Yeah.
+[ 1842.00] slot3: Not for such simple functions because we're focusing on that. Yes.
+[ 1843.28] slot2: because we're focusing on that. Yeah, they should be. Yeah, so cute.
+[ 1845.12] slot0: We should focus on making the manual as user-friendly as possible because a lot of them are just tiny little writing and lots and lots of pages. It puts people off reading them, so they just do the obvious. It does, just put it in the drawer until something goes wrong and then you try and search through it. Sure. That should be something.
+[ 1847.68] slot1: Use your friend.
+[ 1848.72] slot3: as possible because
+[ 1851.04] slot2: Tiny little writing.
+[ 1853.44] slot3: It puts people off reading them, so they just do the obvious. It does. Just put in the drone until something goes.
+[ 1858.56] slot3: That should be something we think about.
+[ 1859.52] slot0: something we think about. What other functions we need? I'm not sure if we need a design decision now, but we should think about, because you've got the dilemma between
+[ 1873.92] slot0: between batteries, that's what I was thinking about. Mobile phone batteries, what kind of battery is that?
+[ 1879.68] slot2: They're specially made for the mobile phones. But they come with a charger. I mean, you could bundle a charger. Well, they last.
+[ 1888.80] slot0: Well, they last quite a long time. And if you had, the thing that you get with mobile house phones, you sit it in its charger when you're not using it or at night or something, but it doesn't really matter because it never really runs.
+[ 1891.52] slot2: And if you...
+[ 1897.36] slot2: you sit
+[ 1900.56] slot2: at night.
+[ 1903.20] slot0: runs out because it lasts a long time once it is charged. Something like that should reduce the size of it.
+[ 1905.12] slot2: Once it's charged.
+[ 1909.20] slot2: Yeah, and if you had one of those, just coming back to your other point about pressing the button and setting off the bleeper in the room, that could...
+[ 1918.32] slot0: Yeah, it could be on that. Yeah, on that as well. Okay.
+[ 1919.36] slot2: Yeah, on that as well. Okay.
+[ 1922.64] slot1: So are we talking of a concept of rechargeable something? Yeah, some sort of docking station or... Rechargeable with...
+[ 1925.68] slot2: Yeah, some sort of docking station.
+[ 1925.84] slot0: some sort of docking station or rechargeable with a docking station yeah so the rechargeable would be your
+[ 1929.52] slot2: Yeah.
+[ 1933.52] slot2: Yeah, yeah. Yeah, that would be fine. And also that would mean they wouldn't have to go out buying batteries all the time. Yes.
+[ 1934.16] slot0: Yeah.
+[ 1936.32] slot1: And also that...
+[ 1936.40] slot0: And also that would be...
+[ 1939.68] slot0: Yes, which is cheaper in the long run as well. The shape, you've got trendy. I don't want a big box with lots of things. You don't want a tiny sort of...
+[ 1939.92] slot1: What you?
+[ 1939.92] slot3: which is
+[ 1941.52] slot2: Yeah.
+[ 1953.44] slot3: little thingy
+[ 1953.68] slot0: little thing either because then you have got the repetitive strain in general matter how many
+[ 1954.88] slot1: Because then you...
+[ 1959.36] slot3: how much you
+[ 1959.60] slot0: how much you try and make it simple um and we don't
+[ 1962.72] slot3: And we don't want, I mean, so many remote controls look absolutely identical. These long brown things with the same coloured buttons all crammed in on the surface. We definitely, an obvious thing, a very simple thing is to get away from these brown rectangles. We don't want that.
+[ 1966.32] slot2: Long, brown.
+[ 1966.56] slot0: Brown.
+[ 1977.12] slot3: Okay.
+[ 1977.28] slot0: Okay, so we've got a flip screen.
+[ 1982.96] slot1: What I was thinking of a design which Nokia came up with almost six or seven years back. Basically, we have a flat one. It looks like a box, like a chocolate. That's very strenuous because your thumb is slightly up.
+[ 1991.60] slot2: box like a chocolate
+[ 1995.60] slot3: so dick
+[ 1996.00] slot1: So they come up with something like this, curved up, so here, and you don't have to bend your thumb too much. So it's like a, you can say, a banana-shaped kind of thing, curved up like a boat.
+[ 2003.92] slot3: A banana shaped kind of thing curved around the boat.
+[ 2006.32] slot0: Okay.
+[ 2007.60] slot1: So what happens is you don't have to press your thumb too down like so it's already curved up
+[ 2013.20] slot3: curved up
+[ 2013.92] slot0: Because it's kind of molded to your hand anyway.
+[ 2016.00] slot3: so we can have
+[ 2016.08] slot1: So we can have a, like, you know, mold it according to your...
+[ 2020.00] slot2: Yeah. The way you.
+[ 2020.08] slot1: the way you hold up it's kind of semicircular in the bottom something like that
+[ 2024.32] slot0: Okay.
+[ 2024.96] slot1: I wouldn't say exactly semi-cycler but yeah. Can you look into...
+[ 2026.56] slot0: Can you look into the company logo, things that are associated with the company in view to try and incorporate that into the design of the product?
+[ 2040.56] slot1: I mean...
+[ 2040.96] slot0: I mean...
+[ 2043.36] slot0: For example, if it was a C or something like that, you could have it in a vague C shape that opens up, kind of like a shell.
+[ 2052.56] slot2: or something.
+[ 2052.72] slot0: or something. Something along those lines to be able to incorporate it quite...
+[ 2059.60] slot3: What's this? Obviously.
+[ 2060.48] slot0: obviously into the design while also making it quite different from anything else that's there.
+[ 2067.44] slot1: We could look at that. Look at the mobile.
+[ 2067.92] slot3: Let me look at the mobile.
+[ 2069.60] slot2: Mm-hmm.
+[ 2069.92] slot1: What we were talking is to make it more rather than like seashells, logo could become, means you could put a logo in the corner of a model rather than, you know, trying to make it like a seashell or what you're telling me.
+[ 2083.52] slot0: Well, we need to think about how it's going to look different.
+[ 2087.20] slot3: I think that sounds a really attractive idea. I've not come across anything like that before. If it kind of, yeah, and that opens out into your flip top.
+[ 2090.48] slot1: I've not come across anything like that.
+[ 2095.68] slot2: then it's nice.
+[ 2095.84] slot3: then it's nice to, you can make it lightweight plastic, nice to hold in the palm of the hand. And just because you're having to actually insert in between the two covers, that's gonna take care of some of the repetitive strain injury, trying to prevent a lot of that, I would think. I think it's a really nice idea.
+[ 2110.08] slot3: Yeah.
+[ 2110.64] slot1: And plus, you can...
+[ 2110.96] slot3: And even though we're using plastic, you can still think of the designs you can get in plastic. You can do a nice conch shell or scallop shell exterior.
+[ 2121.76] slot0: Or you could do different, like you get with mobile phones, different fascias.
+[ 2127.60] slot2: You could have...
+[ 2127.84] slot0: You could have different kind of casings. You could have psychedelic ones for younger people and sleek ones.
+[ 2127.92] slot3: You could have different...
+[ 2130.80] slot3: you could have
+[ 2133.28] slot3: ones for
+[ 2138.40] slot3: less chance of it being lost too. It's not like a chocolate brown lozenge that's going to go down the sofa. People might want to put it on their mantelpiece or whatever if it looks attractive enough as a kind of ornament and they're not going to lose it so much.
+[ 2143.12] slot0: People might want to put it on.
+[ 2151.76] slot3: It's easy to put nice to handle.
+[ 2154.64] slot1: Yeah, maybe we could come with some 5-6 designs and then choose whichever appeals the most. Like that could be the most common design.
+[ 2159.52] slot3: Yes. Like.
+[ 2159.60] slot2: Yes.
+[ 2160.56] slot0: That could be the most common.
+[ 2162.24] slot3: Okay.
+[ 2162.96] slot1: but we can think of five, six reasons.
+[ 2165.12] slot0: Right, I think we have to round it up.
+[ 2168.16] slot3: Can I just quickly go over the new project requirements so that I haven't missed anything? There's no teletext. It's only for TV and by implication video. Corporate image should be incorporated in the remote control. Something about Video Plus.
+[ 2168.96] slot0: go over the new
+[ 2182.48] slot0: That was in cutting down the number. That was kind of separate. That was cutting down the number of functions, making it simpler. So instead of having lots of things... So when they press the programming...
+[ 2188.88] slot3: Right.
+[ 2194.24] slot3: So when they press the programming it comes up on the LCD a reminder about using video plus so that they will look at the guidance Or is this nothing to do with the project requirements is this just that was an add-on feature?
+[ 2207.04] slot0: It kind of takes the place of having a button to press for the date and having the button to press for the channel, things like that. So it's kind of doing away with the programming feature. Yes, it could be an advertisement feature.
+[ 2208.88] slot3: of having a button.
+[ 2211.60] slot3: press for the channel, things like that. So it's kind of doing away with the programming feature. Yes.
+[ 2216.88] slot2: Yes.
+[ 2221.92] slot0: rather than design feature, you know, drawn attention to that and also paid lip service in the instruction manual because it's very simple so putting it down in words should be helpful.
+[ 2235.28] slot3: And the rechargeable batteries, was there anything else there? Any new project requirements?
+[ 2237.20] slot0: Was there anything?
+[ 2239.92] slot0: a new project
+[ 2248.96] slot1: Yep. We've got...
+[ 2249.76] slot0: We've got the buttons, but I think we'll work through that with the design of it.
+[ 2252.88] slot1: works through that.
+[ 2255.84] slot3: That's not at the moment a requirement, it's something we're looking at, what preference, so it may come round to market research at some point to see what people will do.
+[ 2259.44] slot0: preference so it may come around to market research at some point and we've talked about there being an alarm or something a beeping for being lost
+[ 2265.60] slot2: for being lost.
+[ 2267.52] slot1: Right.
+[ 2268.08] slot0: learning how to use it should be as simple as possible. There aren't going to be that many functions incorporated into it, so it should be fine. And the instruction manual, I don't know if we deal with that.
+[ 2286.08] slot0: I think...
+[ 2289.92] slot0: Yeah.
+[ 2290.40] slot1: Yep.
+[ 2290.80] slot0: and different from what's out there. Okay.
+[ 2291.28] slot1: from what's out there.
+[ 2292.48] slot3: Okay.
+[ 2292.80] slot0: Yeah, I think that's us.
+[ 2294.72] slot3: What would you specifically like marketing to look at before the next meeting or shall I just generally look at all the issues involved?
+[ 2300.24] slot0: I think you might get guidance, but...
+[ 2307.28] slot0: instructional manuals, because there tends to be a...
+[ 2308.64] slot3: Because there tends to be a...
+[ 2311.76] slot0: demonized thing there. Everyone's got a big pile of them but no one really uses them.
+[ 2318.88] slot3: Okay.
+[ 2323.44] slot3: Questionnaire 4. We're at lunchtime now, I think.
+[ 2324.24] slot0: Yes, right. Because we're at lunchtime now, I think.
+[ 2326.16] slot1: Time now, I think.
+[ 2329.36] slot0: Okay.
+[ 2333.60] slot0: I think you can email me if there's any more questions.

@@ -1,0 +1,12 @@
+{
+ "meeting": "TS3003c",
+ "model": "BUT-FIT/Dixtral",
+ "masks": "sortformer+tracker(cap4)",
+ "win_s": 120,
+ "cpwer": 0.3579,
+ "ref_words": 4309,
+ "hyp_words": 4110,
+ "gen_wall_s": 75,
+ "rtf": 0.029,
+ "device": "cuda"
+}

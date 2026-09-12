@@ -1,0 +1,231 @@
+[   11.04] FEE013: Are we not allowed to do the lights so people can see that a bit better?
+[   18.00] FEE013: Yeah. Okay.
+[   22.48] FEE013: Am I supposed to be standing up there?
+[   23.12] slot1: standing up there. So we've got both of these clipped on.
+[   29.20] FEE016: Is she going to answer me? Yeah, good. Right, both of them. Okay.
+[   29.92] slot1: Yeah. Good.
+[   34.40] slot1: yes
+[   50.48] FEE016: This is gonna fall off, it doesn't let you put it on.
+[   63.52] FEE013: Yep, yep, yep.
+[   80.64] FEE013: Okay, hello everybody. I'm Sarah, the project manager, and this is our first meeting, surprisingly enough. Okay, this is our agenda.
+[   83.36] FEE013: I am.
+[   96.00] FEE013: We will do some stuff, get to know each other a bit better, feel more comfortable with each other. Then we'll go do tool training, talk about the project plan, discuss our own ideas and everything.
+[  110.88] FEE013: and we've got 25 minutes to do that as far as I can understand.
+[  117.76] FEE013: Now we're developing a remote control, which you probably already know. We want it to be original, something that people haven't thought of, that's not out in the shops, trendy, appealing to a wide market.
+[  132.00] FEE013: but not a hunk of metal. And user-friendly, grannies to kids, maybe even poochies, should be able to use it.
+[  143.12] FEE013: Okay, first is the functional design. This is where we all go off and do our individual work. What needs need to be fulfilled by the product? What effect the product has to have? And how it's...
+[  157.44] FEE013: how it's actually going to do that. Conceptual design, what we're thinking, how it's going to go. And then the detailed design, how we're actually going to put it into practice and make it work.
+[  170.56] FEE013: Okay, right. We're going to practice with the pens and draw our favorite animal on the whiteboard. I'll go first. And sum up the characteristics of that animal. So...
+[  189.04] FEE013: Okay, I'll leave space for everyone else.
+[  243.36] FEE013: We're running out of blue.
+[  247.20] FEE013: Okay, I'm not going to ask you to guess, I'm going to tell you that's supposed to be a tiger.
+[  254.64] FEE013: and I see them as majestic.
+[  260.00] FEE013: and independent.
+[  266.32] FEE013: and
+[  268.80] FEE013: proud
+[  272.40] FEE013: Now, who would like to go next?
+[  275.28] FEE013: Okay.
+[  275.68] FEE013: Okay.
+[  279.28] MEO015: got
+[  285.28] MEO015: Where does this come from?
+[  287.76] FEE013: Put your lapel on.
+[  290.00] FEE013: Yep.
+[  293.44] MEO015: Maybe you can guess what I'm trying to make.
+[  306.48] FEE016: a kind of dog.
+[  309.36] MEO015: Yep.
+[  313.60] MEO015: It's actually sitting. So.
+[  316.08] FEE016: Sorry.
+[  316.80] MEO015: It's sitting down. It's not sitting.
+[  317.12] MEO015: It's sitting, it's not standing. Okay, I see it as one thing. It's very supportive.
+[  318.00] FEE016: Outstanding.
+[  324.24] MEO015: It's your best friend in your... You can talk to a dog, it can be your best friend, it doesn't discriminate between you based on what you are. Second, it's...
+[  333.52] MEO015: loyal
+[  335.68] MEO015: and third thing it's got intuition
+[  340.80] MEO015: Means dogs can sometimes make out between a thief and a...
+[  345.28] MEO015: So basically these are the three unique features I think belong to a dog.
+[  350.24] FEE013: Okay, thank you.
+[  353.84] MEO015: Yeah, I hope we go.
+[  356.32] MEO015: Please please leave
+[  356.64] FEE016: Please leave me a space at the bottom, I'm little. I can get to the top. I'll be standing on a chair.
+[  359.20] MEO015: Get to the top.
+[  359.44] FEE013: get to the top.
+[  361.84] MEE014: Well, since you guys have chosen the ones I wanted to do, I have to go for something a bit random.
+[  364.72] FEE013: Okay.
+[  366.08] MEO015: It's a bit random.
+[  371.60] MEE014: And also my drawing skill isn't that great. Well, as you can see, the quality of the work.
+[  374.00] FEE016: Well, as you can see, the quality of the work today is... I think it's outstandingly good.
+[  376.96] FEE016: I think it's outstandingly good.
+[  379.76] MEE014: Okay, now I'm going to have to change what it was originally going to be because that looks like a beak now.
+[  382.64] MEE014: because that looks like a...
+[  391.28] FEE016: Crocodile?
+[  394.08] FEE013: Yeah.
+[  394.48] MEE014: Yeah, it can be a crocodile. It can be a crocodile. Well, firstly, it was an attempt at a T-Rex, and then it sort of changed into a pelican, but it can be a crocodile.
+[  396.56] MEE014: The crocodile. Well, it was... It's going to be a bird. Firstly...
+[  403.28] FEE016: sort of changed into a...
+[  420.24] FEE013: That's lovely. Yeah.
+[  421.28] MEE014: Yeah, and I'll have to think on the spot of things that it is.
+[  428.24] MEE014: uh scary
+[  432.64] MEE014: uh strong
+[  438.88] MEE014: Yeah, that's about it, I think.
+[  441.76] FEE016: Okay. I'm very impressed with your artistic skills. Mine's a dreadful. Oops, this is now coming apart. Let me just put the top in.
+[  454.08] FEE016: I hope that clicks in. I'll hold it on. Oh dear. What happened there?
+[  461.20] FEE013: technical help
+[  465.52] FEE016: Hopefully that will stay on, two-handed version.
+[  468.32] MEE014: Okay.
+[  468.72] FEE016: Okay.
+[  474.56] FEE016: Again, this is off the top of my head. I was going to do a big cat too.
+[  476.96] MEE014: too.
+[  481.36] FEE016: It doesn't look like what I want it to be.
+[  487.20] FEE016: It's not a vampire bat, honestly.
+[  487.52] FEE016: It's not a vampire bat, honestly.
+[  493.04] FEE016: and somewhere there's a body behind.
+[  497.60] FEE016: That's my dreadful, that's the worst, yeah, that's meant to be.
+[  497.92] FEE016: That's my dreadful, that's the worst. Yeah, it's meant to be an eagle. Right. You can tell it's a flying animal. Could have been a seagull. I never thought of a seagull. An eagle. Again, I'm thinking on my feet. Goodness. I suppose they're also in...
+[  501.60] FEE016: You can tell it's a flying animal.
+[  501.84] FEE016: Right. You can tell it.
+[  501.92] MEO015: Right.
+[  512.16] FEE016: so independent. I'll put that one down again.
+[  516.24] FEE016: I didn't.
+[  520.00] MEE014: Look at it go.
+[  520.32] FEE016: They're good at golf. Independent, right. Did you say they're good at golf? Yeah. Are they? Eagle. Oh, right. I'm not good at golf. I'll say they're quite free-spirited, flying around everywhere.
+[  524.48] FEE016: Yeah. Are they? Eagle. Oh, right.
+[  525.60] FEE013: Eagle.
+[  535.68] FEE016: doing their own thing.
+[  541.60] FEE016: and birds of prey aren't they oh dear intrepid intrepid
+[  553.76] FEE016: There we go. I hope that pen is going to be okay.
+[  554.56] FEE016: I hope that pen's good.
+[  561.28] FEE013: Okay. That was fine. Right. Finance-wise, we've got a selling price at 25 euros, which I don't actually know what that is in pounds at all. Any ideas?
+[  576.64] FEE016: 17?
+[  576.80] MEE014: 17?
+[  576.96] MEO015: 1.4 euro would make a pound or something. Yeah, yes.
+[  580.96] MEE014: Yeah, yeah, something like that. Yeah, about 17 pounds.
+[  582.72] MEO015: It's over.
+[  584.56] FEE013: 17 pounds.
+[  584.96] FEE016: 17 pounds
+[  588.48] FEE016: Should we be making notes of this? We can just refer to this later, Colin. I think so. I think so. I'll be able to pull it up or put it in the shared...
+[  591.12] FEE013: I think so. I think I'll be able to pull it up or put it in the shared folder. Having said that, though...
+[  594.40] MEE014: Having said that though, if you want to get one of those, the ones on the market at the moment, they're about £20 anyway. Right. Yeah, we have to buy one.
+[  603.60] FEE016: Right.
+[  604.00] FEE013: Yeah.
+[  606.00] FEE016: Buy one.
+[  606.80] FEE013: Mm-hmm.
+[  608.16] FEE016: So I suppose later it depends if we want to undercut the price or is it going to make our product look a cheapy, cheapy option? Yeah.
+[  613.68] FEE013: Yeah, production costs at $12.50. So half of the selling price is taken up by building it.
+[  614.24] MEE014: Um,
+[  617.84] MEO015: Okay, pretty huge margin. Half.
+[  621.60] MEE014: taken out
+[  622.16] FEE016: not by
+[  624.00] FEE016: Mm-hmm.
+[  624.40] FEE013: and profit aim is 50 million euros which is a
+[  630.48] FEE016: In her first year. Yep.
+[  631.36] FEE013: Yes. Yeah, I presume so.
+[  635.68] FEE013: So then...
+[  638.24] FEE016: You've got market range international and you did say earlier it's got to be accessible and usable by all age groups. We're not focusing on business market, any particular thing, it's user friendly to everyone.
+[  645.28] FEE013: just
+[  649.28] FEE016: everyone, user friendly to everyone.
+[  653.52] FEE016: big target group
+[  654.56] FEE013: Yes, yes. I don't think it's a case of worrying about different languages and things like that.
+[  662.00] FEE016: No.
+[  662.40] FEE013: making that key point, just that it's going to be in the international market like Australia, America, things like that. Okay.
+[  666.80] MEO015: Australian.
+[  675.28] FEE013: What are your experiences with remote controls? I mean, I've got, we got, we had three videos, a TV and sort of amp thing all set up.
+[  687.52] MEO015: set up.
+[  688.24] MEE014: So we got one of them.
+[  688.48] FEE013: So we got one of the universal remote controls.
+[  691.20] FEE016: Yeah.
+[  691.36] MEE014: Yeah.
+[  691.36] FEE013: Yeah.
+[  691.76] FEE013: that you program each of your things into, but that kept losing the signals, so we'd have to reprogram it every now and again. I think it was quite a GP as well.
+[  701.28] MEO015: so that might
+[  701.28] MEE014: so that might have had
+[  701.44] FEE013: so that might have had something to do with it. But that was quite good, the fact that you could...
+[  705.28] MEE014: Used all the ones in the same time. Didn't have six.
+[  706.16] FEE013: didn't have six remote controls.
+[  708.16] FEE016: Right.
+[  708.88] MEO015: You want to integrate everything into one like yeah
+[  711.36] MEE014: Yeah.
+[  712.00] FEE016: My experience has only been being given the remote control with the object I buy, not doing any tampering with it and programming, using it to program TV or videos and things, but basically on, off, volume, up and down, channel one, two, that...
+[  713.04] MEE014: My experience is...
+[  726.24] FEE016: that basic function I don't think I could go any further with it than that so it's got to be something usable by someone like me as well
+[  735.12] FEE013: Yeah, that's the main stuff anyway. I mean, and you don't want to. I hate looking at a control and seeing a million tiny little buttons with tiny little words saying what they all do and just sitting there searching.
+[  737.44] FEE016: I mean...
+[  746.48] FEE016: seeing what they all do.
+[  747.84] MEE014: Yes.
+[  749.28] FEE016: searching for the teletext button or something like that. And symbols that you don't necessarily understand.
+[  749.92] FEE016: the teletext button or something like that. And symbols that you don't necessarily understand. Symbols you're meant to understand that you don't.
+[  755.60] FEE013: Simplification.
+[  755.60] FEE013: Simplification of symbols you put together. When they're...
+[  757.52] FEE013: when you've got the main things on the front of it and a section opens up or something to the other functions when you can do sound or options kind of recording things like that inside
+[  768.56] FEE016: Oh yeah.
+[  771.84] FEE013: it because it doesn't make when you pick it up it doesn't make it really complicated to look at it's obvious what you're doing um actually that just
+[  772.40] FEE013: because it doesn't...
+[  775.68] FEE013: to look at it's obvious what you're doing
+[  778.00] MEE014: what you're doing.
+[  779.92] FEE016: Actually, that just raises a point. I wonder what our design people think. But you know on a mobile phone,
+[  785.12] MEE014: you can press...
+[  785.28] FEE016: you can press a key and it gives you a menu, it's got a menu display. I wonder if incorporating that into the design of a remote control might be useful. So you've got a little LCD display.
+[  787.20] FEE016: It's got a menu display.
+[  792.32] FEE016: useful so you've got a little
+[  794.64] MEO015: I was thinking on the same lines you instead of having too many buttons and make it complicated for the user May maybe have an LCD display or something like that like a mobile
+[  803.92] MEO015: With menus. With menus. Yeah.
+[  804.48] MEO015: and with menus. And if it's somewhat similar to what you have on mobile phone, people might find it easier to browse and navigate also.
+[  811.28] FEE016: Yeah.
+[  811.92] MEO015: Maybe.
+[  812.48] FEE013: What about the older generation? What about granny and granddads? My granddad can answer his mobile phone, but he couldn't even dream of texting or something like that.
+[  816.40] MEO015: My
+[  821.44] FEE016: Can he program his remote control or is he basic with that too?
+[  828.24] FEE013: I don't think they tape things.
+[  829.52] MEE014: Yeah.
+[  830.16] FEE016: My
+[  830.48] MEE014: My grandad's actually better than me at using Teletext. Right.
+[  830.64] FEE013: My
+[  833.36] FEE016: Right. So that's a problem regardless of any design modifications you come up with. Yeah. That's going to be a problem anyway with the older generation perhaps. And that's another issue how we tackle that. Why?
+[  838.80] MEE014: Yeah.
+[  841.28] FEE013: that's
+[  843.84] MEE014: needs to be, as long as it's sort of self -intuitive and you can work out why everything's doing. Because I mean menus on sort of phones now, they're sort of goldy.
+[  858.24] MEE014: all these pictures and stuff which makes it fairly obvious what you're trying to do.
+[  862.48] FEE013: Hmm.
+[  863.36] MEE014: Mm-hmm.
+[  864.40] FEE013: I don't know I don't like the new phones that have kind of got a Windows -based running system.
+[  864.80] MEE014: don't know how.
+[  870.32] MEE014: Oh yeah. Running.
+[  873.04] FEE013: I find it really confusing. I kept getting lost in the phone. I have not got a new one, but my friend got a new one. I was trying to do things with it. And I just kept getting lost, but that's just me.
+[  885.28] MEE014: I don't know how for €12 .50 how much of an excellent screen you could get. You'd have to keep it down to a black and white LCD. Is it
+[  895.60] FEE016: a...
+[  898.80] FEE016: Is it possible that for the older generation you could have an extra button that you press for large print, like you do in large print books?
+[  905.60] MEO015: Obviously just...
+[  905.76] FEE016: Obviously it displays less on the screen, but as long as they can read it, that's the main thing.
+[  912.00] FEE013: yeah
+[  913.84] FEE013: Or what about kind of a dual function in that you've got the basic buttons just for your play volume program things and also and then a menu to go into with obvious.
+[  923.84] FEE016: and
+[  928.80] FEE013: obvious pictures, obvious symbols, and that's where you control recording and things like that.
+[  930.96] FEE016: Yes.
+[  935.28] FEE016: The other thing is, just tacking into mobile phone design features again, you could have a flip-top remote control so that when you flip over the top, you can have a bigger screen.
+[  946.40] MEO015: The flip
+[  946.48] FEE016: over.
+[  948.56] FEE013: I think that's a cost thing. I don't know how much we're going to know about it.
+[  952.96] MEO015: save a bit of space instead of bulky it might look small yeah
+[  956.16] FEE013: look
+[  957.36] MEO015: but it might have its cost implications.
+[  959.60] FEE013: And
+[  959.76] FEE016: there's no reason we need to make it look as fashionable and stylish as a mobile phone. It can still be lightweight plastic, you know?
+[  965.20] FEE013: you know
+[  966.32] MEO015: Something
+[  966.48] FEE016: Something that's easily moulded and produced. Sorry, I'm treading on your territory, guys.
+[  968.96] FEE013: Sorry, to...
+[  971.12] FEE013: right okay we've got half an hour before the next meeting so we're all going to go off and do our individual things I think that's probably about it and then we'll come back and liaise again
+[  985.44] FEE013: And I get to do another fantastic PowerPoint presentation.
+[  985.52] MEE014: Yeah. And I
+[  988.96] MEE014: a quick thing about what you were saying about the, it doesn't need to be fashionable. So I had a quick look at the company website, and it's like the, we put the...
+[ 1003.20] MEE014: the fashion into electronics. I think the whole design thing might be quite... I mean you don't... you can still have plastic and it look quite good.
+[ 1005.20] FEE016: You can have...
+[ 1013.84] FEE016: quite I mean, it doesn't have to be that, you know, but that was my main point. We do have to use metal. I don't know if using plastic does make it cheaper. I presume it would. Yeah. It would. Yeah. Probably. Yeah.
+[ 1022.40] FEE013: I would, yeah. Probably. Yeah. I mean, the Sky remote controls and everything, they're kind of molded and look a bit different, and the Telewest remote controls are silver plastic, which looks a bit smarter. So, yeah, I guess that's stuff.
+[ 1033.04] FEE016: Right.
+[ 1036.80] FEE013: Okay, so let's break up there.
+[ 1037.52] FEE016: Okay.
+[ 1042.32] FEE016: Okay.
+[ 1042.72] MEE014: Okay.
+[ 1043.28] FEE013: So see you in half an hour.
+[ 1046.56] FEE016: Do we go back to our room? I think so. Yeah.
+[ 1048.16] MEO015: Yeah.
