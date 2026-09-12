@@ -13,7 +13,11 @@ from pathlib import Path
 
 import modal
 
-from modal_app import DATA, GPU_USD_H, HF_SECRET, REPO, VOL, _guard, _link_data, _record_spend  # noqa: F401
+import sys
+for _p in ("/repo/research", str(Path(__file__).resolve().parent)):   # container mount / local checkout
+    if _p not in sys.path:
+        sys.path.insert(0, _p)
+from modal_app import DATA, GPU_USD_H, HF_SECRET, REPO, VOL, _guard, _link_data, _record_spend  # noqa: E402,F401
 
 app = modal.App("livediar-pilot")
 
