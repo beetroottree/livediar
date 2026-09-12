@@ -1,8 +1,14 @@
 """Modal jobs for the parts of PLAN.md that need real GPUs.
 
-    modal run research/modal_app.py::dixtral_ami --meetings all      # stage-1 gate, 16 meetings
-    modal run research/modal_app.py::toy_ablation                    # conditioning proof at scale
-    modal run research/modal_app.py::whisper_ami                     # baseline on GPU (optional)
+    modal setup                                                       # once: attach the account
+    modal secret create huggingface HF_TOKEN=hf_...                   # once: HF token (Voxtral base is gated)
+    modal run research/modal_app.py::sync_data                        # once: upload AMI + rooms (~2.5 GB)
+    modal run --detach research/modal_app.py::dixtral_ami             # stage-1 gate, 16 meetings on 16 H100s (~$10)
+    modal run --detach research/modal_app.py::toy_ablation            # conditioning proof at scale (~$6)
+
+Modal in 2026 (docs/research/infra.md): H100 $3.95/h per-second billing, Starter plans cap at
+10 concurrent GPUs (Team 50), GPU functions are preemptible, single-job clustering tops out
+at 64 GPUs and needs approval. Set a workspace spend limit before running anything.
 
 Data lives in a Modal Volume `livediar-data` laid out like bench/ami and
 research/data locally; `sync_data` uploads what this repo has. Results are
@@ -51,17 +57,30 @@ def _link_data():
     Path("/repo/bench/ami/results").mkdir(exist_ok=True)
 
 
-@app.function(gpu="H100", timeout=6 * 3600, volumes={DATA: VOL},
-              secrets=[modal.Secret.from_name("huggingface", required_keys=["HF_TOKEN"])] if os.environ.get("MODAL_HF_SECRET") else [])
-def dixtral_one(meeting: str, win: int = 120) -> dict:
+# HF weights are cached on the volume so 16 parallel containers download Dixtral once,
+# not 16 times; GPU functions are preemptible on Modal, so jobs are idempotent (skip if the
+# result already exists on the volume) and retried.
+HF_SECRET = [modal.Secret.from_name("huggingface")]   # create with: modal secret create huggingface HF_TOKEN=...
+
+
+@app.function(gpu="H100", timeout=6 * 3600, volumes={DATA: VOL}, secrets=HF_SECRET,
+              retries=modal.Retries(max_retries=3, initial_delay=10.0))
+def dixtral_one(meeting: str, win: int = 120) -> str:
+    done = Path(f"{DATA}/results/{meeting}.dixtral.json")
+    if done.exists():
+        return done.read_text()
     _link_data()
-    env = dict(os.environ, WANDB_MODE="disabled",
+    Path(f"{DATA}/hf").mkdir(parents=True, exist_ok=True)
+    env = dict(os.environ, WANDB_MODE="disabled", HF_HOME=f"{DATA}/hf",
                PYTHONPATH="/repo:/repo/bench:/repo/research/dixtral_repo:/repo/research/dixtral_repo/src")
     subprocess.run(["python", "/repo/research/dixtral_ami.py", meeting, "--win", str(win), "--device", "cuda"],
                    check=True, cwd="/repo", env=env)
     out = Path(f"/repo/bench/ami/results/{meeting}.dixtral.json").read_text()
-    Path(f"{DATA}/results").mkdir(exist_ok=True)
-    Path(f"{DATA}/results/{meeting}.dixtral.json").write_text(out)
+    done.parent.mkdir(exist_ok=True)
+    done.write_text(out)
+    hyp = Path(f"/repo/bench/ami/results/{meeting}.dixtral.hyp.txt")
+    if hyp.exists():
+        Path(f"{DATA}/results/{meeting}.dixtral.hyp.txt").write_text(hyp.read_text())
     VOL.commit()
     return out
 
@@ -73,10 +92,12 @@ def dixtral_ami(meetings: str = "all", win: int = 120):
         print(r)
 
 
-@app.function(gpu="A100", timeout=4 * 3600, volumes={DATA: VOL})
+@app.function(gpu="A100", timeout=4 * 3600, volumes={DATA: VOL}, secrets=HF_SECRET,
+              retries=modal.Retries(max_retries=2, initial_delay=10.0))
 def toy_ablation_job(steps: int = 20000, rooms: int = 2000):
     """Conditioning proof with more rooms and steps than the laptop run."""
-    env = dict(os.environ, PYTHONPATH="/repo:/repo/research")
+    Path(f"{DATA}/hf").mkdir(parents=True, exist_ok=True)
+    env = dict(os.environ, PYTHONPATH="/repo:/repo/research", HF_HOME=f"{DATA}/hf")
     root = Path("/repo/research/data"); root.mkdir(exist_ok=True)
     if not (root / "rooms").exists():
         (root / "rooms").symlink_to(f"{DATA}/rooms")
