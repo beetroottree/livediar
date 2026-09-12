@@ -225,6 +225,31 @@ def simulate_rooms_job(rooms: int = 2000, dur: int = 90) -> str:
     return f"exit {r.returncode}, rooms on volume {n}, {time.time() - t0:.0f}s\nSTDERR tail:\n{r.stderr[-1500:]}"
 
 
+@app.function(volumes={DATA: VOL}, timeout=4 * 3600, memory=16384, cpu=4.0)
+def pilot_data_job() -> str:
+    """Build the Moshi-LoRA pilot dataset on a CPU container (no GPU billing for file conversion):
+    /data/pilot/rooms from /data/rooms_modal, /data/pilot/ami + ami_dev from the AMI wavs + references."""
+    import time
+    t0 = time.time(); out = []
+    VOL.reload(); _link_data()
+    env = dict(os.environ, PYTHONPATH="/repo:/repo/bench:/repo/research")
+    if not Path(f"{DATA}/pilot/rooms/data.jsonl").exists():
+        r = subprocess.run(["python", "/repo/research/pilot_data.py", "rooms", f"{DATA}/rooms_modal", f"{DATA}/pilot/rooms"],
+                           cwd="/repo", env=env, capture_output=True, text=True)
+        out.append(f"rooms: exit {r.returncode} {r.stdout.strip()[-200:]} {r.stderr.strip()[-300:]}"); VOL.commit()
+    for split, sub in (("train", "ami"), ("dev", "ami_dev")):
+        if not Path(f"{DATA}/pilot/{sub}/data.jsonl").exists():
+            r = subprocess.run(["python", "/repo/research/pilot_data.py", "ami", f"{DATA}/pilot/{sub}", split],
+                               cwd="/repo", env=env, capture_output=True, text=True)
+            out.append(f"{sub}: exit {r.returncode} {r.stdout.strip()[-200:]} {r.stderr.strip()[-300:]}"); VOL.commit()
+    return f"{time.time() - t0:.0f}s\n" + "\n".join(out or ["nothing to build"])
+
+
+@app.local_entrypoint()
+def pilot_data():
+    print(pilot_data_job.remote())
+
+
 @app.local_entrypoint()
 def simulate_rooms(rooms: int = 2000):
     print(simulate_rooms_job.remote(rooms=rooms))
