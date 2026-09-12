@@ -1,0 +1,53 @@
+# Training curriculum for the room-aware duplex model (PLAN.md §5).
+# Each stage names its data mix, objective, gate metric and the harness that scores it.
+
+model:
+  backbone: {init: "ablate: kyutai/moshiko-pytorch-bf16 | Qwen/Qwen3-Omni-30B-A3B thinker", d_model: 4096, layers: 32}
+  codec: kyutai/mimi            # 12.5 Hz = Sortformer frame rate; 8 codebooks
+  slots: 4                      # raise to 8 with an 8-spk diarizer
+  conditioning: research/conditioning.py::DiarizationConditioning
+  identity_dim: 192             # TitaNet-large
+
+corruption:                     # applied to every training mask, PLAN.md §4.4
+  jitter_frames: 3
+  flip_p: 0.05
+  swap_p: 0.02
+  max_lag: 12
+
+stages:
+  - name: 0_init
+    goal: pick backbone init; verify Mimi round-trip and frame alignment with Sortformer
+    gate: "1B ablation: conditioned < unconditioned cpWER on simulated rooms by >= 20% relative"
+
+  - name: 1_room_listening
+    data: {real_pseudolabelled: 20000h, simulated_rooms: 100000h}
+    objective: next-token on room audio + speaker-attributed inner monologue (SOT with <spk:NAME> tags)
+    inputs: [room_codes, activity, identity(unknown)]
+    outputs: [text]
+    gate: {cpWER_AMI_test: "<= Dixtral (BUT-FIT/Dixtral) with Sortformer masks", cpWER_NOTSOFAR: "<= Dixtral"}
+    harness: bench/ami_bench.py   # same references, same cpWER
+    compute_h100_hours: 40000
+
+  - name: 2_identity
+    data: {simulated_rooms_named: 30000h, real_with_profiles: 5000h}
+    objective: stage-1 + names bound to identity embeddings; enrollment given as prompt
+    gate: {idWER_minus_cpWER_AMI: "<= 1.0 point"}
+    compute_h100_hours: 10000
+
+  - name: 3_duplex_behaviour
+    data: {assistant_in_room_synthetic: 10000h}
+    objective: add own audio stream + floor token; research/duplex_lm.py::loss
+    gate: {floor_f1: ">= 0.85 on held-out scripts", speech_mos: ">= 4.0"}
+    compute_h100_hours: 30000
+
+  - name: 4_rl_timing
+    data: {assistant_in_room_human: 500h, preferences: "rater labels welcome/late/rude"}
+    objective: preference RL on floor decisions (Moshika-RL recipe, room version)
+    gate: {win_rate_vs_stage3: ">= 0.65", interruption_rate: "<= human baseline"}
+    compute_h100_hours: 10000
+
+  - name: 5_distil
+    data: all
+    objective: 1-2B student, sequence-level KD from stage-4 teacher
+    gate: {cpWER_delta: "<= +2.0", rtf_m_series: "< 0.5"}
+    compute_h100_hours: 15000
