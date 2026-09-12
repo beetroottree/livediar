@@ -232,6 +232,13 @@ def pilot_segment(steps: int = 1000, run: str = "pilot1") -> str:
         env["PILOT_INIT_MOSHI"] = state["init_moshi"]
     if state["init_cond"]:
         env["PILOT_INIT_COND"] = state["init_cond"]
+    # pilot data for simulated rooms is built in-container from the rooms the ablation job simulated
+    # (research/pilot_data.py: stereo 24 kHz + alignments + activity); AMI pilot data is uploaded.
+    if not Path(f"{DATA}/pilot/rooms/data.jsonl").exists():
+        assert Path(f"{DATA}/rooms_modal").exists(), "run toy_ablation first (it simulates /data/rooms_modal)"
+        subprocess.run(["python", "/repo/research/pilot_data.py", "rooms", f"{DATA}/rooms_modal", f"{DATA}/pilot/rooms"],
+                       check=True, cwd="/repo", env=env)
+        VOL.commit()
     subprocess.run(["python", "/repo/research/pilot/build_trainer.py", "/opt/moshi-finetune"], check=True)
     cfg = Path("/opt/moshi-finetune/pilot_seg.yaml")
     y = (Path("/repo/research/pilot/pilot.yaml").read_text()
