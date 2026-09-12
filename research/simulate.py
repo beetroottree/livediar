@@ -37,13 +37,18 @@ SR, FRAME_S = 16000, 0.08
 
 @dataclass
 class Schedule:
-    turn_s: tuple = (0.8, 6.0)      # log-uniform turn length range (AMI median ~2 s)
-    gap_s: tuple = (-1.5, 1.2)      # negative gap = overlap at the handover
-    overlap_p: float = 0.35         # probability the next turn starts before this one ends
-    # defaults give ~8-12% overlapped frames on the sample pool; fit to AMI (PLAN.md §4.2)
-    backchannel_p: float = 0.12     # short "mm-hm" from a listener inside a long turn
-    backchannel_s: tuple = (0.2, 0.6)
-    self_continue_p: float = 0.35   # same speaker keeps the floor after a pause
+    """Turn-taking parameters. Defaults are FITTED to AMI train+dev references
+    (research/fit_turns.py, 154 meetings, 75k turns, 2026-09-12):
+    turn length p10/p50/p90 = 0.28/1.53/10.56 s, 36 % of turns < 0.8 s,
+    39 % of handovers overlap, same-speaker continuation 0.22,
+    overlap = 13.8 % of speech time. Fit per scenario for other corpora
+    (AliMeeting 35-42 %, telephone ~10 %)."""
+    turn_s: tuple = (0.3, 10.5)     # log-uniform turn length range
+    gap_s: tuple = (-4.5, 4.7)      # negative gap = overlap at the handover (clamped to 80 % of the turn)
+    overlap_p: float = 0.39         # probability the next turn starts before this one ends
+    backchannel_p: float = 0.36     # short interjection from a listener inside a long turn
+    backchannel_s: tuple = (0.2, 0.8)
+    self_continue_p: float = 0.22   # same speaker keeps the floor after a pause
 
 
 def read(path):

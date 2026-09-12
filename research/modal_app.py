@@ -48,6 +48,43 @@ MEETINGS = ["EN2002a", "EN2002b", "EN2002c", "EN2002d", "ES2004a", "ES2004b", "E
             "IS1009a", "IS1009b", "IS1009c", "IS1009d", "TS3003a", "TS3003b", "TS3003c", "TS3003d"]
 
 
+# Modal 2026 list prices per GPU-hour (docs/research/infra.md); used for the running spend estimate.
+GPU_USD_H = {"H100": 3.95, "H200": 4.54, "B200": 6.25, "A100": 2.50, "A100-80GB": 2.50, "L40S": 1.95, "L4": 0.80, "T4": 0.59}
+
+
+def _record_spend(job: str, gpu: str, seconds: float, note: str = ""):
+    """Append one line to spend.jsonl on the volume; `modal run ...::spend` sums it."""
+    import json, time
+    n = int(gpu.split(":")[1]) if ":" in gpu else 1
+    kind = gpu.split(":")[0]
+    usd = GPU_USD_H.get(kind, 4.0) * n * seconds / 3600
+    Path(f"{DATA}/results").mkdir(parents=True, exist_ok=True)
+    with open(f"{DATA}/results/spend.jsonl", "a") as f:
+        f.write(json.dumps({"t": time.strftime("%Y-%m-%d %H:%M:%S"), "job": job, "gpu": gpu,
+                            "seconds": round(seconds), "est_usd": round(usd, 3), "note": note}) + "\n")
+    VOL.commit()
+    return usd
+
+
+@app.function(volumes={DATA: VOL})
+def spend_total() -> str:
+    import json
+    p = Path(f"{DATA}/results/spend.jsonl")
+    if not p.exists():
+        return "no spend recorded"
+    rows = [json.loads(l) for l in p.read_text().splitlines() if l.strip()]
+    tot = sum(r["est_usd"] for r in rows)
+    by = {}
+    for r in rows:
+        by[r["job"]] = by.get(r["job"], 0) + r["est_usd"]
+    return "\n".join(f"{k:24s} ${v:8.2f}" for k, v in sorted(by.items())) + f"\n{'TOTAL':24s} ${tot:8.2f}  ({len(rows)} calls)"
+
+
+@app.local_entrypoint()
+def spend():
+    print(spend_total.remote())
+
+
 def _link_data():
     """Make /repo/bench/ami/{wav,cache,manual,setup} point at the volume."""
     for d in ("wav", "cache", "manual", "setup"):
@@ -66,9 +103,11 @@ HF_SECRET = [modal.Secret.from_name("huggingface")]   # create with: modal secre
 @app.function(gpu="H100", timeout=6 * 3600, volumes={DATA: VOL}, secrets=HF_SECRET,
               retries=modal.Retries(max_retries=3, initial_delay=10.0))
 def dixtral_one(meeting: str, win: int = 120) -> str:
+    import time
     done = Path(f"{DATA}/results/{meeting}.dixtral.json")
     if done.exists():
         return done.read_text()
+    t0 = time.time()
     _link_data()
     Path(f"{DATA}/hf").mkdir(parents=True, exist_ok=True)
     env = dict(os.environ, WANDB_MODE="disabled", HF_HOME=f"{DATA}/hf",
@@ -81,7 +120,7 @@ def dixtral_one(meeting: str, win: int = 120) -> str:
     hyp = Path(f"/repo/bench/ami/results/{meeting}.dixtral.hyp.txt")
     if hyp.exists():
         Path(f"{DATA}/results/{meeting}.dixtral.hyp.txt").write_text(hyp.read_text())
-    VOL.commit()
+    _record_spend("dixtral_ami", "H100", time.time() - t0, meeting)
     return out
 
 
@@ -96,6 +135,8 @@ def dixtral_ami(meetings: str = "all", win: int = 120):
               retries=modal.Retries(max_retries=2, initial_delay=10.0))
 def toy_ablation_job(steps: int = 20000, rooms: int = 2000):
     """Conditioning proof with more rooms and steps than the laptop run."""
+    import time
+    t0 = time.time()
     Path(f"{DATA}/hf").mkdir(parents=True, exist_ok=True)
     env = dict(os.environ, PYTHONPATH="/repo:/repo/research", HF_HOME=f"{DATA}/hf")
     root = Path("/repo/research/data"); root.mkdir(exist_ok=True)
@@ -111,7 +152,7 @@ def toy_ablation_job(steps: int = 20000, rooms: int = 2000):
     Path(f"{DATA}/results").mkdir(exist_ok=True)
     for c, t in res.items():
         Path(f"{DATA}/results/toy_cond{c}.json").write_text(t)
-    VOL.commit()
+    _record_spend("toy_ablation", "A100", time.time() - t0)
     return res
 
 

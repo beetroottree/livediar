@@ -11,7 +11,7 @@ local jobs cost $0 and list wall-clock instead.
 | 3 | Dixtral on Sortformer masks, 16 meetings | Modal 16×H100 | — | blocked: Modal token secret (`as-…`) not yet provided | est. $12 | — | — |
 | 3b | Dixtral on Sortformer masks, IS1009a only | local (MPS) | queued after job 2 | first attempt: 1 window in 1 105 s (RTF 9.2) then Metal crash | $0 | — | shows why job 3 is a Modal job |
 | 4 | scaled ablation, 2 000 rooms / 20 k steps, additive vs. per-layer | local (MPS) | rooms generating (CPU) | queued after 3b | $0 | — | — |
-| 5 | per-scenario turn statistics; regenerate rooms | local | — | not started | $0 | — | — |
+| 5 | per-scenario turn statistics; regenerate rooms | local (CPU) | 2026-09-12 13:1x | **done** for AMI: `research/fit_turns.py` on train+dev references (154 meetings, 75 k turns): overlap 13.8 % of speech time, 39 % of handovers overlap, turn p50 1.53 s, 36 % of turns < 0.8 s, continuation 0.22 → `simulate.py` defaults replaced; 2 000-room set regenerated with them | $0 | overlap_frac 1–8 % of frames on 2–4-speaker rooms (13.8 % of *speech* on AMI) | yes: the old 15 % single prior was replaced by fitted per-corpus values (PLAN §4.2) |
 | 6 | Moshi-LoRA stage-1 pilot | Modal 1×H100 | — | not started; needs job 3 + Modal token | est. $120 | — | — |
 | 7 | pilot second arm | Modal 1×H100 | — | reserve | est. $120 | — | — |
 | 8 | assistant-in-the-room scripts + 100 h TTS | local | — | not started | $0 | — | — |
