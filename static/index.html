@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>livediar — who is speaking now</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0F1514; --panel:#17211F;
+    --line:#293634; --text:#E9F1EC; --dim:#8CA29A;
+    --s0:#F2A33C; --s1:#F0655A; --s2:#59B8EE; --s3:#B89BFF;
+    --radius:14px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%}
+  body{
+    background:var(--ink); color:var(--text);
+    font-family:"Archivo","Helvetica Neue",Arial,sans-serif;
+    font-size:15px; line-height:1.45;
+    display:flex; flex-direction:column; min-height:100vh;
+  }
+  .wrap{width:min(1060px,100% - 40px); margin:0 auto; flex:1; display:flex; flex-direction:column}
+
+  /* top bar */
+  header{display:flex; align-items:center; gap:10px; padding:20px 0 14px; flex-wrap:wrap}
+  .mark{display:flex; align-items:baseline; gap:9px; font-weight:700; letter-spacing:.01em; margin-right:4px}
+  .mark .lamp{width:9px; height:9px; border-radius:50%; background:var(--dim); align-self:center; transition:background .2s}
+  .mark .lamp.on{background:#7CE38B; box-shadow:0 0 10px #7CE38B66}
+  .mark .lamp.replay{background:var(--s2); box-shadow:0 0 10px #59B8EE66}
+  .mark small{color:var(--dim); font-weight:500}
+  header .spacer{flex:1}
+  button,select{
+    font:inherit; color:var(--text); background:var(--panel);
+    border:1px solid var(--line); border-radius:10px; padding:9px 16px;
+    cursor:pointer;
+  }
+  select{padding:8px 10px; -webkit-appearance:none; appearance:none}
+  label.people{display:flex; align-items:center; gap:8px; color:var(--dim); font-size:13px}
+  button.primary{background:var(--text); color:var(--ink); border-color:var(--text); font-weight:600}
+  button.accent{border-color:var(--s2); color:var(--s2)}
+  button:hover,select:hover{border-color:var(--dim)}
+  button.primary:hover{opacity:.92}
+  button:focus-visible,select:focus-visible,[contenteditable]:focus-visible{outline:2px solid var(--s2); outline-offset:2px}
+  button[hidden],label[hidden]{display:none}
+
+  /* hero: the on-air board */
+  .board{
+    background:linear-gradient(180deg,var(--panel),#141C1B);
+    border:1px solid var(--line); border-radius:var(--radius);
+    padding:26px 28px 22px; position:relative; overflow:hidden;
+  }
+  .board .status{color:var(--dim); font-size:13.5px; min-height:1.4em}
+  .now{
+    margin:.15em 0 .1em; font-weight:800; font-stretch:118%;
+    font-size:clamp(34px,6.4vw,64px); line-height:1.06; letter-spacing:-.01em;
+    min-height:1.06em; overflow-wrap:anywhere;
+  }
+  .now .quiet{color:var(--dim); font-weight:600; font-stretch:100%}
+  .now .plus{color:var(--dim); font-weight:500; font-size:.6em; vertical-align:.22em; margin:0 .18em}
+  .now-under{height:5px; border-radius:3px; width:0; max-width:420px;
+    background:var(--dim); transition:width .25s,background .25s}
+
+  /* speaker tiles */
+  .tiles{display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-top:14px}
+  .tile{
+    --hue:var(--dim); --level:0;
+    background:var(--panel); border:1px solid var(--line); border-radius:var(--radius);
+    padding:14px 14px 12px; display:flex; flex-direction:column; gap:10px;
+    transition:border-color .2s, box-shadow .2s, background .2s, opacity .3s;
+  }
+  .tile.on{border-color:color-mix(in srgb,var(--hue) 55%,var(--line));
+    box-shadow:0 0 0 1px color-mix(in srgb,var(--hue) 35%,transparent),
+               0 6px 26px -12px var(--hue);
+    background:color-mix(in srgb,var(--hue) 7%,var(--panel));}
+  .tile.capped{opacity:.38}
+  .tile .head{display:flex; align-items:center; gap:11px}
+  .avatar{
+    width:46px; height:46px; border-radius:50%; flex:none;
+    display:grid; place-items:center; font-weight:700; font-size:18px; color:var(--ink);
+    background:var(--hue); position:relative;
+  }
+  .avatar::after{ /* level ring */
+    content:""; position:absolute; inset:-5px; border-radius:50%;
+    background:conic-gradient(var(--hue) calc(var(--level)*360deg), transparent 0);
+    -webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 3px),#000 calc(100% - 2.6px));
+            mask:radial-gradient(farthest-side,transparent calc(100% - 3px),#000 calc(100% - 2.6px));
+    opacity:.95; transition:none;
+  }
+  .tile .who{min-width:0}
+  .tile .name{font-weight:650; outline:none; border-radius:4px; padding:1px 3px; margin-left:-3px;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:100%}
+  .tile .name:hover{background:#ffffff10}
+  .tile .chip{
+    font-size:11.5px; font-weight:700; color:var(--ink); background:var(--hue);
+    border-radius:5px; padding:1.5px 7px; letter-spacing:.02em;
+    opacity:0; transform:translateY(2px); transition:opacity .15s,transform .15s;
+  }
+  .tile.on .chip{opacity:1; transform:none}
+  .tile .meta{display:flex; justify-content:space-between; color:var(--dim); font-size:12.5px}
+  .tile .share{height:4px; border-radius:2px; background:#ffffff12; overflow:hidden}
+  .tile .share i{display:block; height:100%; width:0; background:var(--hue); transition:width .5s}
+
+  /* timeline ribbon */
+  .ribbon{margin-top:14px; background:var(--panel); border:1px solid var(--line);
+    border-radius:var(--radius); padding:12px 14px 8px}
+  .ribbon .rhead{display:flex; justify-content:space-between; color:var(--dim);
+    font-size:12.5px; margin-bottom:6px}
+  canvas{width:100%; height:132px; display:block}
+
+  /* replay transport */
+  .transport{display:none; align-items:center; gap:12px; margin-top:12px;
+    background:var(--panel); border:1px solid var(--line); border-radius:var(--radius);
+    padding:10px 14px}
+  .transport.show{display:flex}
+  .transport .play{width:40px; height:40px; padding:0; border-radius:50%; display:grid; place-items:center;
+    font-size:16px; flex:none}
+  .transport input[type=range]{flex:1; accent-color:var(--s2); height:24px; margin:0}
+  .transport .time{font-variant-numeric:tabular-nums; color:var(--dim); font-size:13px; min-width:92px; text-align:right}
+  .transport .src{color:var(--dim); font-size:12.5px; max-width:220px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+
+  /* transcript */
+  .transcript{margin-top:14px; background:var(--panel); border:1px solid var(--line);
+    border-radius:var(--radius); padding:12px 14px 10px; display:flex; flex-direction:column; gap:6px}
+  .transcript .thead{display:flex; justify-content:space-between; align-items:center; color:var(--dim); font-size:12.5px}
+  .transcript .thead button{padding:5px 10px; font-size:12.5px; border-radius:8px}
+  .lines{max-height:260px; overflow-y:auto; display:flex; flex-direction:column; gap:5px; scroll-behavior:smooth;
+    font-size:15px; line-height:1.5}
+  .line{display:grid; grid-template-columns:52px 1fr; gap:10px; align-items:baseline; padding:2px 4px; border-radius:6px}
+  .line .ts{color:var(--dim); font-size:12px; font-variant-numeric:tabular-nums}
+  .line b{font-weight:650; margin-right:6px}
+  .line.partial{color:var(--dim); font-style:italic}
+  .line.partial b{font-style:normal}
+  .line.now{background:#ffffff0a}
+  .line .ov{font-size:11px; color:var(--dim); margin-left:6px; vertical-align:1px; cursor:help}
+  .lines:empty::after{content:"Captions appear here as people speak."; color:var(--dim); font-size:13px}
+
+  /* voices (enrolled people) */
+  .voices{margin-top:12px; display:flex; align-items:center; gap:10px; flex-wrap:wrap; color:var(--dim); font-size:13px}
+  .voices .chip{display:inline-flex; align-items:center; gap:7px; background:var(--panel); border:1px solid var(--line);
+    border-radius:999px; padding:5px 10px 5px 12px; color:var(--text); font-size:13px}
+  .voices .chip .x{cursor:pointer; color:var(--dim); font-size:15px; line-height:1}
+  .voices .chip .x:hover{color:var(--s1)}
+  .voices button{padding:6px 12px; font-size:13px; border-radius:999px}
+  .voices .rec{color:var(--s1); font-weight:600}
+  .tile .vid{font-size:11px; color:var(--dim); margin-left:6px; font-weight:500}
+  .line .who{font-size:10.5px; color:var(--dim); margin-left:4px}
+
+  footer{display:flex; gap:18px; color:var(--dim); font-size:12.5px;
+    padding:14px 2px 20px; align-items:center; flex-wrap:wrap}
+  .meter{width:66px; height:5px; border-radius:3px; background:#ffffff12; overflow:hidden}
+  .meter i{display:block; height:100%; width:0; background:var(--dim)}
+  .err{margin-top:14px; border:1px solid #7a4640; background:#2A1B19; color:#F3C9C2;
+    border-radius:10px; padding:11px 14px; font-size:14px; display:none}
+
+  @media (max-width:720px){
+    .tiles{grid-template-columns:repeat(2,1fr)}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none !important}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark"><span class="lamp" id="lamp"></span> livediar <small>live speaker board</small></div>
+    <div class="spacer"></div>
+    <label class="people" id="peopleWrap">people in room
+      <select id="selN" aria-label="Number of people in the room">
+        <option value="0">auto (up to 4)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </label>
+    <input type="file" id="fileIn" accept="audio/*,.wav,.m4a,.mp3,.ogg,.flac,.webm" hidden>
+    <button id="btnOpen">Open recording…</button>
+    <button id="btnDemo">Watch demo</button>
+    <button id="btnReplay" class="accent" hidden>Replay session</button>
+    <button id="btnStart" class="primary">Start listening</button>
+    <button id="btnStop" hidden>Stop</button>
+  </header>
+
+  <section class="board" aria-label="Now speaking">
+    <div class="status" id="status">Start listening to diarize this room, open a recording, or watch the demo.</div>
+    <div class="now" id="now" aria-live="polite"><span class="quiet">—</span></div>
+    <div class="now-under" id="nowUnder"></div>
+    <div class="tiles" id="tiles"></div>
+    <div class="voices" id="voices">
+      <span>voices</span><span id="voiceChips"></span>
+      <button id="btnEnroll">+ Add my voice</button>
+      <span id="enrollStatus"></span>
+    </div>
+  </section>
+
+  <div class="transport" id="transport" aria-label="Replay controls">
+    <button class="play" id="btnPlay" aria-label="Play or pause">▶</button>
+    <input type="range" id="seek" min="0" max="1000" value="0" step="1" aria-label="Seek">
+    <span class="time" id="ptime">0:00 / 0:00</span>
+    <span class="src" id="psrc"></span>
+  </div>
+
+  <section class="ribbon" aria-label="Speaking timeline">
+    <div class="rhead"><span>last 75 seconds</span><span id="rclock">00:00</span></div>
+    <canvas id="cv"></canvas>
+  </section>
+
+  <section class="transcript" aria-label="Transcript">
+    <div class="thead"><span id="tinfo">transcript</span>
+      <span><button id="btnCopy">Copy</button> <button id="btnSave">Save .txt</button></span></div>
+    <div class="lines" id="lines" aria-live="polite"></div>
+  </section>
+
+  <div class="err" id="err"></div>
+
+  <footer>
+    <span id="fEngine">engine —</span>
+    <span id="fBuffer"></span>
+    <span id="fRtf"></span>
+    <span id="fSup"></span>
+    <span style="display:flex;align-items:center;gap:7px">mic <span class="meter"><i id="micBar"></i></span></span>
+  </footer>
+</div>
+
+<script>
+"use strict";
+const N=4, FRAME=0.08, WINDOW_S=75, SR=16000;
+const HUES=["--s0","--s1","--s2","--s3"];
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const $=id=>document.getElementById(id);
+
+const state={
+  mode:"idle",            // idle | live | demo | analyze | replay
+  speakers:Array.from({length:N},(_,i)=>({name:"Speaker "+(i+1),active:false,prob:0,talk:0,turns:0})),
+  frames:[],              // ribbon window: {t, probs:[4]}
+  clock:0, ws:null, audio:null, demoTimer:null,
+  maxSpk:(()=>{try{return +(localStorage.getItem("livediar.maxSpk")??3)}catch(e){return 3}})(),
+  // recording of the last live session / opened file, for replay
+  rec:null,               // {pcm:Int16Array, frames:[{t,probs}], turns:[{spk,event,t}], dur, name}
+  cap:null,               // in-progress capture {chunks:[], frames:[], turns:[], captions:{}, name}
+  captions:new Map(),     // id -> {id,spk,t0,t1,text,final,lang,name} shown in the panel
+  people:[],              // enrolled voices [{id,name,secs}]
+  profilesOn:false,
+  asrInfo:"",
+  rp:null,                // replay runtime {ac, src, startedAt, offset, playing, ptr, active[], prevActive[]}
+};
+
+/* ---------- tiles ---------- */
+const tilesEl=$("tiles");
+state.speakers.forEach((sp,i)=>{
+  const t=document.createElement("div");
+  t.className="tile"; t.style.setProperty("--hue",`var(${HUES[i]})`);
+  t.innerHTML=`
+    <div class="head">
+      <div class="avatar"><span>${i+1}</span></div>
+      <div class="who">
+        <div class="name" contenteditable="true" spellcheck="false" role="textbox"
+             aria-label="Rename speaker ${i+1}">${sp.name}</div>
+        <div class="chip">on air</div>
+        <div class="vid"></div>
+      </div>
+    </div>
+    <div class="share"><i></i></div>
+    <div class="meta"><span class="talk">0:00 · 0 turns</span><span class="pct">0%</span></div>`;
+  tilesEl.appendChild(t);
+  const nameEl=t.querySelector(".name");
+  nameEl.addEventListener("input",()=>{sp.name=nameEl.textContent.trim()||("Speaker "+(i+1)); sp.userNamed=true; renderNow(); renderCaptionNames();});
+  nameEl.addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault(); nameEl.blur();}});
+  nameEl.addEventListener("blur",()=>{ if(!nameEl.textContent.trim()) nameEl.textContent=sp.name; });
+  sp.el=t;
+});
+
+/* ---------- rendering ---------- */
+const nowEl=$("now"), underEl=$("nowUnder"), statusEl=$("status");
+function fmt(s){s=Math.max(0,s|0);return `${(s/60)|0}:${String(s%60).padStart(2,"0")}`}
+
+function renderNow(){
+  const on=state.speakers.map((s,i)=>({s,i})).filter(x=>x.s.active);
+  if(state.mode==="idle"){nowEl.innerHTML='<span class="quiet">—</span>'; underEl.style.width="0"; return;}
+  if(!on.length){
+    nowEl.innerHTML='<span class="quiet">Room is quiet</span>';
+    underEl.style.width="0"; return;
+  }
+  nowEl.innerHTML=on.map(x=>`<span style="color:var(${HUES[x.i]})">${x.s.name}</span>`)
+                    .join('<span class="plus">·</span>');
+  const lead=on.reduce((a,b)=>b.s.prob>a.s.prob?b:a);
+  underEl.style.background=`var(${HUES[lead.i]})`;
+  underEl.style.width=`${Math.round(120+280*lead.s.prob)}px`;
+}
+
+function renderTiles(){
+  const total=Math.max(1e-6,state.speakers.reduce((a,s)=>a+s.talk,0));
+  state.speakers.forEach((sp,i)=>{
+    sp.el.classList.toggle("on",sp.active);
+    sp.el.querySelector(".avatar").style.setProperty("--level",sp.active?Math.min(1,sp.prob).toFixed(2):0);
+    sp.el.querySelector(".share i").style.width=`${Math.round(100*sp.talk/total)}%`;
+    sp.el.querySelector(".talk").textContent=`${fmt(sp.talk)} · ${sp.turns} turn${sp.turns===1?"":"s"}`;
+    sp.el.querySelector(".pct").textContent=`${Math.round(100*sp.talk/total)}%`;
+  });
+}
+
+/* ---------- ribbon canvas ---------- */
+const cv=$("cv"), ctx=cv.getContext("2d");
+function drawRibbon(){
+  const dpr=window.devicePixelRatio||1;
+  const w=cv.clientWidth, h=cv.clientHeight;
+  if(cv.width!==w*dpr||cv.height!==h*dpr){cv.width=w*dpr;cv.height=h*dpr;}
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  ctx.clearRect(0,0,w,h);
+  const laneH=h/N, pad=5, pps=w/WINDOW_S, t1=state.clock, t0=t1-WINDOW_S;
+  ctx.strokeStyle="#ffffff12"; ctx.fillStyle=css("--dim"); ctx.font="11px Archivo,system-ui";
+  for(let t=Math.ceil(t0/15)*15;t<=t1;t+=15){
+    const x=(t-t0)*pps;
+    ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,h);ctx.stroke();
+    if(t>=0) ctx.fillText(fmt(t),Math.min(x+4,w-34),11);
+  }
+  for(let s=0;s<N;s++){
+    const y=s*laneH+pad, hh=laneH-2*pad, hue=css(HUES[s]);
+    ctx.fillStyle=hue+"22"; ctx.fillRect(0,y+hh/2-.5,w,1);
+    ctx.fillStyle=hue;
+    for(const f of state.frames){
+      if(f.t<t0) continue;
+      const p=f.probs[s]; if(p<0.12) continue;
+      ctx.globalAlpha=Math.min(1,Math.pow(p,1.3));
+      ctx.fillRect((f.t-t0)*pps, y+hh*(1-Math.max(p,.28)), Math.max(1,FRAME*pps), hh*Math.max(p,.28));
+    }
+    ctx.globalAlpha=1;
+  }
+  ctx.fillStyle=css("--text"); ctx.fillRect(w-1.5,0,1.5,h); // now line
+  if(state.mode==="replay") replayTick();
+  requestAnimationFrame(drawRibbon);
+}
+requestAnimationFrame(drawRibbon);
+
+/* ---------- shared frame ingestion (live / analyze / demo) ---------- */
+function ingest(t0,probs,active){
+  probs.forEach((row,k)=>state.frames.push({t:t0+k*FRAME,probs:row}));
+  const cut=(t0+probs.length*FRAME)-WINDOW_S-2;
+  while(state.frames.length&&state.frames[0].t<cut) state.frames.shift();
+  state.speakers.forEach((sp,i)=>{
+    sp.prob=probs[probs.length-1][i];
+    if(active) sp.active=active[i];
+  });
+  state.clock=t0+probs.length*FRAME;
+  $("rclock").textContent=fmt(state.clock);
+  if(state.cap) probs.forEach((row,k)=>state.cap.frames.push({t:t0+k*FRAME,probs:row}));
+  renderNow(); renderTiles();
+}
+/* ---------- captions ---------- */
+const linesEl=$("lines");
+function captionLine(c){
+  let el=linesEl.querySelector(`[data-id="${c.id}"]`);
+  if(!el){ el=document.createElement("div"); el.className="line"; el.dataset.id=c.id;
+    el.innerHTML=`<span class="ts"></span><span><b></b><span class="tx"></span></span>`; linesEl.appendChild(el); }
+  el.classList.toggle("partial",!c.final);
+  el.querySelector(".ts").textContent=fmt(c.t0);
+  const b=el.querySelector("b"); b.textContent=c.name||state.speakers[c.spk].name; b.style.color=`var(${HUES[c.spk]})`;
+  b.title=c.name?(c.verified?"voice verified against enrolled profile":"attributed via this slot's identified voice"):"";
+  el.querySelector(".tx").textContent=c.text||"…";
+  let ov=el.querySelector(".ov"); if(ov) ov.remove();
+  if(c.overlap>0){ ov=document.createElement("span"); ov.className="ov";
+    ov.textContent=c.recovered?"⧉ un-mixed":"~ overlap";
+    ov.title=c.recovered?`${c.overlap}s overlapped another speaker; this voice was extracted from the mix`
+                        :`${c.overlap}s overlapped another speaker; words kept only where this speaker dominates`;
+    el.lastElementChild.appendChild(ov); }
+  return el;
+}
+function ingestCaption(c){
+  if(!c.text&&!c.final){return;}
+  state.captions.set(c.id,c);
+  if(state.cap) state.cap.captions[c.id]=c;
+  if(c.final&&!c.text){ const el=linesEl.querySelector(`[data-id="${c.id}"]`); if(el) el.remove(); return; }
+  const stick=linesEl.scrollTop+linesEl.clientHeight>=linesEl.scrollHeight-40;
+  captionLine(c);
+  if(stick) linesEl.scrollTop=linesEl.scrollHeight;
+}
+function renderCaptionNames(){ for(const c of state.captions.values()) captionLine(c); }
+function clearCaptions(){ state.captions.clear(); linesEl.innerHTML=""; }
+function transcriptText(){
+  const rows=[...state.captions.values()].filter(c=>c.final&&c.text).sort((a,b)=>a.t0-b.t0);
+  return rows.map(c=>`[${fmt(c.t0)}] ${c.name||state.speakers[c.spk].name}: ${c.text}`).join("\n");
+}
+$("btnCopy").onclick=async()=>{ try{await navigator.clipboard.writeText(transcriptText()); $("btnCopy").textContent="Copied"; setTimeout(()=>$("btnCopy").textContent="Copy",1200);}catch(e){} };
+$("btnSave").onclick=()=>{
+  const name=(state.rec&&state.rec.name||"livediar").replace(/\.[^.]+$/,"");
+  const blob=new Blob([transcriptText()+"\n"],{type:"text/plain"});
+  const a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download=name+".transcript.txt"; a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href),2000);
+};
+
+function ingestStats(st){
+  st.talk_s.forEach((v,i)=>state.speakers[i].talk=v);
+  st.turns.forEach((v,i)=>state.speakers[i].turns=v);
+  if(st.rtf!=null) $("fRtf").textContent=`diarize ${st.rtf}×`+(st.asr_rtf!=null?` · captions ${st.asr_rtf}× realtime`:" realtime");
+  const sup=(st.suppressed_s||[]).reduce((a,b)=>a+b,0);
+  const bits=[]; if(sup>0.05) bits.push(`ghost suppressed ${sup.toFixed(1)}s`);
+  if(st.overlap_s>0.05) bits.push(`overlap ${st.overlap_s}s`+(st.extracted_s>0.05?` · un-mixed ${st.extracted_s}s`:""));
+  $("fSup").textContent=bits.join(" · ");
+  renderTiles();
+}
+
+/* ---------- controls ---------- */
+const btnStart=$("btnStart"),btnStop=$("btnStop"),btnDemo=$("btnDemo"),btnOpen=$("btnOpen"),
+      btnReplay=$("btnReplay"),lamp=$("lamp"),errEl=$("err"),selN=$("selN"),fileIn=$("fileIn");
+function setMode(m){
+  state.mode=m;
+  lamp.classList.toggle("on",m==="live"||m==="demo"||m==="analyze");
+  lamp.classList.toggle("replay",m==="replay");
+  const idle=m==="idle";
+  btnStart.hidden=!idle; btnDemo.hidden=!idle; btnOpen.hidden=!idle;
+  btnReplay.hidden=!(idle&&state.rec);
+  btnStop.hidden=idle;
+  $("transport").classList.toggle("show",m==="replay");
+  if(idle){statusEl.textContent="Start listening to diarize this room, open a recording, or watch the demo.";}
+  applyCapLook();
+  renderNow();
+}
+function applyCapLook(){
+  const cap=state.maxSpk||N;
+  state.speakers.forEach((sp,i)=>sp.el.classList.toggle("capped",i>=cap&&!sp.active&&sp.talk===0));
+}
+function fail(msg){errEl.style.display="block"; errEl.textContent=msg;}
+function resetSession(){
+  state.frames.length=0; state.clock=0;
+  state.speakers.forEach((s,i)=>{Object.assign(s,{active:false,prob:0,talk:0,turns:0,person:null}); s.el.querySelector(".vid").textContent="";});
+  errEl.style.display="none"; $("fSup").textContent=""; renderTiles(); clearCaptions();
+}
+selN.value=String(state.maxSpk); applyCapLook();
+selN.onchange=()=>{
+  state.maxSpk=+selN.value; applyCapLook();
+  try{localStorage.setItem("livediar.maxSpk",state.maxSpk);}catch(e){}
+  if(state.ws&&state.ws.readyState===1) state.ws.send(JSON.stringify({type:"config",max_spk:state.maxSpk}));
+};
+
+btnStart.onclick=startLive;
+btnStop.onclick=stopAll;
+btnDemo.onclick=startDemo;
+btnOpen.onclick=()=>fileIn.click();
+fileIn.onchange=()=>{ if(fileIn.files[0]) openRecording(fileIn.files[0]); fileIn.value=""; };
+btnReplay.onclick=()=>startReplay(0);
+
+/* ---------- websocket to the server ---------- */
+function connect(onReady){
+  const ws=new WebSocket((location.protocol==="https:"?"wss://":"ws://")+location.host+"/ws");
+  ws.binaryType="arraybuffer";
+  state.ws=ws;
+  ws.onmessage=ev=>{
+    const m=JSON.parse(ev.data);
+    if(m.type==="ready"){
+      $("fEngine").textContent=
+        m.engine==="sortformer" ? "engine sortformer · "+(m.model||"").split("/").pop()
+                                : "engine mock (install NeMo for the real model)";
+      $("fBuffer").textContent=`buffer ${m.preset.buffer_s}s`;
+      state.asrInfo=m.asr&&m.asr!=="none"?`captions ${m.asr_model} · ${m.language}`+(m.overlap&&m.overlap!=="none"?` · overlap ${m.overlap}`:""):"captions off";
+      $("tinfo").textContent="transcript · "+state.asrInfo;
+      ws.send(JSON.stringify({type:"config",max_spk:state.maxSpk}));
+      onReady&&onReady(m);
+    }
+    else if(m.type==="frames") ingest(m.t0,m.probs,m.active);
+    else if(m.type==="turn"){ if(state.cap) state.cap.turns.push(m); }
+    else if(m.type==="stats") ingestStats(m);
+    else if(m.type==="caption") ingestCaption(m);
+    else if(m.type==="profiles"){ state.people=m.people; state.profilesOn=m.enabled; renderVoices(); }
+    else if(m.type==="identify") identifySlot(m);
+    else if(m.type==="error"){ fail(m.text); $("enrollStatus").textContent=""; }
+    else if(m.type==="stopped"){ if(state.onStopped) state.onStopped(); }
+  };
+  ws.onerror=()=>{ fail("Could not reach the livediar server on "+location.host+" — is `python -m livediar.server` running? Meanwhile, the demo works without it."); stopAll(); };
+  ws.onclose=()=>{ if(state.mode==="live"||state.mode==="analyze") finishCapture(); };
+  return new Promise(res=>{ws.readyState===1?res(ws):ws.onopen=()=>res(ws);});
+}
+
+/* ---------- voices: enrolled people ---------- */
+function renderVoices(){
+  const box=$("voiceChips"); box.innerHTML="";
+  state.people.forEach(p=>{
+    const c=document.createElement("span"); c.className="chip";
+    c.innerHTML=`<span class="nm" contenteditable="true" spellcheck="false" title="click to rename">${p.name}</span><span class="x" title="remove">×</span>`;
+    const nm=c.querySelector(".nm");
+    nm.addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault(); nm.blur();}});
+    nm.addEventListener("blur",()=>{ const v=nm.textContent.trim(); if(v&&v!==p.name&&state.ws&&state.ws.readyState===1) state.ws.send(JSON.stringify({type:"profile_rename",id:p.id,name:v})); });
+    c.querySelector(".x").onclick=()=>{ if(confirm(`Remove ${p.name}'s voice?`)&&state.ws&&state.ws.readyState===1) state.ws.send(JSON.stringify({type:"profile_delete",id:p.id})); };
+    box.appendChild(c);
+  });
+  $("voices").style.display=state.profilesOn?"flex":"none";
+  if(!state.people.length) $("enrollStatus").textContent="enroll each person once (8 s of talking) so turns are verified by voice, not by slot";
+  else if(!$("enrollStatus").dataset.busy) $("enrollStatus").textContent="";
+}
+function identifySlot(m){
+  const sp=state.speakers[m.spk]; if(!sp) return;
+  sp.person=m.person;
+  if(!sp.userNamed){ sp.name=m.name; sp.el.querySelector(".name").textContent=m.name; }
+  sp.el.querySelector(".vid").textContent=`✓ ${m.name}`;
+  renderNow(); renderCaptionNames();
+}
+async function captureMic(){
+  const stream=await navigator.mediaDevices.getUserMedia({audio:{channelCount:1, echoCancellation:true, noiseSuppression:false, autoGainControl:true}});
+  const ac=new (window.AudioContext||window.webkitAudioContext)();
+  await ac.audioWorklet.addModule(URL.createObjectURL(new Blob([WORKLET],{type:"text/javascript"})));
+  const src=ac.createMediaStreamSource(stream); const node=new AudioWorkletNode(ac,"cap"); src.connect(node);
+  return {ac,stream,node, stop(){ stream.getTracks().forEach(t=>t.stop()); ac.close(); }};
+}
+$("btnEnroll").onclick=async()=>{
+  if(state.mode!=="idle"){ fail("Stop the session first, then enroll."); return; }
+  const name=prompt("Whose voice is this? (name)"); if(!name) return;
+  errEl.style.display="none";
+  const st=$("enrollStatus"); st.dataset.busy="1";
+  let ws=state.ws; if(!ws||ws.readyState!==1){ ws=await connect(()=>{}); }
+  let mic; try{ mic=await captureMic(); }catch(e){ fail("Microphone unavailable ("+e.name+")."); delete st.dataset.busy; return; }
+  ws.send(JSON.stringify({type:"enroll_begin",name}));
+  const SECS=8; let left=SECS; st.innerHTML=`<span class="rec">● recording ${name}</span> — talk normally for ${left}s`;
+  mic.node.port.onmessage=e=>{ if(ws.readyState===1) ws.send(e.data.pcm); $("micBar").style.width=Math.min(100,e.data.rms*600)+"%"; };
+  await new Promise(res=>{ const iv=setInterval(()=>{ left--; st.innerHTML=`<span class="rec">● recording ${name}</span> — talk normally for ${left}s`; if(left<=0){clearInterval(iv); res();} },1000); });
+  mic.stop(); $("micBar").style.width="0";
+  ws.send(JSON.stringify({type:"enroll_end"}));
+  st.textContent=`saving ${name}…`; delete st.dataset.busy;
+  setTimeout(()=>{ if(!st.dataset.busy) st.textContent=""; },2500);
+};
+
+/* ---------- capture bookkeeping (what replay plays back) ---------- */
+function beginCapture(name){ state.cap={chunks:[],frames:[],turns:[],captions:{},name}; }
+function finishCapture(){
+  const cap=state.cap; state.cap=null;
+  if(state.mode!=="idle") setMode("idle");
+  if(!cap||!cap.frames.length) return;
+  let n=0; for(const c of cap.chunks) n+=c.length;
+  const pcm=new Int16Array(n); let o=0; for(const c of cap.chunks){pcm.set(c,o); o+=c.length;}
+  const caps=Object.values(cap.captions).filter(c=>c.final&&c.text).sort((a,b)=>a.t0-b.t0);
+  state.rec={pcm, frames:cap.frames, turns:cap.turns, captions:caps, dur:n/SR, name:cap.name, asrInfo:state.asrInfo};
+  btnReplay.hidden=false;
+  statusEl.textContent=`Session saved — ${fmt(state.rec.dur)} of audio. Press Replay to hear it back with the board.`;
+}
+
+/* ---------- live: mic -> ws ---------- */
+async function startLive(){
+  resetSession();
+  let stream;
+  try{
+    stream=await navigator.mediaDevices.getUserMedia({audio:{
+      channelCount:1, echoCancellation:true, noiseSuppression:false, autoGainControl:true}});
+  }catch(e){ fail("Microphone unavailable ("+e.name+"). Allow mic access, and open this page via localhost or https."); return; }
+
+  beginCapture("live "+new Date().toLocaleTimeString());
+  const ws=await connect(m=>{
+    statusEl.textContent=`Listening — decisions arrive ${m.preset.buffer_s}s behind the room.`+
+      (state.maxSpk?` Capped at ${state.maxSpk} people.`:"");
+  });
+  state.onStopped=()=>{};
+
+  const ac=new (window.AudioContext||window.webkitAudioContext)();
+  await ac.audioWorklet.addModule(URL.createObjectURL(new Blob([WORKLET],{type:"text/javascript"})));
+  const src=ac.createMediaStreamSource(stream);
+  const node=new AudioWorkletNode(ac,"cap");
+  node.port.onmessage=e=>{
+    if(ws.readyState===1) ws.send(e.data.pcm);
+    if(state.cap) state.cap.chunks.push(new Int16Array(e.data.pcm));
+    $("micBar").style.width=Math.min(100,e.data.rms*600)+"%";
+  };
+  src.connect(node);
+  state.audio={ac,stream,node};
+  setMode("live");
+}
+const WORKLET=`
+    class Cap extends AudioWorkletProcessor{
+      constructor(){super(); this.ratio=sampleRate/16000; this.acc=0; this.out=[]; this.prev=0;}
+      process(inputs){
+        const ch=inputs[0][0]; if(!ch) return true;
+        for(let i=0;i<ch.length;i++){
+          this.acc+=1;
+          while(this.acc>=this.ratio){
+            this.acc-=this.ratio;
+            const frac=1-this.acc/this.ratio;
+            const v=this.prev+(ch[i]-this.prev)*frac;
+            this.out.push(Math.max(-1,Math.min(1,v)));
+          }
+          this.prev=ch[i];
+        }
+        if(this.out.length>=1280){
+          const buf=new Int16Array(this.out.length);
+          let rms=0;
+          for(let i=0;i<this.out.length;i++){buf[i]=this.out[i]*32767; rms+=this.out[i]*this.out[i];}
+          this.port.postMessage({pcm:buf.buffer, rms:Math.sqrt(rms/this.out.length)},[buf.buffer]);
+          this.out.length=0;
+        }
+        return true;
+      }
+    }
+    registerProcessor("cap",Cap);`;
+
+function stopAll(){
+  if(state.ws&&state.ws.readyState===1){try{state.ws.send(JSON.stringify({type:"stop"}));}catch(e){}}
+  if(state.ws){state.ws.close(); state.ws=null;}
+  if(state.audio){
+    if(state.audio.stream) state.audio.stream.getTracks().forEach(t=>t.stop());
+    state.audio.ac.close(); state.audio=null;
+  }
+  if(state.demoTimer){clearInterval(state.demoTimer); state.demoTimer=null;}
+  if(state.rp){ replayPause(); if(state.rp.ac) state.rp.ac.close(); state.rp=null; }
+  $("micBar").style.width="0";
+  if(state.cap) finishCapture(); else setMode("idle");
+}
+
+/* ---------- open a recording: decode -> 16k PCM -> server -> replay ---------- */
+async function openRecording(file){
+  resetSession();
+  statusEl.textContent=`Decoding ${file.name}…`;
+  let pcm;
+  try{
+    const ac=new (window.AudioContext||window.webkitAudioContext)();
+    const decoded=await ac.decodeAudioData(await file.arrayBuffer());
+    ac.close();
+    const n=Math.ceil(decoded.duration*SR);
+    const off=new OfflineAudioContext(1,n,SR);
+    const s=off.createBufferSource(); s.buffer=decoded; s.connect(off.destination); s.start();
+    const mono=(await off.startRendering()).getChannelData(0);
+    pcm=new Int16Array(n);
+    for(let i=0;i<n;i++) pcm[i]=Math.max(-32768,Math.min(32767,mono[i]*32767));
+  }catch(e){ fail("Could not decode that file ("+e.message+")."); return; }
+
+  beginCapture(file.name);
+  state.cap.chunks.push(pcm);
+  const dur=pcm.length/SR;
+  const ws=await connect(()=>{});
+  state.onStopped=()=>{ ws.close(); finishCapture(); startReplay(0); };
+  setMode("analyze");
+  const tick=setInterval(()=>{
+    if(state.mode!=="analyze"){clearInterval(tick);return;}
+    statusEl.textContent=`Analyzing ${file.name} — ${Math.min(100,Math.round(100*state.clock/dur))}% (${fmt(state.clock)} of ${fmt(dur)})`;
+  },250);
+  // one-second blocks; the server processes them in order, the socket buffers the rest.
+  const BLK=SR;
+  for(let i=0;i<pcm.length;i+=BLK){
+    if(ws.readyState!==1) return;
+    ws.send(pcm.subarray(i,i+BLK));
+    while(ws.bufferedAmount>4*BLK*2){ await new Promise(r=>setTimeout(r,50)); if(ws.readyState!==1) return; }
+  }
+  ws.send(JSON.stringify({type:"stop"}));
+}
+
+/* ---------- replay: play recorded audio, drive the board from stored frames ---------- */
+function activeAt(turns,t){
+  // turn events are in time order; a slot is active if its last event at or before t is a start
+  const last=new Array(N).fill(false);
+  for(const ev of turns){ if(ev.t>t) break; last[ev.spk]=ev.event==="start"; }
+  return last;
+}
+function startReplay(from){
+  const rec=state.rec; if(!rec) return;
+  resetSession();
+  $("fEngine").textContent="replay · "+rec.name; $("fBuffer").textContent=`${fmt(rec.dur)} recorded`; $("fRtf").textContent="";
+  $("psrc").textContent=rec.name;
+  const ac=new (window.AudioContext||window.webkitAudioContext)({sampleRate:SR});
+  const buf=ac.createBuffer(1,rec.pcm.length,SR);
+  const ch=buf.getChannelData(0); for(let i=0;i<rec.pcm.length;i++) ch[i]=rec.pcm[i]/32768;
+  state.rp={ac,buf,src:null,startedAt:0,offset:0,playing:false,ptr:0,cptr:0,prevActive:new Array(N).fill(false)};
+  $("tinfo").textContent="transcript · replay"+(rec.asrInfo?" · "+rec.asrInfo:"");
+  setMode("replay");
+  statusEl.textContent="Replay — the board follows the recording exactly as the model heard it.";
+  replaySeek(from); replayPlay();
+}
+function replayPos(){ const rp=state.rp; return rp.playing? rp.offset+(rp.ac.currentTime-rp.startedAt) : rp.offset; }
+function replayPlay(){
+  const rp=state.rp; if(!rp||rp.playing) return;
+  if(rp.offset>=state.rec.dur-0.05) replaySeek(0);
+  const src=rp.ac.createBufferSource(); src.buffer=rp.buf; src.connect(rp.ac.destination);
+  src.onended=()=>{ if(rp.src===src&&rp.playing){ rp.offset=state.rec.dur; rp.playing=false; rp.src=null; $("btnPlay").textContent="↺"; } };
+  src.start(0,rp.offset); rp.src=src; rp.startedAt=rp.ac.currentTime; rp.playing=true;
+  $("btnPlay").textContent="❚❚";
+}
+function replayPause(){
+  const rp=state.rp; if(!rp||!rp.playing) return;
+  rp.offset=replayPos(); rp.playing=false;
+  try{rp.src.stop();}catch(e){} rp.src=null;
+  $("btnPlay").textContent="▶";
+}
+function replaySeek(t){
+  const rp=state.rp, rec=state.rec; if(!rp) return;
+  const was=rp.playing; if(was) replayPause();
+  rp.offset=Math.max(0,Math.min(rec.dur,t));
+  // rebuild board state up to t: ribbon window, talk time, turn counts
+  state.frames.length=0;
+  let ptr=0; while(ptr<rec.frames.length&&rec.frames[ptr].t<=rp.offset){ const f=rec.frames[ptr]; if(f.t>=rp.offset-WINDOW_S-2) state.frames.push(f); ptr++; }
+  rp.ptr=ptr;
+  const talk=new Array(N).fill(0), turns=new Array(N).fill(0);
+  const act=new Array(N).fill(false); let lastT=0;
+  for(const ev of rec.turns){ if(ev.t>rp.offset) break;
+    for(let s=0;s<N;s++) if(act[s]) talk[s]+=ev.t-lastT; lastT=ev.t;
+    act[ev.spk]=ev.event==="start"; if(ev.event==="start") turns[ev.spk]++; }
+  for(let s=0;s<N;s++) if(act[s]) talk[s]+=rp.offset-lastT;
+  state.speakers.forEach((sp,i)=>{sp.talk=talk[i]; sp.turns=turns[i]; sp.active=act[i];
+    sp.prob=ptr?rec.frames[ptr-1].probs[i]:0;});
+  state.clock=rp.offset; $("rclock").textContent=fmt(state.clock);
+  clearCaptions(); rp.cptr=0;
+  while(rp.cptr<rec.captions.length&&rec.captions[rp.cptr].t0<=rp.offset){ const c=rec.captions[rp.cptr++]; state.captions.set(c.id,c); captionLine(c); }
+  linesEl.scrollTop=linesEl.scrollHeight;
+  renderNow(); renderTiles(); replayHud();
+  if(was) replayPlay();
+}
+function replayHud(){
+  const rec=state.rec, t=replayPos();
+  $("seek").value=Math.round(1000*t/rec.dur); $("ptime").textContent=`${fmt(t)} / ${fmt(rec.dur)}`;
+}
+function replayTick(){
+  const rp=state.rp, rec=state.rec; if(!rp) return;
+  const t=replayPos();
+  if(rp.playing){
+    let moved=false;
+    while(rp.ptr<rec.frames.length&&rec.frames[rp.ptr].t<=t){
+      const f=rec.frames[rp.ptr++]; state.frames.push(f); moved=true;
+      state.speakers.forEach((sp,i)=>sp.prob=f.probs[i]);
+    }
+    const cut=t-WINDOW_S-2; while(state.frames.length&&state.frames[0].t<cut) state.frames.shift();
+    const act=activeAt(rec.turns,t);
+    state.speakers.forEach((sp,i)=>{
+      if(act[i]&&!sp.active) sp.turns++;
+      if(act[i]) sp.talk+=Math.max(0,t-(rp.lastT||t));
+      sp.active=act[i];
+    });
+    rp.lastT=t;
+    while(rp.cptr<rec.captions.length&&rec.captions[rp.cptr].t0<=t){ const c=rec.captions[rp.cptr++]; state.captions.set(c.id,c); captionLine(c); linesEl.scrollTop=linesEl.scrollHeight; }
+    linesEl.querySelectorAll(".line.now").forEach(e=>e.classList.remove("now"));
+    for(const c of state.captions.values()) if(t>=c.t0&&t<=c.t1){ const e=linesEl.querySelector(`[data-id="${c.id}"]`); if(e) e.classList.add("now"); }
+    state.clock=t; $("rclock").textContent=fmt(t);
+    if(moved||true){ renderNow(); renderTiles(); }
+    replayHud();
+  }
+}
+$("btnPlay").onclick=()=>{ if(!state.rp) return; state.rp.playing?replayPause():replayPlay(); };
+$("seek").oninput=()=>{ if(state.rp) replaySeek(state.rec.dur*$("seek").value/1000); };
+document.addEventListener("keydown",e=>{
+  if(state.mode!=="replay"||e.target.isContentEditable) return;
+  if(e.code==="Space"){e.preventDefault(); $("btnPlay").click();}
+  if(e.code==="ArrowLeft") replaySeek(replayPos()-5);
+  if(e.code==="ArrowRight") replaySeek(replayPos()+5);
+});
+
+/* ---------- demo mode (no server needed) ---------- */
+function startDemo(){
+  resetSession();
+  $("fEngine").textContent="engine demo signal";
+  $("fBuffer").textContent="buffer 1.04s (simulated)";
+  $("fRtf").textContent="";
+  statusEl.textContent="Demo — a scripted four-person conversation.";
+  const names=["Mei","Ravi","Tomás","June"];
+  state.speakers.forEach((s,i)=>{s.name=names[i]; s.el.querySelector(".name").textContent=names[i];});
+  const rng=()=>Math.random();
+  let cur=0, hold=40, overlapWith=-1, overlapLeft=0, t=0;
+  const levels=[0,0,0,0];
+  const slot=Array.from({length:N},()=>({active:false,run:0,hist:[0,0,0]}));
+  state.demoTimer=setInterval(()=>{
+    if(--hold<=0){const prev=cur; do{cur=(rng()*N)|0}while(cur===prev);
+      hold=25+(rng()*50)|0; if(rng()<0.25){overlapWith=prev; overlapLeft=4+(rng()*6)|0;} }
+    if(overlapWith>=0&&--overlapLeft<=0) overlapWith=-1;
+    const probs=[[0,0,0,0]], active=[0,0,0,0];
+    for(let s=0;s<N;s++){
+      const target=s===cur?0.94:(s===overlapWith?0.8:0.06);
+      levels[s]+=0.45*(target-levels[s]);
+      let p=Math.max(0,Math.min(1,levels[s]+(rng()-0.5)*0.06));
+      const st=slot[s]; st.hist.shift(); st.hist.push(p);
+      p=[...st.hist].sort((a,b)=>a-b)[1];
+      probs[0][s]=p;
+      if(st.active){ if(p<0.40){if(++st.run>=4){st.active=false;st.run=0;}}else st.run=0; }
+      else{ if(p>0.55){if(++st.run>=2){st.active=true;st.run=0;state.speakers[s].turns++;}}else st.run=0; }
+      if(st.active) state.speakers[s].talk+=FRAME;
+      active[s]=st.active;
+    }
+    ingest(t,probs,active); t+=FRAME;
+  },80);
+  setMode("demo");
+}
+</script>
+</body>
+</html>

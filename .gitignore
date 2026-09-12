@@ -1,0 +1,24 @@
+# environment / caches
+.venv/
+__pycache__/
+*.pyc
+*.log
+*.pid
+nohup.out
+
+# voice profiles are biometric data — never commit
+profiles.json
+
+# sample audio (downloaded clips; see samples/README.md for how to fetch)
+samples/*.wav
+samples/*.m4a
+samples/*.mp3
+samples/*.npy
+
+# AMI benchmark data and caches (fetched by bench/README.md instructions)
+bench/ami/wav/
+bench/ami/manual/
+bench/ami/ami_manual.zip
+bench/ami/setup/
+bench/ami/cache/
+bench/ami/logs/

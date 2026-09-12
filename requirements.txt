@@ -1,0 +1,16 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+numpy>=1.24
+websockets>=12
+
+# Captions (Apple silicon): Whisper large-v3-turbo on the GPU
+mlx-whisper>=0.4
+
+# Real diarizer (heavy, CPU works; NeMo also provides TitaNet for voice profiles):
+#   pip install torch torchaudio "nemo_toolkit[asr] @ git+https://github.com/NVIDIA/NeMo.git@main"
+# Optional experimental overlap un-mixing (--overlap extract):
+#   pip install speechbrain
+# Sample fetching / conversion:
+#   pip install yt-dlp imageio-ffmpeg
+# Benchmark (bench/):
+#   pip install pyannote.metrics jiwer
