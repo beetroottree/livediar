@@ -113,6 +113,42 @@ class DiarizationConditioning(nn.Module):
         return self.norm(e.sum(2))                                            # (B,T,d)
 
 
+class PerLayerStateConditioning(nn.Module):
+    """DiCoW/FDDT-style per-layer conditioning for a K-slot listener.
+
+    DiCoW applies, in every encoder layer, a diagonal affine transform chosen
+    by the frame's STNO class for one *target* speaker, with a suppressive
+    initialisation (target/overlap = identity, silence/non-target scaled
+    down) that makes it trainable. A K-stream listener has no single target,
+    so the per-layer class here is the frame's *global* state
+    {silence, one speaker, overlap}, and the additive slot/identity
+    embedding (DiarizationConditioning) still tells the model who.
+
+        h' = h * (1 + scale[state]) + shift[state]      per layer
+
+    scale/shift start at zero (identity) except silence, whose scale starts
+    at -0.5 — the suppressive init in miniature. Used by research/toy_ablation.py
+    --cond 2 as the second ablation arm.
+    """
+
+    def __init__(self, d_model: int, n_layers: int):
+        super().__init__()
+        self.scale = nn.Parameter(torch.zeros(n_layers, N_STATES, d_model))
+        self.shift = nn.Parameter(torch.zeros(n_layers, N_STATES, d_model))
+        with torch.no_grad():
+            self.scale[:, 0] = -0.5                      # silence: suppress
+
+    @staticmethod
+    def frame_state(active: torch.Tensor) -> torch.Tensor:
+        n = active.sum(-1)                                # (B,T)
+        return torch.clamp(n, max=2).long()               # 0 silence, 1 single, 2 overlap
+
+    def forward(self, h: torch.Tensor, layer: int, state: torch.Tensor) -> torch.Tensor:
+        sc = self.scale[layer][state]                     # (B,T,d)
+        sh = self.shift[layer][state]
+        return h * (1 + sc) + sh
+
+
 if __name__ == "__main__":
     torch.manual_seed(0)
     B, T, K = 2, 50, 4
