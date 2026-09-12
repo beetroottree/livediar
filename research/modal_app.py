@@ -230,12 +230,12 @@ pilot_image = (
     .pip_install("torch==2.6.0", "torchaudio==2.6.0", "triton>=3.2", "fire", "simple-parsing", "pyyaml",
                  "safetensors", "tensorboard", "tqdm", "sphn", "sentencepiece", "numpy", "scipy",
                  "huggingface_hub", "wandb", "pyannote.core", "pyannote.metrics", "jiwer", "whisper-normalizer")
-    .add_local_dir(str(REPO / "livediar"), "/repo/livediar")
-    .add_local_dir(str(REPO / "bench"), "/repo/bench", ignore=["ami/wav", "ami/cache", "ami/logs", "ami/manual", "ami/setup"])
     .run_commands(
         "git clone --depth 1 https://github.com/kyutai-labs/moshi.git /opt/moshi && pip install /opt/moshi/moshi",
         "git clone https://github.com/kyutai-labs/moshi-finetune.git /opt/moshi-finetune && cd /opt/moshi-finetune && git checkout 2acc879",
     )
+    .add_local_dir(str(REPO / "livediar"), "/repo/livediar")
+    .add_local_dir(str(REPO / "bench"), "/repo/bench", ignore=["ami/wav", "ami/cache", "ami/logs", "ami/manual", "ami/setup"])
     .add_local_dir(str(REPO / "research"), "/repo/research",
                    ignore=["data", ".venv-dixtral", "dixtral_repo", "moshi_finetune_repo", "moshi_repo"])
 )
