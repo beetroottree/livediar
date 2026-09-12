@@ -213,7 +213,7 @@ def main():
         st = torch.load(ckpt, map_location=DEV); m.load_state_dict(st["model"], strict=False)
         opt.load_state_dict(st["opt"]); sched.load_state_dict(st["sched"]); start = st["step"] + 1
         print(f"[cond={a.cond}] resumed from step {st['step']}", flush=True)
-    t0 = time.perf_counter(); m.train()
+    t0 = time.perf_counter(); m.train(); m.m.eval()      # frozen listener stays in eval (no dropout; MPS SDPA has none)
     for step in range(start, a.steps + 1):
         batch = random.sample(tr.items, a.bs)
         audio = torch.from_numpy(np.stack([b[0] for b in batch])).to(DEV)
