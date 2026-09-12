@@ -91,7 +91,8 @@ def simulate(pool, out: Path, n_spk: int, dur_s: float, sched: Schedule, rng: ra
             segs.append({"t0": round(bt, 2), "t1": round(bt + b.size / SR, 2), "slot": o, "spk": spks[o],
                          "text": "[backchannel]"})
         gap = rng.uniform(*sched.gap_s) if rng.random() < sched.overlap_p else abs(rng.uniform(0, sched.gap_s[1]))
-        t = t + a.size / SR + gap
+        gap = max(gap, -0.8 * a.size / SR)              # an overlap can't outrun the turn it overlaps
+        t = max(0.0, t + a.size / SR + gap)
         if not (rng.random() < sched.self_continue_p):
             cur = rng.choice([k for k in range(n_spk) if k != cur]) if n_spk > 1 else cur
     n = int(dur_s * SR)
