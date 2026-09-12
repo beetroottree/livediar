@@ -97,7 +97,9 @@ def _link_data():
 # HF weights are cached on the volume so 16 parallel containers download Dixtral once,
 # not 16 times; GPU functions are preemptible on Modal, so jobs are idempotent (skip if the
 # result already exists on the volume) and retried.
-HF_SECRET = [modal.Secret.from_name("huggingface")]   # create with: modal secret create huggingface HF_TOKEN=...
+# Dixtral, Voxtral and Moshi weights are not gated; attach an HF secret only if you have one:
+#   modal secret create huggingface HF_TOKEN=hf_...   and run with USE_HF_SECRET=1
+HF_SECRET = [modal.Secret.from_name("huggingface")] if os.environ.get("USE_HF_SECRET") else []
 
 
 @app.function(gpu="H100", timeout=6 * 3600, volumes={DATA: VOL}, secrets=HF_SECRET,
@@ -219,18 +221,18 @@ def pilot_stage1(segments: int = 1, steps: int = 1000, run: str = "pilot1"):
 
 
 @app.local_entrypoint()
-def sync_data():
-    """Upload bench/ami/{wav,cache,manual,setup} and research/data/{pool.jsonl,pool_wav,rooms} to the volume."""
+def sync_data(what: str = "ami"):
+    """Upload data to the volume. what = ami (bench/ami wav+cache+manual+setup, ~1.2 GB) |
+    rooms (research/data/rooms2k + pool, ~6 GB, only for the Modal toy job) | pilot (research/pilot_data)."""
     with VOL.batch_upload(force=True) as b:
-        for d in ("wav", "cache", "manual", "setup"):
-            p = REPO / "bench" / "ami" / d
-            if p.exists():
-                b.put_directory(str(p), f"ami/{d}")
-        for d in ("rooms", "pool_wav"):
-            p = REPO / "research" / "data" / d
-            if p.exists():
-                b.put_directory(str(p), d)
-        pool = REPO / "research" / "data" / "pool.jsonl"
-        if pool.exists():
-            b.put_file(str(pool), "pool.jsonl")
-    print("uploaded")
+        if what == "ami":
+            for d in ("wav", "cache", "manual", "setup"):
+                p = REPO / "bench" / "ami" / d
+                if p.exists():
+                    b.put_directory(str(p), f"ami/{d}")
+        elif what == "rooms":
+            b.put_directory(str(REPO / "research" / "data" / "rooms2k"), "rooms")
+            b.put_file(str(REPO / "research" / "data" / "pool.jsonl"), "pool.jsonl")
+        elif what == "pilot":
+            b.put_directory(str(REPO / "research" / "pilot_data"), "pilot")
+    print("uploaded", what)
