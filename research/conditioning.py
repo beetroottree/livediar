@@ -96,6 +96,9 @@ class DiarizationConditioning(nn.Module):
         self.id_proj = nn.Linear(d_id, d_model, bias=False)
         self.unknown_id = nn.Parameter(torch.randn(d_model) * 0.02)
         self.norm = nn.LayerNorm(d_model)
+        # zero-initialised output gate: a pretrained host model is untouched at step 0 and
+        # the conditioning grows only as the loss asks for it (adapter / ControlNet practice)
+        self.gate = nn.Parameter(torch.zeros(1))
         nn.init.normal_(self.state_emb.weight, std=0.02)
         nn.init.normal_(self.slot_pos, std=0.02)
 
@@ -110,7 +113,7 @@ class DiarizationConditioning(nn.Module):
             known = identity.norm(dim=-1, keepdim=True) > 0
             ident = torch.where(known, self.id_proj(identity), self.unknown_id.expand(B, K, -1))
         e = e + ident[:, None] * active[..., None].to(e.dtype)                # identity only when talking
-        return self.norm(e.sum(2))                                            # (B,T,d)
+        return self.gate * self.norm(e.sum(2))                                # (B,T,d)
 
 
 class PerLayerStateConditioning(nn.Module):
@@ -126,8 +129,8 @@ class PerLayerStateConditioning(nn.Module):
 
         h' = h * (1 + scale[state]) + shift[state]      per layer
 
-    scale/shift start at zero (identity) except silence, whose scale starts
-    at -0.5 — the suppressive init in miniature. Used by research/toy_ablation.py
+    scale/shift start at zero (identity), so a pretrained host is untouched
+    at step 0; DiCoW's suppressive prior for silence is learned, not imposed. Used by research/toy_ablation.py
     --cond 2 as the second ablation arm.
     """
 
@@ -135,8 +138,8 @@ class PerLayerStateConditioning(nn.Module):
         super().__init__()
         self.scale = nn.Parameter(torch.zeros(n_layers, N_STATES, d_model))
         self.shift = nn.Parameter(torch.zeros(n_layers, N_STATES, d_model))
-        with torch.no_grad():
-            self.scale[:, 0] = -0.5                      # silence: suppress
+        # identity at init for every state; the suppressive prior (silence scale < 0) is
+        # learned rather than imposed so a pretrained host is not perturbed at step 0
 
     @staticmethod
     def frame_state(active: torch.Tensor) -> torch.Tensor:
