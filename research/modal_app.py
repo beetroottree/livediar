@@ -57,6 +57,7 @@ BUDGET_USD = float(os.environ.get("LIVEDIAR_BUDGET_USD", "450"))   # hard ceilin
 
 def _spent() -> float:
     import json
+    VOL.reload()                       # other containers append to spend.jsonl; see the latest commit
     p = Path(f"{DATA}/results/spend.jsonl")
     if not p.exists():
         return 0.0
