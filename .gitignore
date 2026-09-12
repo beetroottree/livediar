@@ -22,3 +22,8 @@ bench/ami/ami_manual.zip
 bench/ami/setup/
 bench/ami/cache/
 bench/ami/logs/
+
+# research scratch: simulated rooms, LibriSpeech pool, cloned repos, extra venvs
+research/data/
+research/dixtral_repo/
+research/.venv-dixtral/
