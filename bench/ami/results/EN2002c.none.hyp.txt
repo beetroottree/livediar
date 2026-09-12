@@ -1,0 +1,892 @@
+[   20.72] slot0: Oops.
+[   23.20] slot0: Does it squeeze in like that?
+[   46.56] slot0: All right.
+[   47.12] slot1: Did you want to take a look at the comments?
+[   53.36] slot2: Did we get a 7 out of 10 for the other one? Yeah.
+[   55.04] slot0: Yeah.
+[   56.72] slot0: It's going to... What's it going to be right?
+[   61.44] slot0: Oh, okay.
+[   61.92] slot1: Okay. Okay.
+[   63.92] slot0: Excellent.
+[   64.96] slot1: Excellent.
+[   67.20] slot0: Okay.
+[   67.20] slot1: Okay.
+[   67.76] slot2: Okay.
+[   76.32] slot1: Okay.
+[   92.00] slot0: Jay just said the same thing as he just said to his room. Yeah.
+[   94.00] slot1: Yeah.
+[   97.76] slot1: No.
+[   98.48] slot2: Yep.
+[  104.00] slot1: So how are we getting?
+[  104.08] slot0: So how are we getting along?
+[  107.28] slot2: Not bad. No.
+[  107.84] slot1: One thing that I was wondering, is there standard control that you use to connect the different things? Like if you're in the topic and it goes and highlights the topic in the text or whatever, is there a particular type of control?
+[  121.92] slot1: that like is there one of these NXT, or sorry.
+[  125.20] slot2: I think there is. Just because the topic box and all this is based on... What was it called? No, night text.
+[  125.76] slot1: I think there is...
+[  139.68] slot2: area or something and it has some sort of highlighting stuff there so you should probably look at the
+[  140.96] slot1: and text there
+[  151.20] slot2: um
+[  155.52] slot2: I'm not sure if it's inbuilt though, to be honest.
+[  158.08] slot1: You haven't had to build any new windows to do that sort of thing, like other topics? Or we're going to do one for speaker, I guess, and all the rest, right? Or no? Well, OK. When we talk about speaker characterization, how are we accessing the...
+[  167.04] slot2: What?
+[  172.32] slot1: the list of speakers.
+[  173.52] slot0: I wanted to talk about that actually. The data processing is fine, but I would...
+[  177.20] slot3: Data processing is fine, but I don't particularly want to do the...
+[  180.48] slot0: the the the gui for it
+[  182.64] slot2: You don't? No. Okay. If you want to do that. Yeah, I was thinking about that. I was going to have a touch. Tell me how you want the data res...
+[  183.12] slot0: No, not really. I'll do it. If you want to do that. Yeah, I was thinking about that. Tell me how you want the data presented. Yeah. Because at the moment, I've created two classes. One that represents...
+[  184.00] slot1: I'll do it.
+[  190.64] slot2: Yeah, that.
+[  197.28] slot0: represents speakers, one that represents the meetings, and the information about both is contained within each object. And then it writes objects, and the objects contain all the information about the meetings and the speakers. So the speakers that are at the meetings and the amount they speak.
+[  211.68] slot0: and then the averages are contained with the speakers. So there's two separate classes. And they're two different objects. And you can write the objects and then you call the objects back and those returned objects have all the information.
+[  217.12] slot2: Okay, yeah. And they're two different...
+[  226.08] slot0: that they need and then you can call methods to return whatever you want.
+[  230.08] slot2: Okay, yeah, I see what you mean. Or everything, but that's what I wanted to know.
+[  231.44] slot0: or everything but that's why I wanted to know how what's the easiest way to have the data
+[  235.28] slot2: So have you already calculated all this data? Are you supposed to do that? Yes, basically all calculated.
+[  239.04] slot0: Yes, basically all calculated.
+[  241.52] slot1: No.
+[  242.16] slot0: and it will store as objects, so .object files.
+[  245.04] slot2: All right. Okay.
+[  245.36] slot1: Okay.
+[  246.08] slot0: Which means that you just recall the and our no constructor and call the load thing and call it that You can create a list of them or a vector of them Well, we want to do and then or just go to one at a time to populate window But that's what I wanted to how you how what format do you want the data to come?
+[  253.84] slot1: Mm-hmm.
+[  260.16] slot0: to come back in because it can come back as almost anything.
+[  264.72] slot1: Yeah.
+[  266.24] slot2: Well, should it come back?
+[  267.60] slot0: It was easiest to display.
+[  268.88] slot1: That might also help when he was talking about having architecture that things are going to plug into.
+[  269.36] slot2: It also helped like 20.
+[  273.28] slot0: I mean, so that's...
+[  273.44] slot1: I mean, so the things are all modular. I mean, it would be a good idea if we used that same idea for anything else we do. Well, what else are we doing?
+[  280.32] slot0: yeah even the searches or whatever and just yeah any sort of thing i mean
+[  280.72] slot1: even the searches or whatever and just yeah any sort of thing i mean search results if they're all in a predictable thing with a name certain properties or a list of properties of vector yeah
+[  286.88] slot0: properties or a list of properties, vector, whatever. Yeah. So I can have it so that it returns you a, is at the moment the main data structures are hash tables for the meetings.
+[  300.96] slot0: that say it's got one that says percent is called percent talk once percent noise and one is percent participation do you see what i mean so and then it's got inside it's got a link it's got a it's got the speaker's name and then it's got their percentage
+[  315.36] slot0: for that thing. Oh, yeah. So it can either come back as a, you can have the hash table or you can have it returned as a vector and it will say noise, it's just a string, noise, X percent. It will say a vector that's, I don't know, whatever.
+[  316.40] slot2: Oh, yeah. So it can either...
+[  329.76] slot0: You can either have an embedded vector or array of strings and each one represents one person or whatever. What the easiest thing to do is how you want to display it. Whatever you give me, I can do it.
+[  340.80] slot2: Whatever you give me, I can do it. It's just a matter of discipline.
+[  342.40] slot1: It's just a matter of deciding what we...
+[  342.48] slot0: I mean...
+[  345.52] slot2: What would be easiest?
+[  345.68] slot1: What would be easiest? Yeah, exactly. All the way around. I mean, exactly.
+[  346.56] slot0: Yeah, exactly. All the way around. Exactly.
+[  348.80] slot2: So whenever we open a window for one speaker...
+[  355.28] slot0: yeah
+[  359.76] slot0: See that's the kick. How did we...
+[  362.40] slot3: Can I have a look at that again?
+[  366.32] slot3: if it's in that format it's speaker
+[  368.64] slot2: it's speaker pretty much I would have thought it's
+[  369.52] slot0: Speaker. Pretty much, I would have thought. Speaker is the controlling thing, not... Yeah, yeah, okay, yeah, yeah. Yeah, so all of this, all that's calculated as well, still the speaker objects.
+[  373.52] slot2: thing not yeah yeah okay yeah yeah
+[  381.60] slot2: Oh is it? Yeah.
+[  382.08] slot0: Yeah, that's easy. Something quite amusing, actually. The influences are... I lived in Germany for six months. Don't know if that had any effect. I spent too much time talking to Brits. That was a bizarre thing. Where do these people go?
+[  389.12] slot1: effect.
+[  398.80] slot0: So then all that is calculated as well. All I have to do is get the dialogue out. So I don't think that would be difficult.
+[  406.48] slot0: um
+[  414.48] slot0: So then, how is this box populated? Is it populated by the one present or the one highlighted?
+[  421.28] slot2: The one present. The one present. Although we could do the one highlighted, I suppose.
+[  422.48] slot0: The one present.
+[  424.64] slot1: Mm.
+[  429.68] slot0: Because at the moment there are methods that say, that I'm using for other talk time, it says like, get talk time, and it takes a name.
+[  441.36] slot2: That would...
+[  441.52] slot0: That would call that, call the meetings method that said return that, and that would populate that, which would be an easy thing to do. And the same for that. I mean, that would be...
+[  445.04] slot1: would populate that.
+[  447.12] slot2: Mm-hmm.
+[  449.76] slot2: I mean, that would be implementing what you said that you want to see per topic. You want to see which one is spoken most, something like that. So you could zap through these topics.
+[  462.08] slot0: Meetings.
+[  462.80] slot2: Meeting sorry yeah, and and it would come up with how much they spoke and you can pick the one that
+[  463.68] slot0: Yeah, yeah.
+[  468.48] slot0: Yeah, that would be easy as well.
+[  468.56] slot2: Yeah, that would be easy as well. Do you want to do that then? Yeah.
+[  470.96] slot1: Do you want to do that?
+[  472.08] slot0: Yeah, okay. So I'll just leave in lots of methods that just return one number at a time. Yeah. That'll be the easiest way to do. Yeah, definitely. Okay. Yeah, that's fine. So, yeah.
+[  473.92] slot2: Lots of methods.
+[  477.28] slot2: yeah that would be the easiest way to do yeah yeah definitely
+[  481.84] slot2: So, yeah, random things like just return talking time.
+[  485.76] slot0: Yeah.
+[  486.40] slot2: Yeah.
+[  487.12] slot0: get talk time i think it's called
+[  488.80] slot2: Yeah. Good.
+[  491.92] slot2: So each time you...
+[  492.32] slot1: So each time are you going straight to the XML files for the information? No, it's stored as an object file. It processes a whole lot offline and stores it as an object.
+[  495.84] slot0: no it's stored as an object file it presses a whole lot offline and stores it as an object okay right and then they're much much smaller only like a one um without one k so that's all just pre-processed yes it's all pretty processed and then it's just each month that object's got a return bunch of return methods you have to greek
+[  502.72] slot1: without 1K. So that's all just pre-processed? Yes, it's all pre-processed.
+[  509.28] slot3: a bunch of return methods.
+[  510.24] slot0: to recreate the object it's called a load method okay so what you do is you call a null constructor because if you call the proper constructor for each meeting it goes off and does all the processing and stores it's own object right and then if you call a null constructor then you call load
+[  510.64] slot1: the object it's got a load method okay so what you do is you call
+[  519.76] slot1: project. And then.
+[  524.64] slot0: and you can call the load on whatever one or all of them or anything like that is it
+[  528.24] slot1: Is it for the entire corpus? Or is it just like individual ones? Like one object for? One object.
+[  531.44] slot0: Or is it just like individual?
+[  534.08] slot0: One object for each meeting.
+[  534.88] slot3: Oh
+[  535.52] slot1: Oh, each meeting.
+[  536.48] slot0: Yeah, yeah.
+[  539.28] slot1: I wonder if that would be useful for some of the other stuff we're doing.
+[  543.36] slot1: yeah it's just
+[  543.36] slot0: It just tells you who participated at the moment, it tells you who participated and the amount they participated in percentages and in time as well.
+[  548.80] slot1: Right, okay.
+[  551.44] slot2: Can you put in there what topic was spoken about as well?
+[  554.08] slot0: Yeah, yeah, that'll be easy. I could use that for the...
+[  554.88] slot2: I could use that for the topic pop-up window.
+[  555.12] slot1: It would be easy.
+[  558.56] slot1: all right yeah
+[  559.20] slot0: Yeah, that wouldn't be too difficult.
+[  560.80] slot2: That would be...
+[  560.88] slot0: That would cause a problem with anything that wasn't annotated for topics.
+[  565.52] slot2: That wasn't what. Or just.
+[  566.24] slot1: Or just return a null or a blank string. Yeah, no topic specified. I have a default, yeah.
+[  567.68] slot0: Yeah, no topic specified, I have a default, yeah. There are some default unknowns, actually. A lot of people don't give to age.
+[  571.68] slot2: There wasn't...
+[  576.00] slot1: all right
+[  576.64] slot0: and other stuff.
+[  576.80] slot2: Because at the moment if you right click on the topic window on one of the topics you have the option of Popping open a window which gives you a list of all the meetings containing that topic
+[  586.96] slot0: Yeah.
+[  587.60] slot2: so
+[  588.72] slot0: Okay, right, yeah, that would be a problem. And then you could do a search over the meetings, over the objects. Because that's the thing, these are so small that you can load all of the whole lot up and do a search over the whole lot to find who was supposed to be in what, no problem, or what topics were in what. So it doesn't crash the thing.
+[  599.60] slot1: what no problem or what topics were in what okay so it doesn't crash the thing
+[  600.64] slot2: or what topics were involved.
+[  602.88] slot0: the thing
+[  603.76] slot2: So how would you calculate that? Would you do the summarisation as you populate it?
+[  610.40] slot0: What, the global statistics come straight off of that? Yeah, for the global... Because they're just for the meter. Oh, right, so...
+[  610.56] slot2: What the global statistics comes down after that?
+[  615.68] slot2: Oh right, so that is all stored together. The speaker class knows about all of that stuff. Oh right, okay. And the meeting class knows about that stuff.
+[  618.48] slot0: The speaker class knows about all of that stuff. Oh, right. And the meeting class knows about that stuff.
+[  625.76] slot0: Sounds good.
+[  625.84] slot2: Sounds good. So have you done these yet? No, no, but I have to do it. Just got to decide on what we want to...
+[  628.72] slot0: No, no, but I have a TV.
+[  633.04] slot0: what we want, yeah.
+[  635.44] slot0: I thought the other stuff was more important anyway, so I did that first.
+[  637.04] slot2: Yeah, definitely. So I did that first. Yeah. So it's all usable now. Can I do it tonight?
+[  638.40] slot3: Mm-hmm.
+[  642.96] slot1: Mmm.
+[  643.28] slot0: No, design the GUI first. The problem is if you change the classes, the object's serial numbers change and you can't reload the object, so all the processing has to be done over again. And I haven't quite finished a bit.
+[  655.52] slot2: Mm-hmm.
+[  656.16] slot0: it would become out of sync and get a bit funny. If I gave you one. If I gave you it now and you worked on it and then I changed it and ran the thing again, you would never be able to load the objects back up.
+[  666.72] slot2: Oh, I see.
+[  668.00] slot0: And then you'd have multiple copies of objects all over the place and it would get silly, I think.
+[  672.40] slot2: Well let me know when it's sort of usable.
+[  676.48] slot0: But if you want to make the picture, you can do that without anything.
+[  676.56] slot2: But if you want to make the...
+[  681.52] slot2: What do you mean a picture? Just the... Do you mean just the... That, yeah. Yeah, but it's not going to take very long. That doesn't take very long. I mean, it's... Yeah.
+[  682.40] slot0: Just the... You mean just the... Yeah, but it's not going to take... That doesn't take...
+[  688.56] slot0: Okay.
+[  691.28] slot0: Well, it won't take very long to get it all finished up. But I'll need to have done all of this stuff too first.
+[  697.28] slot2: because of
+[  697.84] slot0: because otherwise the objects won't be the same.
+[  700.00] slot2: Mm-hmm.
+[  700.24] slot3: Mm-hmm.
+[  702.80] slot2: Sounds good. So where's that? Is that stored in the...
+[  706.64] slot0: That is still my home directory.
+[  706.72] slot2: I saw my hunger.
+[  709.12] slot2: On your home directory, not in there. No, I think it's going to be weird.
+[  710.24] slot0: Not in there? No, not with it glow. Well, it's finished up with it glow, otherwise it'll get confusing.
+[  711.60] slot1: Go with it.
+[  714.80] slot2: Actually, I can upload.
+[  715.04] slot1: Actually, I can upload my stuff as well. I just have to make one change to your file just to load this one instead of the default. All right.
+[  722.08] slot2: All right.
+[  722.48] slot1: So that's two lines of code.
+[  725.28] slot2: Yeah. Well, are you wanting to write that indirectly or what do you want to do? What do you mean? If you want to change my code. Well, yeah.
+[  725.84] slot3: What are you wanting?
+[  730.80] slot1: What do you mean?
+[  733.60] slot1: Well, yeah, just the one thing that's like the action for loading up the search thing.
+[  735.68] slot2: or loading up the search thing do you want to change that the original mbrowser file then or yeah yeah well your version
+[  740.72] slot1: Yeah. Well, your version.
+[  743.04] slot2: Have you done that now? No.
+[  744.00] slot1: No, I did it in my directory. Oh, okay, so not the actual one.
+[  745.84] slot2: Oh, okay, so not the actual one, but a copy of it.
+[  748.88] slot1: I have a copy, yes. Okay. But I will, yeah, I was going to update that one. Yeah, it just makes sense. Well, just tell me when, because I usually...
+[  751.60] slot2: but I will
+[  757.04] slot2: Well, just tell me when, because I usually work on my own copy for the day, and then update it without checking if the one in the share has changed. Yeah, I haven't made any changes to it yet. Okay.
+[  761.28] slot1: Right, yeah, and then update. For the day, and then update it with our...
+[  765.12] slot1: in the shed yeah i haven't made any changes to it yet okay yeah um yeah i'll just make that one and let you know
+[  772.16] slot2: Yeah, let me know.
+[  773.28] slot1: Because, yeah, like I say, two lines of code.
+[  775.36] slot2: Yeah.
+[  775.76] slot1: and then you can play
+[  778.32] slot2: And then you can...
+[  781.44] slot1: There's not much to do yet. I have to get better results, like better presented. So is that what you're working on?
+[  785.92] slot2: So is that what you're working on now then, to present the results nicer? Yeah, and just...
+[  788.32] slot3: Yeah.
+[  789.52] slot1: and just to wire in the topics and summaries
+[  797.44] slot2: You mean the highlighting stuff? Well, I'll...
+[  799.28] slot1: Well, also, yeah, I like that as well. So I just want to find out what kind of objects those were for the other ones. So it goes in in highlights.
+[  811.76] slot2: yeah
+[  812.88] slot1: I know.
+[  813.68] slot2: Actually for an end text area, whatever it is.
+[  818.00] slot2: they define some handy highlights on that. So you've got different highlights. Just look at what they wrote about it. They've got user highlights, selection highlights.
+[  832.32] slot2: time highlights and
+[  835.76] slot2: something else
+[  838.72] slot2: So you can quite easily, if your text area is called area, you just do area dot set highlights or something.
+[  845.52] slot1: Something like that.
+[  847.92] slot1: All right.
+[  849.12] slot2: That's the way I did it to highlight, to cross highlight between topic and transcripts.
+[  850.72] slot1: to highlight, to cross.
+[  856.08] slot1: Okay.
+[  856.56] slot2: Sounds good.
+[  859.04] slot1: So there's a few more things to do with that. And then once Pranella gets the index, then that's going to be kind of fun. I'm just wondering, have you had to, well, the way you're doing it, I was going to ask if the way you were doing it, you were loading like a new.
+[  873.12] slot1: corpus each time for each meeting, but you're doing the object, so you don't need to. Because if we do have, like, if the inverted search says that there's, you know, 10 documents, are we going to have to load each of these 10 corpora just to...
+[  887.52] slot1: do the individual next NXT search.
+[  890.56] slot0: That way it doesn't crash if you try and load all 10 in one, it crashes.
+[  893.92] slot1: Yeah, I think probably it's a bit dumb.
+[  894.24] slot0: It's a bit dumb if you can fool it. If you load up 10 different engines simultaneously, it can do that. Really? It can't do them if it thinks they're one. It's about the amount that each...
+[  902.56] slot2: Really? I can't do them. I can't do them if you think...
+[  902.96] slot1: Right.
+[  909.12] slot0: have to kind of call a new class and then it will do it fine but if you don't yeah it says okay oh yeah I've got all this space otherwise it goes oh no
+[  910.96] slot1: Yeah, okay. But if you don't...
+[  912.00] slot2: I like how it's more, Dave. That's insane. Yeah, it says, okay, oh yeah, I've got all this space. You could do some.
+[  913.36] slot1: scene yeah it says okay
+[  914.16] slot3: and says, okay, oh yeah, I've got a...
+[  917.52] slot1: I'll do it.
+[  920.64] slot1: Okay.
+[  922.24] slot2: It talks to you now, doesn't it? It talks to me.
+[  926.00] slot0: It's a nice machine.
+[  928.96] slot2: I've spent too much time in front of it, I think. All right, well, I've been doing some random pop-up windows for the speaker characterisation, which is good, so I can fill that in now. The windows are all there now after lots of music.
+[  939.12] slot1: Okay.
+[  942.88] slot0: Oh, they're done, are they? Okay, cool. Well...
+[  944.56] slot2: Well, you know, just a pop-up window. No pop-up. It was difficult enough. Because it basically has to set up, like, whatever, 10 pop-up windows in memory, as in already initialize them.
+[  946.56] slot0: It was difficult enough.
+[  958.56] slot2: because there might be 10 speakers. They all have to have different... Oh.
+[  962.16] slot1: Windows in.
+[  962.40] slot2: Windows. And I'm working on when you click on a topic to see a list of the topics, of the meetings that that topic was mentioned.
+[  975.20] slot1: Okay.
+[  976.40] slot2: I have a question about the start screen.
+[  982.64] slot1: Mm.
+[  984.08] slot2: what kind of start screen do we want i mean do we want some general blurb about welcome to the
+[  990.88] slot3: something
+[  991.28] slot1: Or is it more like...
+[  991.76] slot0: more well as an LSD browser some speeches and music
+[  994.32] slot1: All right. Let's hope so.
+[  998.08] slot1: I'm just kidding.
+[  999.44] slot2: It doesn't take too long.
+[ 1000.40] slot1: too long though. We have to, you know, while we're debugging, we're probably getting sick of it. But no, or something that just sort of guides them to the most obvious things. So do we...
+[ 1000.88] slot0: We have to.
+[ 1004.24] slot0: Yeah.
+[ 1009.44] slot2: things yeah yeah so do we want yeah maybe we could write and on like that whatever it's called the top of the window saying welcome to the meeting browser
+[ 1017.76] slot1: browser yeah
+[ 1018.80] slot0: or a switchboard that comes up that's just a blank form like that with some buttons
+[ 1019.92] slot2: which board that comes up.
+[ 1023.20] slot1: Yeah.
+[ 1023.92] slot0: load me a meeting load me a search load me something else yeah whistle a tune
+[ 1026.40] slot1: yeah
+[ 1029.36] slot2: Yeah, but how? I mean, at the moment the way it is, it's a drop-down menu, as you've seen.
+[ 1034.48] slot3: you've seen.
+[ 1035.20] slot0: yeah
+[ 1035.36] slot1: Yeah.
+[ 1035.92] slot2: with all the... Because it's the dialogue class that you use there.
+[ 1044.72] slot1: I was just going to ask if we should assume that they'll want to load a meeting first, but not necessarily. I guess if they're doing a search on the entire... Yeah.
+[ 1051.60] slot2: Yeah, I mean, I think they should have two options. Either load up a meeting that they choose or do a search.
+[ 1057.76] slot1: and through that once you've got the result
+[ 1058.08] slot3: And through that.
+[ 1058.32] slot2: And through that, once you've got the results, you click on something and that goes out.
+[ 1060.56] slot0: and that might be done. It needs you to have a meeting loaded before it will start doing any searching. Well, we can.
+[ 1064.96] slot1: Oh.
+[ 1065.36] slot2: Well we can put the logic in there.
+[ 1065.68] slot1: Well, we can put the logic in there. You can't...
+[ 1067.92] slot0: The only thing you can search is a night object model, and the only time you get one of those is if you've loaded an observation. I could probably...
+[ 1068.56] slot2: The only thing you can search is a night object.
+[ 1072.88] slot1: I could probably even. That shouldn't be too hard to put a check in there. And if it hasn't loaded, then force them to load one. Yeah.
+[ 1074.08] slot2: It shouldn't be too hard.
+[ 1079.28] slot0: Yeah, you could use the inverted file search to return a list of meetings and then use one of those to load and search. But you won't...
+[ 1088.08] slot1: Mm-hmm.
+[ 1091.04] slot2: Can you not get this num object?
+[ 1093.84] slot0: It has to be an observation. And even if you go and search the whole corpus from that, but you have to have, it has to start with something for some bizarre reason. The engine, there's only one.
+[ 1102.56] slot1: There's any one.
+[ 1102.96] slot0: There's only one search method to the search engine. The engine class only has one search method.
+[ 1105.68] slot1: Mm-hmm.
+[ 1108.24] slot2: I suppose we wouldn't want to use NXT at the beginning anyway because we don't want to search locally. We want to search globally. Unless they know what meeting it is.
+[ 1114.96] slot0: Yeah, yeah, globally. So...
+[ 1117.68] slot1: Unless they know what meeting it is. Well, no, then they...
+[ 1119.60] slot0: Yeah.
+[ 1120.48] slot2: Well, no, then they would open the meeting first, right? Yeah.
+[ 1122.88] slot0: Yeah.
+[ 1124.00] slot2: So let's say they have two options. Either pick one meeting or search globally to find a meeting that they like. Yeah.
+[ 1131.28] slot0: Yeah.
+[ 1135.20] slot1: Yeah. Or, well, the things that may just be looking for a word, and if it shows up 10 different meetings, then at that point, they'll probably want to. Like, do we want to, like, if it by default goes with the first one and they want number five of the ones that are returned, I mean, then they have to go through the.
+[ 1143.52] slot2: Like, do we want to?
+[ 1149.92] slot2: No, but why do we want default? I mean, just, you know. Well, I'd like to load.
+[ 1152.00] slot1: Well, I'd like to load up. Like, the thing is, I think...
+[ 1155.92] slot1: Like when it loads up, it'll load up the transcript window and the whatever other window. Right now I think just the topic ones. Although the time is probably more caused by loading the actual data. So I'm just thinking if it's
+[ 1170.24] slot1: if it's kind of like you're saying you have to have a nom object right i mean before you do a search at all yeah but
+[ 1177.20] slot2: Yeah, but local sets. We can't do local sets without anything.
+[ 1177.68] slot1: Local search. Yeah. We can do global search without anything.
+[ 1181.44] slot0: It doesn't take long to load up anyway. You can load the dumb one up, it doesn't have any. Yeah, but...
+[ 1181.60] slot2: I'm pretty long to load up.
+[ 1184.72] slot1: Yeah, but the global one feeds into the local.
+[ 1189.12] slot2: So if we're getting any usable data, it's...
+[ 1189.36] slot1: So if we're getting any usable data, it's going to be doing a search on each of those files. So it's going to be loading up each of those one at a time to get the data. Yeah, the globe.
+[ 1194.56] slot2: one at a time to get the data. But yeah, the global inverted file search gives the NOM objects basically to the local search, right? Exactly, yeah, right.
+[ 1203.92] slot0: Yeah, right.
+[ 1204.40] slot1: But it could be time consuming, like if there are 10 documents that hit with this. Well, yeah, that's always going to be the case.
+[ 1207.84] slot2: we had that was going to be the case of search
+[ 1210.40] slot3: Yeah.
+[ 1211.04] slot0: But he gives one at a time anyway, doesn't it? Because otherwise he'll crush the thing.
+[ 1214.40] slot1: Yeah, well, I'm just thinking of some way we could cache the results in a nice little format that will make things a bit easier. But the thing is, I mean, if we've got that, then it's going to be needing really to load the entire corpus.
+[ 1228.80] slot1: for that meeting if it's trying to show us where those were, if it's trying to highlight those in the text, transcript, or whatever, and we're going to have to have all that other data in there. So each time when we have the search window and we have 10 different meetings, the word wireless comes up, go to meeting one.
+[ 1243.68] slot1: one that has to reload the NOM object. Next one. I mean, that's gonna...
+[ 1249.68] slot0: Yeah, it's not too slow though, I don't think. It's not too bad on that. I don't think that'll be too much of a problem.
+[ 1250.16] slot1: It's not too slow, though, I don't think. It's not too bad on that. Okay. I don't think that'll be...
+[ 1255.52] slot1: It always seems to be slow loading up the first time at least. Like that's all I do lately is just sort of loading it up, test it, try some else and shut down, load it up. Yeah. So just sort of based on that as well. Yeah. But.
+[ 1258.80] slot0: Yeah, yeah.
+[ 1259.68] slot2: is just sort of
+[ 1265.28] slot0: Yeah.
+[ 1270.08] slot1: if it doesn't take that long each time then that should be
+[ 1274.48] slot1: Alright.
+[ 1275.12] slot0: I mean, you can...
+[ 1275.68] slot2: I mean, you can, you know, the option is to do a search in the way that, if you do a global search, first, as a first step, only return the meetings, as in, not even the meetings, but the name of the meetings. So, you know, say you want to...
+[ 1281.44] slot3: Mm-hmm.
+[ 1286.40] slot1: meetings but the name of the meeting
+[ 1289.76] slot2: you want to search for the word language, then it gives you as a result all the meetings that contain the word language. And then you can decide, well, I want to search on this and this and this meeting, or only on this meeting.
+[ 1296.16] slot1: language
+[ 1299.28] slot1: meeting only on this
+[ 1302.24] slot1: Yeah, yeah. Yeah, make it.
+[ 1302.32] slot0: Yeah, make it strings for as long as possible. And then only return the things when they actually need to have to set. That makes sense.
+[ 1302.96] slot2: Yeah, make it string.
+[ 1305.44] slot1: with some other things when they actually...
+[ 1306.16] slot3: actually
+[ 1308.40] slot1: That makes sense. And that way if they know specifically which meaning it is, that'll save the time.
+[ 1312.80] slot2: Yeah.
+[ 1314.16] slot0: Because I'm sure they don't.
+[ 1314.16] slot1: Because I'm sure they don't want to have the extra loading time either, if they can avoid it. Definitely.
+[ 1317.28] slot0: Neither of them can avoid it.
+[ 1318.56] slot2: Definitely. Or they could.
+[ 1318.96] slot1: Or they could check mark against the ones they want to check.
+[ 1319.28] slot3: or they could
+[ 1322.56] slot0: Did we think about...
+[ 1326.96] slot0: better names for the meetings.
+[ 1330.16] slot1: I think they were in the text. We can probably do that ourselves and just sort of BDB, you know, just do a...
+[ 1330.64] slot3: in the text we can probably
+[ 1334.96] slot2: There is, yeah, in one of the papers they have names such as… Oh, do they…
+[ 1335.68] slot1: Yeah, in one of the papers.
+[ 1340.96] slot1: such as
+[ 1342.08] slot0: Do they translate them?
+[ 1342.88] slot1: like the working that it's part of okay
+[ 1342.88] slot2: Better understanding or whatever. Like the working group that it's part of. Do they? Okay. One of those. Even better understanding or something. Yeah.
+[ 1346.16] slot0: Okay. One of those is even better.
+[ 1350.64] slot1: Yeah.
+[ 1351.28] slot0: That's a working group. I want to see the meetings about even better understanding.
+[ 1351.68] slot2: That's a working group. Yeah. I love that. I want to see the media.
+[ 1359.36] slot2: Yeah.
+[ 1360.16] slot1: See if it's accurate.
+[ 1361.36] slot2: So I've put that in already too.
+[ 1364.64] slot0: Okay, let's go. Let's go.
+[ 1365.36] slot2: sort of.
+[ 1368.08] slot2: So, yeah, again, concretely to the startup window.
+[ 1376.24] slot2: um
+[ 1380.48] slot0: so he would have the on ideas mean the ds document frequencies which would well
+[ 1387.04] slot2: Well, can I? Do I actually need?
+[ 1387.20] slot1: Do I actually need the frequencies?
+[ 1390.72] slot0: Yeah, to do what Tiskev's talking about, you do. Yeah.
+[ 1393.04] slot1: Yeah.
+[ 1393.60] slot0: to do the topic label.
+[ 1394.88] slot1: Oh, right, that right. Yeah, okay.
+[ 1396.48] slot3: Yeah.
+[ 1396.64] slot2: Yeah, how is that? I mean, do you think you would have time for that as well?
+[ 1401.76] slot1: Well, the thing is, if it's being done... If somebody's done the keywords...
+[ 1402.56] slot0: somebody's done the key so there was the idea of the dfs already would be not too probably there's a clash
+[ 1406.64] slot1: There was a class she was trying to get to work on Friday. They did have all that, and it was sort of built in, and just had some trouble getting it running properly. But it had sort of all that standard sort of stuff. But it was the last time.
+[ 1420.80] slot1: Last I heard, it wasn't working. She was going to look at a more straightforward sort of thing that really just fulfills what we needed to do. But if we do need the frequencies, then. How do you do it in university?
+[ 1430.88] slot0: How do you do an inverted file search without the TF idea?
+[ 1433.84] slot1: I don't know.
+[ 1436.24] slot0: I think you need to have that.
+[ 1438.24] slot1: Well, what does TF-IDF stand for?
+[ 1438.48] slot2: What does TF-IDF stand for?
+[ 1440.72] slot0: the amount that they occur over turn documents basically the amount the what does it stand for df is the document frequency is the amount that each word occurs um no what is it turn frequency is the amount that it occurs
+[ 1444.00] slot3: What does it stand for? DF is the...
+[ 1455.52] slot0: One of them is the amount that occurs in each document, and the other one is the amount that occurs generally. So the more it occurs in specific documents compared to its general score, the more informative it is about a certain... So the general...
+[ 1462.56] slot2: So the more it occurs...
+[ 1465.36] slot1: compared to his gender.
+[ 1465.44] slot2: compared to his general score, the better more than...
+[ 1468.96] slot2: So the general score, would that be for the whole language? The whole corporate. The whole corporate. The whole corporate.
+[ 1473.20] slot0: Before you call corporate corporate data. Well, you know, you might have some general figures.
+[ 1475.52] slot3: Well, you know, you might have some general frequencies.
+[ 1476.32] slot2: Well, you know, you might have some general frequencies.
+[ 1479.44] slot1: Plus a stop list, so you remove stuff that doesn't...
+[ 1479.52] slot0: Plus a stop list, so you remove stuff that doesn't... Like that and then there, which is going to have a basically equal score.
+[ 1481.68] slot2: like that
+[ 1484.72] slot1: at the equal school.
+[ 1485.84] slot2: So what would the, if we had these fake topics, what would they look like? A bunch of keywords. A bunch.
+[ 1487.52] slot0: these fake topics
+[ 1489.76] slot0: bunch of keywords
+[ 1492.24] slot0: That would probably be the easiest one. Just a list of like three words or something. Yeah, keywords. Three or five words. What's the I?
+[ 1493.12] slot2: Just a list of like three words or something.
+[ 1496.96] slot1: What's the I in TF-IDF? Inverse document.
+[ 1498.48] slot0: inverse document the term frequency inverse document frequency
+[ 1499.76] slot3: term freaks
+[ 1504.40] slot0: I did do it once, I do have a Java class that does it for something. I don't know whether it will work for this.
+[ 1506.80] slot1: something I don't know
+[ 1507.92] slot2: All right.
+[ 1508.72] slot1: Because that...
+[ 1509.12] slot2: Because that would be really handy then, we can actually test it on the user. As opposed to just doing it and not using it. Because if you just have the segmentation, that's great. But we can't compare it to the hand annotator.
+[ 1515.76] slot3: doing it and not using it.
+[ 1520.40] slot0: We can't...
+[ 1523.52] slot2: you know the hand segmented
+[ 1524.96] slot1: segmented
+[ 1526.72] slot0: Also, keywords gives you an eye on a whole new type of search. You have to do keyword search, but keyword search could be topic search, it could be the same thing. Instead, it would just search for keywords. You tell them they're searching for topics, but you can't search for keywords.
+[ 1540.80] slot0: for each to see what I mean
+[ 1542.32] slot2: which is what I mean.
+[ 1546.56] slot2: Hmm.
+[ 1548.64] slot2: Yeah, that would work. That would be really nice.
+[ 1553.52] slot0: I suppose even calculating the...
+[ 1558.48] slot0: the what's-its-faces themselves wouldn't be too much, too long. The easy bit, it's probably easier to calculate them based upon in their whole occurrences in the corpus than it is to calculate them per topic, because you don't have to...
+[ 1572.48] slot0: have to integrate as much. Yeah.
+[ 1573.52] slot2: as much. Yeah. Yeah, definitely.
+[ 1574.48] slot3: Definitely.
+[ 1575.68] slot0: information.
+[ 1579.84] slot0: No, you can do search without TFID if you just can't rank the search.
+[ 1584.80] slot1: Yeah, that's what I'm thinking too. Do we need to?
+[ 1585.20] slot2: Yeah, that's what I'm thinking too. Do we need to?
+[ 1587.28] slot0: I mean, we're just looking.
+[ 1587.28] slot3: I mean, we're just looking for your stuff, I guess.
+[ 1587.76] slot2: For your stuff, I guess.
+[ 1588.88] slot1: For your stuff, I guess. No, no, no. That's what was in that.
+[ 1589.84] slot0: No, no, no. But isn't that what the idea was in the first place, to rank the results? So that...
+[ 1595.20] slot2: Sort of but then the main idea was more like to speed up speed the search up because NXT Whole of the corpus was just not feasible. Yeah
+[ 1596.00] slot1: And the main idea was...
+[ 1600.72] slot1: whole
+[ 1602.80] slot0: Yeah, but that won't slow down. Ranking won't slow down.
+[ 1602.88] slot1: Yeah, but...
+[ 1603.92] slot2: quite slow it down.
+[ 1607.52] slot2: No, but the general inverted file.
+[ 1610.80] slot0: Yeah, it still uses an Inventify, but it ranks the results by the amount... That would just be a nice extra. Yeah, I thought that was part of it, but yeah, okay, it doesn't matter. Yeah.
+[ 1610.96] slot2: It still uses an Inventify, but it ranks the results by the amount. That would just be a nice extra. Yeah.
+[ 1618.40] slot2: Yeah, I wasn't sure.
+[ 1619.52] slot3: Mm-hmm.
+[ 1620.32] slot1: I don't think we have that in the document.
+[ 1620.40] slot2: I don't think we had that in there.
+[ 1622.32] slot2: No, we didn't. So what? It's only interim. Yeah, exactly.
+[ 1622.56] slot0: No, we didn't.
+[ 1626.08] slot1: Yeah, exactly.
+[ 1626.88] slot0: you know
+[ 1630.00] slot0: But yeah, I guess if that's not part of it, don't worry about it. Yeah, I mean...
+[ 1633.76] slot2: Yeah, I mean, if you have time.
+[ 1635.20] slot1: Yeah, nice to know. Because I'm only going to do this.
+[ 1635.76] slot0: Because I'm only going to do this if I've got time anyways.
+[ 1635.84] slot2: Because I'm only going to do this if I've got time anyway.
+[ 1637.84] slot1: Because I mean...
+[ 1638.08] slot2: Because, I mean, then it would give you, like, if you search for a word, it would give you the meetings, but also how often that word occurred in that meeting. That would be so useful. It would just give you a rank. That was the whole point. No, no, actually.
+[ 1647.44] slot0: We just give you a rank. That was the whole point. No, no, actually, because the thing is, I mean, this is your top one, this is your bottom. Yeah, yeah.
+[ 1649.84] slot3: No, no, no, actually, because the thing is, I mean, typically... This is your...
+[ 1650.32] slot1: Actually, because the thing is, I mean...
+[ 1652.96] slot2: Yeah, yeah.
+[ 1654.24] slot3: The thing is we're...
+[ 1654.64] slot1: The thing is we're just looking for when it happens in a meeting, if they're looking for a particular term or something. They just want to know if that term exists there and where does it exist and I want to see it. Yeah, but it will be useful.
+[ 1662.48] slot0: yeah but it was useful how informative that TF IDF is an informatys goers you know if you have
+[ 1662.64] slot2: yeah but it was useful how informative that TF IDF isn't
+[ 1667.04] slot2: If you search for language and you return basically all of the meetings, you want to see where they actually spoke about it and where they just mentioned it at once.
+[ 1672.48] slot1: You want to.
+[ 1676.48] slot3: If it's like a two word term.
+[ 1677.20] slot1: word term does the TF-IDF
+[ 1679.68] slot0: Depends how you treat your compound now.
+[ 1680.00] slot1: Have a look.
+[ 1681.12] slot2: Yeah.
+[ 1682.00] slot1: It's not a compound noun. It's just two words together.
+[ 1684.32] slot0: Bulllight work.
+[ 1685.44] slot1: I don't know. Just something like...
+[ 1690.80] slot2: Language in. Edinburgh University.
+[ 1691.52] slot1: Edinburgh University. As it compares to them. Wow. Seriously. It's like Edinburgh and...
+[ 1693.20] slot0: As a compound down. Wow.
+[ 1696.08] slot2: It's like Edinburgh and language. Sunny day. Sunny day, yeah. Like an adjective, yeah.
+[ 1697.36] slot3: Sunny day. Sunny day, yeah.
+[ 1698.08] slot0: like an adjective yeah
+[ 1703.20] slot0: It's my simple form. It would do a separate rank for each one, each term.
+[ 1707.68] slot1: You could make it.
+[ 1707.84] slot0: You could make it more complicated than make it dead. Let's not make it more complicated.
+[ 1709.60] slot1: Let's not make it more complicated.
+[ 1711.12] slot2: and then add those up or something because
+[ 1714.00] slot1: Because the thing is...
+[ 1714.16] slot3: Because the thing is, the way we were doing it, we were just looking for the words.
+[ 1714.24] slot0: The thing is that the way we were doing it, we were just looking for the words.
+[ 1714.32] slot2: The thing is that the way we...
+[ 1717.04] slot1: for the words period, each word in the index. Well, that's the way we were thinking about it. And then it's just saying, were these two words in any of these documents? And then if it was, then we'd go closer and do the NXT search.
+[ 1720.56] slot0: Well, that's the way we were thinking about it. Yeah, you don't want to. And then it's just saying...
+[ 1720.72] slot3: Well, that's the way we were thinking about it. Yeah, you don't want to start looking for that. And then it's just saying...
+[ 1728.56] slot0: Yeah.
+[ 1729.52] slot1: Look for the exact term or the regular expression. I guess you just do.
+[ 1732.40] slot0: I guess you just do some of the...
+[ 1736.08] slot0: of the individual TFIDF for each term returned. And that generally will be a bit crude, but it will give you a score. And the more informative each term is for each thing.
+[ 1748.40] slot3: Mm-hmm.
+[ 1749.60] slot0: be a few high thing. It's pretty crude anyway, but it's just looking for...
+[ 1754.24] slot0: If it's all it's going to do is look for separate... Oh, because then it's going to go into the NXT section and return. Or we choose the list of meetings that we wanted to search to do that. Yeah, yeah, that's true. Yeah, that's less good.
+[ 1758.72] slot1: Or we choose the list of meetings that we wanted to search to do that. Yeah, yeah, that's true.
+[ 1766.32] slot3: I'm just wondering if it's going to give up.
+[ 1766.96] slot1: If it's going to give us something cool, then absolutely. But if it's sort of like, if the NXT search has still got to be run to find these terms or these patterns. Groups of terms, yeah, without doing any.
+[ 1775.04] slot0: Groups of terms, yeah, without doing any, like, word pairs. Or also, like, do...
+[ 1779.68] slot3: or also like to do.
+[ 1779.92] slot1: Or also, do wild cards work for something like that? So if you're looking for wireless, wired wire, blah, blah, blah, you do wire with a star. Yeah, I don't know.
+[ 1788.64] slot0: Yeah, I don't know how that works. Actually, that's a problem for me, too. That's, yeah.
+[ 1790.80] slot1: Actually, that's a problem for me too. So.
+[ 1796.96] slot1: But the idea is...
+[ 1797.20] slot0: But the idea is that gives you an informative score. How you combine that is up to you. I guess there's lots in the literature. It should work, yeah.
+[ 1804.08] slot3: It could work, yeah. Okay.
+[ 1804.88] slot1: Okay, I'm just... If you were...
+[ 1805.60] slot0: If you will, there's a whole load about it in Manning and Schutzer.
+[ 1811.12] slot0: They've got a whole chunk about, it's just IR, isn't it? It's basically information retrieval. They've got a good chapter on it. If you haven't got it, it's on Cognit. Yeah, I've got...
+[ 1814.64] slot1: They've got a good chat.
+[ 1818.96] slot3: Yeah.
+[ 1818.96] slot1: Yeah, I've got somewhere. PDF.
+[ 1824.32] slot0: yeah me too hundreds of videos
+[ 1828.00] slot1: do the PDF, switch it to PostScript, switch it back to PDF.
+[ 1829.76] slot2: to postscripts.
+[ 1831.28] slot0: Yeah.
+[ 1836.08] slot1: Okay. Is that... okay.
+[ 1842.08] slot1: Okay.
+[ 1843.04] slot2: So, to come back to the start of the screen. Oh, okay. Sort of to see. I'm very unsure about what that should look like. I mean, for the part where you can choose the meeting, what kind of information do you want to have about the meeting?
+[ 1845.76] slot0: Okay.
+[ 1846.96] slot1: sort of
+[ 1857.12] slot2: meeting I mean the the longer name obviously if there is one
+[ 1861.28] slot1: Because they don't all have a...
+[ 1861.28] slot2: they don't all have a long enough what the users that spoke uses that took part
+[ 1867.76] slot1: But then that's probably...
+[ 1867.92] slot2: Then that's probably pretty much the same for the same group.
+[ 1869.04] slot3: Yeah.
+[ 1873.04] slot1: For the most part. I mean, there'll be a set of people that do a subset feature.
+[ 1874.72] slot2: a set of people that do a subset for each meeting. Yeah, just to give them an idea, a general idea, what there is so they can pick a meeting. Search for stuff.
+[ 1877.20] slot0: That's great.
+[ 1884.16] slot3: Search for stuff. Start working. Yeah, I guess. Yeah, I guess.
+[ 1886.96] slot0: Yeah, I guess that's huge. Our brows.
+[ 1888.64] slot1: Or browse. Okay, like search, browse.
+[ 1888.80] slot3: Browse, okay, like search, browse.
+[ 1893.60] slot3: Like if you're looking for something specific.
+[ 1894.16] slot1: for something specific like is that what you're thinking like if they if they know exactly where they want to go they want to go to you know that meeting on december 3rd and they just want to go there and see stuff then they can immediately go and browse yeah i want to look at the meeting
+[ 1900.56] slot2: I just want to go there and see.
+[ 1902.24] slot2: immediately go and browse that. Yeah, I want to look at the meeting where so-and-so spoke.
+[ 1906.96] slot1: Yeah.
+[ 1907.28] slot2: of that, you know, some sort of research group.
+[ 1911.84] slot1: I want that.
+[ 1911.84] slot2: I want that first meeting. Look at that. Yeah.
+[ 1913.92] slot1: Yeah.
+[ 1918.24] slot3: Yeah.
+[ 1919.84] slot1: Browse by meeting, browse by law, browse by speaker. No, I'm just thinking of different ways we can...
+[ 1925.20] slot2: Do that, like different buttons on the top.
+[ 1925.44] slot1: do that like different buttons on the top like if they're looking for a particular person particular working group particular whatever I mean we just we could break things down like that to that level of detail if we want or we could
+[ 1937.76] slot2: I don't think we need that. Because we just want to have a way of... Because as soon as they've got loaded their first meeting, they can browse through that quite nicely.
+[ 1938.08] slot1: I don't think we need that. Yeah. Because.
+[ 1951.84] slot3: um yeah but i'm just
+[ 1953.20] slot1: Just thinking like initially when they load up.
+[ 1956.40] slot1: What are the range of things that they'd want to do?
+[ 1958.40] slot2: yeah
+[ 1959.12] slot1: Like if they're part of X working group, they'll want to get in there. Do we want to save preferences?
+[ 1967.20] slot2: What do you mean? Molly.
+[ 1968.00] slot1: Well, if they're part of BDB working group, they're going to want to look at the BDB ones and some default to that. I don't know.
+[ 1973.92] slot2: How are we going to know that?
+[ 1976.24] slot1: based on what they did the last time.
+[ 1978.96] slot0: You can have safe preferences.
+[ 1979.04] slot2: You can have safe preferences.
+[ 1980.72] slot1: Yeah.
+[ 1981.20] slot0: You could have a safe present for references, I guess.
+[ 1984.32] slot2: But that would defy the whole point of browsing, right? If you only wanted to look at... All right, call it favourites then.
+[ 1988.08] slot0: Call it favourites then.
+[ 1990.24] slot3: Yeah.
+[ 1992.88] slot1: Yeah.
+[ 1993.52] slot0: You could have a favourite. You just scroll.
+[ 1994.32] slot3: You just scroll down the list and find your favourite.
+[ 1997.36] slot0: Yeah, it's not enough emulation, is it? It's not like they come back every...
+[ 1998.24] slot1: Immigration is.
+[ 1998.96] slot2: It's not like they come back every day and do the same browsing. Let's see what's changed today.
+[ 2003.52] slot3: Let's check it out today.
+[ 2006.00] slot1: I forget.
+[ 2008.64] slot1: Right.
+[ 2009.12] slot2: Um,
+[ 2009.36] slot1: Okay, well, no, I'm just getting back to sort of what could be on the startup screen.
+[ 2015.12] slot0: like there's just
+[ 2015.20] slot2: Like there's just a.
+[ 2015.52] slot1: Like there's just a range of things we could do. We could have like search options, browse options. I mean, just, I don't know, just playing around with ideas.
+[ 2024.64] slot3: um
+[ 2026.16] slot1: And then we can...
+[ 2028.48] slot1: tie this into our evaluation tasks and say, well, if you want to search for a meeting or search for a user in a particular meeting, then do this, blah, blah, blah. So we can, yeah.
+[ 2037.36] slot2: Oh, right. Sort of a guide.
+[ 2037.92] slot1: sort of, you know, guide them. It's just like, hey, my task is to do this and there's a button for it. Perfect. You know?
+[ 2040.64] slot2: my task is to do this and there's a button perfect no
+[ 2047.28] slot1: Um,
+[ 2047.44] slot2: Yeah.
+[ 2048.24] slot0: Yeah, it'd be quite good if it has, yeah.
+[ 2050.40] slot2: I wasn't going to put any help in there, any sort of explanation of how the browser works, to be honest. No.
+[ 2056.96] slot3: No, that's not what I'm suggesting. I'm just saying, like, these are just, like, a lot of programs will kind of...
+[ 2057.28] slot0: Let's do it. Let's do it.
+[ 2057.52] slot2: That's not what I'm suggesting.
+[ 2057.84] slot1: I'm just saying like these are just
+[ 2058.96] slot0: I'm just saying, like, these are just...
+[ 2061.68] slot1: well kind of lame programs do have that sort of thing first just because they don't want people to have to go through all the menus and search themselves and just like do commonly
+[ 2070.32] slot2: use tasks or just
+[ 2070.64] slot1: use tasks or just exit and just let me use the program as well.
+[ 2072.16] slot0: exit and just let me.
+[ 2074.72] slot0: well I mean the main thing what
+[ 2076.32] slot2: But I mean, the main thing what you want to do is to view a meeting.
+[ 2080.08] slot3: probably search some says
+[ 2081.12] slot1: Search. Yeah.
+[ 2081.12] slot0: says you know such a yeah you think you said once the one said take me straight to this meeting and have a text box you into it or drop down menu and then another one that said search that led us in the other search likely finds
+[ 2081.68] slot2: Yeah, we'll search, yeah. So even if it just said two things, just said...
+[ 2093.36] slot1: Find specific meaning. That's an easy sort of thing. Yeah, yeah.
+[ 2094.88] slot0: That's an easy sort of thing. Yeah, yeah. Or one that, yeah. Yeah, that.
+[ 2098.32] slot2: Yeah, that all happens through the search, basically. Yeah.
+[ 2101.04] slot0: Basically, I...
+[ 2101.36] slot2: basically either that use a lot knows which meeting you want to look at he just clicks on it or he doesn't and then he searches for one that
+[ 2108.80] slot1: sort of.
+[ 2109.76] slot0: The other thing to do is just have search as the default, just it opens and the search window opens. And that's the interface. And you just go from there.
+[ 2109.84] slot1: Well, the other thing to do is...
+[ 2109.92] slot2: such as great.
+[ 2118.80] slot2: Yeah.
+[ 2121.36] slot0: And then that brings up the browser after you've searched for something. Or the search window could have on it something that has a drop-down menu that says just and a go button that said take me to this.
+[ 2132.80] slot2: Oh, I see what you mean. Inside the search menu, yeah. Yeah, so the first...
+[ 2133.68] slot0: so that for the inside yes the only thing that comes up when you finish is a when you start it's just one window like that and it's got all the search stuff down there so this is your search just over here and here is just go
+[ 2145.36] slot2: Mm-hmm.
+[ 2148.00] slot0: go to wherever and then from there it takes you to whatever
+[ 2153.44] slot2: Yeah, that's what, yeah.
+[ 2157.20] slot0: And the other topic says, welcome to our browser.
+[ 2159.28] slot2: welcome to our browser yeah and I'm I'm sure how to to put all the information in the don't know many that we want all the information about the name the longer
+[ 2168.24] slot0: Because we need a drop-down menu.
+[ 2173.44] slot2: I'm gonna use it for the users.
+[ 2173.60] slot0: Oh, you want to have users. Well, we don't actually have users.
+[ 2175.92] slot3: We don't actually have usernames, do we?
+[ 2176.00] slot2: We don't actually have a username.
+[ 2176.88] slot1: usernames do you aren't there all these codes maybe 11 or whatever maybe if they know
+[ 2178.64] slot2: Maybe if they know the codes in other corpus copies.
+[ 2182.72] slot1: in other
+[ 2184.48] slot0: Yeah, that's true.
+[ 2185.36] slot1: In a case like that, we do want dropdown. We don't want them to type them, do we?
+[ 2189.76] slot2: Yeah.
+[ 2190.96] slot0: Yeah, drop down.
+[ 2191.20] slot2: drop down
+[ 2193.76] slot1: And allow multiple? No? Okay, you're just looking for one specific.
+[ 2194.96] slot3: No? Okay, you're just...
+[ 2197.44] slot0: This is good. If you want to search, if you want to look for one meeting, just look at it. Yeah. Okay. Yeah. But then, yeah, as I said, that's true. Unless you have two, one there, but you've got two, one for meeting, one for speaker.
+[ 2197.92] slot1: If you want to search yourself...
+[ 2200.96] slot2: yeah that's funny okay yeah but then yeah as i said that's that's true that's unless you have two
+[ 2201.52] slot1: Okay.
+[ 2210.64] slot1: for meeting one this week.
+[ 2211.84] slot0: and you can choose, you can go for go or go for the other. You can't go for both. No, no, no, I'm not saying...
+[ 2215.44] slot2: No, no, no, I'm not saying you can pick a user. But it should come up with some list, but an extended list of the meetings. So, you know, you have BDR, whatever it was called, 01. And then it gives you the longer name.
+[ 2224.40] slot0: have BDR.
+[ 2229.60] slot2: blah and then it gives you the you know the participants
+[ 2233.84] slot0: We could do Microsoft study and hold it over and it pops up a thing.
+[ 2236.96] slot1: No?
+[ 2238.08] slot2: I was thinking that. Tool tip. But then... Is that complicated? No, it's not at all, I think.
+[ 2238.32] slot3: I was thinking that.
+[ 2242.16] slot0: Is that complicated? No.
+[ 2245.04] slot1: A tooltip. A tooltip.
+[ 2245.68] slot2: I've not tried that yet, but I was going to do that. Mouse over, isn't it? Yeah, I'm very keen on that.
+[ 2246.00] slot3: it.
+[ 2248.96] slot0: Mouse over, isn't it? Yeah, very keen on that. Let's do that then.
+[ 2249.12] slot3: It's over, isn't it?
+[ 2253.28] slot2: Yeah, I'm not sure. Is that not annoying? If you have to...
+[ 2258.48] slot0: Get out of the bloody way!
+[ 2258.56] slot2: get out the bloody way to search for a specific user you have to hold your mouth over that one wait for it to pop up that one
+[ 2270.80] slot3: Yeah.
+[ 2270.88] slot1: Yeah, that's it.
+[ 2270.96] slot0: Yeah, that's true. That's annoying. But that's why you could just have a list of your users. And you just say, I want to look for this user. Go.
+[ 2273.84] slot2: That's why you could just...
+[ 2280.48] slot2: Funny. Funny.
+[ 2280.56] slot0: Find me, and then it pulls up a list of all the ones who got that user in. And then you search. But then you're doing search. Maybe just leave it. Just have the meeting names there. And don't worry about the speakers. If they're doing speakers, they're doing search. It's not the same as doing a quick...
+[ 2292.56] slot2: speakers are doing search.
+[ 2294.56] slot1: Let's do it.
+[ 2295.36] slot0: the quick access.
+[ 2296.24] slot2: Mm.
+[ 2298.32] slot2: Yeah, it would just be nice to have some basic information on each of the meetings. Or you can have a text box there. Yeah, I'm thinking that updates. Yeah.
+[ 2301.28] slot0: Or you can have a text box there. Yeah, I'm thinking about that.
+[ 2304.88] slot0: yeah as you go over them
+[ 2305.52] slot3: as you go over there.
+[ 2306.08] slot2: Maybe that's the best idea then. So you've got a drop down menu. Search button, not search, go button.
+[ 2306.72] slot1: Then that doesn't get in the way it uses. Maybe that's the best idea then.
+[ 2317.28] slot2: and then
+[ 2320.16] slot2: some sort of field which updates dynamically depending on what you've got highlighted. Yeah.
+[ 2324.00] slot0: Yeah, the full name and the speakers. Yeah.
+[ 2326.48] slot2: Yeah, yeah, that sounds good.
+[ 2328.56] slot0: We can do all of that without even ever going anywhere near loading up a...
+[ 2334.80] slot0: I think.
+[ 2336.48] slot2: I think.
+[ 2337.52] slot0: called a thing. Nom. I'm eating a nom.
+[ 2338.88] slot2: Nom. I'm eating a nom. Yeah.
+[ 2343.60] slot2: What does NOMA actually stand for?
+[ 2345.52] slot0: I think it's a night object model. Night, oh yeah.
+[ 2346.24] slot1: object model I think in that case it's the right corpus no yeah it's the right cool
+[ 2347.12] slot2: I think in that case it's...
+[ 2351.84] slot0: Yeah, it is the right corpus. It's the knight-right corpus, and then you've got knight-right elements, and then you've got knight-right attributes.
+[ 2358.08] slot1: Right, actually.
+[ 2358.24] slot2: You've got lots of nom something and then knight something and then end something.
+[ 2362.00] slot1: and then
+[ 2363.84] slot0: I think N ones are interfaces and the N ones, one of the ways around, one's an interface and one's actually an implemented class.
+[ 2363.84] slot1: I think the end ones are interesting.
+[ 2367.68] slot2: One's an interface and one's actually an implemented class.
+[ 2369.44] slot1: It's a romantic curse.
+[ 2372.16] slot0: Because if you go back and off, what's his name? It's not very good. The API's all right, but there's not a lot of description in it. No. It says you well.
+[ 2378.00] slot1: Yeah.
+[ 2379.12] slot2: No. And most of the descriptions are hints to each other saying, you've got to update this, Jonathan. This is unintelligible. Right. Right.
+[ 2383.84] slot0: You've got to update this, Jonathan. This is...
+[ 2388.80] slot3: Great.
+[ 2390.24] slot0: Yeah.
+[ 2391.12] slot2: So you end up just...
+[ 2391.20] slot0: So you end up just saying it returns a n text box. Okay, what's that though? It's an implementation of an n text.
+[ 2396.80] slot3: implementation
+[ 2399.28] slot2: Yeah.
+[ 2399.60] slot3: There we go.
+[ 2400.00] slot0: what's that extended version of it
+[ 2404.32] slot2: No, stop it.
+[ 2407.76] slot2: Yeah, definitely. Not very fun. Right, so anyone else got anything to say?
+[ 2409.20] slot3: Definitely.
+[ 2416.88] slot1: Not really, just gonna keep on going.
+[ 2421.36] slot2: Do we want another meeting at the end of the week with Penelope?
+[ 2427.76] slot0: Might be useful, wouldn't it? Yeah.
+[ 2428.72] slot2: Yeah. Like Friday afternoon or something? Yeah, something like that. I mean, I think I'm going to do quite a bit of work this week, so I'll have probably more to talk about.
+[ 2429.20] slot1: Like Friday afternoon or something? Yeah.
+[ 2437.04] slot0: Yeah, I should have more to talk about.
+[ 2438.32] slot2: And we won't have to have...
+[ 2438.88] slot1: And we won't have to have the meeting with Steve on Tuesday, or at all. So do we want to arrange this, get this one earlier, maybe? Three year.
+[ 2443.52] slot2: We want to arrange this.
+[ 2446.40] slot3: three years
+[ 2448.56] slot2: If you like. Or we can discuss that on Friday if we have one. That's true.
+[ 2448.64] slot1: if you like
+[ 2449.20] slot0: Well, we can discuss that on Friday.
+[ 2451.12] slot1: one.
+[ 2456.08] slot1: Friday? Yeah, sure.
+[ 2456.16] slot2: Friday? Yeah, sure. What time?
+[ 2459.28] slot3: Um,
+[ 2461.60] slot2: Just...
+[ 2462.08] slot0: just after sp2
+[ 2464.16] slot1: Possibly. I don't know. Usually by then. Need a break.
+[ 2469.84] slot0: Yeah, yeah. Although, well, I don't know.
+[ 2470.08] slot1: Yeah, yeah.
+[ 2470.64] slot3: Although, well, I don't know.
+[ 2471.52] slot1: I don't know, because it's the lab, and try and get some work done.
+[ 2474.72] slot0: For the live stuff. Yeah, that could be quite good.
+[ 2474.96] slot1: for the lab stuff. Yeah, that could be quite good. I've got a dog.
+[ 2477.92] slot2: I've got a doctor's appointment at 10 to 2.
+[ 2480.72] slot1: okay right
+[ 2481.44] slot0: right
+[ 2484.72] slot2: Friday morning?
+[ 2485.12] slot0: Friday morning?
+[ 2487.60] slot3: Three o'clock?
+[ 2489.44] slot1: or you want to get out.
+[ 2489.52] slot0: or you want to get
+[ 2491.60] slot0: I don't know, maybe I do, I'm not sure. I'll do this again.
+[ 2492.08] slot1: Maybe I do. I'm not sure. Okay. Okay.
+[ 2497.84] slot1: Because I think she's got a class at 11. We've all got class, well, three of us have class at 12.
+[ 2504.64] slot0: How about we say three o'clock and then if there's a serious problem, we could try
+[ 2504.72] slot2: How about... Can we say three?
+[ 2508.08] slot1: I think we could try one. We could try shortly after. Well, yeah. Well, yeah. Well, it wouldn't be a long meeting then. Would you want to? No, probably not.
+[ 2510.16] slot3: Well, yeah. Yeah.
+[ 2510.80] slot2: Yeah. Well, yeah.
+[ 2515.84] slot2: um
+[ 2517.20] slot1: If one's bad for you then? No, no, that would only give it...
+[ 2517.60] slot2: That's bad for you then. No, no, that would only give us like 35 minutes or something. Okay. Well, what?
+[ 2522.48] slot1: Okay.
+[ 2524.48] slot0: It's quite late, like, you know, five or six. Three's better than five or six. Yeah.
+[ 2525.04] slot2: How about quite late, like, you know, five or six?
+[ 2528.72] slot1: Yeah.
+[ 2531.28] slot2: Well, three o'clock. Let's say three o'clock.
+[ 2532.32] slot0: Just say 3 o'clock and then if there's a problem with that then. If 3 o'clock's a problem, 5 or 6 will be a problem. Because I won't be here.
+[ 2541.68] slot2: but I don't think that will.
+[ 2541.84] slot0: but I don't think that will be. I'm not sure.
+[ 2544.24] slot2: I'll write this meeting up and I'll send it to Pamela as well.
+[ 2549.04] slot1: Okay.
+[ 2549.92] slot0: Is she collecting them?
+[ 2551.60] slot2: No.
+[ 2552.24] slot0: You just said it to us.
+[ 2553.76] slot2: Because she's not here.
+[ 2554.88] slot0: No, I mean, is she collecting? Oh, right. Oh, yeah, sorry. Yeah. It's cool for the gifting. I collect the meetings.
+[ 2560.48] slot2: I collect meeting summaries.
+[ 2563.36] slot0: I thought somebody was collecting them. Well, that's what I thought when you said that. Yeah, no.
+[ 2566.24] slot2: Yeah, we should probably do that at the end.
+[ 2568.56] slot1: Yeah.
+[ 2569.04] slot0: Then we'd know who's missed them. So, can we just...
+[ 2570.32] slot2: So can we just repeat briefly what we've spoken about? So we've done progress on the speaker characterisation. Who does the speaker characterisation? We've mentioned topic labelling with...
+[ 2584.80] slot2: keywords
+[ 2586.24] slot0: Yeah.
+[ 2587.20] slot2: We discussed if the search should be ranked. And Michael, did you have anything else?
+[ 2594.88] slot1: Um, there's just sort of the basic implementation stuff that I was wondering about, but it should be fine. It's just progressing.
+[ 2604.80] slot2: Did we decide?
+[ 2604.88] slot1: Did we decide whether it should be ranked? No? For now? No. Well...
+[ 2605.52] slot3: decide whether it should be around.
+[ 2608.24] slot0: Oh, well.
+[ 2608.56] slot2: Well, basically, not unless you've got time for it at the end. It would be nice at the end. I kind of think it would...
+[ 2614.08] slot1: Yeah. Well, I. It would be nice.
+[ 2614.40] slot3: Well, I kind of think it would complicate things.
+[ 2617.04] slot1: things quite a bit and not bring us a lot. Just because if it is like independently doing the words for a particular document, it's not really getting them together. Like if someone's looking for a particular term.
+[ 2631.36] slot1: I don't know. I just don't know if it would bring us that much.
+[ 2635.60] slot2: I think it would. How so? Yeah. I think it would give you the most relevant result.
+[ 2641.04] slot3: give you the most relevant result. If they're looking for, like I say, sunny day and, you know...
+[ 2643.84] slot1: like I say, sunny day and you know, sunny shows up in this document, day shows up, but they're not together. Or if they are together. I don't know.
+[ 2651.76] slot3: I don't, it just doesn't, you're looking for that term, and relevance is kind of.
+[ 2654.32] slot1: and relevance is kind of irrelevant because if the term shows up it shows up.
+[ 2658.40] slot2: No, but for things like if you search for language, then you might have some topics which have as a, you know, some meetings which have as a topic language. They specifically speak about language and they use that word like in every sentence. And then you've got...
+[ 2672.64] slot2: you've got those that just mention you know mention it briefly like once or twice saying you know my language is German or something stupid that you don't really want so you want to distinguish that somehow
+[ 2679.44] slot1: But you don't really...
+[ 2684.40] slot0: Yeah, that would help. And that's for single terms. It would be very useful. Yeah. Yeah.
+[ 2684.72] slot3: And that's for single word.
+[ 2687.04] slot2: the Aries. Yeah. Yeah. Yeah. Yeah.
+[ 2688.00] slot1: Yeah.
+[ 2688.48] slot0: for multiple terms unless you want to do something. There will be a way of doing it for multiple terms.
+[ 2693.44] slot2: For multiple terms, we can just do something really simple. I mean...
+[ 2693.52] slot1: For multiple terms we can just do something really simple.
+[ 2697.36] slot0: Or you could do it and override it by the... You could just ignore the ranking if it doesn't show up together.
+[ 2697.76] slot1: Or you could do it in a...
+[ 2705.76] slot1: Yeah.
+[ 2706.48] slot0: or you could have you can penalize it you could just put away to do the searches
+[ 2707.68] slot3: penalize it you could
+[ 2708.88] slot1: But you still have to do the search, you still have to do the NXT search then, right? Yeah, you do the NXT search and it doesn't show up together. Either disregard it or put a weight in against it.
+[ 2712.16] slot0: Yeah, you do the NXT shirts and it doesn't show up together. Either disregard it or put a weighting against it. So how many pairs you get... It wouldn't show up on the shirt.
+[ 2716.56] slot2: Yeah.
+[ 2717.04] slot1: So how many pairs you get. It wouldn't show up on the search results if it didn't exist. So then just, next.
+[ 2720.40] slot2: if it didn't exist.
+[ 2721.44] slot2: Just disregard it. Yeah, I mean, you just do it really simply, you know?
+[ 2721.44] slot0: Just disregard it.
+[ 2726.88] slot1: Yeah.
+[ 2727.76] slot2: You'll have the results as before. We'll have to talk to Pranella about this.
+[ 2727.76] slot3: You'll have the results as before. We'll have to talk to Pranella about that.
+[ 2728.88] slot1: Can we talk to Pranella about this? See how she's doing this. If we are using that, I mean, it does make sense for that. But, yeah, actually.
+[ 2729.92] slot0: Yeah, that's good.
+[ 2730.32] slot2: to see how she's doing this. Because if we are using that, I mean...
+[ 2732.72] slot3: We are using that. I mean.
+[ 2736.80] slot3: Actually, yeah.
+[ 2738.96] slot1: Yeah.
+[ 2740.32] slot2: It doesn't have to be all intelligent. Yeah.
+[ 2742.64] slot1: Yeah.
+[ 2742.96] slot0: Because some things you're going to get a lot of results.
+[ 2743.28] slot3: I don't think you're going to get a lot of...
+[ 2743.76] slot1: get a lot of results yeah and if the one that you
+[ 2745.20] slot2: And if the one that you got...
+[ 2745.20] slot3: And if the one that...
+[ 2745.44] slot0: And if the one that you got just happened to be at the bottom and it was actually the most relevant one, something like that would just push it up.
+[ 2749.20] slot3: I mean, if it's, well, yeah.
+[ 2751.44] slot1: Yeah. Yeah, OK, I see what you mean. And then we could actually put that on the list of meetings that get returned. If there were 15 meetings with languages in, then it's going to show you those. Yeah.
+[ 2762.96] slot0: Rank them.
+[ 2763.12] slot1: rank them as to which is the highest which is the highest okay i see that and uh
+[ 2764.72] slot0: which is the highest. OK, I see that. Also, with something like Sunny Day, if Sunny and Day aren't mentioned together a lot, but Sunny just happens to be mentioned once, its term will be low and it will push down the other one.
+[ 2776.96] slot1: It's term will be low.
+[ 2778.72] slot0: one if you combine them if you just add them together the things I mean that
+[ 2779.68] slot1: You just add them together. The thing is, I mean, that'll be exactly how we're doing it now. Like, we're just looking for the two words separately, see if they exist in the same document. If they do, then there's a possibility that they occur together. And then we do the NXC search on that document. Yeah, yeah.
+[ 2790.40] slot2: on that document.
+[ 2791.36] slot0: Yeah, but you have no ranking system at the moment. So if something's an amazing, highly ranked thing from TF-IDF, it could just be ignored because it falls off the bottom of the...
+[ 2793.28] slot1: moment so if something
+[ 2800.80] slot0: I assume you return all results for all. Say you type language and it returns 75 meetings.
+[ 2808.32] slot1: Well, right now it's not doing anything, so I don't know what it's doing. Well, it's not that many meetings. But yeah.
+[ 2811.52] slot2: Well, there's not that many meetings.
+[ 2813.36] slot0: Yeah, there are 75 meetings. Is there really? Yeah. Wow.
+[ 2813.52] slot3: that I already said.
+[ 2813.52] slot2: But there are 75 meetings. Is there really? Yeah. Wow.
+[ 2814.56] slot1: 75 meeting is there really yeah yeah wow yeah
+[ 2820.00] slot0: So yeah, if you return 75, where do you stop? Or how do you rank them or something? Or if it turns 20, even if it turns 20, do you cut it off at 10? Do you rank them? Yeah, that's true. Okay. What's the threshold? Yeah, that's true.
+[ 2825.84] slot1: If it turns 20, even if it turns 20.
+[ 2827.84] slot1: but 10, do you? Rank them, do you? Yeah, that's true. Okay.
+[ 2831.68] slot2: Yeah, that's true.
+[ 2832.40] slot3: Look through them all.
+[ 2834.64] slot0: It would be useful as...
+[ 2836.24] slot2: It would be useful as well for a word like language that might occur in all of them. But you want to find the one that actually contains it usefully somehow.
+[ 2845.92] slot0: Mm-hmm.
+[ 2846.88] slot1: Yeah.
+[ 2848.00] slot0: Mm-hmm.
+[ 2849.44] slot2: you still want to be able to search for the word language.
+[ 2854.24] slot2: in a sensible way.
+[ 2858.64] slot2: Well, we'll discuss it again on Friday.
+[ 2866.88] slot3: yeah
+[ 2874.96] slot0: So is that it?
+[ 2876.48] slot2: I think so. Done. Tick.
+[ 2876.64] slot1: Yep.
+[ 2877.52] slot0: done.
+[ 2879.60] slot0: Take it.
+[ 2880.40] slot1: Okay.
+[ 2881.04] slot0: It's lined up already.
+[ 2882.32] slot1: Yeah.

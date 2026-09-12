@@ -1,0 +1,12 @@
+{
+ "meeting": "ES2004a",
+ "model": "BUT-FIT/Dixtral",
+ "masks": "sortformer+tracker(cap4)",
+ "win_s": 120,
+ "cpwer": 0.1454,
+ "ref_words": 2676,
+ "hyp_words": 2532,
+ "gen_wall_s": 46,
+ "rtf": 0.044,
+ "device": "cuda"
+}

@@ -1,0 +1,12 @@
+{
+ "meeting": "EN2002b",
+ "model": "BUT-FIT/Dixtral",
+ "masks": "sortformer+tracker(cap4)",
+ "win_s": 120,
+ "cpwer": 0.1815,
+ "ref_words": 6258,
+ "hyp_words": 5818,
+ "gen_wall_s": 69,
+ "rtf": 0.039,
+ "device": "cuda"
+}

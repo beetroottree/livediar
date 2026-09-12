@@ -1,0 +1,12 @@
+{
+ "meeting": "IS1009b",
+ "model": "BUT-FIT/Dixtral",
+ "masks": "sortformer+tracker(cap4)",
+ "win_s": 120,
+ "cpwer": 0.1125,
+ "ref_words": 5981,
+ "hyp_words": 5788,
+ "gen_wall_s": 86,
+ "rtf": 0.042,
+ "device": "cuda"
+}
